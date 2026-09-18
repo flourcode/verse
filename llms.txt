@@ -1,0 +1,61 @@
+# Better Verses
+
+> The right verse for right now. Find the right Bible verse for what you're facing right now. Verses matched to everyday situations, feelings, life changes, and occasions, each with the context behind it.
+
+Every verse is quoted from the World English Bible (public domain) and comes with a short editorial note explaining who wrote it, to whom, and why it fits the situation. Verses are chosen for their context, not because a line sounds inspirational on its own. The site is a static HTML site with no login; all pages are freely readable. Please attribute quotations of our editorial notes to Better Verses (https://betterverses.com).
+
+## Start here
+
+- [Home](https://betterverses.com/): Type what you are facing and get a matched verse with context
+- [All topics](https://betterverses.com/topics/): Every page, grouped by feelings, work, family, health, changes, decisions, money, and occasions
+- [Verse for today](https://betterverses.com/today/): One verse a day, same for everyone, with context and a reflection question
+- [How we choose verses](https://betterverses.com/how-we-choose-verses/): The selection method
+- [Editorial policy](https://betterverses.com/editorial-policy/): Who writes the pages, tone, what we never claim
+- [About](https://betterverses.com/about/): What the site is and is not
+
+## Feelings and themes
+
+- [Bible verses for worry](https://betterverses.com/topics/worry/): Bible verses for worry, with short notes on what each passage is actually saying and why people reach for it when the mind won't settle.
+- [Bible verses for anxiety](https://betterverses.com/topics/anxiety/): Bible verses for anxiety, chosen for what they say about fear, a racing mind, and God's nearness, with plain notes on context.
+- [Bible verses for courage](https://betterverses.com/topics/courage/): Bible verses for courage, from Joshua to Paul, with notes on who was told to be brave and why it wasn't a pep talk.
+- [Bible verses for hope](https://betterverses.com/topics/hope/): Bible verses about hope, with notes on the difference between biblical hope and wishful thinking, and where each passage comes from.
+- [Bible verses for peace](https://betterverses.com/topics/peace/): Bible verses about peace: the inner kind, the kind Jesus leaves with his friends, and the kind that holds while trouble continues.
+- [Bible verses for patience](https://betterverses.com/topics/patience/): Bible verses about patience with people, with waiting, and with yourself, including where each passage comes from and what it's really asking.
+- [Bible verses for wisdom](https://betterverses.com/topics/wisdom/): Bible verses about wisdom and where it comes from, chosen for people who need to think clearly about something real.
+- [Bible verses for loneliness](https://betterverses.com/topics/loneliness/): Bible verses for loneliness, including the ones written by people who felt abandoned, with notes on what each actually promises.
+- [Bible verses for grief](https://betterverses.com/topics/grief/): Bible verses for grief and loss, with the context behind each one. Verses that sit with the sorrow rather than rushing past it.
+- [Bible verses for feeling overwhelmed](https://betterverses.com/topics/overwhelmed/): Bible verses for when you feel overwhelmed and have nothing left, chosen for what they say about weakness, burdens, and rest.
+- [Bible verses for forgiveness](https://betterverses.com/topics/forgiveness/): Bible verses about forgiving someone, being forgiven, and what forgiveness does and doesn't require, with plain context for each.
+- [Bible verses for financial stress](https://betterverses.com/topics/financial-stress/): Bible verses for financial stress and money worries, with notes on provision and contentment that don't promise you'll get rich.
+
+## Situations
+
+- [Bible verses for making a difficult decision](https://betterverses.com/situations/difficult-decisions/): Bible verses for making a hard decision, chosen for what they say about guidance, counsel, and trusting God with an outcome you can't see.
+- [Bible verses for waiting](https://betterverses.com/situations/waiting/): Bible verses for waiting on God, on an answer, or on a season to change, with notes on what 'wait' actually means in each passage.
+- [Bible verses when you can't sleep](https://betterverses.com/situations/cannot-sleep/): Bible verses for when you can't sleep: short psalms about lying down in peace, night watches, and letting go of what you're carrying.
+- [Bible verses for starting over](https://betterverses.com/situations/starting-over/): Bible verses for starting over after a loss, a failure, or an ending, with notes on new beginnings that happened to real people in Scripture.
+- [Bible verses for difficult coworkers](https://betterverses.com/situations/difficult-coworkers/): Bible verses for dealing with a difficult coworker: patience, wise speech, restraint, and the part of the situation you actually control.
+- [Bible verses for work stress](https://betterverses.com/situations/work-stress/): Bible verses for work stress, deadlines, and burnout, with notes on what Scripture says about labor, rest, and where your work's value comes from.
+- [Bible verses before a job interview](https://betterverses.com/situations/job-interview/): Bible verses to read before a job interview: calm nerves, speak clearly, and trust the outcome without pretending a verse guarantees the job.
+- [Bible verses after losing a job](https://betterverses.com/situations/job-loss/): Bible verses after losing a job: provision, identity, and hope for what's next, with notes that don't pretend the loss isn't real.
+- [Bible verses for retirement](https://betterverses.com/situations/retirement/): Bible verses for retirement and the season after work: fruitfulness in later life, finishing well, and what the next chapter is for.
+- [Bible verses before surgery](https://betterverses.com/situations/before-surgery/): Bible verses to read before surgery, for the patient or someone waiting with them: presence, peace, and rest in the hours before.
+- [Bible verses while waiting for test results](https://betterverses.com/situations/waiting-for-test-results/): Bible verses for waiting on medical test results: verses about steadiness before news, fear, and days when you can't do anything but wait.
+- [Bible verses for moving](https://betterverses.com/situations/moving/): Bible verses for moving to a new home or city: leaving, being kept on the way, and settling somewhere you don't know yet.
+- [Bible verses for graduation](https://betterverses.com/situations/graduation/): Bible verses for a graduate, chosen for what they say about the next step, wisdom, and being taken seriously while young.
+- [Bible verses for safe travel](https://betterverses.com/situations/safe-travel/): Bible verses for safe travel and a journey, including the traveler's psalm, with notes on what each passage promises about the road.
+- [Bible verses for marriage](https://betterverses.com/situations/marriage/): Bible verses for marriage: love that's patient, two being better than one, and the daily work of staying together, with plain notes on context.
+- [Bible verses for difficult family members](https://betterverses.com/situations/difficult-family-members/): Bible verses for dealing with a difficult family member: keeping peace where you can, not repaying evil, and setting down grudges you can't carry.
+
+## Cards and occasions
+
+- [Bible verse for a retirement card](https://betterverses.com/occasions/retirement-card/): Bible verses for a retirement card, with a best overall pick, a short one, a traditional one, and suggested wording you can copy.
+- [Bible verse for a graduation card](https://betterverses.com/occasions/graduation-card/): Bible verses for a graduation card, with a best overall pick, a short one, and ready-to-copy wording for a graduate you're proud of.
+- [Bible verse for a sympathy card](https://betterverses.com/occasions/sympathy-card/): Bible verses for a sympathy card after a death, with a best overall pick, a short one, and gentle wording that doesn't try to explain the loss.
+
+## Optional
+
+- [Contact](https://betterverses.com/contact/): Report a wrong verse or suggest a topic
+- [Privacy policy](https://betterverses.com/privacy/)
+- [Terms of use](https://betterverses.com/terms/)
+- [XML sitemap](https://betterverses.com/sitemap.xml)
