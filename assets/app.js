@@ -1,4 +1,4 @@
-/* Relevant Verse — client script. No framework, no build step. ~6 KB minified.
+/* Better Verses — client script. No framework, no build step. ~6 KB minified.
    Everything here progressively enhances static HTML; every page works without it. */
 (function () {
   'use strict';
