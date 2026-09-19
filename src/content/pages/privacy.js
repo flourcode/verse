@@ -17,7 +17,7 @@ export default {
 </ul>
 
 <h2>Analytics</h2>
-<p>We may use Google Analytics 4 to understand which pages are useful. If it is enabled, Google sets cookies and collects usage information such as pages visited, approximate location derived from a truncated IP address, device type, and how you arrived at the site. We configure analytics to anonymize IP addresses and we do not send it the text you search for; we only record which topic page you ended up on and which buttons you used (for example “copy verse”).</p>
+<p>The site uses Google Analytics 4 to understand which pages are useful. Google sets cookies and collects usage information such as pages visited, approximate location derived from a truncated IP address, device type, and how you arrived at the site. We configure analytics to anonymize IP addresses and we do not send it the text you search for; we only record which topic page you ended up on and which buttons you used (for example “copy verse”).</p>
 <p>You can opt out of Google Analytics across all websites with the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google Analytics opt-out browser add-on</a>.</p>
 
 <h2>Cookies</h2>

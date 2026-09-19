@@ -10,6 +10,18 @@ customHeaders:
         value: 'strict-origin-when-cross-origin'
       - key: 'Permissions-Policy'
         value: 'camera=(), microphone=(), geolocation=()'
+  - pattern: '**/*.js'
+    headers:
+      - key: 'Content-Type'
+        value: 'application/javascript; charset=utf-8'
+  - pattern: '**/*.css'
+    headers:
+      - key: 'Content-Type'
+        value: 'text/css; charset=utf-8'
+  - pattern: '**/*.txt'
+    headers:
+      - key: 'Content-Type'
+        value: 'text/plain; charset=utf-8'
   - pattern: '/assets/*'
     headers:
       - key: 'Cache-Control'
