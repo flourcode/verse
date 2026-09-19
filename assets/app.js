@@ -16,7 +16,7 @@
     const a = e.target.closest('a[href]'); if (!a) return; let h = a.getAttribute('href');
     if (/^(https?:|mailto:|#)/.test(h)) return;
     if (h.startsWith('/')) h = BASE + h.slice(1);
-    h = h.replace(/\/(#|$)/, '/index.html$1');
+    h = h.replace(/\/(\?|#|$)/, '/index.html$1');
     e.preventDefault(); location.href = h;
   });
   const TR = 'World English Bible (WEB)';

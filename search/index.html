@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" data-site="https://betterverses.com" data-tr="World English Bible (WEB)">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Search the Bible | Better Verses</title>
+<meta name="description" content="Search every verse of the Bible in plain English: phrases, topics, references, or what you’re facing. Results explain why they matched. Runs in your browser.">
+<link rel="canonical" href="https://betterverses.com/search/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FBFAF6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15171A" media="(prefers-color-scheme: dark)">
+<meta property="og:site_name" content="Better Verses">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Search the Bible">
+<meta property="og:description" content="Search every verse of the Bible in plain English: phrases, topics, references, or what you’re facing. Results explain why they matched. Runs in your browser.">
+<meta property="og:url" content="https://betterverses.com/search/">
+<meta property="og:image" content="https://betterverses.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Better Verses: Search the Bible in plain English.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Search the Bible">
+<meta name="twitter:description" content="Search every verse of the Bible in plain English: phrases, topics, references, or what you’re facing. Results explain why they matched. Runs in your browser.">
+<meta name="twitter:image" content="https://betterverses.com/og-default.png">
+<meta name="twitter:image:alt" content="Better Verses: Search the Bible in plain English.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../source-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/main.css">
+<script src="../data/finder.js" defer></script>
+<script src="../assets/search.js" defer></script>
+<script src="../analytics.js" defer></script>
+<script src="../assets/app.js" defer></script>
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap bar__in">
+    <a class="brand" href="../" aria-label="Better Verses home"><svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5V5.5"/><path d="M9 8h6"/></svg><span>Better Verses</span></a>
+    <nav class="nav" aria-label="Main"><a href="../search/" aria-current="page">Search</a><a href="../topics/">Topics</a><a href="../today/">Today</a><a href="../about/">About</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap wrap--narrow">
+
+<ol class="crumbs" aria-label="Breadcrumb"><li><a href="../">Home</a></li><li aria-current="page">Search</li></ol>
+<h1>Search the Bible</h1>
+<p class="hero__dek">Every verse of the World English Bible, searched in your browser. Exact phrases, topics, references, or plain questions.</p>
+<form id="search" class="finder" role="search" action="../search/" method="get">
+    <div class="field">
+      <label for="q" class="sr-only">Search the Bible</label>
+      <input id="q" name="q" type="search" autocomplete="off" autocapitalize="sentences" enterkeyhint="search" spellcheck="false" placeholder="where Jesus talks about worrying…" maxlength="140" value="" data-examples="[&quot;where Jesus talks about worrying…&quot;,&quot;be still and know…&quot;,&quot;verses about debt…&quot;,&quot;Paul and running a race…&quot;,&quot;what the Bible says about starting over…&quot;,&quot;verses that mention clay…&quot;,&quot;John 3:16…&quot;,&quot;my help comes from…&quot;]">
+    </div>
+    <div class="finder__row">
+      <button class="btn btn--primary" type="submit">Search</button>
+      <span class="finder__try">Try: <a href="../search/?q=%22be%20still%20and%20know%22" data-q="&quot;be still and know&quot;">be still and know</a> · <a href="../search/?q=Jesus%20on%20forgiveness" data-q="Jesus on forgiveness">Jesus on forgiveness</a> · <a href="../search/?q=verses%20about%20money" data-q="verses about money">verses about money</a> · <a href="../search/?q=Paul%20running%20a%20race" data-q="Paul running a race">Paul running a race</a></span>
+    </div>
+    <p id="search-status" class="finder__status" aria-live="polite"></p>
+    <div id="filters" class="filters" hidden>
+      <label>Testament <select id="f-testament"><option value="">All</option><option value="OT">Old</option><option value="NT">New</option></select></label>
+      <label>Book <select id="f-book"><option value="">All books</option></select></label>
+      <label>Match <select id="f-mode"><option value="best">Best match</option><option value="all">All words</option><option value="phrase">Exact phrase</option></select></label>
+    </div>
+  </form>
+  <div id="results" class="results" aria-live="polite" hidden></div>
+<section class="section" id="search-help">
+  <h2>What you can type</h2>
+  <ul class="list">
+    <li><strong>A phrase you remember</strong>: <em>be still and know</em>, <em>love is patient</em>, <em>camel through the eye of a needle</em>. Put it in quotes to require the exact words.</li>
+    <li><strong>A topic</strong>: <em>verses about debt</em>, <em>forgiveness</em>, <em>clay</em>. Related words are included and labelled.</li>
+    <li><strong>A reference</strong>: <em>John 3:16</em>, <em>Psalm 23</em>, <em>Matt 6 25-34</em>.</li>
+    <li><strong>A person or section</strong>: <em>Jesus on worry</em>, <em>Paul and running a race</em>, <em>Proverbs about the tongue</em>.</li>
+    <li><strong>What you’re facing</strong>: <em>starting over</em>, <em>can’t sleep</em>. If we have a hand-picked page for it, it appears above the results.</li>
+  </ul>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <ul>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../how-we-choose-verses/">How we choose verses</a></li>
+      <li><a href="../editorial-policy/">Editorial policy</a></li>
+      <li><a href="../contact/">Contact</a></li>
+      <li><a href="../privacy/">Privacy</a></li>
+      <li><a href="../terms/">Terms</a></li>
+      <li><a href="../affiliate-disclosure/">Affiliate disclosure</a></li>
+    </ul>
+    <p>Bible text: World English Bible (Public Domain)</p>
+    <p>© Better Verses</p>
+  </div>
+</footer>
+
+</body>
+</html>

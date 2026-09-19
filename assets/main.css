@@ -302,7 +302,8 @@ main { padding: 1.5rem 0 4rem; }
   /* One big primary action on a phone, like a native app. */
   .finder__row .btn--primary { flex: 1 1 100%; min-height: 56px; font-size: 1.1rem; }
   .finder__row { row-gap: .25rem; }
-  .nav a { padding-inline: .55rem; font-size: .9rem; }
+  .nav a { padding-inline: .5rem; font-size: .9rem; }
+  .nav a[href="/about/"], .nav a[href$="/about/"] { display: none; }  /* About stays in the footer on phones */
   .verse { padding: 1.15rem 1.1rem 1rem; border-radius: var(--r-md); }
   .picks li { grid-template-columns: 1fr; gap: .15rem; }
 }
@@ -313,3 +314,42 @@ main { padding: 1.5rem 0 4rem; }
 .rl { color: var(--red-letter); }
 .rl-key { color: var(--red-letter); }
 @media print { .rl { color: #B3261E; } }
+
+/* ── Full-Bible search ── */
+.finder__try { font-size: .9rem; color: var(--ink-2); line-height: 1.6; }
+.finder__try a { color: var(--accent-ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.finder__try a:hover { border-color: var(--accent-ink); }
+.finder__status { font-size: .9rem; color: var(--ink-2); min-height: 1.4em; margin: .5rem 0 0; }
+.filters[hidden] { display: none; }
+.filters { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin-top: .75rem; font-size: .85rem; color: var(--ink-2); }
+.filters label { display: inline-flex; align-items: center; gap: .4rem; }
+.filters select { font: inherit; color: var(--ink); background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--r-sm); padding: .35rem .5rem; min-height: 36px; }
+.results { margin-top: 1.5rem; scroll-margin-top: 72px; }
+.results__count { font-size: .9rem; color: var(--ink-2); margin: 0 0 .75rem; }
+.results__note { font-size: .95rem; margin: 0 0 .5rem; }
+.curated { display: block; background: var(--accent-soft); color: var(--on-accent-soft, var(--ink)); border-radius: var(--r-lg); padding: 1rem 1.15rem; margin: 0 0 1.25rem; text-decoration: none; }
+.curated__k { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: .2rem; }
+.curated strong { display: block; font-size: 1.15rem; color: var(--ink); }
+.curated span:last-child { display: block; font-size: .9rem; color: var(--ink-2); margin-top: .2rem; }
+.curated:hover { text-decoration: none; background: color-mix(in srgb, var(--on-surface) 6%, var(--accent-soft)); }
+.hit { padding: 1.1rem 0 .9rem; border-top: 1px solid var(--line); }
+.hit__ref { font-size: 1rem; font-weight: 600; margin: 0 0 .35rem; }
+.hit__ref a { color: var(--accent-ink); text-decoration: none; }
+.hit__ref a:hover { text-decoration: underline; }
+.hit__text { font-family: var(--font-verse); font-size: 1.2rem; line-height: 1.5; margin: 0 0 .5rem; text-wrap: pretty; }
+.hit__text mark { background: color-mix(in srgb, var(--accent) 22%, transparent); color: inherit; border-radius: 3px; padding: 0 .1em; }
+.hit__why { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 .25rem; }
+.hit__why span { font-size: .78rem; color: var(--ink-2); background: var(--bg-2); border-radius: var(--r-pill); padding: .2rem .6rem; }
+.hit__actions { display: flex; flex-wrap: wrap; gap: 0 .25rem; margin-left: -.6rem; }
+.hit__actions .btn { min-height: 40px; font-size: .9rem; }
+.hit__ctx { background: var(--bg-2); border-radius: var(--r-md); padding: .9rem 1rem; margin: .5rem 0 .25rem; font-size: 1rem; }
+.hit__ctxhead { font-size: .8rem; font-weight: 600; color: var(--ink-2); margin: 0 0 .5rem; text-transform: uppercase; letter-spacing: .06em; }
+.hit__ctx .ctx { margin: 0 0 .45rem; color: var(--ink-2); }
+.hit__ctx .ctx--hit { color: var(--ink); font-weight: 500; }
+.hit__ctx sup { font-size: .7em; color: var(--ink-3); margin-right: .15em; }
+.hit__ctxfoot { margin: .6rem 0 0; font-size: .9rem; }
+.results__more { margin-top: 1rem; }
+.searchmore { background: var(--bg-2); border-radius: var(--r-lg); padding: 1.25rem 1.25rem 1.35rem; }
+.searchmore h2 { margin-top: 0; font-size: 1.2rem; }
+.chip--more { background: transparent; border: 1px solid var(--line); }
+@media (max-width: 480px) { .finder__try { flex-basis: 100%; } }

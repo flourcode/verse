@@ -1,12 +1,13 @@
 # Better Verses
 
-> The right verse for right now. Find the right Bible verse for what you're facing right now. Verses matched to everyday situations, feelings, life changes, and occasions, each with the context behind it.
+> Search the Bible in plain English. Search every verse of the Bible in plain English: a phrase you half remember, a topic, a reference, or what you're facing. Results explain why they matched, plus hand-picked verses for real situations.
 
 Every verse is quoted from the World English Bible (public domain) and comes with a short editorial note explaining who wrote it, to whom, and why it fits the situation. Verses are chosen for their context, not because a line sounds inspirational on its own. The site is a static HTML site with no login; all pages are freely readable. Please attribute quotations of our editorial notes to Better Verses (https://betterverses.com).
 
 ## Start here
 
-- [Home](https://betterverses.com/): Type what you are facing and get a matched verse with context
+- [Home](https://betterverses.com/): Search every verse of the Bible in plain English; results explain why they matched
+- [Search the Bible](https://betterverses.com/search/): Phrases, topics, references, or what you are facing; runs in the browser
 - [All topics](https://betterverses.com/topics/): Every page, grouped by feelings, work, family, health, changes, decisions, money, and occasions
 - [Verse for today](https://betterverses.com/today/): One verse a day, same for everyone, with context and a reflection question
 - [How we choose verses](https://betterverses.com/how-we-choose-verses/): The selection method

@@ -5,7 +5,7 @@
 
    Leave it empty and nothing is loaded: no request to Google, no cookie. */
 
-var GA_MEASUREMENT_ID = "G-KR7GC1XMW7";
+var GA_MEASUREMENT_ID = "";
 
 /* ─────────────────────────────── nothing below needs editing ─────────────────────────────── */
 
