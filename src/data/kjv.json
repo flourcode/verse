@@ -1,0 +1,743 @@
+{
+ "_comment": "Wordings people remember from other Bibles (King James, and modern ones) that the World English Bible renders differently. Key: what they type. Value: what the WEB says. Only vocabulary, never verse text.",
+ "whore": [
+  "prostitute"
+ ],
+ "whores": [
+  "prostitutes"
+ ],
+ "whoredom": [
+  "prostitution"
+ ],
+ "whoredoms": [
+  "prostitution"
+ ],
+ "whoring": [
+  "prostitution",
+  "prostitute"
+ ],
+ "harlot": [
+  "prostitute"
+ ],
+ "harlots": [
+  "prostitutes"
+ ],
+ "smite": [
+  "strike"
+ ],
+ "smote": [
+  "struck"
+ ],
+ "smitten": [
+  "struck"
+ ],
+ "smiteth": [
+  "strikes"
+ ],
+ "thee": [
+  "you"
+ ],
+ "thou": [
+  "you"
+ ],
+ "thy": [
+  "your"
+ ],
+ "thine": [
+  "your",
+  "yours"
+ ],
+ "ye": [
+  "you"
+ ],
+ "verily": [
+  "most certainly",
+  "truly"
+ ],
+ "begat": [
+  "became the father of"
+ ],
+ "begotten": [
+  "one and only",
+  "born"
+ ],
+ "hearken": [
+  "listen"
+ ],
+ "hearkened": [
+  "listened"
+ ],
+ "raiment": [
+  "clothing",
+  "garments"
+ ],
+ "brethren": [
+  "brothers"
+ ],
+ "abide": [
+  "remain",
+  "stay",
+  "live"
+ ],
+ "abideth": [
+  "remains"
+ ],
+ "spake": [
+  "spoke"
+ ],
+ "wherefore": [
+  "therefore",
+  "why"
+ ],
+ "holy ghost": [
+  "holy spirit"
+ ],
+ "ghost": [
+  "spirit"
+ ],
+ "fornication": [
+  "sexual immorality"
+ ],
+ "fornicators": [
+  "sexually immoral"
+ ],
+ "charity": [
+  "love"
+ ],
+ "lord of hosts": [
+  "yahweh of armies"
+ ],
+ "hosts": [
+  "armies"
+ ],
+ "lord": [
+  "yahweh"
+ ],
+ "saith": [
+  "says"
+ ],
+ "sayeth": [
+  "says"
+ ],
+ "cometh": [
+  "comes"
+ ],
+ "goeth": [
+  "goes"
+ ],
+ "doeth": [
+  "does"
+ ],
+ "hath": [
+  "has"
+ ],
+ "doth": [
+  "does"
+ ],
+ "shalt": [
+  "shall",
+  "will"
+ ],
+ "wilt": [
+  "will"
+ ],
+ "art": [
+  "are"
+ ],
+ "unto": [
+  "to"
+ ],
+ "peradventure": [
+  "perhaps"
+ ],
+ "haply": [
+  "perhaps"
+ ],
+ "howbeit": [
+  "however",
+  "but"
+ ],
+ "whither": [
+  "where"
+ ],
+ "hither": [
+  "here"
+ ],
+ "thither": [
+  "there"
+ ],
+ "whence": [
+  "where"
+ ],
+ "hence": [
+  "from here"
+ ],
+ "shew": [
+  "show"
+ ],
+ "shewed": [
+  "showed"
+ ],
+ "sheweth": [
+  "shows"
+ ],
+ "ere": [
+  "before"
+ ],
+ "nigh": [
+  "near"
+ ],
+ "anon": [
+  "immediately"
+ ],
+ "straightway": [
+  "immediately"
+ ],
+ "forthwith": [
+  "immediately"
+ ],
+ "beseech": [
+  "beg",
+  "urge"
+ ],
+ "besought": [
+  "begged"
+ ],
+ "supplication": [
+  "petition",
+  "requests"
+ ],
+ "entreat": [
+  "beg"
+ ],
+ "vex": [
+  "trouble",
+  "distress"
+ ],
+ "vexed": [
+  "troubled"
+ ],
+ "sore": [
+  "very",
+  "greatly"
+ ],
+ "sore afraid": [
+  "terrified"
+ ],
+ "exceeding": [
+  "very",
+  "extremely"
+ ],
+ "exceedingly": [
+  "greatly"
+ ],
+ "meat": [
+  "food"
+ ],
+ "victuals": [
+  "food"
+ ],
+ "corn": [
+  "grain"
+ ],
+ "kine": [
+  "cattle"
+ ],
+ "ass": [
+  "donkey"
+ ],
+ "asses": [
+  "donkeys"
+ ],
+ "fowl": [
+  "birds"
+ ],
+ "fowls": [
+  "birds"
+ ],
+ "beasts": [
+  "animals"
+ ],
+ "coney": [
+  "hyrax"
+ ],
+ "unicorn": [
+  "wild ox"
+ ],
+ "sepulchre": [
+  "tomb"
+ ],
+ "sepulchres": [
+  "tombs"
+ ],
+ "grave": [
+  "sheol",
+  "tomb"
+ ],
+ "hell": [
+  "sheol",
+  "hades",
+  "gehenna"
+ ],
+ "sabaoth": [
+  "armies"
+ ],
+ "publican": [
+  "tax collector"
+ ],
+ "publicans": [
+  "tax collectors"
+ ],
+ "comforter": [
+  "counselor"
+ ],
+ "advocate": [
+  "counselor"
+ ],
+ "propitiation": [
+  "atoning sacrifice"
+ ],
+ "atonement": [
+  "atoning"
+ ],
+ "remission": [
+  "forgiveness"
+ ],
+ "quick": [
+  "living"
+ ],
+ "quickened": [
+  "made alive"
+ ],
+ "quicken": [
+  "revive"
+ ],
+ "conversation": [
+  "conduct",
+  "way of life"
+ ],
+ "let": [
+  "hinder"
+ ],
+ "prevent": [
+  "precede",
+  "go before"
+ ],
+ "suffer": [
+  "allow",
+  "let"
+ ],
+ "lucre": [
+  "gain",
+  "money"
+ ],
+ "filthy lucre": [
+  "dishonest gain"
+ ],
+ "usury": [
+  "interest"
+ ],
+ "tribute": [
+  "taxes"
+ ],
+ "farthing": [
+  "penny"
+ ],
+ "mite": [
+  "coin"
+ ],
+ "pence": [
+  "denarii"
+ ],
+ "penny": [
+  "denarius"
+ ],
+ "lamentation": [
+  "mourning"
+ ],
+ "gird": [
+  "put on",
+  "belt"
+ ],
+ "girded": [
+  "dressed",
+  "belt"
+ ],
+ "loins": [
+  "waist"
+ ],
+ "bowels": [
+  "heart",
+  "compassion"
+ ],
+ "reins": [
+  "heart",
+  "mind"
+ ],
+ "countenance": [
+  "face"
+ ],
+ "visage": [
+  "face"
+ ],
+ "lineage": [
+  "family"
+ ],
+ "kindred": [
+  "relatives",
+  "family"
+ ],
+ "kinsman": [
+  "relative"
+ ],
+ "kinsmen": [
+  "relatives"
+ ],
+ "tabernacle": [
+  "tent"
+ ],
+ "lest": [
+  "so that not"
+ ],
+ "whosoever": [
+  "whoever"
+ ],
+ "whatsoever": [
+  "whatever"
+ ],
+ "wherewith": [
+  "with which"
+ ],
+ "thereof": [
+  "of it"
+ ],
+ "therein": [
+  "in it"
+ ],
+ "hitherto": [
+  "until now"
+ ],
+ "transgression": [
+  "disobedience"
+ ],
+ "trespasses": [
+  "debts",
+  "trespasses"
+ ],
+ "wroth": [
+  "angry"
+ ],
+ "wrath": [
+  "anger"
+ ],
+ "chasten": [
+  "discipline"
+ ],
+ "chastening": [
+  "discipline"
+ ],
+ "chastise": [
+  "discipline"
+ ],
+ "reprove": [
+  "correct"
+ ],
+ "fear not": [
+  "don't be afraid"
+ ],
+ "be not afraid": [
+  "don't be afraid"
+ ],
+ "shall not want": [
+  "shall lack nothing"
+ ],
+ "i shall not want": [
+  "i shall lack nothing"
+ ],
+ "want": [
+  "lack",
+  "need"
+ ],
+ "wanteth": [
+  "lacks"
+ ],
+ "stedfast": [
+  "steadfast"
+ ],
+ "longsuffering": [
+  "patience",
+  "patient"
+ ],
+ "temperance": [
+  "self-control"
+ ],
+ "meekness": [
+  "gentleness",
+  "humility"
+ ],
+ "meek": [
+  "gentle",
+  "humble"
+ ],
+ "lowly": [
+  "humble"
+ ],
+ "vain": [
+  "worthless"
+ ],
+ "compass": [
+  "surround"
+ ],
+ "compassed": [
+  "surrounded"
+ ],
+ "encompassed": [
+  "surrounded"
+ ],
+ "shewbread": [
+  "show bread"
+ ],
+ "firmament": [
+  "expanse"
+ ],
+ "graven image": [
+  "engraved image",
+  "idol"
+ ],
+ "graven": [
+  "engraved"
+ ],
+ "damsel": [
+  "young lady",
+  "girl"
+ ],
+ "maid": [
+  "young woman",
+  "servant"
+ ],
+ "handmaid": [
+  "servant"
+ ],
+ "espoused": [
+  "engaged"
+ ],
+ "betrothed": [
+  "engaged"
+ ],
+ "swine": [
+  "pigs"
+ ],
+ "palsy": [
+  "paralyzed",
+  "paralytic"
+ ],
+ "issue of blood": [
+  "flow of blood"
+ ],
+ "wine bibber": [
+  "drunkard"
+ ],
+ "winebibber": [
+  "drunkard"
+ ],
+ "sup": [
+  "dine"
+ ],
+ "hallowed": [
+  "holy"
+ ],
+ "consecrate": [
+  "dedicate"
+ ],
+ "leaven": [
+  "yeast"
+ ],
+ "the lord": [
+  "yahweh"
+ ],
+ "jehovah": [
+  "yahweh"
+ ],
+ "goodly": [
+  "fine",
+  "good"
+ ],
+ "comely": [
+  "lovely",
+  "beautiful"
+ ],
+ "fair": [
+  "beautiful"
+ ],
+ "haughty": [
+  "proud",
+  "arrogant"
+ ],
+ "froward": [
+  "perverse"
+ ],
+ "wanton": [
+  "lustful"
+ ],
+ "lasciviousness": [
+  "lustfulness"
+ ],
+ "concupiscence": [
+  "lust"
+ ],
+ "effeminate": [
+  "male prostitutes"
+ ],
+ "bastard": [
+  "illegitimate"
+ ],
+ "bastards": [
+  "illegitimate"
+ ],
+ "damned": [
+  "condemned"
+ ],
+ "damnation": [
+  "condemnation",
+  "judgment"
+ ],
+ "buckler": [
+  "shield"
+ ],
+ "fenced": [
+  "fortified"
+ ],
+ "fenced cities": [
+  "fortified cities"
+ ],
+ "bulwark": [
+  "fortress"
+ ],
+ "rent": [
+  "tore"
+ ],
+ "brake": [
+  "broke"
+ ],
+ "bare": [
+  "bore"
+ ],
+ "gat": [
+  "got"
+ ],
+ "gotten": [
+  "obtained"
+ ],
+ "holden": [
+  "held"
+ ],
+ "trode": [
+  "trod"
+ ],
+ "wist": [
+  "knew"
+ ],
+ "wot": [
+  "know"
+ ],
+ "durst": [
+  "dared"
+ ],
+ "clave": [
+  "split",
+  "stuck"
+ ],
+ "cleave": [
+  "cling",
+  "join"
+ ],
+ "ensample": [
+  "example"
+ ],
+ "ensamples": [
+  "examples"
+ ],
+ "vials": [
+  "bowls"
+ ],
+ "candlestick": [
+  "lamp stand"
+ ],
+ "candlesticks": [
+  "lamp stands"
+ ],
+ "candle": [
+  "lamp"
+ ],
+ "furlong": [
+  "stadia"
+ ],
+ "gender": [
+  "breed"
+ ],
+ "transcends": [
+  "surpasses"
+ ],
+ "steadfast love": [
+  "loving kindness"
+ ],
+ "unfailing love": [
+  "loving kindness"
+ ],
+ "lovingkindness": [
+  "loving kindness"
+ ],
+ "lord almighty": [
+  "yahweh of armies"
+ ],
+ "sovereign lord": [
+  "lord yahweh"
+ ],
+ "gospel": [
+  "good news"
+ ],
+ "only begotten": [
+  "one and only"
+ ],
+ "helper": [
+  "counselor",
+  "helper"
+ ],
+ "born again": [
+  "born anew",
+  "born again"
+ ],
+ "prosper you": [
+  "peace"
+ ],
+ "plans to prosper": [
+  "thoughts of peace"
+ ],
+ "anxiety": [
+  "worries",
+  "anxious"
+ ],
+ "anxieties": [
+  "worries"
+ ],
+ "cares": [
+  "worries",
+  "cares"
+ ],
+ "compassionate": [
+  "merciful",
+  "compassionate"
+ ],
+ "sinful nature": [
+  "flesh"
+ ],
+ "daily bread": [
+  "daily bread"
+ ],
+ "hallowed be": [
+  "holy"
+ ],
+ "deliver us from evil": [
+  "deliver us from the evil one"
+ ]
+}

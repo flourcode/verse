@@ -1,0 +1,1767 @@
+[
+ {
+  "say": [
+   "god won't give you more than you can handle",
+   "god will never give you more than you can handle",
+   "god doesn't give you more than you can bear",
+   "more than you can handle",
+   "more than you can bear",
+   "god won't give me more than i can handle",
+   "more than i can handle",
+   "more than i can bear",
+   "never gives you more than you can handle",
+   "never give me more than i can handle",
+   "god won't put more on you than you can bear",
+   "god doesn't give us more than we can handle",
+   "more than we can handle"
+  ],
+  "status": "not",
+  "ref": "1 Corinthians 10:13",
+  "note": "That's a common saying, but it isn't a Bible verse. The closest is 1 Corinthians 10:13, which is about temptation, not about suffering: it says God provides a way out so you can endure it. Elsewhere Paul says he was burdened far beyond his strength (2 Corinthians 1:8)."
+ },
+ {
+  "say": [
+   "god helps those who help themselves",
+   "the lord helps those who help themselves"
+  ],
+  "status": "not",
+  "ref": null,
+  "note": "Not in the Bible. It's from Benjamin Franklin's Poor Richard's Almanack (and older Greek sources). The Bible tends to say the opposite: God helps those who can't help themselves (Psalm 34:18, Romans 5:6)."
+ },
+ {
+  "say": [
+   "money is the root of all evil",
+   "money root of evil",
+   "money root evil",
+   "root of all evil"
+  ],
+  "status": "misquote",
+  "ref": "1 Timothy 6:10",
+  "note": "Close, but the verse says the love of money is a root of all kinds of evil, not money itself. The difference matters."
+ },
+ {
+  "say": [
+   "cleanliness is next to godliness"
+  ],
+  "status": "not",
+  "ref": null,
+  "note": "Not in the Bible. It comes from a John Wesley sermon in the 1700s, and possibly older Hebrew proverbs. The Bible does talk about clean hands and a pure heart (Psalm 24:4), which is a different idea."
+ },
+ {
+  "say": [
+   "this too shall pass",
+   "this too will pass"
+  ],
+  "status": "not",
+  "ref": "2 Corinthians 4:17",
+  "note": "Not a Bible verse; it's a Persian proverb. The nearest biblical idea is 2 Corinthians 4:17, that present trouble is light and momentary compared with what's coming, and Psalm 30:5 about weeping lasting the night but joy coming in the morning."
+ },
+ {
+  "say": [
+   "when god closes a door he opens a window",
+   "god closes one door and opens another",
+   "god closes a door",
+   "closes one door opens another",
+   "when one door closes"
+  ],
+  "status": "not",
+  "ref": "Revelation 3:8",
+  "note": "Not in the Bible (it's usually traced to a 1600s Irish proverb, and The Sound of Music). The closest verse is Revelation 3:8, where Jesus tells a small church he has set before them an open door that no one can shut."
+ },
+ {
+  "say": [
+   "footprints in the sand",
+   "footsteps in the sand",
+   "footprints poem",
+   "one set of footprints"
+  ],
+  "status": "not",
+  "ref": "Deuteronomy 1:31",
+  "note": "That's a poem from the 20th century, not Scripture. The image it draws on is biblical, though: Deuteronomy 1:31 says God carried Israel through the wilderness 'as a man carries his son,' and Isaiah 46:4 says 'I will carry you' even to old age."
+ },
+ {
+  "say": [
+   "everything happens for a reason"
+  ],
+  "status": "not",
+  "ref": "Romans 8:28",
+  "note": "Not a Bible verse. People are usually thinking of Romans 8:28, which says something narrower: that God works in all things for good, for those who love him. It doesn't say every event is good or has a tidy explanation."
+ },
+ {
+  "say": [
+   "god works in mysterious ways",
+   "the lord works in mysterious ways",
+   "mysterious ways"
+  ],
+  "status": "not",
+  "ref": "Isaiah 55:8",
+  "note": "Not in the Bible; it's from William Cowper's 1773 hymn 'God Moves in a Mysterious Way.' The idea comes from Isaiah 55:8-9: 'my thoughts are not your thoughts, and your ways are not my ways.'"
+ },
+ {
+  "say": [
+   "hate the sin love the sinner",
+   "love the sinner hate the sin"
+  ],
+  "status": "not",
+  "ref": "Jude 1:23",
+  "note": "Not a Bible verse. It's usually attributed to Augustine or Gandhi. Jude 1:23 comes near it: have mercy on people while hating even the clothing stained by sin."
+ },
+ {
+  "say": [
+   "charity begins at home"
+  ],
+  "status": "not",
+  "ref": "1 Timothy 5:8",
+  "note": "Not in the Bible (it's from a 1600s English writer). 1 Timothy 5:8 is the verse people connect it to: someone who doesn't provide for their own household 'has denied the faith.'"
+ },
+ {
+  "say": [
+   "to thine own self be true",
+   "to thine own self"
+  ],
+  "status": "not",
+  "ref": null,
+  "note": "That's Shakespeare: Polonius in Hamlet, not the Bible."
+ },
+ {
+  "say": [
+   "spare the rod spoil the child",
+   "spare the rod and spoil the child",
+   "spare the rod"
+  ],
+  "status": "misquote",
+  "ref": "Proverbs 13:24",
+  "note": "The exact wording is from a 1600s poem by Samuel Butler. The verse it paraphrases is Proverbs 13:24: 'One who spares the rod hates his son, but one who loves him takes care to discipline him.'"
+ },
+ {
+  "say": [
+   "the lion shall lie down with the lamb",
+   "lion and the lamb",
+   "lion lies down with the lamb",
+   "lion will lie down with the lamb"
+  ],
+  "status": "misquote",
+  "ref": "Isaiah 11:6",
+  "note": "The verse actually says the wolf will live with the lamb, and the leopard will lie down with the young goat; the lion is there too, eating straw with the ox. The lion-and-lamb pairing is a later shorthand."
+ },
+ {
+  "say": [
+   "pride comes before a fall",
+   "pride goes before a fall",
+   "pride before a fall",
+   "pride cometh before a fall"
+  ],
+  "status": "misquote",
+  "ref": "Proverbs 16:18",
+  "note": "Nearly right. Proverbs 16:18 says 'Pride goes before destruction, and an arrogant spirit before a fall.'"
+ },
+ {
+  "say": [
+   "the truth will set you free",
+   "the truth shall set you free",
+   "truth will set you free",
+   "truth shall make you free"
+  ],
+  "status": "verse",
+  "ref": "John 8:32",
+  "note": "That's John 8:32. Worth reading the verse before it: the freedom is tied to remaining in Jesus' word."
+ },
+ {
+  "say": [
+   "iron sharpens iron",
+   "iron sharpening iron",
+   "iron sharpening"
+  ],
+  "status": "verse",
+  "ref": "Proverbs 27:17",
+  "note": "Proverbs 27:17: 'Iron sharpens iron; so a man sharpens his friend's countenance.'"
+ },
+ {
+  "say": [
+   "where two or three gather",
+   "where two or three are gathered",
+   "two or three gathered in my name",
+   "two or three gather"
+  ],
+  "status": "verse",
+  "ref": "Matthew 18:20",
+  "note": "Matthew 18:20. It's said in a passage about how a church handles a member who has wronged someone, which is why it mentions such a small number."
+ },
+ {
+  "say": [
+   "train up a child",
+   "train a child in the way he should go",
+   "train child",
+   "train up a child in the way"
+  ],
+  "status": "verse",
+  "ref": "Proverbs 22:6",
+  "note": "Proverbs 22:6. A proverb, meaning a general observation about how things usually go, not a guarantee about any particular child."
+ },
+ {
+  "say": [
+   "faith can move mountains",
+   "faith to move mountains",
+   "move mountains",
+   "faith of a mustard seed",
+   "mustard seed faith"
+  ],
+  "status": "verse",
+  "ref": "Matthew 17:20",
+  "note": "Matthew 17:20, and again in Matthew 21:21 and Mark 11:23. The mustard-seed image is about how small the faith can be, not how big."
+ },
+ {
+  "say": [
+   "wolf in sheep's clothing",
+   "wolves in sheep's clothing"
+  ],
+  "status": "verse",
+  "ref": "Matthew 7:15",
+  "note": "Matthew 7:15, about false prophets."
+ },
+ {
+  "say": [
+   "by the skin of my teeth",
+   "skin of my teeth",
+   "skin of your teeth"
+  ],
+  "status": "verse",
+  "ref": "Job 19:20",
+  "note": "Job 19:20. Job describing how little of him is left."
+ },
+ {
+  "say": [
+   "let there be light"
+  ],
+  "status": "verse",
+  "ref": "Genesis 1:3",
+  "note": "Genesis 1:3, the third verse of the Bible."
+ },
+ {
+  "say": [
+   "apple of my eye",
+   "apple of his eye",
+   "apple of your eye"
+  ],
+  "status": "verse",
+  "ref": "Deuteronomy 32:10",
+  "note": "Deuteronomy 32:10, and also Psalm 17:8 and Zechariah 2:8. The 'apple' is the pupil, the part of the eye you most protect."
+ },
+ {
+  "say": [
+   "a house divided",
+   "house divided against itself",
+   "house divided cannot stand"
+  ],
+  "status": "verse",
+  "ref": "Mark 3:25",
+  "note": "Mark 3:25 (also Matthew 12:25 and Luke 11:17). Lincoln borrowed it for his 1858 speech."
+ },
+ {
+  "say": [
+   "the blind leading the blind",
+   "blind leading the blind",
+   "blind lead the blind"
+  ],
+  "status": "verse",
+  "ref": "Matthew 15:14",
+  "note": "Matthew 15:14, and Luke 6:39."
+ },
+ {
+  "say": [
+   "fight the good fight",
+   "fought the good fight",
+   "finished the race",
+   "finished my course"
+  ],
+  "status": "verse",
+  "ref": "2 Timothy 4:7",
+  "note": "2 Timothy 4:7, Paul near the end of his life. 'Fight the good fight of faith' is also 1 Timothy 6:12."
+ },
+ {
+  "say": [
+   "all things work together for good",
+   "all things work for good",
+   "works all things for good"
+  ],
+  "status": "verse",
+  "ref": "Romans 8:28",
+  "note": "Romans 8:28. Note the second half: 'for those who love God, to those who are called according to his purpose.'"
+ },
+ {
+  "say": [
+   "i can do all things",
+   "i can do all things through christ",
+   "all things through christ who strengthens me",
+   "i can do everything through him"
+  ],
+  "status": "verse",
+  "ref": "Philippians 4:13",
+  "note": "Philippians 4:13. Read verses 11-12 first: Paul is talking about being content whether he has plenty or nothing, not about winning."
+ },
+ {
+  "say": [
+   "for god so loved the world"
+  ],
+  "status": "verse",
+  "ref": "John 3:16",
+  "note": "John 3:16."
+ },
+ {
+  "say": [
+   "to everything there is a season",
+   "a time for everything",
+   "there is a time for everything",
+   "a season for everything",
+   "time to be born and a time to die"
+  ],
+  "status": "verse",
+  "ref": "Ecclesiastes 3:1",
+  "note": "Ecclesiastes 3:1, the start of a list that runs through verse 8."
+ },
+ {
+  "say": [
+   "an eye for an eye",
+   "eye for an eye",
+   "eye for eye tooth for tooth"
+  ],
+  "status": "verse",
+  "ref": "Exodus 21:24",
+  "note": "Exodus 21:24 (also Leviticus 24:20 and Deuteronomy 19:21). It was a limit on retaliation, not a license for it, and Jesus takes it further in Matthew 5:38-39."
+ },
+ {
+  "say": [
+   "the writing on the wall",
+   "writing is on the wall",
+   "handwriting on the wall"
+  ],
+  "status": "story",
+  "ref": "Daniel 5:5",
+  "note": "Daniel 5. A hand appears and writes on the wall during Belshazzar's feast; Daniel reads it as the end of his kingdom."
+ },
+ {
+  "say": [
+   "go the extra mile",
+   "the extra mile",
+   "second mile"
+  ],
+  "status": "verse",
+  "ref": "Matthew 5:41",
+  "note": "Matthew 5:41: 'Whoever compels you to go one mile, go with him two.' A Roman soldier could legally make a civilian carry his pack one mile."
+ },
+ {
+  "say": [
+   "salt of the earth"
+  ],
+  "status": "verse",
+  "ref": "Matthew 5:13",
+  "note": "Matthew 5:13."
+ },
+ {
+  "say": [
+   "a drop in the bucket",
+   "drop in a bucket"
+  ],
+  "status": "verse",
+  "ref": "Isaiah 40:15",
+  "note": "Isaiah 40:15: the nations are like a drop in a bucket."
+ },
+ {
+  "say": [
+   "nothing new under the sun",
+   "no new thing under the sun"
+  ],
+  "status": "verse",
+  "ref": "Ecclesiastes 1:9",
+  "note": "Ecclesiastes 1:9."
+ },
+ {
+  "say": [
+   "thorn in the flesh",
+   "thorn in my flesh",
+   "thorn in my side",
+   "thorn in the side"
+  ],
+  "status": "verse",
+  "ref": "2 Corinthians 12:7",
+  "note": "2 Corinthians 12:7. Paul never says what the thorn was."
+ },
+ {
+  "say": [
+   "the spirit is willing but the flesh is weak",
+   "spirit is willing",
+   "flesh is weak"
+  ],
+  "status": "verse",
+  "ref": "Matthew 26:41",
+  "note": "Matthew 26:41, to the disciples who fell asleep in Gethsemane."
+ },
+ {
+  "say": [
+   "do unto others",
+   "do unto others as you would have them do unto you",
+   "golden rule",
+   "the golden rule"
+  ],
+  "status": "verse",
+  "ref": "Luke 6:31",
+  "note": "Luke 6:31, and Matthew 7:12. The name 'golden rule' came much later."
+ },
+ {
+  "say": [
+   "judge not",
+   "judge not lest ye be judged",
+   "judge not that you be not judged",
+   "do not judge"
+  ],
+  "status": "verse",
+  "ref": "Matthew 7:1",
+  "note": "Matthew 7:1. Keep reading to verse 5: the point is to deal with your own faults before someone else's, not to never assess anything."
+ },
+ {
+  "say": [
+   "turn the other cheek"
+  ],
+  "status": "verse",
+  "ref": "Matthew 5:39",
+  "note": "Matthew 5:39."
+ },
+ {
+  "say": [
+   "love your neighbor as yourself",
+   "love thy neighbor",
+   "love your neighbour"
+  ],
+  "status": "verse",
+  "ref": "Leviticus 19:18",
+  "note": "Leviticus 19:18 first; Jesus quotes it in Matthew 22:39 and Mark 12:31."
+ },
+ {
+  "say": [
+   "the prodigal son",
+   "prodigal son"
+  ],
+  "status": "story",
+  "ref": "Luke 15:11",
+  "note": "Luke 15:11-32. The word 'prodigal' isn't in the text; it means wasteful."
+ },
+ {
+  "say": [
+   "the good samaritan",
+   "good samaritan"
+  ],
+  "status": "story",
+  "ref": "Luke 10:25",
+  "note": "Luke 10:25-37. Jesus tells it in answer to 'who is my neighbor?'"
+ },
+ {
+  "say": [
+   "david and goliath",
+   "david goliath"
+  ],
+  "status": "story",
+  "ref": "1 Samuel 17:1",
+  "note": "1 Samuel 17."
+ },
+ {
+  "say": [
+   "jonah and the whale",
+   "jonah whale",
+   "jonah and the fish"
+  ],
+  "status": "story",
+  "ref": "Jonah 1:17",
+  "note": "Jonah 1:17. The text says 'a huge fish'; 'whale' comes from some English translations of Matthew 12:40."
+ },
+ {
+  "say": [
+   "daniel in the lions den",
+   "daniel in the lion's den",
+   "lions den"
+  ],
+  "status": "story",
+  "ref": "Daniel 6:16",
+  "note": "Daniel 6."
+ },
+ {
+  "say": [
+   "noah's ark",
+   "noahs ark",
+   "noah and the flood"
+  ],
+  "status": "story",
+  "ref": "Genesis 6:13",
+  "note": "Genesis 6-9."
+ },
+ {
+  "say": [
+   "the ten commandments",
+   "ten commandments"
+  ],
+  "status": "story",
+  "ref": "Exodus 20:1",
+  "note": "Exodus 20:1-17, and again in Deuteronomy 5:6-21."
+ },
+ {
+  "say": [
+   "the lord's prayer",
+   "lords prayer",
+   "our father who art in heaven",
+   "our father in heaven"
+  ],
+  "status": "verse",
+  "ref": "Matthew 6:9",
+  "note": "Matthew 6:9-13, with a shorter form in Luke 11:2-4."
+ },
+ {
+  "say": [
+   "the beatitudes",
+   "blessed are the poor in spirit",
+   "blessed are the meek",
+   "blessed are the peacemakers"
+  ],
+  "status": "verse",
+  "ref": "Matthew 5:3",
+  "note": "Matthew 5:3-12, the opening of the Sermon on the Mount."
+ },
+ {
+  "say": [
+   "the armor of god",
+   "armour of god",
+   "full armor of god",
+   "whole armor of god"
+  ],
+  "status": "verse",
+  "ref": "Ephesians 6:11",
+  "note": "Ephesians 6:10-18."
+ },
+ {
+  "say": [
+   "stop worrying about tomorrow",
+   "don't worry about tomorrow",
+   "do not worry about tomorrow",
+   "take no thought for the morrow",
+   "tomorrow will worry about itself",
+   "jesus stop worrying about tomorrow"
+  ],
+  "status": "verse",
+  "ref": "Matthew 6:34",
+  "note": "Matthew 6:34, the end of a passage that starts at verse 25 about birds and lilies."
+ },
+ {
+  "say": [
+   "consider the lilies",
+   "lilies of the field",
+   "birds of the air",
+   "consider the birds"
+  ],
+  "status": "verse",
+  "ref": "Matthew 6:26",
+  "note": "Matthew 6:26-29 (and Luke 12:24-27)."
+ },
+ {
+  "say": [
+   "paul race",
+   "paul running a race",
+   "run the race",
+   "run with endurance the race",
+   "run with perseverance"
+  ],
+  "status": "verse",
+  "ref": "Hebrews 12:1",
+  "note": "Hebrews 12:1 ('run with perseverance the race marked out for us'), and Paul's own in 1 Corinthians 9:24 and 2 Timothy 4:7."
+ },
+ {
+  "say": [
+   "camel through the eye of a needle",
+   "eye of a needle",
+   "camel eye needle",
+   "rich man eye of a needle"
+  ],
+  "status": "verse",
+  "ref": "Matthew 19:24",
+  "note": "Matthew 19:24, also Mark 10:25 and Luke 18:25."
+ },
+ {
+  "say": [
+   "love is patient love is kind",
+   "love is patient",
+   "love is kind"
+  ],
+  "status": "verse",
+  "ref": "1 Corinthians 13:4",
+  "note": "1 Corinthians 13:4-8."
+ },
+ {
+  "say": [
+   "be still and know",
+   "be still and know that i am god"
+  ],
+  "status": "verse",
+  "ref": "Psalm 46:10",
+  "note": "Psalm 46:10."
+ },
+ {
+  "say": [
+   "the lord is my shepherd",
+   "i shall not want"
+  ],
+  "status": "verse",
+  "ref": "Psalm 23:1",
+  "note": "Psalm 23:1. The World English Bible says 'Yahweh is my shepherd: I shall lack nothing.'"
+ },
+ {
+  "say": [
+   "plans to prosper you",
+   "plans to prosper you and not to harm you",
+   "i know the plans i have for you",
+   "for i know the plans"
+  ],
+  "status": "verse",
+  "ref": "Jeremiah 29:11",
+  "note": "Jeremiah 29:11, written to exiles who would stay in Babylon for seventy years. Read verse 10 too."
+ },
+ {
+  "say": [
+   "ask and you shall receive",
+   "ask and it will be given",
+   "seek and you will find",
+   "knock and the door will be opened",
+   "ask seek knock"
+  ],
+  "status": "verse",
+  "ref": "Matthew 7:7",
+  "note": "Matthew 7:7-8, and Luke 11:9-10."
+ },
+ {
+  "say": [
+   "the wages of sin is death",
+   "wages of sin"
+  ],
+  "status": "verse",
+  "ref": "Romans 6:23",
+  "note": "Romans 6:23. The second half is the point: 'but the free gift of God is eternal life.'"
+ },
+ {
+  "say": [
+   "let he who is without sin cast the first stone",
+   "cast the first stone",
+   "without sin cast the first stone",
+   "first stone"
+  ],
+  "status": "verse",
+  "ref": "John 8:7",
+  "note": "John 8:7."
+ },
+ {
+  "say": [
+   "the meek shall inherit the earth",
+   "meek inherit the earth"
+  ],
+  "status": "verse",
+  "ref": "Matthew 5:5",
+  "note": "Matthew 5:5, echoing Psalm 37:11."
+ },
+ {
+  "say": [
+   "it is finished"
+  ],
+  "status": "verse",
+  "ref": "John 19:30",
+  "note": "John 19:30, Jesus' last words on the cross in John's account."
+ },
+ {
+  "say": [
+   "jesus wept"
+  ],
+  "status": "verse",
+  "ref": "John 11:35",
+  "note": "John 11:35, the shortest verse in the Bible."
+ },
+ {
+  "say": [
+   "god is love"
+  ],
+  "status": "verse",
+  "ref": "1 John 4:8",
+  "note": "1 John 4:8, and again in 4:16."
+ },
+ {
+  "say": [
+   "greater love has no one than this",
+   "greater love hath no man",
+   "lay down his life for his friends"
+  ],
+  "status": "verse",
+  "ref": "John 15:13",
+  "note": "John 15:13."
+ },
+ {
+  "say": [
+   "the fear of the lord is the beginning of wisdom",
+   "fear of the lord is the beginning"
+  ],
+  "status": "verse",
+  "ref": "Proverbs 9:10",
+  "note": "Proverbs 9:10, and Psalm 111:10; Proverbs 1:7 says 'the beginning of knowledge.'"
+ },
+ {
+  "say": [
+   "three wise men",
+   "the three wise men",
+   "three kings"
+  ],
+  "status": "misquote",
+  "ref": "Matthew 2:1",
+  "note": "Matthew 2 never says how many wise men there were, only that they brought three gifts. They aren't called kings, and they arrived some time after the birth, at a house."
+ },
+ {
+  "say": [
+   "adam and eve apple",
+   "eve ate the apple",
+   "forbidden apple",
+   "adam ate the apple"
+  ],
+  "status": "misquote",
+  "ref": "Genesis 3:6",
+  "note": "Genesis 3 says 'fruit,' never 'apple.' The apple is a later European tradition."
+ },
+ {
+  "say": [
+   "the road to hell is paved with good intentions"
+  ],
+  "status": "not",
+  "ref": null,
+  "note": "Not in the Bible; it's a proverb of uncertain origin, often credited to Samuel Johnson or Bernard of Clairvaux."
+ },
+ {
+  "say": [
+   "the eyes are the window to the soul",
+   "eyes are the window of the soul"
+  ],
+  "status": "not",
+  "ref": "Matthew 6:22",
+  "note": "Not a Bible verse, though Matthew 6:22 says 'The lamp of the body is the eye,' which is probably where people connect it."
+ },
+ {
+  "say": [
+   "god is in control"
+  ],
+  "status": "not",
+  "ref": "Psalm 103:19",
+  "note": "The phrase itself isn't in the Bible, but the idea runs all through it; Psalm 103:19 and Isaiah 46:10 say it directly."
+ },
+ {
+  "say": [
+   "let go and let god"
+  ],
+  "status": "not",
+  "ref": "Psalm 46:10",
+  "note": "Not a Bible verse; it's a 20th-century slogan. Psalm 46:10 ('Be still, and know that I am God') and 1 Peter 5:7 are what people mean by it."
+ },
+ {
+  "say": [
+   "god never gives up on you",
+   "god will never give up on you"
+  ],
+  "status": "not",
+  "ref": "Philippians 1:6",
+  "note": "Not a verse as worded, but Philippians 1:6 comes close: 'he who began a good work in you will complete it.'"
+ },
+ {
+  "say": [
+   "this is the day the lord has made",
+   "this is the day that the lord has made",
+   "rejoice and be glad in it"
+  ],
+  "status": "verse",
+  "ref": "Psalm 118:24",
+  "note": "Psalm 118:24."
+ },
+ {
+  "say": [
+   "the lord giveth and the lord taketh away",
+   "the lord gives and the lord takes away",
+   "lord gives and takes away"
+  ],
+  "status": "verse",
+  "ref": "Job 1:21",
+  "note": "Job 1:21, Job's words after losing his children and everything he owned."
+ },
+ {
+  "say": [
+   "my cup runneth over",
+   "my cup overflows",
+   "cup runs over"
+  ],
+  "status": "verse",
+  "ref": "Psalm 23:5",
+  "note": "Psalm 23:5."
+ },
+ {
+  "say": [
+   "valley of the shadow of death",
+   "walk through the valley"
+  ],
+  "status": "verse",
+  "ref": "Psalm 23:4",
+  "note": "Psalm 23:4."
+ },
+ {
+  "say": [
+   "the lord is my light and my salvation"
+  ],
+  "status": "verse",
+  "ref": "Psalm 27:1",
+  "note": "Psalm 27:1."
+ },
+ {
+  "say": [
+   "weeping may endure for a night",
+   "joy comes in the morning",
+   "joy cometh in the morning"
+  ],
+  "status": "verse",
+  "ref": "Psalm 30:5",
+  "note": "Psalm 30:5."
+ },
+ {
+  "say": [
+   "cast all your anxiety on him",
+   "cast your cares",
+   "cast all your cares upon him"
+  ],
+  "status": "verse",
+  "ref": "1 Peter 5:7",
+  "note": "1 Peter 5:7, and Psalm 55:22."
+ },
+ {
+  "say": [
+   "come to me all you who are weary",
+   "come unto me all ye that labour",
+   "weary and heavy laden",
+   "i will give you rest"
+  ],
+  "status": "verse",
+  "ref": "Matthew 11:28",
+  "note": "Matthew 11:28-30."
+ },
+ {
+  "say": [
+   "they that wait upon the lord",
+   "wait upon the lord",
+   "renew their strength",
+   "mount up with wings as eagles",
+   "wings like eagles",
+   "soar on wings like eagles"
+  ],
+  "status": "verse",
+  "ref": "Isaiah 40:31",
+  "note": "Isaiah 40:31."
+ },
+ {
+  "say": [
+   "fear not for i am with you",
+   "do not fear for i am with you",
+   "i am with you always"
+  ],
+  "status": "verse",
+  "ref": "Isaiah 41:10",
+  "note": "Isaiah 41:10; 'I am with you always' is Matthew 28:20."
+ },
+ {
+  "say": [
+   "trust in the lord with all your heart",
+   "lean not on your own understanding",
+   "lean not unto thine own understanding"
+  ],
+  "status": "verse",
+  "ref": "Proverbs 3:5",
+  "note": "Proverbs 3:5-6."
+ },
+ {
+  "say": [
+   "the peace that passes understanding",
+   "peace which passeth all understanding",
+   "peace that surpasses understanding",
+   "peace that passes all understanding"
+  ],
+  "status": "verse",
+  "ref": "Philippians 4:7",
+  "note": "Philippians 4:7."
+ },
+ {
+  "say": [
+   "thy word is a lamp unto my feet",
+   "lamp to my feet",
+   "lamp unto my feet",
+   "light unto my path"
+  ],
+  "status": "verse",
+  "ref": "Psalm 119:105",
+  "note": "Psalm 119:105."
+ },
+ {
+  "say": [
+   "the joy of the lord is your strength",
+   "joy of the lord is my strength"
+  ],
+  "status": "verse",
+  "ref": "Nehemiah 8:10",
+  "note": "Nehemiah 8:10."
+ },
+ {
+  "say": [
+   "he who began a good work",
+   "will carry it on to completion",
+   "complete it until the day"
+  ],
+  "status": "verse",
+  "ref": "Philippians 1:6",
+  "note": "Philippians 1:6."
+ },
+ {
+  "say": [
+   "all have sinned and fall short",
+   "fall short of the glory of god"
+  ],
+  "status": "verse",
+  "ref": "Romans 3:23",
+  "note": "Romans 3:23."
+ },
+ {
+  "say": [
+   "faith without works is dead",
+   "faith without deeds is dead"
+  ],
+  "status": "verse",
+  "ref": "James 2:26",
+  "note": "James 2:26, and 2:17."
+ },
+ {
+  "say": [
+   "the last shall be first",
+   "the first shall be last",
+   "last will be first"
+  ],
+  "status": "verse",
+  "ref": "Matthew 20:16",
+  "note": "Matthew 20:16, also 19:30 and Mark 10:31."
+ },
+ {
+  "say": [
+   "man shall not live by bread alone",
+   "not by bread alone"
+  ],
+  "status": "verse",
+  "ref": "Matthew 4:4",
+  "note": "Matthew 4:4, quoting Deuteronomy 8:3."
+ },
+ {
+  "say": [
+   "you reap what you sow",
+   "reap what you sow",
+   "whatsoever a man soweth"
+  ],
+  "status": "verse",
+  "ref": "Galatians 6:7",
+  "note": "Galatians 6:7."
+ },
+ {
+  "say": [
+   "the lord is my rock",
+   "my rock and my fortress"
+  ],
+  "status": "verse",
+  "ref": "Psalm 18:2",
+  "note": "Psalm 18:2, and Psalm 62:2."
+ },
+ {
+  "say": [
+   "children are a gift from the lord",
+   "children are a heritage",
+   "children are a blessing"
+  ],
+  "status": "verse",
+  "ref": "Psalm 127:3",
+  "note": "Psalm 127:3."
+ },
+ {
+  "say": [
+   "husbands love your wives",
+   "wives submit"
+  ],
+  "status": "verse",
+  "ref": "Ephesians 5:25",
+  "note": "Ephesians 5:22-33. Read the whole passage; verse 21 ('subjecting yourselves to one another') sets it up."
+ },
+ {
+  "say": [
+   "two become one flesh",
+   "one flesh",
+   "what god has joined together",
+   "let no man put asunder"
+  ],
+  "status": "verse",
+  "ref": "Genesis 2:24",
+  "note": "Genesis 2:24; Jesus quotes it in Matthew 19:5-6, which is where 'let no one separate' comes from."
+ },
+ {
+  "say": [
+   "honor your father and mother",
+   "honour thy father and thy mother"
+  ],
+  "status": "verse",
+  "ref": "Exodus 20:12",
+  "note": "Exodus 20:12, the fifth commandment; Paul quotes it in Ephesians 6:2."
+ },
+ {
+  "say": [
+   "a cheerful giver",
+   "god loves a cheerful giver"
+  ],
+  "status": "verse",
+  "ref": "2 Corinthians 9:7",
+  "note": "2 Corinthians 9:7."
+ },
+ {
+  "say": [
+   "it is more blessed to give than to receive",
+   "more blessed to give"
+  ],
+  "status": "verse",
+  "ref": "Acts 20:35",
+  "note": "Acts 20:35. Paul says Jesus said it; it doesn't appear in the Gospels."
+ },
+ {
+  "say": [
+   "the borrower is servant to the lender",
+   "borrower is slave to the lender"
+  ],
+  "status": "verse",
+  "ref": "Proverbs 22:7",
+  "note": "Proverbs 22:7."
+ },
+ {
+  "say": [
+   "a good name is better than riches",
+   "good name rather than great riches"
+  ],
+  "status": "verse",
+  "ref": "Proverbs 22:1",
+  "note": "Proverbs 22:1."
+ },
+ {
+  "say": [
+   "cannot serve god and money",
+   "cannot serve two masters",
+   "serve god and mammon",
+   "two masters"
+  ],
+  "status": "verse",
+  "ref": "Matthew 6:24",
+  "note": "Matthew 6:24, and Luke 16:13."
+ },
+ {
+  "say": [
+   "where your treasure is",
+   "there your heart will be also",
+   "treasure in heaven"
+  ],
+  "status": "verse",
+  "ref": "Matthew 6:21",
+  "note": "Matthew 6:19-21."
+ },
+ {
+  "say": [
+   "new wine in old wineskins",
+   "old wineskins",
+   "new wine old bottles"
+  ],
+  "status": "verse",
+  "ref": "Matthew 9:17",
+  "note": "Matthew 9:17, also Mark 2:22 and Luke 5:37."
+ },
+ {
+  "say": [
+   "a still small voice",
+   "still small voice"
+  ],
+  "status": "verse",
+  "ref": "1 Kings 19:12",
+  "note": "1 Kings 19:12. The World English Bible renders it 'a still small voice'; some translations say 'a gentle whisper.'"
+ },
+ {
+  "say": [
+   "god whisper",
+   "god in a whisper",
+   "gentle whisper"
+  ],
+  "status": "verse",
+  "ref": "1 Kings 19:12",
+  "note": "1 Kings 19:12, Elijah on the mountain: not in the wind, earthquake, or fire, but in a still small voice."
+ },
+ {
+  "say": [
+   "how the mighty have fallen"
+  ],
+  "status": "verse",
+  "ref": "2 Samuel 1:19",
+  "note": "2 Samuel 1:19, David's lament for Saul and Jonathan."
+ },
+ {
+  "say": [
+   "a leopard cannot change its spots",
+   "leopard change its spots"
+  ],
+  "status": "verse",
+  "ref": "Jeremiah 13:23",
+  "note": "Jeremiah 13:23."
+ },
+ {
+  "say": [
+   "the patience of job"
+  ],
+  "status": "verse",
+  "ref": "James 5:11",
+  "note": "James 5:11. Job in the book itself is more persistent than patient; the World English Bible says 'perseverance.'"
+ },
+ {
+  "say": [
+   "a good shepherd",
+   "the good shepherd",
+   "i am the good shepherd"
+  ],
+  "status": "verse",
+  "ref": "John 10:11",
+  "note": "John 10:11."
+ },
+ {
+  "say": [
+   "i am the way the truth and the life",
+   "the way the truth and the life"
+  ],
+  "status": "verse",
+  "ref": "John 14:6",
+  "note": "John 14:6."
+ },
+ {
+  "say": [
+   "in my father's house are many mansions",
+   "many mansions",
+   "many rooms",
+   "i go to prepare a place for you"
+  ],
+  "status": "verse",
+  "ref": "John 14:2",
+  "note": "John 14:2-3."
+ },
+ {
+  "say": [
+   "the wolf and the lamb",
+   "wolf shall dwell with the lamb"
+  ],
+  "status": "verse",
+  "ref": "Isaiah 11:6",
+  "note": "Isaiah 11:6, and Isaiah 65:25."
+ },
+ {
+  "say": [
+   "swords into plowshares",
+   "beat their swords into plowshares",
+   "swords into ploughshares"
+  ],
+  "status": "verse",
+  "ref": "Isaiah 2:4",
+  "note": "Isaiah 2:4, and Micah 4:3."
+ },
+ {
+  "say": [
+   "there is no fear in love",
+   "perfect love casts out fear",
+   "perfect love drives out fear"
+  ],
+  "status": "verse",
+  "ref": "1 John 4:18",
+  "note": "1 John 4:18."
+ },
+ {
+  "say": [
+   "god is our refuge and strength",
+   "a very present help in trouble",
+   "an ever present help in trouble"
+  ],
+  "status": "verse",
+  "ref": "Psalm 46:1",
+  "note": "Psalm 46:1."
+ },
+ {
+  "say": [
+   "the lord bless you and keep you",
+   "the lord make his face shine upon you",
+   "make his face shine"
+  ],
+  "status": "verse",
+  "ref": "Numbers 6:24",
+  "note": "Numbers 6:24-26, the priestly blessing."
+ },
+ {
+  "say": [
+   "what does the lord require of you",
+   "do justly love mercy walk humbly",
+   "act justly love mercy walk humbly",
+   "walk humbly with your god"
+  ],
+  "status": "verse",
+  "ref": "Micah 6:8",
+  "note": "Micah 6:8."
+ },
+ {
+  "say": [
+   "moses burning bush",
+   "burning bush"
+  ],
+  "status": "story",
+  "ref": "Exodus 3:2",
+  "note": "Exodus 3. Moses at Horeb, the bush that burns without burning up."
+ },
+ {
+  "say": [
+   "parting of the red sea",
+   "crossing the red sea",
+   "red sea",
+   "moses parts the sea"
+  ],
+  "status": "story",
+  "ref": "Exodus 14:21",
+  "note": "Exodus 14."
+ },
+ {
+  "say": [
+   "ten plagues",
+   "plagues of egypt",
+   "plagues"
+  ],
+  "status": "story",
+  "ref": "Exodus 7:14",
+  "note": "Exodus 7-12."
+ },
+ {
+  "say": [
+   "jacob's ladder",
+   "jacobs ladder",
+   "ladder to heaven"
+  ],
+  "status": "story",
+  "ref": "Genesis 28:12",
+  "note": "Genesis 28:10-22."
+ },
+ {
+  "say": [
+   "tower of babel",
+   "babel"
+  ],
+  "status": "story",
+  "ref": "Genesis 11:4",
+  "note": "Genesis 11:1-9."
+ },
+ {
+  "say": [
+   "samson and delilah",
+   "samson delilah",
+   "samson"
+  ],
+  "status": "story",
+  "ref": "Judges 16:4",
+  "note": "Judges 13-16; Delilah is in chapter 16."
+ },
+ {
+  "say": [
+   "walls of jericho",
+   "jericho",
+   "joshua jericho"
+  ],
+  "status": "story",
+  "ref": "Joshua 6:20",
+  "note": "Joshua 6."
+ },
+ {
+  "say": [
+   "abraham sacrifices isaac",
+   "abraham and isaac",
+   "binding of isaac",
+   "abraham isaac"
+  ],
+  "status": "story",
+  "ref": "Genesis 22:2",
+  "note": "Genesis 22."
+ },
+ {
+  "say": [
+   "joseph coat of many colors",
+   "coat of many colors",
+   "joseph and his brothers",
+   "joseph brothers"
+  ],
+  "status": "story",
+  "ref": "Genesis 37:3",
+  "note": "Genesis 37, and the rest of Joseph's story through chapter 50."
+ },
+ {
+  "say": [
+   "elijah chariot of fire",
+   "chariot of fire",
+   "elijah taken up"
+  ],
+  "status": "story",
+  "ref": "2 Kings 2:11",
+  "note": "2 Kings 2."
+ },
+ {
+  "say": [
+   "sodom and gomorrah",
+   "sodom",
+   "lot's wife",
+   "pillar of salt"
+  ],
+  "status": "story",
+  "ref": "Genesis 19:24",
+  "note": "Genesis 19."
+ },
+ {
+  "say": [
+   "cain and abel",
+   "cain abel"
+  ],
+  "status": "story",
+  "ref": "Genesis 4:8",
+  "note": "Genesis 4."
+ },
+ {
+  "say": [
+   "garden of eden",
+   "adam and eve",
+   "the fall",
+   "the serpent"
+  ],
+  "status": "story",
+  "ref": "Genesis 3:1",
+  "note": "Genesis 2-3."
+ },
+ {
+  "say": [
+   "ruth and naomi",
+   "ruth naomi",
+   "where you go i will go"
+  ],
+  "status": "story",
+  "ref": "Ruth 1:16",
+  "note": "Ruth 1:16-17."
+ },
+ {
+  "say": [
+   "esther",
+   "queen esther",
+   "for such a time as this"
+  ],
+  "status": "story",
+  "ref": "Esther 4:14",
+  "note": "Esther 4:14."
+ },
+ {
+  "say": [
+   "solomon wisdom",
+   "solomon two women",
+   "solomon baby",
+   "wisdom of solomon"
+  ],
+  "status": "story",
+  "ref": "1 Kings 3:16",
+  "note": "1 Kings 3:16-28."
+ },
+ {
+  "say": [
+   "shadrach meshach abednego",
+   "fiery furnace",
+   "three men in the furnace"
+  ],
+  "status": "story",
+  "ref": "Daniel 3:19",
+  "note": "Daniel 3."
+ },
+ {
+  "say": [
+   "water into wine",
+   "wedding at cana",
+   "wedding in cana"
+  ],
+  "status": "story",
+  "ref": "John 2:1",
+  "note": "John 2:1-11."
+ },
+ {
+  "say": [
+   "feeding of the five thousand",
+   "feeding the 5000",
+   "five loaves and two fish",
+   "loaves and fishes"
+  ],
+  "status": "story",
+  "ref": "John 6:9",
+  "note": "John 6:1-14; also Matthew 14, Mark 6, Luke 9."
+ },
+ {
+  "say": [
+   "jesus walks on water",
+   "walking on water",
+   "peter walks on water"
+  ],
+  "status": "story",
+  "ref": "Matthew 14:25",
+  "note": "Matthew 14:22-33."
+ },
+ {
+  "say": [
+   "jesus calms the storm",
+   "calms the storm",
+   "peace be still",
+   "storm on the sea"
+  ],
+  "status": "story",
+  "ref": "Mark 4:39",
+  "note": "Mark 4:35-41; also Matthew 8 and Luke 8."
+ },
+ {
+  "say": [
+   "raising of lazarus",
+   "lazarus",
+   "lazarus come out",
+   "lazarus come forth"
+  ],
+  "status": "story",
+  "ref": "John 11:43",
+  "note": "John 11."
+ },
+ {
+  "say": [
+   "zacchaeus",
+   "zacchaeus tree",
+   "wee little man"
+  ],
+  "status": "story",
+  "ref": "Luke 19:4",
+  "note": "Luke 19:1-10."
+ },
+ {
+  "say": [
+   "road to emmaus",
+   "emmaus"
+  ],
+  "status": "story",
+  "ref": "Luke 24:13",
+  "note": "Luke 24:13-35."
+ },
+ {
+  "say": [
+   "pentecost",
+   "tongues of fire",
+   "day of pentecost"
+  ],
+  "status": "story",
+  "ref": "Acts 2:3",
+  "note": "Acts 2."
+ },
+ {
+  "say": [
+   "paul on the road to damascus",
+   "damascus road",
+   "saul conversion",
+   "paul conversion"
+  ],
+  "status": "story",
+  "ref": "Acts 9:3",
+  "note": "Acts 9:1-19."
+ },
+ {
+  "say": [
+   "peter denies jesus",
+   "peter denial",
+   "rooster crows",
+   "before the rooster crows"
+  ],
+  "status": "story",
+  "ref": "Luke 22:61",
+  "note": "Luke 22:54-62; also Matthew 26, Mark 14, John 18."
+ },
+ {
+  "say": [
+   "last supper",
+   "the last supper"
+  ],
+  "status": "story",
+  "ref": "Luke 22:19",
+  "note": "Luke 22:14-23; also Matthew 26, Mark 14, and 1 Corinthians 11:23-26."
+ },
+ {
+  "say": [
+   "transfiguration"
+  ],
+  "status": "story",
+  "ref": "Matthew 17:2",
+  "note": "Matthew 17:1-9."
+ },
+ {
+  "say": [
+   "temptation in the wilderness",
+   "jesus tempted",
+   "forty days in the wilderness",
+   "temptation of jesus"
+  ],
+  "status": "story",
+  "ref": "Matthew 4:1",
+  "note": "Matthew 4:1-11; also Luke 4."
+ },
+ {
+  "say": [
+   "woman at the well",
+   "samaritan woman",
+   "living water"
+  ],
+  "status": "story",
+  "ref": "John 4:10",
+  "note": "John 4:1-42."
+ },
+ {
+  "say": [
+   "nicodemus",
+   "born again",
+   "you must be born again"
+  ],
+  "status": "story",
+  "ref": "John 3:3",
+  "note": "John 3:1-21."
+ },
+ {
+  "say": [
+   "lost sheep",
+   "parable of the lost sheep",
+   "ninety nine sheep",
+   "leaves the ninety-nine"
+  ],
+  "status": "story",
+  "ref": "Luke 15:4",
+  "note": "Luke 15:3-7; also Matthew 18:12-14."
+ },
+ {
+  "say": [
+   "lost coin",
+   "parable of the lost coin"
+  ],
+  "status": "story",
+  "ref": "Luke 15:8",
+  "note": "Luke 15:8-10."
+ },
+ {
+  "say": [
+   "parable of the talents",
+   "talents"
+  ],
+  "status": "story",
+  "ref": "Matthew 25:14",
+  "note": "Matthew 25:14-30."
+ },
+ {
+  "say": [
+   "parable of the sower",
+   "the sower",
+   "seed on rocky ground",
+   "good soil"
+  ],
+  "status": "story",
+  "ref": "Matthew 13:3",
+  "note": "Matthew 13:1-23."
+ },
+ {
+  "say": [
+   "wise and foolish builders",
+   "house on the rock",
+   "built his house on the rock",
+   "house on the sand"
+  ],
+  "status": "story",
+  "ref": "Matthew 7:24",
+  "note": "Matthew 7:24-27."
+ },
+ {
+  "say": [
+   "ten virgins",
+   "wise and foolish virgins",
+   "ten bridesmaids"
+  ],
+  "status": "story",
+  "ref": "Matthew 25:1",
+  "note": "Matthew 25:1-13."
+ },
+ {
+  "say": [
+   "rich young ruler",
+   "rich young man",
+   "sell everything you have"
+  ],
+  "status": "story",
+  "ref": "Matthew 19:16",
+  "note": "Matthew 19:16-30; also Mark 10 and Luke 18."
+ },
+ {
+  "say": [
+   "widow's mite",
+   "widows mite",
+   "the widow's offering",
+   "two small coins"
+  ],
+  "status": "story",
+  "ref": "Mark 12:42",
+  "note": "Mark 12:41-44; also Luke 21:1-4."
+ },
+ {
+  "say": [
+   "doubting thomas",
+   "thomas doubts",
+   "unless i see the nail marks"
+  ],
+  "status": "story",
+  "ref": "John 20:25",
+  "note": "John 20:24-29."
+ },
+ {
+  "say": [
+   "mary and martha",
+   "martha and mary"
+  ],
+  "status": "story",
+  "ref": "Luke 10:38",
+  "note": "Luke 10:38-42."
+ },
+ {
+  "say": [
+   "jesus washes feet",
+   "washing the disciples feet",
+   "foot washing"
+  ],
+  "status": "story",
+  "ref": "John 13:5",
+  "note": "John 13:1-17."
+ },
+ {
+  "say": [
+   "the great commission",
+   "great commission",
+   "go and make disciples",
+   "make disciples of all nations"
+  ],
+  "status": "story",
+  "ref": "Matthew 28:19",
+  "note": "Matthew 28:18-20."
+ },
+ {
+  "say": [
+   "sermon on the mount"
+  ],
+  "status": "story",
+  "ref": "Matthew 5:1",
+  "note": "Matthew 5-7."
+ },
+ {
+  "say": [
+   "fruit of the spirit",
+   "fruits of the spirit"
+  ],
+  "status": "story",
+  "ref": "Galatians 5:22",
+  "note": "Galatians 5:22-23."
+ },
+ {
+  "say": [
+   "the love chapter",
+   "love chapter"
+  ],
+  "status": "story",
+  "ref": "1 Corinthians 13:1",
+  "note": "1 Corinthians 13."
+ },
+ {
+  "say": [
+   "faith chapter",
+   "hall of faith",
+   "heroes of faith"
+  ],
+  "status": "story",
+  "ref": "Hebrews 11:1",
+  "note": "Hebrews 11."
+ },
+ {
+  "say": [
+   "creation story",
+   "seven days of creation",
+   "in the beginning"
+  ],
+  "status": "story",
+  "ref": "Genesis 1:1",
+  "note": "Genesis 1-2."
+ },
+ {
+  "say": [
+   "the flood",
+   "great flood",
+   "forty days and forty nights",
+   "rainbow covenant"
+  ],
+  "status": "story",
+  "ref": "Genesis 7:12",
+  "note": "Genesis 6-9; the rainbow is 9:13."
+ },
+ {
+  "say": [
+   "job's suffering",
+   "job loses everything",
+   "job and his friends"
+  ],
+  "status": "story",
+  "ref": "Job 1:13",
+  "note": "Job 1-2, then the long conversation with his friends."
+ },
+ {
+  "say": [
+   "valley of dry bones",
+   "dry bones"
+  ],
+  "status": "story",
+  "ref": "Ezekiel 37:4",
+  "note": "Ezekiel 37:1-14."
+ },
+ {
+  "say": [
+   "armor of god",
+   "belt of truth",
+   "shield of faith",
+   "sword of the spirit"
+  ],
+  "status": "story",
+  "ref": "Ephesians 6:14",
+  "note": "Ephesians 6:10-18."
+ },
+ {
+  "say": [
+   "steadfast love of the lord never ceases",
+   "his mercies never come to an end",
+   "his mercies never fail",
+   "new every morning",
+   "mercies are new every morning",
+   "great is your faithfulness",
+   "great is thy faithfulness"
+  ],
+  "status": "verse",
+  "ref": "Lamentations 3:22",
+  "note": "Lamentations 3:22-23. The World English Bible says 'loving kindnesses' where some translations say 'steadfast love' or 'mercies.'"
+ }
+]

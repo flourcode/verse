@@ -1,0 +1,10 @@
+[
+  { "id": "feelings", "title": "Feelings", "moment": "Hard days", "blurb": "Worry, fear, loneliness, and the days that feel heavier than they should." },
+  { "id": "work", "title": "Work", "moment": "Work", "blurb": "Interviews, difficult coworkers, stress, job loss, and stepping away for good." },
+  { "id": "family", "title": "Family & relationships", "moment": "Family", "blurb": "Marriage, difficult relatives, forgiveness, and the people closest to you." },
+  { "id": "health", "title": "Health & hard times", "moment": "Health", "blurb": "Surgery, waiting on results, and the long days in a hospital." },
+  { "id": "changes", "title": "Life changes", "moment": "Big changes", "blurb": "Starting over, moving, graduating, retiring, and everything that shifts under you." },
+  { "id": "decisions", "title": "Decisions & guidance", "moment": "Decisions", "blurb": "Choosing well, asking for wisdom, and waiting when you'd rather act." },
+  { "id": "money", "title": "Money", "moment": "Money", "blurb": "Financial pressure, provision, and contentment when the numbers don't add up." },
+  { "id": "occasions", "title": "Occasions & cards", "moment": "Celebrations", "blurb": "The right verse for a card, a toast, or a note someone will keep." }
+]

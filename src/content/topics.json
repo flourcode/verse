@@ -1,0 +1,778 @@
+[
+  {
+    "slug": "worry",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Worry",
+    "h1": "Bible verses for worry",
+    "label": "Worry",
+    "for": "worry",
+    "description": "Bible verses for worry, with short notes on what each passage is actually saying and why people reach for it when the mind won't settle.",
+    "intent": "Someone worrying about something specific (or everything) who wants Scripture that addresses worry directly, not a pep talk.",
+    "intro": "Worry has a way of borrowing trouble from next week and spending it today. These passages don't pretend problems aren't real. They're mostly about where you put the weight.",
+    "verses": [
+      {
+        "id": "matthew-6-34",
+        "why": "Jesus doesn't claim tomorrow will be easy. The point is narrower: tomorrow will bring its own concerns, and carrying them today only doubles the load. This is the last line of a longer section in Matthew 6 about birds, flowers, and a Father who already knows what you need. Read the whole stretch and the theme is trust, not denial."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Paul wrote this from custody, to a church he loved, so it isn't advice from a comfortable distance. The instruction is concrete: turn each worry into a specific request, and add thanks. The promise that follows isn't that the problem disappears but that peace 'guards' the heart, a military word for a sentry at a gate."
+      },
+      {
+        "id": "1-peter-5-7",
+        "why": "One short sentence with a reason attached: because he cares for you. Peter is writing to scattered, pressured Christians, and the verse before it is about humility. Worry often hides a quiet assumption that everything depends on us. This line pushes back on that assumption gently."
+      },
+      {
+        "id": "matthew-6-26",
+        "why": "Birds don't plan, and they're fed anyway. Jesus isn't telling anyone to stop working; he's asking a question about worth. If God provides for creatures that can't plan at all, the anxious math about your own future is missing a variable."
+      },
+      {
+        "id": "psalm-55-22",
+        "why": "David wrote this psalm while being betrayed by a close friend, which is worth knowing. 'Cast your burden' is not a tidy religious phrase here; it's what you say when the situation is real and you're out of options. The psalm promises sustaining, not that the betrayal reverses."
+      },
+      {
+        "id": "isaiah-26-3",
+        "why": "The peace described here is tied to a fixed mind: attention that keeps returning to God rather than circling the problem. It's part of a song about a secure city. Worry is often exactly the opposite, a mind that won't stay anywhere. The verse names the alternative without shaming the struggle."
+      },
+      {
+        "id": "psalm-94-19",
+        "why": "This is one of the more honest lines in the Psalms about an overactive mind. The writer doesn't claim the thoughts stop. He says that in the middle of them, comfort arrives. If your worry shows up as a crowd of competing thoughts, this verse describes your situation accurately."
+      }
+    ],
+    "howToUse": "Pick one, not seven. Read the surrounding paragraph so you know who's speaking and to whom. If a verse names a specific worry you carry, try saying that worry out loud as a request, which is what Philippians 4:6 actually describes.",
+    "related": [
+      "anxiety",
+      "peace",
+      "waiting",
+      "cannot-sleep",
+      "financial-stress",
+      "overwhelmed"
+    ],
+    "faq": [
+      {
+        "q": "What is the most well-known Bible verse about worry?",
+        "a": "Matthew 6:34 (\"don't be anxious for tomorrow\") and Philippians 4:6-7 are the two I'd start with. Both come from longer passages that are worth reading in full."
+      },
+      {
+        "q": "Does the Bible say worrying is a sin?",
+        "a": "The passages above treat worry as something to be redirected rather than a charge to feel guilty about. Jesus and Paul both give instructions (bring it as a request, consider the birds) rather than condemnation. Persistent, overwhelming anxiety can also be a health matter, and talking to a doctor is a reasonable step alongside prayer."
+      }
+    ],
+    "skip": {
+      "ref": "Philippians 4:13",
+      "why": "“I can do all things through Christ” gets sent as a pep talk. Paul wrote it about being content while hungry, in prison, with the outcome out of his hands. It’s a great verse for the wrong reason here; Matthew 6:34 was actually written about worry."
+    }
+  },
+  {
+    "slug": "anxiety",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Anxiety",
+    "h1": "Bible verses for anxiety",
+    "label": "Anxiety",
+    "for": "anxiety",
+    "description": "Bible verses for anxiety, chosen for what they say about fear, a racing mind, and God's nearness, with plain notes on context.",
+    "intent": "Someone feeling anxious, possibly in the moment, wanting Scripture that speaks to fear and a body that won't calm down.",
+    "intro": "Anxiety is worry with the volume turned up: tight chest, racing thoughts, a sense that something's wrong even when nothing is. These verses speak to fear directly and to the God who says, repeatedly, 'I am with you.'",
+    "safety": "If anxiety is making daily life hard, or you're having thoughts of harming yourself, please talk to a doctor or a crisis line in your country. Scripture can sit alongside real help; it isn't a replacement for it.",
+    "verses": [
+      {
+        "id": "isaiah-41-10",
+        "why": "Five short promises in one verse: I'm with you, I'm your God, I'll strengthen you, I'll help you, I'll hold you up. It's addressed to Israel in exile, people who had real reasons for fear. The verse doesn't argue with the fear. It answers it with presence, which is what anxious people usually need first."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Notice the sequence. Anxiety, then prayer with specific requests, then thanksgiving, then a peace that doesn't make logical sense ('surpasses all understanding'). Paul isn't offering a technique so much as describing what happens when the anxious loop gets interrupted by turning outward."
+      },
+      {
+        "id": "psalm-56-3",
+        "why": "Not 'I won't be afraid' but 'when I am afraid.' David wrote this after being captured by enemies, so the fear was warranted. The verse assumes fear will come and describes what to do in the middle of it. That's more useful than pretending it won't."
+      },
+      {
+        "id": "2-timothy-1-7",
+        "why": "Paul is writing to a younger leader who seems to have been timid under pressure. The verse contrasts a spirit of fear with three things: power, love, and self-control (or a sound mind). For anxiety that feels like losing control of your own thoughts, that last word is the one to hold onto."
+      },
+      {
+        "id": "john-14-27",
+        "why": "Jesus says this the night before his arrest, to friends who are about to be terrified. The peace he offers is explicitly 'not as the world gives,' which usually means removing the threat. His is a peace that can exist while the threat is still there."
+      },
+      {
+        "id": "psalm-46-1",
+        "why": "The whole psalm is about the ground shaking and God staying put. 'Very present' means near, available now, not eventually. For an anxious moment, the picture of a refuge you can step into immediately is the point. The psalm goes on to picture mountains falling into the sea and nations in uproar, then answers with 'Be still, and know that I am God.' It was written for people whose world felt unstable, which is roughly what anxiety feels like from the inside."
+      },
+      {
+        "id": "1-peter-5-7",
+        "why": "The Greek word for 'worries' here can also mean 'cares' or 'distractions.' Peter is telling scattered, persecuted believers to hand the whole pile over, and the reason he gives is simply that God cares. Anxiety often carries an unspoken belief that no one else is holding this. This verse says otherwise."
+      }
+    ],
+    "howToUse": "When anxiety is high, long reading rarely works. Choose one short line, such as Psalm 56:3, and repeat it slowly while you breathe out. Later, when things settle, read the full chapter to see where the line came from.",
+    "related": [
+      "worry",
+      "peace",
+      "cannot-sleep",
+      "overwhelmed",
+      "waiting-for-test-results",
+      "courage"
+    ],
+    "faq": [
+      {
+        "q": "What does the Bible say about anxiety?",
+        "a": "It treats anxiety as real and common, gives practical instruction (pray specifically, give thanks, remember God is near), and repeatedly answers fear with presence rather than explanation. It doesn't promise anxious feelings will never return."
+      },
+      {
+        "q": "Is there a short Bible verse for anxiety I can memorize?",
+        "a": "Psalm 56:3 is one sentence: \"When I am afraid, I will put my trust in you.\" 1 Peter 5:7 is another."
+      }
+    ],
+    "skip": {
+      "ref": "“God won’t give you more than you can handle”",
+      "why": "Not a verse. The closest one, 1 Corinthians 10:13, is about temptation. Told to someone who is anxious, the saying implies their anxiety is a failure to handle what was handed to them. Philippians 4:6–7 gives them something to do instead of something to feel."
+    }
+  },
+  {
+    "slug": "courage",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Courage",
+    "h1": "Bible verses for courage",
+    "label": "Courage",
+    "for": "courage",
+    "description": "Bible verses for courage, from Joshua to Paul, with notes on who was told to be brave and why it wasn't a pep talk.",
+    "intent": "Someone facing something that requires nerve: a conversation, a diagnosis, a move, a stand.",
+    "intro": "Almost every 'be strong and courageous' in the Bible is said to someone who has a good reason to be afraid. That's what makes these verses worth more than a poster. Courage here isn't the absence of fear; it's acting while God goes with you.",
+    "verses": [
+      {
+        "id": "joshua-1-9",
+        "why": "Joshua has just inherited leadership from Moses, the only leader the nation has ever known, and is about to cross into hostile territory. God says 'be courageous' three times in nine verses. The command comes with a reason: 'Yahweh your God is with you wherever you go.' The courage rests on the company, not on Joshua's nerve."
+      },
+      {
+        "id": "deuteronomy-31-6",
+        "why": "Moses, at the end of his life, speaking to the whole people before they go on without him. 'He will not fail you nor forsake you' is the promise the New Testament later quotes in Hebrews 13. If courage feels impossible because you're losing someone or something you leaned on, this is the passage."
+      },
+      {
+        "id": "psalm-27-1",
+        "why": "Two rhetorical questions, and the psalm expects the answer 'no one.' David wrote this while surrounded by enemies (verse 3 mentions an army camped against him). The courage is derived: if God is the light and the stronghold, the list of things worth fearing gets short."
+      },
+      {
+        "id": "isaiah-41-10",
+        "why": "'Don't be dismayed' is stronger than 'don't worry.' It means don't look around anxiously for help. The verse answers with a hand: 'I will uphold you with the right hand of my righteousness.' For a moment that needs steadiness more than boldness, this is the verse."
+      },
+      {
+        "id": "2-timothy-1-7",
+        "why": "Timothy seems to have been naturally cautious, and Paul doesn't scold him for it. He reminds him what he's been given: power, love, and a sound mind. Courage in this verse looks like clear thinking and love, not bravado. 'Fear' here is the word for cowardice or timidity, a shrinking back, not the healthy caution that keeps you alive. Paul writes it from prison, to a young pastor who is watching his mentor suffer, so it isn't cheap advice."
+      },
+      {
+        "id": "psalm-46-1",
+        "why": "Written for a city under threat, this psalm describes mountains falling into the sea and says, essentially, we still won't fear. It's the source of Luther's 'A Mighty Fortress.' The courage isn't naive; the psalm names the chaos and then names something stronger."
+      },
+      {
+        "id": "exodus-14-14",
+        "why": "Israel is trapped between Pharaoh's army and the sea. Moses' instruction isn't 'fight bravely' but 'be still.' Sometimes courage is doing the hard thing; sometimes it's not panicking and letting God act. Knowing which situation you're in matters. The next verse has God telling Moses to stop crying out and get the people moving, so stillness and action sit side by side in the same story. Courage may mean waiting quietly for the sea to open, and then walking."
+      }
+    ],
+    "related": [
+      "hope",
+      "anxiety",
+      "job-interview",
+      "starting-over",
+      "before-surgery",
+      "difficult-decisions"
+    ],
+    "faq": [
+      {
+        "q": "What is the most famous Bible verse about courage?",
+        "a": "Joshua 1:9 (\"Be strong and courageous. Don't be afraid\") is quoted most often. Deuteronomy 31:6 and Psalm 27:1 are close behind."
+      },
+      {
+        "q": "Does the Bible say fear is wrong?",
+        "a": "The people told to be courageous are almost always in genuinely frightening situations, and the text doesn't shame them for fear. The instruction is to act anyway, on the basis that God is present."
+      }
+    ]
+  },
+  {
+    "slug": "hope",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Hope",
+    "h1": "Bible verses for hope",
+    "label": "Hope",
+    "for": "hope",
+    "description": "Bible verses about hope, with notes on the difference between biblical hope and wishful thinking, and where each passage comes from.",
+    "intent": "Someone discouraged who wants something to hold onto that isn't empty optimism.",
+    "intro": "In everyday speech, 'hope' means 'I'd like this to happen.' In the Bible it's closer to 'confident expectation,' and it usually shows up in the middle of hard circumstances, not after them. These verses are about that kind of hope.",
+    "verses": [
+      {
+        "id": "romans-15-13",
+        "why": "Paul calls God 'the God of hope,' as if hope is his characteristic gift. The prayer is that you'd 'abound' in it, overflow, not scrape by. Notice hope here is tied to joy and peace 'in believing,' which means it grows with trust rather than with better circumstances."
+      },
+      {
+        "id": "lamentations-3-22-23",
+        "why": "Lamentations is a book of grief written after Jerusalem was destroyed. These verses sit in the exact middle of it. 'New every morning' isn't a cheerful slogan here; it's what a man says when he's lost almost everything and still finds mercy waiting the next day. That context is what gives the line its weight."
+      },
+      {
+        "id": "jeremiah-29-11",
+        "why": "Often printed on graduation cards, this verse was actually written to exiles being told they'd stay in Babylon for seventy years. The 'hope and a future' was real, but it wasn't quick. If you're in a long season, that's not a disappointment; it's the verse's original setting."
+      },
+      {
+        "id": "romans-5-3-5",
+        "why": "A chain: suffering produces perseverance, perseverance produces character, character produces hope. Hope comes at the end of the process, not the beginning. And 'hope doesn't disappoint' because it rests on God's love already given, not on a predicted outcome. Paul isn't saying suffering is good. He's saying it isn't wasted, because of what it produces in a person over time. The verse ends with God's love 'poured out,' which is where the hope actually rests."
+      },
+      {
+        "id": "psalm-42-11",
+        "why": "The psalmist talks to himself: 'Why are you in despair, my soul?' Then he gives himself an instruction: hope in God. This is the third time the refrain appears in Psalms 42 and 43. Hope in the Psalms is sometimes a decision you have to make more than once in the same day."
+      },
+      {
+        "id": "hebrews-6-19",
+        "why": "Hope as an anchor, the only place the Bible uses that image. An anchor doesn't stop the storm; it keeps the boat from drifting. The verse says this hope reaches 'within the veil,' into God's own presence, which is why it holds."
+      },
+      {
+        "id": "isaiah-40-31",
+        "why": "The chapter opens with 'Comfort, comfort my people' and is addressed to exiles who thought God had forgotten them. 'Those who wait' means those who keep hoping when nothing has changed yet. The strength renews in the waiting, not after it."
+      }
+    ],
+    "related": [
+      "grief",
+      "waiting",
+      "overwhelmed",
+      "starting-over",
+      "job-loss",
+      "patience"
+    ],
+    "faq": [
+      {
+        "q": "What's the difference between hope in the Bible and optimism?",
+        "a": "Optimism is a prediction that things will improve. Biblical hope is confidence in God's character regardless of the prediction. Several passages above (Lamentations 3, Romans 5) were written in circumstances that weren't improving."
+      },
+      {
+        "q": "What is a good short Bible verse about hope?",
+        "a": "Romans 15:13 works well as a blessing. Lamentations 3:22-23 is short and widely known."
+      }
+    ]
+  },
+  {
+    "slug": "peace",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Peace",
+    "h1": "Bible verses for peace",
+    "label": "Peace",
+    "for": "peace",
+    "description": "Bible verses about peace: the inner kind, the kind Jesus leaves with his friends, and the kind that holds while trouble continues.",
+    "intent": "Someone who wants calm, a quieted mind, or reassurance, and wants Scripture rather than a breathing app.",
+    "intro": "Peace in the Bible isn't mainly the absence of noise. The Hebrew word, shalom, means wholeness, things being as they should be. Most of these verses describe peace that exists while the trouble is still going on.",
+    "verses": [
+      {
+        "id": "john-14-27",
+        "why": "Spoken by Jesus hours before his arrest, to disciples who are about to scatter. He 'leaves' peace like a bequest and specifies it's not the world's kind, which depends on circumstances improving. Then two instructions: don't let your heart be troubled, don't let it be afraid. The peace and the fear are both real, and he's addressing both."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "The peace here 'surpasses all understanding,' which is Paul's way of saying it won't make sense on paper. It arrives after specific prayer with thanksgiving, and it guards, like a soldier posted at the door of your heart and mind. If peace feels like something you have to manufacture, this passage describes it as something that arrives."
+      },
+      {
+        "id": "isaiah-26-3",
+        "why": "'Perfect peace' in Hebrew is literally 'shalom shalom,' peace doubled. It's promised to the person whose mind is steadfast, fixed, leaning on God. This is part of a song of trust sung in Judah. The condition isn't a calm life; it's a mind that keeps returning to the same place."
+      },
+      {
+        "id": "john-16-33",
+        "why": "Jesus states the problem plainly ('in the world you have trouble') and doesn't soften it. The peace is 'in me,' located in a person rather than a situation. And 'cheer up' or 'take heart' is a command with a reason: the trouble has already been overcome."
+      },
+      {
+        "id": "psalm-4-8",
+        "why": "A bedtime psalm. David lies down and sleeps because God alone makes him live in safety. The earlier verses show he's under pressure from people spreading lies about him. Peace here is the ability to stop being on guard and rest."
+      },
+      {
+        "id": "colossians-3-15",
+        "why": "'Let the peace of God rule' uses a word for an umpire, the one who makes the call. Paul is writing about relationships in a church, so this peace isn't purely private; it's meant to settle disputes and be shared. The verse ends 'be thankful,' which shows up next to peace more than once in Paul's letters."
+      },
+      {
+        "id": "numbers-6-24-26",
+        "why": "The oldest blessing in the Bible, given to Aaron to speak over the people. It ends with peace. God's face 'shining' on someone and being 'lifted up' toward them are pictures of favor and attention. People still use these words at the end of services and in cards because they've never needed updating."
+      }
+    ],
+    "related": [
+      "grief",
+      "worry",
+      "anxiety",
+      "cannot-sleep",
+      "overwhelmed",
+      "waiting"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse talks about peace that passes understanding?",
+        "a": "Philippians 4:7: \"the peace of God, which surpasses all understanding, will guard your hearts and your thoughts in Christ Jesus.\" The verse before it explains how to get there."
+      },
+      {
+        "q": "What is the shortest Bible verse about peace?",
+        "a": "Psalm 4:8 is one sentence, and Numbers 6:26 (\"give you peace\") is the end of a three-line blessing."
+      }
+    ]
+  },
+  {
+    "slug": "patience",
+    "type": "topic",
+    "cluster": "decisions",
+    "title": "Bible Verses for Patience",
+    "h1": "Bible verses for patience",
+    "label": "Patience",
+    "for": "patience",
+    "description": "Bible verses about patience with people, with waiting, and with yourself, including where each passage comes from and what it's really asking.",
+    "intent": "Someone losing patience with a person, a process, or a season, who wants Scripture that's honest about how hard patience is.",
+    "intro": "The Bible uses two kinds of patience: putting up with people, and waiting out a season. Both are hard for different reasons. These verses cover both, and none of them pretend it comes naturally.",
+    "verses": [
+      {
+        "id": "james-5-7-8",
+        "why": "James uses a farmer who's planted and now can't do anything but wait for rain. The waiting isn't passive; he's 'patient over it,' attentive. 'Establish your hearts' means settle them, stop them swinging. For a season where you've done what you can and now have to wait, this is the picture."
+      },
+      {
+        "id": "galatians-5-22-23",
+        "why": "Patience is listed among the fruit of the Spirit, which matters: fruit grows, it isn't manufactured. Paul places it between peace and kindness. If you're trying to force patience by gritting your teeth, this verse suggests a different approach, one that treats it as something produced in you over time."
+      },
+      {
+        "id": "proverbs-14-29",
+        "why": "A proverb contrasts two people: the slow-to-anger person has great understanding, and the quick-tempered one puts foolishness on display. The point isn't that anger is always wrong but that speed is the problem. Patience here is mostly about the gap between feeling and reacting."
+      },
+      {
+        "id": "proverbs-16-32",
+        "why": "A person who rules their own temper is compared favorably to a general capturing a city. In the ancient world that's about the highest praise available. If patience feels unimpressive next to action, this proverb ranks it higher. The pairing is deliberate: 'slow to anger' and 'rules his spirit' are one skill, seen from the inside and the outside. It takes years to build, like a city takes years to take. Proverbs treats it as the more lasting conquest."
+      },
+      {
+        "id": "ephesians-4-2-3",
+        "why": "'Bearing with one another in love' is patience applied to specific people you're stuck with. Paul writes it to a church trying to stay unified across real differences. The verse doesn't say pretend the friction isn't there; it says carry it, for the sake of keeping peace."
+      },
+      {
+        "id": "ecclesiastes-7-8",
+        "why": "'The patient in spirit is better than the proud in spirit' pairs patience with humility and impatience with pride, which is often accurate. And 'the end of a thing is better than its beginning' is a reminder that how something finishes matters more than how it started."
+      },
+      {
+        "id": "romans-8-25",
+        "why": "Paul defines patience as waiting for what you don't see yet. That's the whole difficulty. If you could see it, you wouldn't need patience. The verse comes in a passage about creation itself groaning and waiting, which puts your own waiting in a very large context."
+      }
+    ],
+    "related": [
+      "waiting",
+      "difficult-coworkers",
+      "difficult-family-members",
+      "hope",
+      "peace",
+      "forgiveness"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse says patience is a virtue?",
+        "a": "That exact phrase isn't in the Bible. The closest ideas are Galatians 5:22 (patience as fruit of the Spirit) and Proverbs 16:32 (ruling your temper is better than taking a city)."
+      },
+      {
+        "q": "Is there a Bible verse about being patient with people?",
+        "a": "Ephesians 4:2 (\"bearing with one another in love\") and Proverbs 14:29 both deal with patience toward other people specifically."
+      }
+    ]
+  },
+  {
+    "slug": "wisdom",
+    "type": "topic",
+    "cluster": "decisions",
+    "title": "Bible Verses for Wisdom",
+    "h1": "Bible verses for wisdom",
+    "label": "Wisdom",
+    "for": "wisdom",
+    "description": "Bible verses about wisdom and where it comes from, chosen for people who need to think clearly about something real.",
+    "intent": "Someone who needs to make a good judgment and wants Scripture on wisdom, discernment, and asking God for it.",
+    "intro": "In Scripture, wisdom is less about being smart and more about knowing how to live well: what to say, when to wait, whom to listen to. These passages are about getting it, and they're unusually practical.",
+    "verses": [
+      {
+        "id": "james-1-5",
+        "why": "The most direct verse on the subject: if you lack wisdom, ask. Two details matter. God gives 'liberally,' generously, and 'without reproach,' without making you feel foolish for asking. James writes this to people going through trials, so wisdom here means knowing how to handle hard things, not abstract knowledge."
+      },
+      {
+        "id": "proverbs-3-5-6",
+        "why": "'Don't lean on your own understanding' isn't anti-thinking; Proverbs is a whole book about thinking well. It's a warning against treating your own view as the final word. 'He will make your paths straight' is the promise for someone who keeps God in the decision rather than consulting him afterward."
+      },
+      {
+        "id": "proverbs-2-6",
+        "why": "Wisdom has a source. The chapter describes searching for it like silver, then says plainly it comes from God's mouth. That's why prayer and wisdom sit together throughout the Bible. Effort matters, but the origin is a gift. The verse sits between two ideas: the chapter opens with 'if you cry out for discernment' and then says wisdom comes from God's mouth. So the effort and the gift go together. Ask and look at the same time."
+      },
+      {
+        "id": "james-3-17",
+        "why": "James gives a checklist for real wisdom: pure, peaceful, gentle, reasonable, merciful, impartial, sincere. It's useful for testing advice, including your own. If a 'wise' course of action is harsh, self-serving, or divisive, this verse says it fails the test."
+      },
+      {
+        "id": "proverbs-15-22",
+        "why": "Plans fail without counsel and succeed with many advisers. This is wisdom as a social practice: ask people. Proverbs repeats this idea several times, which suggests the writers knew how tempting it is to decide alone. The counsel in view isn't a crowd shouting opinions; 'advisers' in Proverbs are people with experience who will tell you the truth. Two or three of those are worth more than a poll, and far more than deciding alone."
+      },
+      {
+        "id": "proverbs-9-10",
+        "why": "'The fear of Yahweh is the beginning of wisdom' doesn't mean being scared. It means taking God seriously as the fixed point everything else is measured against. Wisdom that starts anywhere else, the proverb suggests, is built on sand. Chapter 9 sets two invitations side by side, from Wisdom and from Folly, using nearly identical words. Both sound appealing. The difference is where each one leads, which is why the starting point matters so much."
+      },
+      {
+        "id": "psalm-90-12",
+        "why": "Moses asks God to teach us to count our days, to remember they're limited. The result is 'a heart of wisdom.' Knowing your time is finite changes what seems worth doing. It's one of the oldest and plainest ways the Bible connects wisdom to mortality."
+      }
+    ],
+    "related": [
+      "difficult-decisions",
+      "patience",
+      "waiting",
+      "job-interview",
+      "work-stress",
+      "graduation"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse says to ask God for wisdom?",
+        "a": "James 1:5: \"If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.\""
+      },
+      {
+        "q": "What does 'the fear of the Lord is the beginning of wisdom' mean?",
+        "a": "It means wisdom starts with taking God seriously, with reverence rather than dread. Proverbs 9:10 is the classic statement; Proverbs 1:7 says the same thing."
+      }
+    ]
+  },
+  {
+    "slug": "loneliness",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Loneliness",
+    "h1": "Bible verses for loneliness",
+    "label": "Loneliness",
+    "for": "loneliness",
+    "description": "Bible verses for loneliness, including the ones written by people who felt abandoned, with notes on what each actually promises.",
+    "intent": "Someone feeling alone, possibly late at night, who wants honest Scripture rather than a reminder to join a small group.",
+    "intro": "Some of the Bible's most-quoted lines about God's presence were written by people who felt completely alone. That's worth knowing. These verses don't pretend loneliness isn't real. They insist you're not as alone as it feels.",
+    "safety": "If loneliness has become hopelessness, or you're thinking about ending your life, please reach out to a crisis line or someone you trust today. You matter, and a verse is not meant to carry that alone.",
+    "verses": [
+      {
+        "id": "psalm-25-16",
+        "why": "'I am desolate and afflicted' is about as plain as the Psalms get. David doesn't dress it up. He asks God to turn toward him, which is a physical picture: someone facing you instead of facing away. If you need words for the feeling itself, this verse gives them."
+      },
+      {
+        "id": "deuteronomy-31-6",
+        "why": "'He will not fail you nor forsake you' is said to a people about to lose the only leader they've known. Loneliness often follows a loss like that. The promise isn't that someone will replace what's gone; it's that God himself goes with you into the unfamiliar."
+      },
+      {
+        "id": "psalm-68-6",
+        "why": "'God sets the lonely in families' is a line about God's character: he notices the solitary and puts them somewhere they belong. It's descriptive, not a timeline. But it tells you what God is like, which matters when loneliness suggests nobody is paying attention."
+      },
+      {
+        "id": "matthew-28-20",
+        "why": "The last words of Matthew's Gospel. Jesus is sending his friends out into the world, and his final promise is presence: 'always, even to the end of the age.' It's not conditional on their success or their mood. If you've felt left behind, this is the opposite."
+      },
+      {
+        "id": "psalm-139-7-8",
+        "why": "The psalmist tries to imagine a place God isn't and can't find one, not heaven, not the grave. It's an unusual comfort: there is no location, including the low one you're in, where you'd be out of reach. This psalm is often read at 3 a.m. for a reason."
+      },
+      {
+        "id": "psalm-27-10",
+        "why": "'When my father and my mother forsake me' names the deepest kind of abandonment, and then says God takes up the one who's been left. If your loneliness has a family shape to it, this verse doesn't minimize that. It answers it."
+      },
+      {
+        "id": "hebrews-13-5",
+        "why": "The writer quotes God's promise from Deuteronomy, 'I will in no way leave you,' with emphatic double negatives in the original. It's set, interestingly, in a verse about contentment and money. Loneliness and the feeling of not having enough often travel together; this verse addresses both."
+      }
+    ],
+    "howToUse": "Loneliness tends to be worst at specific hours. Choose one verse and read it at that hour, out loud if you can. Then, when you're able, tell one person, in real life, that you've been lonely. Scripture is meant to be read in company.",
+    "related": [
+      "grief",
+      "sympathy-card",
+      "cannot-sleep",
+      "overwhelmed",
+      "hope",
+      "moving"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse says God will never leave you?",
+        "a": "Deuteronomy 31:6 and Hebrews 13:5 both say it directly. Matthew 28:20 (\"I am with you always\") is Jesus' version."
+      },
+      {
+        "q": "Is there a Psalm about feeling alone?",
+        "a": "Psalm 25:16 says it outright: \"I am desolate and afflicted.\" Psalm 139 is about the impossibility of being somewhere God isn't."
+      }
+    ],
+    "whatToSay": [
+      "“I noticed you weren’t there Sunday. I missed you.”",
+      "“I’m going for a walk at 4 most days. You’re welcome any time, no notice needed.”",
+      "Invite them to the ordinary thing, not the big thing. The grocery run, not the party.",
+      "Don’t say: “You should get out more.” Say when and where, and go with them."
+    ]
+  },
+  {
+    "slug": "grief",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Grief",
+    "h1": "Bible verses for grief",
+    "label": "Grief",
+    "for": "grief",
+    "description": "Bible verses for grief and loss, with the context behind each one. Verses that sit with the sorrow rather than rushing past it.",
+    "intent": "Someone has died, or something has ended, and the person wants Scripture that meets them in the loss, not a card verse for someone else.",
+    "intro": "Grief doesn’t follow a schedule, and the Bible doesn’t pretend it does. The verses here come from people who lost children, friends, homes, and whole cities, and wrote it down. Most of them don’t explain the loss. They stay in it.",
+    "safety": "If your grief has become a weight you can’t carry alone, or you’ve had thoughts of not wanting to be here, please reach out to someone today: a friend, a doctor, or a crisis line in your country. That isn’t a failure of faith.",
+    "verses": [
+      {
+        "id": "psalm-34-18",
+        "why": "David wrote this psalm after a humiliating escape, pretending to be insane to get out of an enemy court. It isn’t a triumphant psalm; it’s the writing of someone who has been reduced. ‘Near to those who have a broken heart’ doesn’t promise the heart will be fixed on a timetable. It says the nearness is a response to the breaking, not to recovery from it. That’s why this is the verse to start with: it meets you where grief actually puts you, on the floor, and says that is exactly where God comes close."
+      },
+      {
+        "id": "john-11-35",
+        "why": "The shortest verse in the Bible, and it happens minutes before Jesus raises Lazarus. He knows what he’s about to do, and he weeps anyway, because Mary is weeping and the loss is real. The verse gives you permission that no explanation could: if Jesus grieved at a tomb he was about to empty, grief is not a lack of faith. It’s the correct response to loss. You don’t have to reason your way out of it before you’re allowed to feel it."
+      },
+      {
+        "id": "matthew-5-4",
+        "why": "The second Beatitude, and an odd one. Jesus calls mourners blessed, not because grief is pleasant but because of what is promised to them: comfort. Notice he doesn’t say when. The sentence holds the sorrow and the comfort together without collapsing one into the other. Read it slowly on a day when the loss is loud. It doesn’t tell you to stop mourning; it tells you what mourning is headed toward."
+      },
+      {
+        "id": "psalm-30-5",
+        "why": "David wrote this looking back on a season he thought he wouldn’t survive. ‘Weeping may stay for the night’ is honest that the night is real and can be long; the Hebrew pictures weeping as a guest who lodges overnight. The joy that comes in the morning isn’t a promise that morning comes tomorrow. It’s the testimony of someone who has been through the night and is telling you it does end. That’s a different kind of comfort than being told to cheer up."
+      },
+      {
+        "id": "2-corinthians-1-3-4",
+        "why": "Paul opens this letter after a stretch he describes a few verses later as so hard he despaired of life itself. So ‘the God of all comfort’ isn’t a greeting-card phrase; it comes from a man who needed comforting and got it. The verse also says what comfort is for: so that we can comfort others. Grief connects you to everyone who has grieved. Eventually, though not yet, yours may be what someone else needs."
+      },
+      {
+        "id": "psalm-56-8",
+        "why": "‘You put my tears into your container’ is a strange, tender image. In the ancient world, mourners sometimes kept tears in small bottles. The psalmist imagines God doing that: collecting each one, writing it down, missing none. On the days grief feels invisible to everyone around you, this verse says it is fully seen. Not fixed, not explained. Counted."
+      },
+      {
+        "id": "john-11-25-26",
+        "why": "Spoken to Martha at her brother’s tomb, before anything has changed. Jesus doesn’t say ‘I will do a resurrection’; he says ‘I am the resurrection,’ and then asks her, with the loss still fresh, whether she believes it. It’s the most direct thing the Bible says about death, and it’s said to a grieving woman, not a classroom. If you can’t answer Martha’s question yet, that’s allowed. She said yes with tears on her face."
+      },
+      {
+        "id": "1-thessalonians-4-13",
+        "why": "Paul is writing to a young church whose members have started dying, and the survivors don’t know what to think. His line is careful: not ‘don’t grieve’ but ‘don’t grieve like those who have no hope.’ Grief is assumed. Hope changes its shape, not its existence. This is the verse for a Christian who feels guilty for being devastated. Paul expected you to be."
+      },
+      {
+        "id": "revelation-21-4",
+        "why": "The end of the story. John’s vision of the new creation ends with a hand wiping away tears, and a list of things that will be gone: death, mourning, crying, pain. The verse only means something because those things are real now. It’s a promise for later, and it’s honest about that. On the worst days, some people find it helps to know the last page has already been written."
+      }
+    ],
+    "howToUse": "Don’t read all of these at once. Pick one and keep it for a week. Grief is a long road, and one verse carried well does more than nine read quickly. If you’re looking for something to write for someone else, the sympathy card page has shorter verses and suggested wording.",
+    "related": [
+      "sympathy-card",
+      "loneliness",
+      "peace",
+      "hope",
+      "cannot-sleep",
+      "overwhelmed"
+    ],
+    "faq": [
+      {
+        "q": "Is it wrong to be angry at God while grieving?",
+        "a": "The psalms are full of people angry at God, and they were kept in the Bible on purpose. Psalm 13 opens with ‘How long, Yahweh? Will you forget me forever?’ Honest anger addressed to God is prayer. It’s silence that the psalms seem to worry about."
+      },
+      {
+        "q": "How long is grief supposed to last?",
+        "a": "The Bible gives no timeline. Jacob mourned Joseph for years. Jesus wept at a tomb he was about to empty. Anyone who tells you grief should be over by a certain date is speaking for themselves, not for Scripture."
+      },
+      {
+        "q": "What’s the best Bible verse for grief?",
+        "a": "For most people, Psalm 34:18, because it doesn’t require you to feel anything but broken. If you want one from Jesus, Matthew 5:4. If you want one that names the future, Revelation 21:4."
+      }
+    ],
+    "skip": {
+      "ref": "Romans 8:28",
+      "why": "True, and wrong for the first weeks. “All things work together for good” heard in fresh grief sounds like the loss was for the best. Paul meant that God is at work in it and that the good is who we become. Keep it for the one-year mark. Right now, Psalm 34:18 asks nothing of the person but being broken."
+    },
+    "whatToSay": [
+      "“I don’t have anything wise to say. I loved her too.”",
+      "“I’m dropping dinner on the porch Tuesday. No need to answer the door.”",
+      "Say the person’s name. People in grief are often afraid everyone has stopped saying it.",
+      "Don’t say: “She’s in a better place,” “everything happens for a reason,” or anything that starts with “at least.”",
+      "In three weeks, when the casseroles stop, send one line. That’s when it’s quietest."
+    ]
+  },
+  {
+    "slug": "overwhelmed",
+    "type": "topic",
+    "cluster": "feelings",
+    "title": "Bible Verses for Feeling Overwhelmed",
+    "h1": "Bible verses for feeling overwhelmed",
+    "label": "Overwhelmed",
+    "for": "when you're overwhelmed",
+    "description": "Bible verses for when you feel overwhelmed and have nothing left, chosen for what they say about weakness, burdens, and rest.",
+    "intent": "Someone at capacity, tired and behind, who needs relief more than motivation.",
+    "intro": "Feeling overwhelmed usually means the load is bigger than the person carrying it. Most of these verses accept that as the starting point. They're about weakness, rest, and what happens when you stop trying to hold everything up yourself.",
+    "verses": [
+      {
+        "id": "matthew-11-28-29",
+        "why": "Jesus invites the exhausted specifically: 'all you who labor and are heavily burdened.' He doesn't offer a lighter schedule; he offers rest and a different yoke, one carried alongside him. 'Gentle and humble in heart' is how he describes himself, which is a relief if the voice in your head driving you is neither."
+      },
+      {
+        "id": "psalm-61-2",
+        "why": "'When my heart is overwhelmed' is the phrase, and it's in the Bible, from the end of the earth, from someone far from where he wants to be. He asks to be led to a rock higher than himself, a place to stand that he couldn't climb to alone. That's the request when you can't."
+      },
+      {
+        "id": "2-corinthians-12-9",
+        "why": "Paul asked three times for a hardship to be removed, and the answer was no, with this sentence attached: 'My grace is sufficient for you, for my power is made perfect in weakness.' Being overwhelmed is weakness, and this verse says weakness is where the strength shows up. It's the opposite of the advice to try harder."
+      },
+      {
+        "id": "psalm-55-22",
+        "why": "Cast the burden, and 'he will sustain you.' The word for burden can mean what's been given to you, your lot. David wrote this during a betrayal. The promise is holding up under it, not that the lot changes overnight."
+      },
+      {
+        "id": "isaiah-40-29",
+        "why": "'He gives power to the weak.' Two verses later comes the famous 'wings like eagles' line, but it starts here, with an admission of having no might left. The chapter is addressed to people who think God has stopped noticing them. It's the right chapter for running on empty."
+      },
+      {
+        "id": "exodus-14-14",
+        "why": "Trapped between an army and the sea, the people panic. Moses says God will fight, and 'you shall be still.' Sometimes the overwhelming thing is that you think every outcome depends on your effort. This verse describes a situation where the outcome didn't."
+      },
+      {
+        "id": "psalm-62-1-2",
+        "why": "'My soul rests in God alone.' The word 'alone' does a lot of work: not in God plus a plan, not in God once things calm down. The result is 'I will never be greatly shaken,' which is honest, since 'greatly' admits some shaking still happens."
+      }
+    ],
+    "howToUse": "When you're overwhelmed, don't add 'read the Bible more' to the list. Read one verse. Matthew 11:28 is enough for a day. If a line describes exactly how you feel, that's the one to sit with.",
+    "related": [
+      "grief",
+      "work-stress",
+      "anxiety",
+      "peace",
+      "cannot-sleep",
+      "loneliness"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse is for when you feel like giving up?",
+        "a": "Galatians 6:9 speaks directly to weariness in doing good. Isaiah 40:29-31 and 2 Corinthians 12:9 are about strength arriving in weakness."
+      },
+      {
+        "q": "Which Psalm mentions being overwhelmed?",
+        "a": "Psalm 61:2 uses the word: \"when my heart is overwhelmed.\" Psalm 55:22 and Psalm 62 cover similar ground."
+      }
+    ],
+    "skip": {
+      "ref": "“God won’t give you more than you can handle”",
+      "why": "Not in the Bible, and the exact wrong thing to say to someone who is being given more than they can handle. Paul says plainly in 2 Corinthians 1:8 that he was burdened beyond his strength. Matthew 11:28 is what to send."
+    }
+  },
+  {
+    "slug": "forgiveness",
+    "type": "topic",
+    "cluster": "family",
+    "title": "Bible Verses for Forgiveness",
+    "h1": "Bible verses for forgiveness",
+    "label": "Forgiveness",
+    "for": "forgiveness",
+    "description": "Bible verses about forgiving someone, being forgiven, and what forgiveness does and doesn't require, with plain context for each.",
+    "intent": "Someone trying to forgive a person who hurt them, or wanting to know they've been forgiven.",
+    "intro": "Forgiveness in Scripture runs in two directions: what God extends to us and what we're asked to extend to others. The Bible ties the two together more tightly than most people would like. These verses are honest about that.",
+    "safety": "Forgiveness doesn't mean staying in a situation that's harming you. If someone is hurting you, getting safe comes first; forgiveness can be worked out later and from a distance.",
+    "verses": [
+      {
+        "id": "ephesians-4-32",
+        "why": "The standard for forgiving others is stated in one clause: 'just as God also in Christ forgave you.' That's both the measure and the motive. Paul frames it with kindness and tenderheartedness, which suggests forgiveness is less a legal decision than a softening."
+      },
+      {
+        "id": "colossians-3-13",
+        "why": "'Bearing with' and 'forgiving' are two different things here. One is tolerating ongoing friction; the other is releasing a specific complaint. The verse assumes both will be necessary in any real community. 'If any man has a complaint against any' is refreshingly realistic."
+      },
+      {
+        "id": "matthew-18-21-22",
+        "why": "Peter thinks seven times is generous. Jesus says seventy times seven, which isn't a number to count to; it's a way of saying stop counting. The parable that follows, about a servant forgiven a huge debt who then refuses to forgive a small one, is the real point of the passage. Read it."
+      },
+      {
+        "id": "matthew-6-14-15",
+        "why": "This comes right after the Lord's Prayer and is the one line Jesus stops to expand. The link between being forgiven and forgiving is stated bluntly. It's uncomfortable, and it's meant to be. Jesus doesn't treat refusing to forgive as a minor matter."
+      },
+      {
+        "id": "psalm-103-12",
+        "why": "East and west never meet, so the distance is infinite. That's how far God removes our sins. If your need is to know you've been forgiven rather than to forgive someone else, this is the verse. The whole psalm is worth reading for its description of God's character."
+      },
+      {
+        "id": "1-john-1-9",
+        "why": "The condition is confession, and the promise is two things: forgiveness and cleansing. God is called 'faithful and righteous' to do this, meaning it's consistent with who he is, not a reluctant exception. This is the verse for guilt that keeps circling back."
+      },
+      {
+        "id": "mark-11-25",
+        "why": "Jesus connects forgiveness to prayer: 'whenever you stand praying, forgive.' It implies forgiveness is a recurring act, something you do each time the grudge resurfaces, not a single event. That's more realistic than the idea that you forgive once and it's done."
+      }
+    ],
+    "howToUse": "Forgiveness is rarely a single moment. If you're working on forgiving someone, choose one verse, such as Mark 11:25, and return to it each time the resentment comes back. Reading the parable in Matthew 18:23-35 once, slowly, is worth more than any list.",
+    "related": [
+      "loneliness",
+      "difficult-family-members",
+      "difficult-coworkers",
+      "patience",
+      "marriage",
+      "peace"
+    ],
+    "faq": [
+      {
+        "q": "What does the Bible say about forgiving someone who isn't sorry?",
+        "a": "The passages above don't make forgiveness conditional on the other person's apology. Mark 11:25 and Ephesians 4:32 are about your own posture. Reconciliation, restoring the relationship, is a separate step and may require more from both sides."
+      },
+      {
+        "q": "What is the Bible verse about forgiving seventy times seven?",
+        "a": "Matthew 18:21-22. Jesus follows it with a parable (verses 23-35) that explains why."
+      }
+    ],
+    "skip": {
+      "ref": "Matthew 18:21–22",
+      "why": "It’s on the page, because it belongs. What I’d leave out is using it as a lever on someone else: “the Bible says you have to forgive me.” The verse is addressed to the person doing the forgiving, and only they get to hold it."
+    }
+  },
+  {
+    "slug": "financial-stress",
+    "type": "topic",
+    "cluster": "money",
+    "title": "Bible Verses for Financial Stress",
+    "h1": "Bible verses for financial stress",
+    "label": "Financial stress",
+    "for": "financial stress",
+    "description": "Bible verses for financial stress and money worries, with notes on provision and contentment that don't promise you'll get rich.",
+    "intent": "Someone worried about money, bills, or debt who wants Scripture on provision and peace, not a prosperity pitch.",
+    "intro": "Money stress is specific: a number, a date, a bill. These verses don't promise a windfall. They're about provision, contentment, and where your security actually rests, which is what makes them useful when the math isn't working.",
+    "safety": "Scripture isn't financial advice. If you're in serious debt, a nonprofit credit counselor or a trusted adviser can help you with the practical side.",
+    "verses": [
+      {
+        "id": "matthew-6-33",
+        "why": "This comes in the middle of Jesus' teaching about not worrying over food and clothes. 'All these things' are the basics, not luxuries, and the promise is that they'll be 'given.' The instruction is about priority: seek the kingdom first and let provision follow. It's not a formula for wealth; it's a reordering."
+      },
+      {
+        "id": "philippians-4-19",
+        "why": "Paul says this to a church that had just sent him money while he was in prison. God supplies 'every need' according to 'his riches,' not according to your budget. The verse is about need, and the context is generosity. Both matter for reading it honestly."
+      },
+      {
+        "id": "hebrews-13-5",
+        "why": "Contentment is tied directly to God's promise never to leave. The logic: if he's with you, you already have the thing money can't secure. 'Content with such things as you have' is a hard sentence when you're short, but it's addressed to people who were, in fact, short."
+      },
+      {
+        "id": "matthew-6-26",
+        "why": "Birds don't plan and are fed anyway. Jesus asks whether you're worth more than they are. The verse doesn't say don't work; it says don't let provision anxiety run your life. It's hard to read this and keep believing everything depends on you."
+      },
+      {
+        "id": "philippians-4-11-12",
+        "why": "Paul says he's 'learned' contentment, which means it wasn't automatic. He'd known both plenty and hunger and found a secret that worked in both. The next verse, 'I can do all things through Christ,' is about this: enduring lack, not achieving goals."
+      },
+      {
+        "id": "1-timothy-6-6-8",
+        "why": "'Godliness with contentment is great gain.' Paul then reduces the necessities to food and clothing. That's stark, but for someone stressed about money, it's clarifying: the list of what you truly need is shorter than the list of what you're afraid of losing."
+      },
+      {
+        "id": "psalm-37-25",
+        "why": "An old man's observation from a long life: he hasn't seen the righteous forsaken. It's testimony, not a guarantee, and it's honest about being one person's experience. The whole psalm is about not fretting over people who seem to prosper unfairly, which is often part of money stress."
+      }
+    ],
+    "related": [
+      "worry",
+      "job-loss",
+      "peace",
+      "anxiety",
+      "waiting",
+      "retirement"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse helps with money worries?",
+        "a": "Matthew 6:25-34 is the longest passage on the subject; Matthew 6:33 is its center. Philippians 4:19 is the verse most people reach for on provision."
+      },
+      {
+        "q": "Does the Bible promise financial prosperity?",
+        "a": "The verses above promise provision for needs and commend contentment. They don't promise wealth. Paul, who wrote several of them, spent time in prison and in hunger."
+      }
+    ]
+  }
+]

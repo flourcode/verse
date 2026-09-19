@@ -1,0 +1,268 @@
+[
+  {
+    "slug": "retirement-card",
+    "type": "occasion",
+    "cluster": "occasions",
+    "title": "Bible Verse for a Retirement Card",
+    "h1": "Bible verse for a retirement card",
+    "label": "Retirement card",
+    "for": "a retirement card",
+    "description": "Bible verses for a retirement card, with a best overall pick, a short one, a traditional one, and suggested wording you can copy.",
+    "intent": "Someone writing a retirement card for a colleague, parent, or friend who wants a verse that fits, plus help with what to write around it.",
+    "intro": "A retirement card needs a verse that honors the work that's done and says something about what's next. Here are the ones that do both, with suggested wording so you're not staring at a blank card.",
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "2-timothy-4-7"
+      },
+      {
+        "kind": "Short",
+        "id": "numbers-6-24-26"
+      },
+      {
+        "kind": "Encouraging",
+        "id": "psalm-92-14"
+      },
+      {
+        "kind": "Traditional",
+        "id": "matthew-25-21"
+      }
+    ],
+    "wording": [
+      "Congratulations on finishing well. Enjoy every bit of what comes next.",
+      "Thank you for the years of work, steadiness, and example. The next season is going to be a good one.",
+      "You've earned this. May it be full of the things you never had time for."
+    ],
+    "verses": [
+      {
+        "id": "2-timothy-4-7",
+        "why": "'I have fought the good fight. I have finished the course. I have kept the faith.' Paul, near the end of his life, looking back. If I were writing the card, I'd start here, because it honors a course completed with integrity. It works for a colleague you respect and for a parent."
+      },
+      {
+        "id": "matthew-25-21",
+        "why": "'Well done, good and faithful servant... Enter into the joy of your lord.' From a parable about servants entrusted with money. The line is often quoted at retirements because it praises faithfulness over results and ends with joy. It's the traditional choice, and it lands."
+      },
+      {
+        "id": "psalm-92-14",
+        "why": "'They will still produce fruit in old age.' The right verse for someone who's worried retirement means fading out. It says the opposite: green, full of sap, still bearing. Encouraging without being saccharine. The psalm compares the righteous to a palm tree and a cedar, both slow-growing and long-lived. For a card, the image of continued fruitfulness says what most people want to hear at a retirement: this isn't the end of your usefulness."
+      },
+      {
+        "id": "numbers-6-24-26",
+        "why": "The priestly blessing, three lines, ending in peace. It fits on any card and has been said over people at thresholds for three thousand years. If you're not sure, use this. It works because it doesn't try to summarize a career. It simply asks for blessing, protection, favor, and peace over the next stretch. Traditional enough for a formal card, warm enough for a close colleague."
+      },
+      {
+        "id": "ecclesiastes-3-1",
+        "why": "'For everything there is a season.' Short and universally known. It frames retirement as a season, which is what most retirees want to hear: not an ending, a change. The verses that follow list pairs: a time to plant and to uproot, to keep and to throw away. Quoting even the first line brings that whole list to mind. It's especially good for someone who seems unsure how to feel about the change."
+      },
+      {
+        "id": "psalm-90-17",
+        "why": "'Establish the work of our hands.' A prayer that what someone built would last. For a colleague whose work mattered to you, this says so without gushing. Moses wrote this at the end of a long psalm about how short life is. The request that our work would be established is a good thing to wish for someone whose work is finishing. It honors what they built."
+      },
+      {
+        "id": "philippians-1-6",
+        "why": "'He who began a good work in you will complete it.' A reminder that the important work isn't over. Good for someone who's anxious about purpose after the job. Paul wrote it to people he'd worked alongside, which makes it right for a colleague. The completion he has in mind is the person, not the project. A good verse for someone who has tied their identity to the job."
+      }
+    ],
+    "related": [
+      "retirement",
+      "graduation-card",
+      "wisdom",
+      "hope",
+      "starting-over",
+      "peace"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse do you write in a retirement card?",
+        "a": "2 Timothy 4:7 is the one I'd reach for first. Matthew 25:21 (\"well done, good and faithful servant\") is the traditional one. For a short card, Numbers 6:24-26."
+      },
+      {
+        "q": "How do you write a retirement card with a Bible verse?",
+        "a": "Write one or two sentences of thanks or congratulation, then the verse with its reference. Keep it short; the verse does the work. Suggested wording is above."
+      }
+    ],
+    "howToUse": " If you worked with them, one true sentence about what they were like to work with will outlast the verse and the gift card both."
+  },
+  {
+    "slug": "graduation-card",
+    "type": "occasion",
+    "cluster": "occasions",
+    "title": "Bible Verse for a Graduation Card",
+    "h1": "Bible verse for a graduation card",
+    "label": "Graduation card",
+    "for": "a graduation card",
+    "description": "Bible verses for a graduation card, with a best overall pick, a short one, and ready-to-copy wording for a graduate you're proud of.",
+    "intent": "Someone writing a graduation card who wants the right verse and a line or two to go with it.",
+    "intro": "Graduation cards get read once and sometimes kept forever. Pick a verse the graduate can carry, not just decorate the card with. Here are the ones that hold up, with wording to go around them.",
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "proverbs-3-5-6"
+      },
+      {
+        "kind": "Short",
+        "id": "psalm-32-8"
+      },
+      {
+        "kind": "Encouraging",
+        "id": "1-timothy-4-12"
+      },
+      {
+        "kind": "Traditional",
+        "id": "jeremiah-29-11"
+      }
+    ],
+    "wording": [
+      "So proud of you. Whatever comes next, you're ready for it.",
+      "Congratulations on finishing what you started. The best of it is still ahead.",
+      "You worked hard for this. Go do something good with it."
+    ],
+    "verses": [
+      {
+        "id": "proverbs-3-5-6",
+        "why": "'Trust in Yahweh with all your heart... he will make your paths straight.' The right verse for a graduate about to make a lot of decisions. It's well-known, fits on a card, and says something true about the years ahead."
+      },
+      {
+        "id": "jeremiah-29-11",
+        "why": "The most-used graduation verse. Worth knowing: it was written to exiles with seventy years of waiting ahead. That doesn't make it a bad choice; it makes it a patient one. 'Hope and a future' is a promise with a long horizon."
+      },
+      {
+        "id": "1-timothy-4-12",
+        "why": "'Let no one despise your youth; but be an example.' For a graduate heading into rooms where they'll be the youngest person. It's encouragement with a challenge built in, which most graduates appreciate more than praise. Paul wrote it to a young leader who would be doubted because of his age. The list that follows (speech, conduct, love, faith, purity) is a practical answer to that doubt. It respects the graduate enough to expect something of them."
+      },
+      {
+        "id": "psalm-32-8",
+        "why": "'I will instruct you and teach you in the way which you shall go.' One sentence, God speaking. For someone who's just finished being taught, a reminder that the teaching continues. The 'eye upon you' at the end of the verse is a picture of attention rather than surveillance. For a card, it says the graduate isn't being sent out alone, and it says it in a single clean line."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "'Be strong and courageous... God is with you wherever you go.' 'Wherever you go' is the graduation phrase. It works for a graduate moving away, starting a job, or entering the military. Joshua was stepping into leadership after Moses, which is about as intimidating as a first job gets. The verse is long enough that many people quote only the final clause; that works fine on a card."
+      },
+      {
+        "id": "micah-6-8",
+        "why": "'Act justly, love mercy, walk humbly with your God.' If you want to give a graduate one sentence to live by, this is the one many people would choose. It fits on a card and on a life. Micah delivers it as the answer to what God actually wants from a person, after ruling out grand gestures. It's a traditional graduation choice for a reason: it describes a good life in nine words without preaching."
+      },
+      {
+        "id": "philippians-1-6",
+        "why": "'He who began a good work in you will complete it.' A completion verse for a completion day, with the reminder that the deeper work keeps going. Paul writes it to people he founded a church with, and his confidence is in God's follow-through. For a graduate, it says the person they're becoming isn't finished, and isn't being left to luck."
+      }
+    ],
+    "related": [
+      "graduation",
+      "retirement-card",
+      "wisdom",
+      "courage",
+      "starting-over",
+      "difficult-decisions"
+    ],
+    "faq": [
+      {
+        "q": "What is the best Bible verse for a graduation card?",
+        "a": "Proverbs 3:5-6 is the strongest all-around choice. Jeremiah 29:11 is the one you'll see most often on cards, and it works, though read the note on its setting. Psalm 32:8 is the shortest."
+      },
+      {
+        "q": "What do you write in a graduation card with a Bible verse?",
+        "a": "One sentence of congratulations, one sentence about what you see in them, then the verse and reference. Wording suggestions are above."
+      }
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "It is the most popular graduation verse and I still put it on the page, with its setting. What I’d leave out is the version without the setting: a bare “plans to prosper you” reads as a guarantee about next year, and the graduate will notice when next year is hard. Write the sentence about the exiles next to it, or choose Joshua 1:9."
+    },
+    "howToUse": " Handwrite it. A verse in your own handwriting is the one thing in the card they will keep."
+  },
+  {
+    "slug": "sympathy-card",
+    "type": "occasion",
+    "cluster": "occasions",
+    "title": "Bible Verse for a Sympathy Card",
+    "h1": "Bible verse for a sympathy card",
+    "label": "Sympathy card",
+    "for": "a sympathy card",
+    "description": "Bible verses for a sympathy card after a death, with a best overall pick, a short one, and gentle wording that doesn't try to explain the loss.",
+    "intent": "Someone writing a sympathy card who wants a verse that comforts without preaching, and help with what to say.",
+    "intro": "A sympathy card is not the place to explain grief or fix it. The verse should sit quietly next to the loss. These are the ones that do, with wording that says less rather than more.",
+    "safety": "If you're writing to someone whose loss was sudden or traumatic, keep the verse short and the note shorter. Presence matters more than words.",
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "psalm-34-18"
+      },
+      {
+        "kind": "Short",
+        "id": "matthew-5-4"
+      },
+      {
+        "kind": "Encouraging",
+        "id": "2-corinthians-1-3-4"
+      },
+      {
+        "kind": "Traditional",
+        "id": "psalm-23-4"
+      }
+    ],
+    "wording": [
+      "I'm so sorry. I'm thinking of you and holding you in prayer.",
+      "There are no right words. Please know you're not alone in this.",
+      "With deepest sympathy, and love, as you grieve."
+    ],
+    "verses": [
+      {
+        "id": "psalm-34-18",
+        "why": "'Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit.' It doesn't explain the loss or promise it makes sense. It says God is near to exactly the state the person is in. That's why I'd start with it for almost any sympathy card."
+      },
+      {
+        "id": "matthew-5-4",
+        "why": "'Blessed are those who mourn, for they shall be comforted.' Seven words from Jesus. It doesn't rush the mourning; it blesses it, and promises comfort without a date. Fits any card. It's the second of the Beatitudes, spoken to a crowd, and it's unusual because it calls mourners blessed rather than unfortunate. For a card, that reframing is gentle and true without asking the grieving person to feel anything they don't."
+      },
+      {
+        "id": "psalm-23-4",
+        "why": "'Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me.' The traditional choice, and the one many people will already know by heart. It names death plainly and answers it with presence, not explanation."
+      },
+      {
+        "id": "2-corinthians-1-3-4",
+        "why": "God 'comforts us in all our affliction.' Paul calls him 'the God of all comfort,' and the verse is honest that affliction is real. Good for a card because it's about comfort, not resolution. Paul wrote it after a season so hard he says he despaired of life. That's what makes it a credible sympathy verse. It comes from someone who was comforted in real affliction, not from a distance."
+      },
+      {
+        "id": "revelation-21-4",
+        "why": "'He will wipe away every tear from their eyes. Death will be no more.' A verse about the end of grief, set in the future. Use it with someone who shares that hope; it's a promise about what's coming, not a claim about right now."
+      },
+      {
+        "id": "psalm-147-3",
+        "why": "'He heals the broken in heart, and binds up their wounds.' One sentence, and the image is a physician bandaging. For a card, it says the wound is real and it's being tended. The psalm is about God gathering the scattered and naming the stars, and this line sits in the middle. It's brief enough to write by hand, and it makes no promise about timing, which is honest in the early days of grief."
+      },
+      {
+        "id": "john-14-1-3",
+        "why": "'Don't let your heart be troubled... In my Father's house are many homes.' Jesus to his friends the night before he died. It's the traditional funeral reading for a reason: it's about a place prepared. Best for a family who'd want to hear it in Jesus' own words."
+      }
+    ],
+    "related": [
+      "grief",
+      "loneliness",
+      "hope",
+      "peace",
+      "waiting",
+      "overwhelmed"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse is best for a sympathy card?",
+        "a": "Psalm 34:18 fits almost any loss. Matthew 5:4 is the shortest. Psalm 23:4 is the traditional choice."
+      },
+      {
+        "q": "What should you write in a sympathy card with a Bible verse?",
+        "a": "Keep it short: one sentence of sympathy, the verse with its reference, your name. Don't explain the loss or say it was for the best. Suggested wording is above."
+      }
+    ],
+    "skip": {
+      "ref": "Romans 8:28",
+      "why": "It is on more sympathy cards than almost any verse, and in a card it can only be read one way: this happened for a reason. Even people who believe that don’t want to read it from you this week. Psalm 34:18 or Matthew 5:4 say what you mean."
+    },
+    "whatToSay": [
+      "One line before the verse is enough: “Thinking of you and of your dad. This came to mind.”",
+      "Write the name of the person who died. Most cards don’t, and the family notices.",
+      "If you knew them, one specific memory beats any verse: “He always asked about my mom.”",
+      "Don’t explain the loss, don’t compare it to yours, and don’t promise it gets easier. Sign it and send it."
+    ]
+  }
+]

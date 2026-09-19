@@ -1,0 +1,27 @@
+# Every Monday at 7:00 Pacific, generate this week's newsletter issue and save it in the repo under
+# newsletter/<date>/. Nothing is sent. Open the folder on GitHub, copy email.html into a Kit broadcast,
+# paste the subject from subject.txt, send. You can also run this any time from the Actions tab.
+name: Weekly newsletter
+on:
+  schedule:
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: 'Issue number (blank = this week)'
+        required: false
+permissions:
+  contents: write
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: |
+          if [ -n "${{ github.event.inputs.issue }}" ]; then node scripts/newsletter.js --issue "${{ github.event.inputs.issue }}"; else node scripts/newsletter.js; fi
+          git config user.name "newsletter"; git config user.email "hello@betterverses.com"
+          git add newsletter/
+          git diff --cached --quiet || git commit -m "Newsletter issue for $(ls newsletter | sort | tail -1)"
+          git push

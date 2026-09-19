@@ -1,0 +1,1027 @@
+[
+  {
+    "slug": "difficult-decisions",
+    "type": "situation",
+    "cluster": "decisions",
+    "title": "Bible Verses for Making a Difficult Decision",
+    "h1": "Bible verses for making a difficult decision",
+    "label": "Difficult decisions",
+    "for": "a difficult decision",
+    "description": "Bible verses for making a hard decision, chosen for what they say about guidance, counsel, and trusting God with an outcome you can't see.",
+    "intent": "Someone facing a real choice, often with a deadline, who wants Scripture about guidance without a verse pretending to answer the question for them.",
+    "intro": "A hard decision usually isn't hard because the right answer is hidden; it's hard because every option costs something. These verses won't tell you which door to pick. They're about how to decide, whom to ask, and what to do with the uncertainty that stays.",
+    "verses": [
+      {
+        "id": "proverbs-3-5-6",
+        "why": "The instruction is to bring God into the deciding ('in all your ways acknowledge him') rather than to skip the thinking. 'Don't lean on your own understanding' means don't treat your own read of the situation as the last word. The promise is straight paths, not a map handed over in advance."
+      },
+      {
+        "id": "james-1-5",
+        "why": "If you lack wisdom, ask. God gives 'liberally and without reproach,' generously, and without making you feel foolish for not already knowing. It's the most direct verse in the Bible for someone stuck at a fork. The next verse adds 'ask in faith, without any doubting,' which isn't a demand for certainty about the answer. It's about trusting that God is willing to help. Doubt about the decision is normal; doubt about God's willingness is what James addresses."
+      },
+      {
+        "id": "proverbs-15-22",
+        "why": "Plans fail without counsel. This is wisdom's most practical instruction: talk to people. Not one person who'll agree with you, but 'a multitude,' several perspectives. Hard decisions made in isolation tend to be harder than they need to be. It also matters who counts as counsel. Proverbs assumes advisers are people with experience who will tell you what you don't want to hear. A friend who already agrees with you is company, not counsel."
+      },
+      {
+        "id": "psalm-32-8",
+        "why": "'I will counsel you with my eye on you' is God speaking. The picture is of someone watching closely and guiding, not shouting directions from far off. For a decision where you feel unwatched and on your own, this verse says otherwise."
+      },
+      {
+        "id": "proverbs-16-9",
+        "why": "You plan; God directs the steps. This isn't fatalism; the planning is assumed and expected. It's reassurance that the outcome doesn't rest entirely on getting the plan perfect. Decide carefully, and then hold the plan loosely. The same chapter says 'Commit your deeds to Yahweh, and your plans shall succeed,' so the two ideas belong together: plan seriously, hand the plan over, and don't treat the outcome as a verdict on whether you chose right."
+      },
+      {
+        "id": "psalm-25-4-5",
+        "why": "David asks to be shown, taught, and guided, and then says 'I wait for you all day long.' The waiting is part of asking. It's a prayer you can use word for word when you don't yet know what to do."
+      },
+      {
+        "id": "isaiah-30-21",
+        "why": "A voice behind you saying 'this is the way, walk in it.' In context it's a promise to a people who'd been ignoring God's guidance and would finally receive it. The image is of correction as you go, not a full itinerary beforehand. That's how most guidance actually works."
+      }
+    ],
+    "howToUse": "Write the decision down in one sentence. Read Proverbs 3:5-6 and James 1:5, then ask God for wisdom in those words. Then take Proverbs 15:22 literally and ask two or three people you trust. Scripture doesn't replace that step; it commands it.",
+    "related": [
+      "wisdom",
+      "waiting",
+      "job-interview",
+      "starting-over",
+      "patience",
+      "moving"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse can help me make a decision?",
+        "a": "Proverbs 3:5-6 and James 1:5 are the two most people start with. Proverbs 15:22 adds the practical step of seeking counsel."
+      },
+      {
+        "q": "Will a Bible verse tell me what to decide?",
+        "a": "No, and be cautious of anyone who says a verse does. The passages above describe how to seek wisdom and whom to consult. The decision remains yours."
+      }
+    ]
+  },
+  {
+    "slug": "waiting",
+    "type": "situation",
+    "cluster": "decisions",
+    "title": "Bible Verses for Waiting",
+    "h1": "Bible verses for waiting",
+    "label": "Waiting",
+    "for": "waiting",
+    "description": "Bible verses for waiting on God, on an answer, or on a season to change, with notes on what 'wait' actually means in each passage.",
+    "intent": "Someone in a holding pattern, waiting on news, a person, a job, or God, who needs Scripture that takes waiting seriously.",
+    "intro": "Waiting is its own kind of hard, because there's nothing to do and everything to feel. The Bible talks about waiting more than you'd expect, and almost never as wasted time. In Hebrew, the word for 'wait' is close to 'hope.'",
+    "verses": [
+      {
+        "id": "psalm-27-14",
+        "why": "'Wait for Yahweh' appears twice in one verse, with 'be strong and let your heart take courage' between them. The repetition matters: waiting is something you decide again after you've already decided it. The psalm was written under threat, so this isn't waiting in comfort."
+      },
+      {
+        "id": "isaiah-40-31",
+        "why": "Strength is renewed in those who wait, not after the waiting ends. The famous images (eagles, running, walking) descend in intensity, and the last one, walking without fainting, is the most relevant to a long wait. The chapter is addressed to exiles who thought God had forgotten them."
+      },
+      {
+        "id": "lamentations-3-25-26",
+        "why": "'It is good that a man should hope and quietly wait.' This is in the middle of Lamentations, a book written in ruins. The writer isn't waiting in a pleasant place. He's saying that quiet waiting is good even here, which is a stronger claim than it sounds."
+      },
+      {
+        "id": "psalm-37-7",
+        "why": "'Rest in Yahweh, and wait patiently for him' is paired with 'don't fret' about people who seem to be getting ahead. Waiting is hard partly because others don't seem to be. This psalm names that specific irritation and says let it go."
+      },
+      {
+        "id": "habakkuk-2-3",
+        "why": "God tells the prophet the answer is coming at an appointed time: 'Though it takes time, wait for it.' The original context is national, but the sentence is about any promise that's true and not yet visible. Delay is admitted openly; the delay isn't the same as denial."
+      },
+      {
+        "id": "micah-7-7",
+        "why": "'I will look. I will wait. My God will hear me.' Three short sentences of resolve, from a prophet surrounded by corruption with no reason for optimism. It's a good verse to say out loud when the waiting has gone on longer than you thought it would."
+      },
+      {
+        "id": "psalm-40-1-2",
+        "why": "'I waited patiently' and then, in past tense, God heard, lifted, set on rock. It's testimony from the far side of a wait. Reading it doesn't shorten yours, but it tells you what the other side has looked like for someone before."
+      }
+    ],
+    "related": [
+      "patience",
+      "waiting-for-test-results",
+      "hope",
+      "difficult-decisions",
+      "job-loss",
+      "peace"
+    ],
+    "faq": [
+      {
+        "q": "What does it mean to wait on the Lord?",
+        "a": "In the Psalms and Isaiah it means holding onto God with expectation while nothing has changed yet. The Hebrew word is closely related to 'hope.' It's active trust, not passive resignation."
+      },
+      {
+        "q": "What is a short Bible verse about waiting?",
+        "a": "Psalm 27:14 is one verse and can be memorized quickly. Micah 7:7 is three short sentences."
+      }
+    ]
+  },
+  {
+    "slug": "cannot-sleep",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses When You Can't Sleep",
+    "h1": "Bible verses when you can't sleep",
+    "label": "Can't sleep",
+    "for": "when you can't sleep",
+    "description": "Bible verses for when you can't sleep: short psalms about lying down in peace, night watches, and letting go of what you're carrying.",
+    "intent": "Someone awake at night, phone in hand, who wants something calm and short to read, not a study.",
+    "intro": "If you're reading this in the dark, keep it short. These are the verses people have read at night for a very long time. Most are one or two sentences. Several are about the exact thing you're doing: lying awake, thinking.",
+    "safety": "Ongoing insomnia is worth mentioning to a doctor. These verses are for the night in front of you, not a treatment plan.",
+    "verses": [
+      {
+        "id": "psalm-4-8",
+        "why": "A bedtime psalm. David says he'll both lie down and sleep, and the reason is that God alone makes him live in safety. Earlier in the psalm, people are lying about him and he's under pressure. He isn't sleeping because everything's resolved. He's sleeping because he's not the one on watch."
+      },
+      {
+        "id": "psalm-127-2",
+        "why": "'It is vain to rise up early, to stay up late,' eating 'the bread of toil,' and then: he gives sleep to those he loves. It's one of the only verses where sleep itself is called a gift. If you're awake because you're trying to solve something, this verse says the solving isn't all on you."
+      },
+      {
+        "id": "proverbs-3-23-24",
+        "why": "'When you lie down, you will not be afraid. Yes, you will lie down, and your sleep will be sweet.' In Proverbs this is the result of keeping wisdom close. Sweet sleep is treated as a normal consequence of a settled mind, which tells you where the writers thought insomnia comes from."
+      },
+      {
+        "id": "psalm-63-6",
+        "why": "'When I remember you on my bed, and think about you in the night watches.' David was awake at night too. The difference is what he did with the wakefulness: he used it to remember. If you can't sleep anyway, this verse suggests what to think about instead of the thing keeping you up."
+      },
+      {
+        "id": "matthew-11-28-29",
+        "why": "'I will give you rest' is a promise from Jesus to the heavily burdened. The rest he offers is 'for your souls,' which is often where sleeplessness starts. If you're tired in a way that sleep alone wouldn't fix, this is the passage."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Middle-of-the-night worry has a specific shape: a problem you can't act on for hours. Paul's instruction is to turn each worry into a request. 'Guard your hearts and your thoughts' is what a mind at 2 a.m. needs most. Paul adds 'with thanksgiving,' which is easy to skip past. Naming even one thing you're grateful for changes the shape of a 2 a.m. thought loop. Peace here is described as a guard, something posted at the door of your mind."
+      },
+      {
+        "id": "psalm-121-1-2",
+        "why": "The psalm that follows this (verses 3-4) says the one who keeps you 'will neither slumber nor sleep.' Someone is awake so you don't have to be. It's a pilgrim song for travelers sleeping in unfamiliar places, which is close to what an unfamiliar night feels like."
+      }
+    ],
+    "howToUse": "Don't scroll. Pick Psalm 4:8 or Psalm 127:2, read it two or three times slowly, and put the phone face down. If your mind keeps going, try Psalm 63:6 as an instruction: remember, instead of rehearse.",
+    "related": [
+      "worry",
+      "anxiety",
+      "peace",
+      "overwhelmed",
+      "loneliness",
+      "waiting-for-test-results"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse helps you sleep?",
+        "a": "Psalm 4:8 is the classic: \"In peace I will both lay myself down and sleep, for you, Yahweh alone, make me live in safety.\" Psalm 127:2 calls sleep a gift."
+      },
+      {
+        "q": "Is there a Psalm about not being able to sleep?",
+        "a": "Psalm 63:6 describes remembering God \"in the night watches.\" Psalm 77 opens with a sleepless night as well."
+      }
+    ],
+    "skip": {
+      "ref": "Proverbs 3:24",
+      "why": "It’s here, because it’s lovely: “your sleep will be sweet.” But sent to someone in their third week of insomnia it can land as a promise that isn’t being kept. Psalm 4:8 is a decision made in the dark, which is where they are."
+    },
+    "whatToSay": [
+      "Text it late. If they’re up at 2 a.m., a message from someone else who’s awake is the whole comfort.",
+      "“No need to reply. Just wanted you to have this if you’re staring at the ceiling.”",
+      "Don’t send sleep tips. They have tried them."
+    ]
+  },
+  {
+    "slug": "starting-over",
+    "type": "situation",
+    "cluster": "changes",
+    "title": "Bible Verses for Starting Over",
+    "h1": "Bible verses for starting over",
+    "label": "Starting over",
+    "for": "starting over",
+    "description": "Bible verses for starting over after a loss, a failure, or an ending, with notes on new beginnings that happened to real people in Scripture.",
+    "intent": "Someone rebuilding after something ended (a job, a marriage, a plan, a mistake) who wants Scripture that acknowledges the ending and points forward.",
+    "intro": "Starting over means something ended, and usually not the way you'd have chosen. The Bible is full of people who had to begin again: Abraham leaving home, Israel leaving Egypt, Paul leaving his old life. These verses are about the next step.",
+    "verses": [
+      {
+        "id": "isaiah-43-18-19",
+        "why": "'Don't remember the former things' and 'I will do a new thing' were spoken to exiles who couldn't stop looking back at what they'd lost. God doesn't erase the past; he announces something new and asks, 'Don't you know it?' as if it's already sprouting. A way in the wilderness is exactly what starting over feels like."
+      },
+      {
+        "id": "lamentations-3-22-23",
+        "why": "'New every morning' is the line, and it comes from a book of grief. The writer has watched his city burn. Mercies that reset daily are what you need when a whole life doesn't reset at once. Starting over is mostly a series of mornings."
+      },
+      {
+        "id": "philippians-3-13-14",
+        "why": "Paul's own starting over. He'd built an entire identity that he then left behind. 'Forgetting the things which are behind' isn't amnesia; it's refusing to let the past be the thing that defines the direction. 'Stretching forward' is the posture of someone leaning into the next thing."
+      },
+      {
+        "id": "2-corinthians-5-17",
+        "why": "'The old things have passed away. Behold, all things have become new.' This is about what happens when a person belongs to Christ, and it's the most complete starting-over statement in the Bible. If the thing you need to leave behind is a version of yourself, this is the verse."
+      },
+      {
+        "id": "genesis-12-1",
+        "why": "Abraham's story begins with leaving: country, relatives, father's house, destination unknown. He was seventy-five. Every major story in the Bible flows from this one act of starting over late and without a map. That's worth remembering if you feel too old or too unsure."
+      },
+      {
+        "id": "psalm-40-1-2",
+        "why": "Out of the pit, out of the mud, feet set on rock. It's past tense, someone describing how a bad season ended. The order matters: he waited, God heard, then the lifting. Starting over often begins before you can see where you're standing."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "Joshua is starting over as leader of a whole nation, replacing Moses, with a river and hostile territory in front of him. 'Be strong and courageous' comes with 'God is with you wherever you go.' New beginnings are frightening; the promise is company, not ease."
+      }
+    ],
+    "related": [
+      "hope",
+      "courage",
+      "job-loss",
+      "moving",
+      "waiting",
+      "forgiveness"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse is about new beginnings?",
+        "a": "Isaiah 43:18-19 (\"I will do a new thing\") and 2 Corinthians 5:17 (\"all things have become new\") are the two most people use. Lamentations 3:22-23 is about mercies renewing each morning."
+      },
+      {
+        "q": "Is there a Bible verse about starting over after failure?",
+        "a": "Philippians 3:13-14 is Paul describing his own reset. Psalm 40:1-2 is a description of coming out of a pit."
+      }
+    ]
+  },
+  {
+    "slug": "difficult-coworkers",
+    "type": "situation",
+    "cluster": "work",
+    "title": "Bible Verses for Difficult Coworkers",
+    "h1": "Bible verses for difficult coworkers",
+    "label": "Difficult coworkers",
+    "for": "difficult coworkers",
+    "description": "Bible verses for dealing with a difficult coworker: patience, wise speech, restraint, and the part of the situation you actually control.",
+    "intent": "Someone with a specific person at work who's making things hard, looking for Scripture on how to respond without losing their temper or their integrity.",
+    "intro": "A difficult coworker can test your patience long before it tests your theology. These passages focus on restraint, wise speech, forgiveness, and the only part of the situation you fully control: your own response.",
+    "verses": [
+      {
+        "id": "proverbs-15-1",
+        "why": "'A gentle answer turns away wrath, but a harsh word stirs up anger.' This is a proverb about escalation and how to stop it. It doesn't say the other person will become reasonable. It says your reply is a lever, and you get to choose which way to pull it."
+      },
+      {
+        "id": "romans-12-17-18",
+        "why": "'If it is possible, as much as it is up to you, be at peace with all men.' Paul builds in two qualifiers because he knows peace isn't always possible and isn't entirely yours to make. What is yours: not repaying evil for evil, and being honorable in a way everyone can see. That's a workplace ethic in one sentence."
+      },
+      {
+        "id": "proverbs-19-11",
+        "why": "'It is his glory to overlook an offense.' Overlooking isn't the same as being a doormat; it's choosing which battles are worth having. With a coworker who gives you daily small reasons to be offended, this proverb is practical: most of them can be let go, and letting them go is a strength."
+      },
+      {
+        "id": "james-1-19",
+        "why": "Swift to hear, slow to speak, slow to anger. In that order. With difficult people, the temptation is to reverse it. James writes this to a community with real conflicts, and the advice hasn't aged. The slowness is the skill."
+      },
+      {
+        "id": "colossians-3-13",
+        "why": "'Bearing with one another' is the phrase for tolerating ongoing friction. 'If any man has a complaint against any' assumes you will have one. The standard for forgiving is how Christ forgave you, which is a high bar, and Paul knew it."
+      },
+      {
+        "id": "colossians-3-23-24",
+        "why": "'Whatever you do, work heartily, as for the Lord, and not for men.' When a coworker makes the job feel pointless or unfair, this verse changes who you're working for. It's addressed to servants in the first century, people with far less control over their work than you have."
+      },
+      {
+        "id": "proverbs-16-32",
+        "why": "Ruling your own spirit is ranked above conquering a city. In a tense office, keeping your temper feels like the smaller achievement. The proverb says it's the bigger one. The verse pairs 'slow to anger' with 'rules his spirit,' the same skill seen from outside and inside. Nobody sees the emails you didn't send or the comeback you didn't make. Proverbs says those unseen victories are the bigger ones."
+      }
+    ],
+    "howToUse": "Pick one line, such as Proverbs 15:1, and use it as a rule for one week: every reply to that person gets the gentle version. Read Romans 12:14-21 in full once; it's the Bible's most complete guidance on dealing with people who treat you badly.",
+    "related": [
+      "work-stress",
+      "patience",
+      "forgiveness",
+      "difficult-family-members",
+      "wisdom",
+      "peace"
+    ],
+    "faq": [
+      {
+        "q": "What does the Bible say about dealing with difficult people at work?",
+        "a": "The most direct guidance is Romans 12:17-21: don't repay evil with evil, do what's honorable in everyone's sight, and be at peace as far as it depends on you. Proverbs adds a lot about controlling your reply (15:1, 19:11)."
+      },
+      {
+        "q": "Is there a Bible verse about patience at work?",
+        "a": "James 1:19 (slow to speak, slow to anger) and Proverbs 16:32 both apply directly. Colossians 3:23 is about doing your work well regardless of the people around you."
+      }
+    ]
+  },
+  {
+    "slug": "work-stress",
+    "type": "situation",
+    "cluster": "work",
+    "title": "Bible Verses for Work Stress",
+    "h1": "Bible verses for work stress",
+    "label": "Work stress",
+    "for": "work stress",
+    "description": "Bible verses for work stress, deadlines, and burnout, with notes on what Scripture says about labor, rest, and where your work's value comes from.",
+    "intent": "Someone stretched thin by their job who wants Scripture about rest, meaning in work, and pressure that won't let up.",
+    "intro": "Work stress is usually a mix of too much to do and too much riding on it. The Bible takes work seriously, more seriously than most religions, and it also insists on rest. These verses hold both.",
+    "verses": [
+      {
+        "id": "matthew-11-28-29",
+        "why": "'All you who labor and are heavily burdened' is a direct address to the overworked. Jesus doesn't offer to remove the work. He offers rest 'for your souls' and a yoke that's easy, which in farming means one that fits. Stress often means carrying a yoke that doesn't."
+      },
+      {
+        "id": "colossians-3-23-24",
+        "why": "'Work heartily, as for the Lord, and not for men.' This reframes who the work is for, which changes how much the boss's mood or the review cycle can dictate your peace. First written to servants, it's the Bible's clearest statement that ordinary work has dignity."
+      },
+      {
+        "id": "psalm-127-2",
+        "why": "Rising early, staying late, eating 'the bread of toil' is called vain here, not because effort is bad but because anxious effort forgets who provides. 'He gives sleep to his loved ones' is the correction. If work has eaten your sleep, this psalm is about you."
+      },
+      {
+        "id": "psalm-90-17",
+        "why": "'Establish the work of our hands' is a prayer that what you do would last and matter. Moses prays it after reflecting on how short life is. It's a good sentence to say on the way into a hard day: let this count."
+      },
+      {
+        "id": "galatians-6-9",
+        "why": "'Let's not be weary in doing good.' Paul admits weariness is the risk and answers it with a harvest 'in due season,' which means the payoff has a timeline you don't control. For work that feels unrewarded right now, the promise is that it's not unseen."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Work stress tends to be a list of specific worries. Paul's instruction fits a list: take each one and make it a request, with thanks. The peace that follows 'guards' your thoughts, which is what a mind spinning on Sunday night needs."
+      },
+      {
+        "id": "proverbs-16-3",
+        "why": "'Commit your deeds to Yahweh, and your plans shall succeed.' The Hebrew for 'commit' means roll onto, as if you're rolling a weight off yourself. It's not a guarantee of every project working out. It's a picture of handing over the outcome so you can do the work without carrying the whole result."
+      }
+    ],
+    "related": [
+      "difficult-coworkers",
+      "overwhelmed",
+      "job-interview",
+      "job-loss",
+      "cannot-sleep",
+      "peace"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse is good for a stressful day at work?",
+        "a": "Matthew 11:28 is the most direct. Psalm 90:17 works as a one-line prayer before a hard day."
+      },
+      {
+        "q": "What does the Bible say about burnout?",
+        "a": "The word isn't used, but Psalm 127:2 describes anxious overwork as vain and calls sleep a gift, and Jesus' invitation in Matthew 11:28-30 is addressed to the exhausted. Rest is commanded, not just permitted."
+      }
+    ]
+  },
+  {
+    "slug": "job-interview",
+    "type": "situation",
+    "cluster": "work",
+    "title": "Bible Verses Before a Job Interview",
+    "h1": "Bible verses before a job interview",
+    "label": "Job interview",
+    "for": "a job interview",
+    "description": "Bible verses to read before a job interview: calm nerves, speak clearly, and trust the outcome without pretending a verse guarantees the job.",
+    "intent": "Someone with an interview soon, nervous, wanting a verse for the morning of or the moment before walking in.",
+    "intro": "An interview is an hour where you're judged, which is why even confident people get nervous. These verses are about steadiness, speaking well, and holding the outcome loosely. None of them promise you'll get the job.",
+    "verses": [
+      {
+        "id": "exodus-4-12",
+        "why": "Moses told God he wasn't a good speaker. God's answer: 'Go, and I will be with your mouth, and teach you what you shall speak.' The verse doesn't promise eloquence; it promises company in the speaking. For the moment before an interview, that's the right promise."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Interview nerves are anxiety with a start time. Paul's instruction fits: name the specific worry, ask, give thanks, and let peace stand guard over your thoughts. This is the verse to read in the parking lot. 'With thanksgiving' is the part people skip. Being grateful you got the interview at all shrinks the fear of the interview. The peace Paul describes doesn't remove nerves; it keeps them from running the room."
+      },
+      {
+        "id": "proverbs-16-3",
+        "why": "'Commit your deeds to Yahweh, and your plans shall succeed.' The word for 'commit' means roll onto, as in rolling a weight off yourself. It's not a guarantee this specific job is yours. It's a way to walk in without carrying the whole outcome."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "'Be strong and courageous' was said to a man about to take on something far bigger than a job. The reason attached, 'God is with you wherever you go,' includes conference rooms. Courage in this verse is derived from presence, not personality."
+      },
+      {
+        "id": "colossians-3-23-24",
+        "why": "Work 'as for the Lord.' It helps to remember who you're ultimately working for before you sit across from someone deciding whether to hire you. It lowers the stakes of the room without lowering your effort. Paul wrote this to people at the very bottom of the labor market, who had no control over their employers. If they could work with that kind of freedom, an interview candidate can walk in with some of it too."
+      },
+      {
+        "id": "psalm-90-17",
+        "why": "'Establish the work of our hands.' A short prayer for the morning of: let what I've prepared hold up. Moses prayed it after admitting how brief life is, which is a decent antidote to treating one interview as everything. The psalm is attributed to Moses and is mostly about how short life is. Ending it with a request that our work would last is a quiet kind of confidence: not that this interview will go perfectly, but that honest work isn't wasted."
+      },
+      {
+        "id": "james-1-5",
+        "why": "You'll be asked questions you didn't prepare for. James says wisdom is available for the asking, given generously and without reproach. It's a good verse to have in mind when you need to think on your feet. The wisdom James means is practical, how to act well under pressure, not trivia. The verse also promises it's given 'without reproach.' You won't be made to feel foolish for asking, which is more than most interviews promise."
+      }
+    ],
+    "howToUse": "Read Philippians 4:6-7 the night before and Exodus 4:12 the morning of. Say Psalm 90:17 once before you walk in. Then do the interview. If you don't get the job, come back to Proverbs 16:3; it was never a guarantee, and it still holds.",
+    "related": [
+      "starting-over",
+      "courage",
+      "work-stress",
+      "job-loss",
+      "wisdom",
+      "waiting"
+    ],
+    "faq": [
+      {
+        "q": "What is a good Bible verse to read before an interview?",
+        "a": "Exodus 4:12 is specific to speaking under pressure. Philippians 4:6-7 is for the nerves. Joshua 1:9 is for courage."
+      },
+      {
+        "q": "Is there a Bible verse for getting a job?",
+        "a": "No verse promises a particular job. Proverbs 16:3 and Psalm 90:17 are prayers to commit your work and its outcome to God, which is a different and more honest thing."
+      }
+    ]
+  },
+  {
+    "slug": "job-loss",
+    "type": "situation",
+    "cluster": "work",
+    "title": "Bible Verses After Losing a Job",
+    "h1": "Bible verses after losing a job",
+    "label": "Job loss",
+    "for": "after losing a job",
+    "description": "Bible verses after losing a job: provision, identity, and hope for what's next, with notes that don't pretend the loss isn't real.",
+    "intent": "Someone recently laid off or fired, dealing with fear about money and a hit to identity, who needs Scripture that's honest.",
+    "intro": "Losing a job is a financial problem and an identity problem at the same time, and the second one often hurts more. These verses speak to both. They don't promise the next job by Friday. They do say you're not forgotten.",
+    "verses": [
+      {
+        "id": "psalm-34-18",
+        "why": "'Yahweh is near to those who have a broken heart.' Job loss can break something, especially when it wasn't your choice. This verse doesn't offer a plan; it offers nearness, and it's addressed specifically to the crushed. That's the first thing to hear, before any verse about provision."
+      },
+      {
+        "id": "matthew-6-26",
+        "why": "Birds don't have jobs and are fed anyway. Jesus asks whether you're worth more than they are, and the answer is yes. The verse doesn't tell you not to look for work. It tells you your value and your provision were never contingent on the position you just lost."
+      },
+      {
+        "id": "philippians-4-19",
+        "why": "'My God will supply every need of yours.' Paul wrote this from prison, to people who'd sent him support. The supply is 'according to his riches,' not according to your severance. It's about need, and it's honest about the source."
+      },
+      {
+        "id": "isaiah-43-18-19",
+        "why": "'Don't remember the former things... I will do a new thing.' Spoken to people who'd lost everything familiar. Job loss forces a new thing whether you wanted one or not; this verse says God is already at work in it, 'springing out now,' even before you can see it."
+      },
+      {
+        "id": "romans-8-28",
+        "why": "'All things work together for good for those who love God.' Be careful with this one: it doesn't say the layoff was good, and it doesn't promise the next job will be better. It says God works through all of it, including the bad parts, toward good. That's the accurate reading, and it's enough."
+      },
+      {
+        "id": "psalm-37-25",
+        "why": "An old man's testimony: he hasn't seen the righteous forsaken. It's one person's long-life observation, not a legal guarantee, but it's the kind of thing you need to hear from someone who's watched a lot of people go through a lot of things."
+      },
+      {
+        "id": "deuteronomy-31-8",
+        "why": "'Yahweh himself is who goes before you.' The verse ends with 'don't be afraid, don't be discouraged,' which are the two things job loss produces most reliably. The promise is that the next stretch has already been walked ahead of you."
+      }
+    ],
+    "howToUse": "Read Psalm 34:18 first, and give the loss its due. Then, when you're ready to think about next steps, read Isaiah 43:18-19 and the whole of Matthew 6:25-34. Practical help, a friend who's been through it, a good adviser, isn't less spiritual than a verse.",
+    "related": [
+      "financial-stress",
+      "starting-over",
+      "worry",
+      "hope",
+      "job-interview",
+      "waiting"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse helps after being laid off?",
+        "a": "Psalm 34:18 for the immediate hurt; Matthew 6:26 and Philippians 4:19 for provision; Isaiah 43:18-19 for what's next."
+      },
+      {
+        "q": "Does the Bible say God will give me a new job?",
+        "a": "No verse promises a specific job. The promises are about need being met and God going ahead of you. Reading Romans 8:28 as a job guarantee misreads it."
+      }
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "It’s the verse people send first, and it promises a prosperity it never promised. It was written to exiles told to settle in for seventy years. Sent the week someone lost a job, it reads as “this will be fixed soon,” which nobody can promise. Isaiah 43:18–19 or Matthew 6:26 say something truer."
+    },
+    "whatToSay": [
+      "“That’s rotten. I’m sorry.” Then stop. Don’t fix it in the same breath.",
+      "“I know two people I could introduce you to when you’re ready. Just say when.”",
+      "“Lunch is on me Thursday, and we don’t have to talk about work.”",
+      "Don’t say: “When one door closes…” It isn’t in the Bible, and it sounds like you’re moving them along."
+    ]
+  },
+  {
+    "slug": "retirement",
+    "type": "situation",
+    "cluster": "changes",
+    "title": "Bible Verses for Retirement",
+    "h1": "Bible verses for retirement",
+    "label": "Retirement",
+    "for": "retirement",
+    "description": "Bible verses for retirement and the season after work: fruitfulness in later life, finishing well, and what the next chapter is for.",
+    "intent": "Someone retiring or recently retired, thinking about purpose after work, who wants Scripture about later life that isn't a card cliché.",
+    "intro": "Retirement isn't in the Bible, but growing older and finishing well are, repeatedly. Scripture expects the later years to be fruitful, not idle. These verses are for someone stepping out of one role and wondering what the next one is. And it is allowed to be a good day. The psalms have more to say about long life than most retirement speeches do.",
+    "verses": [
+      {
+        "id": "psalm-92-14",
+        "why": "'They will still produce fruit in old age.' The psalm compares the righteous to trees planted in God's house that stay green. It's a direct answer to the fear that retirement means becoming useless. Fruit in old age is the expectation, not the exception."
+      },
+      {
+        "id": "isaiah-46-4",
+        "why": "'Even to old age I am he, and even to gray hairs I will carry you.' God contrasts himself with idols that have to be carried around. He carries. For a season where you're no longer the one holding everything up at work, this is the right verse."
+      },
+      {
+        "id": "2-timothy-4-7",
+        "why": "'I have fought the good fight. I have finished the course. I have kept the faith.' Paul, near the end. Retirement is a course finished, and this is what finishing well sounds like. The verse is often read at funerals but fits any ending done with integrity."
+      },
+      {
+        "id": "psalm-71-18",
+        "why": "An older person's prayer: don't forsake me until I've told the next generation what you've done. This verse gives retirement a job: pass it on. Whatever you learned over a career is meant to be declared to someone younger. The psalmist is honest about being 'old and gray-haired' and asks not to be abandoned. Then the request turns outward: let me declare your strength to the next generation. Retirement is often when people finally have time to do exactly that."
+      },
+      {
+        "id": "ecclesiastes-3-1",
+        "why": "'For everything there is a season.' The famous list that follows includes planting and uprooting, keeping and throwing away. Retirement is a season change, and Ecclesiastes gives you permission to treat it as one rather than an ending. The list that follows pairs each thing with its opposite: build and break down, keep silent and speak. None of them is called wrong. A season of working hard and a season of not working are both, in this view, appropriate in their time."
+      },
+      {
+        "id": "philippians-1-6",
+        "why": "'He who began a good work in you will complete it.' The work God is doing in a person doesn't stop when employment does. Paul is confident about completion, and the timeline extends to 'the day of Christ Jesus,' well past any retirement date."
+      },
+      {
+        "id": "psalm-90-12",
+        "why": "'Teach us to count our days, that we may gain a heart of wisdom.' Retirement makes the counting real. The verse turns that into an asset: knowing time is limited produces wisdom about what to do with it. Moses wrote this psalm reflecting on how short a life is. Counting days sounds grim, but the verse treats it as the path to wisdom. People who know their time is limited tend to spend it on what matters, which is a good way to retire."
+      }
+    ],
+    "related": [
+      "retirement-card",
+      "starting-over",
+      "wisdom",
+      "difficult-family-members",
+      "hope",
+      "waiting"
+    ],
+    "faq": [
+      {
+        "q": "What does the Bible say about retirement?",
+        "a": "It doesn't mention retirement directly. It does speak about aging, fruitfulness in later life (Psalm 92:14), and passing on what you've learned (Psalm 71:18)."
+      },
+      {
+        "q": "Is there a Bible verse for someone retiring?",
+        "a": "2 Timothy 4:7 is the classic for finishing well. For a card, see the retirement card page, which has shorter options."
+      }
+    ],
+    "skip": {
+      "ref": "Matthew 25:21",
+      "why": "“Well done, good and faithful servant” is said at a final accounting in a parable, not at a career change. It sounds like an ending, and a retiree may already be afraid of one. Psalm 92:14, still bearing fruit in old age, points the other way."
+    }
+  },
+  {
+    "slug": "before-surgery",
+    "type": "situation",
+    "cluster": "health",
+    "title": "Bible Verses Before Surgery",
+    "h1": "Bible verses before surgery",
+    "label": "Before surgery",
+    "for": "before surgery",
+    "description": "Bible verses to read before surgery, for the patient or someone waiting with them: presence, peace, and rest in the hours before.",
+    "intent": "Someone about to have surgery, or sitting with someone who is, wanting a short verse for the morning of or the night before.",
+    "intro": "The hours before surgery are mostly waiting, and waiting is when fear gets loud. These verses are short on purpose. They're about presence and peace, which is what you can hold onto when everything else is in other people's hands.",
+    "safety": "Nothing here is medical advice. Ask your care team every question you have; that's part of preparing well.",
+    "verses": [
+      {
+        "id": "isaiah-41-10",
+        "why": "'Don't be afraid, for I am with you.' Five promises in one verse, ending with being held up by God's right hand. It's addressed to people with real reasons to fear. It's the verse most often written on a card and slipped into a hospital bag."
+      },
+      {
+        "id": "psalm-23-4",
+        "why": "'Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me.' The psalm doesn't say the valley is avoided. It says the walk through it isn't alone. Before surgery, that's the honest version of comfort."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Pre-surgery anxiety comes with specific questions. Paul's instruction is to make each one a request, then let peace stand guard. The peace 'surpasses understanding,' meaning it can be present even when the outcome is unknown. Paul's instruction has a structure that helps in a pre-op bed: take each specific fear, turn it into a specific request, and add one thing you're thankful for. The peace he describes stands guard over your thoughts; it doesn't require the outcome to be known."
+      },
+      {
+        "id": "psalm-46-1",
+        "why": "'A very present help in trouble.' Present means now, not later. This is the verse for the pre-op room, when help needs to be immediate and you can't do anything but lie still. The psalm goes on to picture the earth changing and mountains shaking, then says 'Be still, and know that I am God.' Surgery involves handing control to other people. This psalm was written for people who had no control either."
+      },
+      {
+        "id": "exodus-33-14",
+        "why": "'My presence will go with you, and I will give you rest.' Moses asked for exactly this and got it. Going into an operating room, you go under, and rest is literally what happens. God says this to Moses when Moses is afraid to go forward without him. That is why people facing something frightening have returned to this image: a presence that goes in with you."
+      },
+      {
+        "id": "psalm-4-8",
+        "why": "'In peace I will both lay myself down and sleep, for you, Yahweh alone, make me live in safety.' Written for a normal bedtime, it fits the night before surgery unusually well: lying down, sleeping, being kept safe by someone who's awake."
+      },
+      {
+        "id": "psalm-73-26",
+        "why": "'My flesh and my heart fails, but God is the strength of my heart and my portion forever.' The verse admits the body fails. That admission is what makes the second half believable. It's for someone whose body is the reason they're in this room."
+      }
+    ],
+    "howToUse": "Write one verse on a card and take it with you; Isaiah 41:10 or Psalm 23:4 are the usual choices. If you're the one waiting in the family room, Psalm 46:1 is short enough to say over and over.",
+    "related": [
+      "hope",
+      "waiting-for-test-results",
+      "worry",
+      "anxiety",
+      "peace",
+      "courage"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse should I read before surgery?",
+        "a": "Isaiah 41:10 and Psalm 23:4 are the two I'd start with. Exodus 33:14 (\"my presence will go with you\") is a good one for the moment you're wheeled in."
+      },
+      {
+        "q": "What's a good verse to send someone having surgery?",
+        "a": "Psalm 46:1 is one sentence and fits a text message. Isaiah 41:10 fits a card."
+      }
+    ],
+    "skip": {
+      "ref": "James 5:15",
+      "why": "“The prayer of faith will heal the one who is sick” is a real verse in a real passage about elders anointing the sick. Sent before surgery it quietly puts the outcome on the patient’s faith, and if the outcome is bad, the verse has hurt them twice. Isaiah 41:10 promises presence, which is the thing you can actually promise."
+    },
+    "whatToSay": [
+      "“I’ll be thinking about you at 7 tomorrow. You don’t need to reply.”",
+      "“Can I read you something short? You don’t have to say anything back.”",
+      "“I’m going to text your husband after, so you don’t have to update anyone.”",
+      "Don’t say: “You’ll be fine.” You don’t know that, and they know you don’t. Say you’ll be there."
+    ]
+  },
+  {
+    "slug": "waiting-for-test-results",
+    "type": "situation",
+    "cluster": "health",
+    "title": "Bible Verses While Waiting for Test Results",
+    "h1": "Bible verses while waiting for test results",
+    "label": "Waiting for test results",
+    "for": "waiting for test results",
+    "description": "Bible verses for waiting on medical test results: verses about steadiness before news, fear, and days when you can't do anything but wait.",
+    "intent": "Someone waiting on a scan, biopsy, or lab result, anxious about news that hasn't come, who needs Scripture for the in-between.",
+    "intro": "Waiting for results is a specific kind of hard: nothing to do, no news, every phone call a possible verdict. These verses are for the in-between days. One of them is literally about not being afraid of bad news.",
+    "safety": "If the waiting is becoming unbearable, tell your care team; they can sometimes give a timeline or help you plan for either result.",
+    "verses": [
+      {
+        "id": "psalm-112-7",
+        "why": "'He will not be afraid of evil news. His heart is steadfast, trusting in Yahweh.' A verse about bad news, written before the news arrives. The steadiness isn't from knowing the result; it's from trusting regardless. Few verses fit this exact situation as well."
+      },
+      {
+        "id": "psalm-56-3",
+        "why": "'When I am afraid, I will put my trust in you.' Not if; when. David wrote it as a captive. The verse assumes fear will come in waves and gives one thing to do each time it does. The next verse adds 'I will not be afraid,' which sounds like a contradiction until you see it as a sequence. Fear arrives, trust is chosen, fear loses its grip. Then it arrives again. David's psalm is honest that this is a cycle, not a cure."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Every possible result generates its own worry. Paul's instruction is to bring each one as a request, with thanks. The peace that follows guards your thoughts, which during a wait like this run in circles. 'In everything' is the key phrase for a wait like this, because the mind produces a new scenario every hour. Each one can be handed over in turn. Peace that 'surpasses understanding' means it can come before the results do."
+      },
+      {
+        "id": "psalm-46-10",
+        "why": "'Be still, and know that I am God.' In context it's said in the middle of upheaval, with nations raging. Being still while waiting for a result isn't passivity; it's a decision to stop rehearsing outcomes. The knowing is the anchor."
+      },
+      {
+        "id": "isaiah-26-3",
+        "why": "'Perfect peace' for the one whose mind is fixed. A mind waiting for results is the opposite of fixed; it jumps between scenarios. This verse names the alternative: keep bringing the mind back to the same place. Isaiah wrote this as a song for a city under threat. The word for 'stayed' means propped up or leaned. A mind can't stop imagining outcomes, but it can keep being leaned back onto something steadier than the next phone call."
+      },
+      {
+        "id": "psalm-27-14",
+        "why": "'Wait for Yahweh. Be strong, and let your heart take courage. Yes, wait.' Waiting said twice, with courage in the middle. It's the verse for the day the results were supposed to come and didn't. The whole psalm is David steadying himself, moving between confidence and fear. It ends here, with waiting as the last word. He doesn't say the waiting will be short or that the news will be good. He says it can be done with courage."
+      },
+      {
+        "id": "romans-8-26",
+        "why": "'We don't know how to pray as we ought, but the Spirit himself makes intercession for us with groanings which can't be uttered.' Waiting for a diagnosis, you may not know what to ask for. This verse says you don't have to. The groaning is the prayer."
+      }
+    ],
+    "howToUse": "Memorize Psalm 112:7. It's one sentence, and it's the one you'll want when the phone rings. If you can't pray in words, Romans 8:26 says that's fine.",
+    "related": [
+      "before-surgery",
+      "waiting",
+      "anxiety",
+      "peace",
+      "cannot-sleep",
+      "worry"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse is good while waiting for medical results?",
+        "a": "Psalm 112:7 is the closest match in Scripture: \"He will not be afraid of evil news.\" Psalm 56:3 is the shortest."
+      },
+      {
+        "q": "What does the Bible say about fear of bad news?",
+        "a": "Psalm 112:7 says the person who trusts God has a steadfast heart and doesn't fear bad news. The steadiness comes from trust, not from a promise that the news will be good."
+      }
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "“Plans to prosper you and not to harm you” is the wrong promise for a wait like this, because it implies you know the result will be good. You don’t, and they know you don’t. Psalm 112:7 is about a heart steady before the news, which is honest."
+    },
+    "whatToSay": [
+      "“I know you’re waiting. I’m not going to ask. I’m just here.”",
+      "“Want company Thursday, or would you rather be alone? Either is fine.”",
+      "“This came to mind and I wanted you to have it, whatever the call says.”",
+      "Don’t say: “I’m sure it’s nothing.” Say: “Whatever it is, you won’t hear it alone.”"
+    ]
+  },
+  {
+    "slug": "moving",
+    "type": "situation",
+    "cluster": "changes",
+    "title": "Bible Verses for Moving",
+    "h1": "Bible verses for moving",
+    "label": "Moving",
+    "for": "moving",
+    "description": "Bible verses for moving to a new home or city: leaving, being kept on the way, and settling somewhere you don't know yet.",
+    "intent": "Someone moving (house, city, country) who wants Scripture about leaving, the journey, and starting somewhere new.",
+    "intro": "Moving is leaving, traveling, and arriving, usually in a state of exhaustion. The Bible's founding story is a move: Abraham leaving home for a place he'd never seen. These verses cover the leaving, the road, and the new door.",
+    "verses": [
+      {
+        "id": "genesis-28-15",
+        "why": "Jacob is sleeping on the ground, running from his brother, on his way to a country he's never seen. God says: 'I am with you, and will keep you, wherever you go.' The promise is for the road and for the arrival. It's the verse for a moving van."
+      },
+      {
+        "id": "genesis-12-1",
+        "why": "'Leave your country, and your relatives, and your father's house.' Abraham's move is the first act of the whole biblical story. He went without knowing the destination. If your move involves leaving people you love, this is the passage that takes that seriously."
+      },
+      {
+        "id": "psalm-90-1",
+        "why": "'Lord, you have been our dwelling place for all generations.' Moses wrote this without a permanent home, wandering for forty years. Home, in this psalm, is a person rather than a place. That's the verse for the week when you don't have an address yet."
+      },
+      {
+        "id": "deuteronomy-31-8",
+        "why": "'Yahweh himself is who goes before you.' The new city has already been walked ahead of you. The verse ends with 'don't be afraid, don't be discouraged,' which are the two moods of unpacking boxes in a place you don't know."
+      },
+      {
+        "id": "psalm-139-9-10",
+        "why": "'If I settle in the uttermost parts of the sea, even there your hand will lead me.' The psalmist imagines the most remote move possible and finds God there too. Distance from what's familiar isn't distance from God. The psalm has been listing places you could go to get away from God, and coming up empty each time. For a move, that's a comfort rather than a threat: the person who is leading you there is already there."
+      },
+      {
+        "id": "psalm-127-1",
+        "why": "'Unless Yahweh builds the house, they who build it labor in vain.' A verse for the arrival: the new home is a house until something more is built in it. It's a good line to read aloud on the first night."
+      },
+      {
+        "id": "hebrews-11-8",
+        "why": "Abraham 'went out, not knowing where he went.' The writer of Hebrews calls this faith. If your move feels like a leap, Scripture has a category for it, and it's a positive one. Abraham left an established city for a promise with no map. Hebrews lists that as the first thing he did right. You don't need to know how a move will turn out for it to be an act of trust rather than recklessness."
+      }
+    ],
+    "related": [
+      "hope",
+      "starting-over",
+      "safe-travel",
+      "loneliness",
+      "courage",
+      "waiting"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse is good for moving to a new home?",
+        "a": "Genesis 28:15 (\"I am with you, and will keep you, wherever you go\") is the closest fit. Psalm 127:1 is often read in a new house."
+      },
+      {
+        "q": "Is there a Bible verse about leaving home?",
+        "a": "Genesis 12:1 is Abraham being told to leave. Hebrews 11:8 describes the same move as an act of faith."
+      }
+    ]
+  },
+  {
+    "slug": "graduation",
+    "type": "situation",
+    "cluster": "changes",
+    "title": "Bible Verses for Graduation",
+    "h1": "Bible verses for graduation",
+    "label": "Graduation",
+    "for": "graduation",
+    "description": "Bible verses for a graduate, chosen for what they say about the next step, wisdom, and being taken seriously while young.",
+    "intent": "A graduate, or someone writing to one, wanting Scripture for the transition that isn't just Jeremiah 29:11 by default.",
+    "intro": "Graduation is one of the few endings everyone agrees to celebrate. These verses are for the graduate: about the path ahead, asking for wisdom, and being an example while young. A couple of them are the ones you'd expect; the notes explain what they actually say.",
+    "verses": [
+      {
+        "id": "proverbs-3-5-6",
+        "why": "'Trust in Yahweh with all your heart, and don't lean on your own understanding.' For a graduate who's just spent years building understanding, this is a well-timed word: use it, but don't make it the foundation. 'He will make your paths straight' is for the years when the path isn't obvious."
+      },
+      {
+        "id": "jeremiah-29-11",
+        "why": "The verse that ends up on the most graduation cards, and worth knowing its setting: it was written to exiles who'd be in Babylon for seventy years. The 'hope and a future' were real but slow. That makes it a better graduation verse, not a worse one. The future comes, but it's a long game."
+      },
+      {
+        "id": "1-timothy-4-12",
+        "why": "'Let no one despise your youth; but be an example.' Paul to a young leader who'd be doubted because of his age. It's the verse for a graduate walking into rooms where they're the youngest. The instruction isn't to demand respect but to earn it in five specific ways."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "Joshua, just promoted, told to be strong and courageous because God goes with him 'wherever you go.' A graduate is at the same kind of threshold: new responsibility, unfamiliar territory, and the same promise. The 'wherever' matters because Joshua was about to lead people into territory none of them had seen. The verse repeats 'be strong and courageous' three times in a few lines, which suggests God knew how a person feels at a threshold."
+      },
+      {
+        "id": "philippians-1-6",
+        "why": "'He who began a good work in you will complete it.' Graduation is a completion that's also a beginning. This verse says the deeper work in a person keeps going, and God finishes what he starts. Paul wrote this to a church he founded and loved, and he's confident about them because of God, not because of their track record. For a graduate, it's reassurance that the person you're becoming isn't finished, and isn't left to chance."
+      },
+      {
+        "id": "micah-6-8",
+        "why": "'Act justly, love mercy, walk humbly.' If a graduate wanted one sentence to carry into a career, this is the one many people would choose. It's what God requires, stated plainly, with no degree needed. Micah delivers it after asking what God could possibly want, whether thousands of rams or rivers of oil, and the answer is disarmingly simple. Justice, mercy, humility. A career built on those three will outlast most of what a degree teaches."
+      },
+      {
+        "id": "psalm-32-8",
+        "why": "'I will instruct you and teach you in the way which you shall go.' For someone who's just finished being taught, a promise that instruction continues, from a teacher watching closely. The psalm is David's, written after a season of hiding a wrong and then owning it. The teaching he describes comes with 'my eye upon you,' which is a picture of attention, not surveillance. Someone is still watching how you go."
+      }
+    ],
+    "related": [
+      "graduation-card",
+      "wisdom",
+      "starting-over",
+      "difficult-decisions",
+      "courage",
+      "job-interview"
+    ],
+    "faq": [
+      {
+        "q": "What is the best Bible verse for a graduate?",
+        "a": "Jeremiah 29:11 is the one you'll see most often on cards, and it works, though read the note on its setting. Proverbs 3:5-6 and 1 Timothy 4:12 are stronger fits for what a graduate actually faces next."
+      },
+      {
+        "q": "What's a short Bible verse for a graduation card?",
+        "a": "Micah 6:8 or Psalm 32:8 fit on a card. The graduation card page has more options with suggested wording."
+      }
+    ]
+  },
+  {
+    "slug": "safe-travel",
+    "type": "situation",
+    "cluster": "changes",
+    "title": "Bible Verses for Safe Travel",
+    "h1": "Bible verses for safe travel",
+    "label": "Safe travel",
+    "for": "safe travel",
+    "description": "Bible verses for safe travel and a journey, including the traveler's psalm, with notes on what each passage promises about the road.",
+    "intent": "Someone leaving on a trip, or sending someone off, who wants a verse for the journey.",
+    "intro": "Psalm 121 was written for travelers, sung on the road to Jerusalem. Most of the Bible's people were on the move at some point. These verses are for the trip, whether it's a flight, a long drive, or a deployment.",
+    "verses": [
+      {
+        "id": "psalm-121-7-8",
+        "why": "'Yahweh will keep your going out and your coming in.' This is the traveler's psalm, and these are its last lines. 'Going out and coming in' covers the whole trip: departure and return. It's the most-quoted travel blessing for good reason."
+      },
+      {
+        "id": "psalm-121-1-2",
+        "why": "The opening of the same psalm: lifting eyes to the hills, which for a pilgrim were both the route and the danger. Help comes from the one 'who made heaven and earth,' which is to say the one who made the terrain."
+      },
+      {
+        "id": "genesis-28-15",
+        "why": "God's promise to Jacob, alone on a road: 'I am with you, and will keep you, wherever you go, and will bring you again.' The 'bring you again' is the return trip. It's a complete travel promise: there, kept, and back."
+      },
+      {
+        "id": "psalm-91-11",
+        "why": "'He will put his angels in charge of you, to guard you in all your ways.' 'All your ways' includes the highway. This is the psalm people read before flights. It's a picture of being watched over en route. The psalm was written for people facing real dangers: plague, arrows, lions. It doesn't say nothing will happen. It says God assigns guardians. Read the whole psalm and you'll find it is honest about hazards while being confident about protection."
+      },
+      {
+        "id": "psalm-139-9-10",
+        "why": "The wings of the dawn, the far side of the sea: the psalmist imagines the farthest journey possible and finds God's hand there. For long-distance travel, this is the verse that says distance changes nothing. The psalm has been trying, verse by verse, to find somewhere God isn't, and failing. Applied to travel, it means the destination, however far, isn't outside the range of the hand that leads you."
+      },
+      {
+        "id": "isaiah-43-2",
+        "why": "Waters, rivers, fire. The verse doesn't promise you'll avoid them; it promises you'll pass through. Spoken to exiles, it's honest that journeys involve hazards, and it puts God in the hazard with you. The verse begins 'when you pass through,' not 'if.' Isaiah writes it to people who have already been through the worst. The promise is presence rather than avoidance, which is the honest kind of promise for a journey."
+      },
+      {
+        "id": "numbers-6-24-26",
+        "why": "The oldest blessing in Scripture, and 'keep you' is its second phrase. It's the thing to say to someone as they leave. Short enough to text, old enough that it's been said over travelers for three thousand years. Aaron and his sons were told to say these exact words over the people. 'Keep' in this blessing means guard and preserve. If you want something to say at the door before someone drives away, this is what generations have said."
+      }
+    ],
+    "related": [
+      "moving",
+      "courage",
+      "peace",
+      "anxiety",
+      "waiting",
+      "graduation"
+    ],
+    "faq": [
+      {
+        "q": "What Bible verse is for safe travels?",
+        "a": "Psalm 121:7-8 (\"Yahweh will keep your going out and your coming in\") is the classic. Psalm 91:11 is a close second."
+      },
+      {
+        "q": "What is a short travel blessing from the Bible?",
+        "a": "Numbers 6:24 (\"Yahweh bless you, and keep you\") is one line. Psalm 121:8 is one sentence."
+      }
+    ]
+  },
+  {
+    "slug": "marriage",
+    "type": "situation",
+    "cluster": "family",
+    "title": "Bible Verses for Marriage",
+    "h1": "Bible verses for marriage",
+    "label": "Marriage",
+    "for": "marriage",
+    "description": "Bible verses for marriage: love that's patient, two being better than one, and the daily work of staying together, with plain notes on context.",
+    "intent": "A married person (or engaged couple) wanting Scripture about marriage, for a hard season, an anniversary, or simply to hold onto.",
+    "intro": "Marriage in the Bible is described in practical terms: two are better than one, love is patient, don't go to bed angry. These verses are less about the wedding and more about the years after it.",
+    "safety": "If your marriage involves abuse or you're afraid of your spouse, please reach out to someone who can help you get safe. No verse here is meant to keep anyone in danger.",
+    "verses": [
+      {
+        "id": "1-corinthians-13-4-7",
+        "why": "Read at nearly every wedding, and best understood as a checklist for the years after. Paul wrote it to a church in conflict, not to a couple, which is why it's so practical: patient, kind, not keeping score, bearing all things. Replace 'love' with your own name and see how it reads."
+      },
+      {
+        "id": "ecclesiastes-4-9-10",
+        "why": "'Two are better than one' because when one falls, the other lifts them up. It's an unsentimental description of what a marriage is for. Verse 12, the threefold cord, extends it: two people with God as the third strand don't break easily."
+      },
+      {
+        "id": "colossians-3-14",
+        "why": "'Above all these things, walk in love, which is the bond of perfection.' The preceding verses list bearing with each other and forgiving. Love is what holds the list together. For a marriage in a hard patch, this verse says what to put on top."
+      },
+      {
+        "id": "ephesians-4-2-3",
+        "why": "'Bearing with one another in love, being eager to keep the unity.' 'Eager' is the word. Staying united isn't automatic; it takes someone wanting it. Paul wrote this about a church, and it applies to any two people who've promised to stay."
+      },
+      {
+        "id": "ephesians-4-26",
+        "why": "'Don't let the sun go down on your wrath.' Anger is allowed ('be angry, and don't sin'), but it has a deadline. Couples have used this as a rule for centuries because it works: deal with it today. The line sits in a passage about putting away lies and speaking truth to each other, because 'we are members of one another.' In a marriage, unresolved anger doesn't stay in one person. Paul's deadline keeps it from moving in permanently."
+      },
+      {
+        "id": "1-peter-4-8",
+        "why": "'Love covers a multitude of sins.' Not one or two; a multitude. This isn't a license for bad behavior. It's a description of what love does with the ordinary daily failures that pile up in any home. Peter writes to people under real pressure and tells them, above all, to keep loving each other 'earnestly,' a word for a stretched-out effort. Covering sins doesn't mean pretending they didn't happen; it means not keeping score."
+      },
+      {
+        "id": "proverbs-17-17",
+        "why": "'A friend loves at all times.' A spouse who is also a friend loves in the seasons that aren't romantic. This proverb is about steadiness, which is most of what a long marriage is made of. The second half says 'a brother is born for adversity,' which is the same idea from another angle. Someone is meant to be there when things go badly. A marriage where each is that person for the other has what this verse describes."
+      }
+    ],
+    "related": [
+      "forgiveness",
+      "patience",
+      "difficult-family-members",
+      "peace",
+      "loneliness",
+      "hope"
+    ],
+    "faq": [
+      {
+        "q": "What is the most popular Bible verse about marriage?",
+        "a": "1 Corinthians 13:4-7 is read at more weddings than any other passage. Ecclesiastes 4:9-12 is close behind."
+      },
+      {
+        "q": "Is there a Bible verse about not going to bed angry?",
+        "a": "Ephesians 4:26: \"Don't let the sun go down on your wrath.\""
+      }
+    ]
+  },
+  {
+    "slug": "difficult-family-members",
+    "type": "situation",
+    "cluster": "family",
+    "title": "Bible Verses for Difficult Family Members",
+    "h1": "Bible verses for difficult family members",
+    "label": "Difficult family",
+    "for": "difficult family members",
+    "description": "Bible verses for dealing with a difficult family member: keeping peace where you can, not repaying evil, and setting down grudges you can't carry.",
+    "intent": "Someone with a strained relationship with a parent, sibling, in-law, or relative, looking for Scripture about responding well without pretending the person will change.",
+    "intro": "You can leave a job, but family stays family. That's what makes a difficult relative uniquely draining. These verses are about your side of the relationship: your words, your temper, your willingness to forgive, and your limits.",
+    "safety": "If a family member is abusive, Scripture about peace and patience doesn't ask you to stay in harm's way. Safety first; the rest can be worked out from a distance.",
+    "verses": [
+      {
+        "id": "romans-12-17-18",
+        "why": "'If it is possible, as much as it is up to you, be at peace with all men.' Paul admits peace isn't always possible and isn't entirely up to you. With family, that honesty matters. Your responsibility is your part: don't repay evil, act honorably. The other person's part isn't yours to carry."
+      },
+      {
+        "id": "proverbs-17-14",
+        "why": "'Stop contention before quarreling breaks out.' The image is a dam breaching: once the water's moving, you can't stop it. Family arguments have a familiar early moment where things could still go either way. This proverb says leave then. The verse is about timing. It doesn't ask you to win the argument or avoid the person forever. It asks you to notice the moment before the moment, when a subject change or a walk to the kitchen still works."
+      },
+      {
+        "id": "proverbs-15-1",
+        "why": "'A gentle answer turns away wrath.' With relatives, you often know exactly what will set them off. This proverb puts the lever in your hand: your reply can escalate or de-escalate, and you get to choose, even when they don't."
+      },
+      {
+        "id": "colossians-3-13",
+        "why": "'Bearing with one another, and forgiving each other, if any man has a complaint against any.' Bearing with is tolerating the ongoing friction; forgiving is releasing the specific wrong. Family requires both, repeatedly. The standard is Christ's forgiveness of you, which is meant to be humbling, not crushing."
+      },
+      {
+        "id": "1-peter-3-9",
+        "why": "'Not rendering evil for evil, or insult for insult; but instead blessing.' Peter is realistic about insults. Family insults land harder because they know where to aim. The instruction isn't to absorb them silently but to respond with blessing, which is a choice, not a feeling."
+      },
+      {
+        "id": "proverbs-19-11",
+        "why": "'It is his glory to overlook an offense.' Not every remark at a family dinner needs a response. Overlooking is a skill and, this proverb says, an honor. It's also the only way to survive some holidays. Discretion in the first half of the verse is what makes overlooking possible: knowing which remarks are worth answering. Most aren't. Proverbs treats restraint as a mark of maturity, not weakness."
+      },
+      {
+        "id": "ephesians-4-26",
+        "why": "'Be angry, and don't sin.' The anger is allowed; it's what you do with it. The deadline, before the sun goes down, keeps a single argument from becoming a decades-long estrangement. Many family rifts began as one unresolved evening. Paul's next line is 'don't give place to the devil,' which is his way of saying that anger left overnight becomes a foothold. The verse doesn't require the argument to be resolved by bedtime, only that it not be abandoned there."
+      }
+    ],
+    "related": [
+      "forgiveness",
+      "patience",
+      "difficult-coworkers",
+      "marriage",
+      "peace",
+      "loneliness"
+    ],
+    "faq": [
+      {
+        "q": "What does the Bible say about toxic family members?",
+        "a": "Romans 12:18 sets the frame: be at peace as far as it depends on you. Proverbs 17:14 and 19:11 are about avoiding and overlooking fights. Nothing in these passages requires you to remain in harm's way."
+      },
+      {
+        "q": "Is there a Bible verse about forgiving family?",
+        "a": "Colossians 3:13 applies directly, and Matthew 18:21-22 (seventy times seven) was Peter's question about a brother."
+      }
+    ],
+    "skip": {
+      "ref": "Matthew 18:21–22",
+      "why": "“Seventy times seven” is about forgiveness, and it gets sent as a demand for instant reconciliation, sometimes with someone who is unsafe. Forgiveness and access are different things. Romans 12:18 is honest that peace takes two and only one of them is you."
+    },
+    "whatToSay": [
+      "“You’re not crazy. That was a hard thing to sit through.”",
+      "“You don’t have to decide today what you do about it.”",
+      "“I’m around after the holiday if you need to debrief.”",
+      "Don’t say: “But they’re family.” They know. That’s what makes it hard."
+    ]
+  }
+]

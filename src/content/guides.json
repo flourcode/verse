@@ -1,0 +1,413 @@
+[
+  {
+    "slug": "funeral-scripture",
+    "title": "Funeral Scripture by Situation",
+    "h1": "Scripture for funerals, by situation",
+    "description": "Bible passages for funerals and memorial services, organized by pastoral situation: sudden death, long illness, a child, an elderly believer, a non-believer, suicide. World English Bible text, copyable.",
+    "intro": "A funeral is not the place to discover a passage doesn’t fit. These are grouped by the situation you are actually walking into, with a line on why each one works there and where it can go wrong. All text is from the World English Bible and can be copied straight into an order of service.",
+    "sections": [
+      {
+        "h": "Almost any funeral",
+        "note": "Passages that hold up regardless of the circumstances. If you have time to read only one, Psalm 23 whole.",
+        "refs": [
+          {
+            "ref": "Psalm 23:1-6",
+            "why": "Confident because of the shepherd, not because the road is safe. It names the valley of the shadow of death without flinching, which is why it is read so often."
+          },
+          {
+            "ref": "John 14:1-3",
+            "why": "Jesus, the night before his own death, telling frightened friends there is a prepared place. Read it as a promise from someone who has been through the door."
+          },
+          {
+            "ref": "Revelation 21:4",
+            "why": "The last page of the story. Best read near the end of the service, after the grief has been given room, not as a way to skip it."
+          },
+          {
+            "ref": "Romans 8:38-39",
+            "why": "Paul’s list of everything that cannot separate us from God’s love begins with death. Sturdy, and works for families with mixed beliefs because it makes no demands of the listener."
+          }
+        ]
+      },
+      {
+        "h": "Sudden or traumatic death",
+        "note": "Avoid anything that hints at explanation or purpose. The room needs presence, not reasons.",
+        "refs": [
+          {
+            "ref": "Psalm 34:18",
+            "why": "Nearness to the brokenhearted, promised without conditions. Written by David after a humiliating day, which is why it sounds like it was written from the floor."
+          },
+          {
+            "ref": "John 11:35",
+            "why": "Jesus wept at a tomb he was about to empty. Two words that give the whole room permission to grieve without apology."
+          },
+          {
+            "ref": "Psalm 46:1-3",
+            "why": "A psalm for when the earth gives way. It doesn’t say the earth won’t; it says where the refuge is while it does."
+          },
+          {
+            "ref": "Lamentations 3:22-23",
+            "why": "Mercy new every morning, written in a burned city. Honest enough for a funeral where nothing makes sense yet."
+          }
+        ]
+      },
+      {
+        "h": "After a long illness",
+        "note": "The family has often been grieving for months. Rest and completion are the themes that land.",
+        "refs": [
+          {
+            "ref": "2 Timothy 4:7-8",
+            "why": "A course finished and a faith kept. Right for someone who endured well; use with care if the illness stripped the person of the capacity to ‘fight.’"
+          },
+          {
+            "ref": "Matthew 11:28-30",
+            "why": "Rest for the heavily burdened. Fits the person who has died and the caregivers who are exhausted in the front row."
+          },
+          {
+            "ref": "2 Corinthians 4:16-18",
+            "why": "The outer person wasting away while the inner is renewed. Paul’s own words about a body giving out, without pretending it isn’t."
+          },
+          {
+            "ref": "Psalm 116:15",
+            "why": "‘Precious in Yahweh’s sight is the death of his saints.’ One line, and it says the death was noticed and valued, not merely permitted."
+          }
+        ]
+      },
+      {
+        "h": "A child or infant",
+        "note": "Say less. Choose one passage and read it slowly. Do not explain.",
+        "refs": [
+          {
+            "ref": "Mark 10:13-16",
+            "why": "Jesus taking children in his arms and blessing them, over the disciples’ objection. Read it without comment."
+          },
+          {
+            "ref": "2 Samuel 12:22-23",
+            "why": "David after the death of his infant son: ‘I will go to him, but he will not return to me.’ Grief and hope in one sentence, from a father."
+          },
+          {
+            "ref": "Psalm 139:13-16",
+            "why": "Formed in the womb, every day written before one of them came to be. It says the short life was known and whole."
+          },
+          {
+            "ref": "Isaiah 40:11",
+            "why": "The shepherd gathering the lambs in his arms and carrying them close. An image, not an argument, which is what the day can bear."
+          }
+        ]
+      },
+      {
+        "h": "An elderly believer",
+        "note": "A long life of faith deserves passages that honor it as a course completed.",
+        "refs": [
+          {
+            "ref": "Psalm 90:10-12",
+            "why": "Moses on the length of a life and the wisdom of counting days. Fitting for someone who counted theirs well."
+          },
+          {
+            "ref": "Psalm 92:12-15",
+            "why": "Still bearing fruit in old age, ‘full of sap and green.’ For someone who kept going."
+          },
+          {
+            "ref": "2 Timothy 4:7-8",
+            "why": "The finished race. Nearly always right for a faithful elder."
+          },
+          {
+            "ref": "Isaiah 46:4",
+            "why": "‘Even to old age I am he, and even to gray hairs I will carry you.’ A promise kept to the end; read it as fulfilled."
+          }
+        ]
+      },
+      {
+        "h": "When the person’s faith is unknown, or the family’s is",
+        "note": "Choose passages that comfort without requiring the listener to affirm anything. Let the text do its own work.",
+        "refs": [
+          {
+            "ref": "Ecclesiastes 3:1-8",
+            "why": "A time to be born and a time to die. Recognizable to almost everyone, honest about mortality, and it asks nothing of the hearer."
+          },
+          {
+            "ref": "Psalm 103:13-17",
+            "why": "‘As a father has compassion on his children.’ Frailty and mercy together; the ‘dust’ line is unusually honest for a funeral."
+          },
+          {
+            "ref": "Matthew 5:4",
+            "why": "Blessed are those who mourn. A single sentence that dignifies the grief in the room without preaching at it."
+          },
+          {
+            "ref": "Romans 8:38-39",
+            "why": "Read as a description of God’s disposition rather than a test of the listener’s."
+          }
+        ]
+      },
+      {
+        "h": "After a suicide",
+        "note": "Do not speculate about the person’s eternal state from the pulpit, in either direction. Speak to the living. Have a crisis line number available for the family and say so.",
+        "refs": [
+          {
+            "ref": "Psalm 34:18",
+            "why": "Nearness to the crushed in spirit. The most important verse for this room, and it applies to the person who died as much as to those who remain."
+          },
+          {
+            "ref": "Psalm 88:1-3",
+            "why": "The only psalm that ends in darkness. Reading it says the Bible knows what despair sounds like and kept it in the canon."
+          },
+          {
+            "ref": "Romans 8:38-39",
+            "why": "Nothing, including death, separates from God’s love. Read it plainly and let it stand."
+          },
+          {
+            "ref": "1 Kings 19:4-8",
+            "why": "Elijah asking to die, and God’s answer: food, sleep, and a touch. A gentle passage for a family asking why they didn’t see it."
+          }
+        ]
+      }
+    ],
+    "howToUse": "Pick two or three passages, not six. Read them slowly. If a verse needs a paragraph of explanation to fit the situation, choose a different verse. For a graveside committal, Psalm 23 or John 14:1–3 alone is enough.",
+    "related": [
+      "grief",
+      "sympathy-card",
+      "loneliness"
+    ],
+    "printable": "/print/funeral-scripture.pdf"
+  },
+  {
+    "slug": "wedding-scripture",
+    "title": "Wedding Scripture with Context",
+    "h1": "Scripture for weddings, with context",
+    "description": "Bible readings for weddings, with what each passage was written about, so the couple hears it as it was meant. Traditional choices and less-used ones. World English Bible, copyable.",
+    "intro": "Most wedding readings were not written about weddings. That isn’t a problem, but it is worth knowing, because the original setting is usually what makes the passage strong. These are grouped by what the couple wants the reading to say, with a line on where each one comes from.",
+    "sections": [
+      {
+        "h": "The traditional readings",
+        "note": "Chosen at most weddings for good reason. Worth a sentence of introduction so the couple hears them fresh.",
+        "refs": [
+          {
+            "ref": "1 Corinthians 13:4-8",
+            "why": "Written to a church that was fighting, as a description of what they were failing to be. It works at a wedding because it defines love as behavior under pressure, not feeling under candlelight."
+          },
+          {
+            "ref": "Genesis 2:18-24",
+            "why": "The first wedding, and the line Jesus later quotes: the two become one flesh. ‘It is not good for the man to be alone’ is the Bible’s first ‘not good.’"
+          },
+          {
+            "ref": "Ecclesiastes 4:9-12",
+            "why": "Two are better than one; a cord of three strands is not quickly broken. Practical, unsentimental, and the ‘three strands’ line is why couples choose it."
+          },
+          {
+            "ref": "Colossians 3:12-17",
+            "why": "Compassion, kindness, humility, patience, forgiveness, and ‘above all love.’ A list a marriage can actually be measured against."
+          }
+        ]
+      },
+      {
+        "h": "Promises and faithfulness",
+        "note": "For couples who want the vows to be the center of the day.",
+        "refs": [
+          {
+            "ref": "Ruth 1:16-17",
+            "why": "‘Where you go, I will go.’ Said by a widowed daughter-in-law to her mother-in-law, not by a bride. Still the best statement of chosen loyalty in the Bible, and the couple should know who said it."
+          },
+          {
+            "ref": "Song of Solomon 8:6-7",
+            "why": "Love as strong as death, unquenchable by many waters. The Bible’s one book of love poetry, read plainly."
+          },
+          {
+            "ref": "Hosea 2:19-20",
+            "why": "God’s own betrothal vows to an unfaithful people: righteousness, justice, loving kindness, mercy, faithfulness. A high standard, spoken by the one who kept it."
+          }
+        ]
+      },
+      {
+        "h": "Partnership and daily life",
+        "note": "For couples who want the reading to describe an ordinary Tuesday, not just the wedding day.",
+        "refs": [
+          {
+            "ref": "Proverbs 31:10-12",
+            "why": "The opening of the ‘excellent wife’ poem: worth more than jewels, trusted completely. Read just the first three verses unless the couple wants the whole acrostic."
+          },
+          {
+            "ref": "Ephesians 4:2-3",
+            "why": "Humility, gentleness, patience, bearing with one another in love. Written about a church, and it describes a kitchen just as well."
+          },
+          {
+            "ref": "1 John 4:7-12",
+            "why": "Love comes from God; if we love one another, God lives in us. Grounds the marriage in something larger than itself."
+          },
+          {
+            "ref": "Romans 12:9-13",
+            "why": "Sincere love, honoring one another above yourselves, patient in trouble. A checklist for the years after the honeymoon."
+          }
+        ]
+      },
+      {
+        "h": "Second marriages and blended families",
+        "note": "Readings that acknowledge a past without dwelling on it, and that include children if they are part of the day.",
+        "refs": [
+          {
+            "ref": "Isaiah 43:18-19",
+            "why": "‘Don’t remember the former things. Behold, I will do a new thing.’ Said to exiles, and honest about starting again."
+          },
+          {
+            "ref": "Lamentations 3:22-23",
+            "why": "Mercies new every morning. A quiet way to say the past is not the last word."
+          },
+          {
+            "ref": "Psalm 127:1-3",
+            "why": "Unless Yahweh builds the house, the builders labor in vain; children are a heritage. Brings the children into the reading."
+          },
+          {
+            "ref": "Colossians 3:12-14",
+            "why": "Bearing with one another and forgiving. For a family being assembled from parts."
+          }
+        ]
+      },
+      {
+        "h": "Less common, worth considering",
+        "note": "For couples who want something the guests haven’t heard at the last five weddings.",
+        "refs": [
+          {
+            "ref": "Genesis 24:63-67",
+            "why": "Isaac and Rebekah: he was out in the field at evening, looked up, and saw the camels coming. The Bible’s quietest love story."
+          },
+          {
+            "ref": "John 2:1-11",
+            "why": "Jesus at a wedding in Cana, keeping the party going. A reminder that the first miracle was at a reception."
+          },
+          {
+            "ref": "Psalm 34:1-3",
+            "why": "‘Let us exalt his name together.’ For a couple who want the first thing they do as a married pair to be worship."
+          },
+          {
+            "ref": "Micah 6:8",
+            "why": "Do justly, love mercy, walk humbly. Nine words for a life together."
+          }
+        ]
+      }
+    ],
+    "howToUse": "Tell the couple where the reading comes from before the rehearsal, in one sentence. Ruth’s words to Naomi and Paul’s rebuke to Corinth are both stronger when the room knows what they are.",
+    "related": [
+      "marriage",
+      "starting-over",
+      "patience"
+    ]
+  },
+  {
+    "slug": "pastoral-care-scripture",
+    "title": "Pastoral Care Scripture by Situation",
+    "h1": "Scripture for pastoral care, by situation",
+    "description": "A quick reference for hospital visits, grief, fear, illness, job loss, and family conflict: the passage to bring, and the one to avoid. Links to the full hand-picked page for each situation.",
+    "intro": "Most pastoral visits leave time for one passage. This is the short list: the verse to open with for each situation, why, and the common choice that tends to misfire. Each links to the full page with seven verses and notes.",
+    "sections": [
+      {
+        "h": "Hospital and illness",
+        "refs": [
+          {
+            "ref": "Isaiah 41:10",
+            "why": "Open with this before surgery or a hard diagnosis: five promises, and a hand. Avoid James 5:15 unless you are prepared to talk about what ‘the prayer of faith will heal’ means if it doesn’t.",
+            "page": "before-surgery"
+          },
+          {
+            "ref": "Psalm 112:7",
+            "why": "For the wait between the test and the result: a heart steady before the news, not after it.",
+            "page": "waiting-for-test-results"
+          }
+        ]
+      },
+      {
+        "h": "Grief and loss",
+        "refs": [
+          {
+            "ref": "Psalm 34:18",
+            "why": "The first verse for fresh grief because it asks nothing of the griever. Avoid Romans 8:28 in the first weeks; it can sound like the loss was a means to an end.",
+            "page": "grief"
+          },
+          {
+            "ref": "Matthew 5:4",
+            "why": "For the person who feels their grief is a failure of faith.",
+            "page": "sympathy-card"
+          }
+        ]
+      },
+      {
+        "h": "Fear and anxiety",
+        "refs": [
+          {
+            "ref": "Philippians 4:6-7",
+            "why": "Give them a practice, not a feeling: each worry as a request, with thanks. Avoid ‘God won’t give you more than you can handle,’ which isn’t in the Bible.",
+            "page": "anxiety"
+          },
+          {
+            "ref": "Joshua 1:9",
+            "why": "For someone about to walk into something. Courage as a conclusion from who is with them.",
+            "page": "courage"
+          }
+        ]
+      },
+      {
+        "h": "Work and money",
+        "refs": [
+          {
+            "ref": "Matthew 6:26",
+            "why": "For job loss: the birds are fed. Avoid Jeremiah 29:11 as a promise of a quick new job; it was written to people staying in exile seventy years.",
+            "page": "job-loss"
+          },
+          {
+            "ref": "Hebrews 13:5",
+            "why": "For money fear: ‘I will in no way leave you’ sits inside a verse about the love of money, on purpose.",
+            "page": "financial-stress"
+          }
+        ]
+      },
+      {
+        "h": "Family conflict and forgiveness",
+        "refs": [
+          {
+            "ref": "Romans 12:18",
+            "why": "‘As much as it is up to you.’ Honest that peace takes two, and only one of them is in the room with you.",
+            "page": "difficult-family-members"
+          },
+          {
+            "ref": "Ephesians 4:32",
+            "why": "For someone who needs to forgive and doesn’t want to. The standard is set by how they were forgiven. Avoid using Matthew 18:21–22 as a demand for instant reconciliation with an abuser; forgiveness and safety are different things.",
+            "page": "forgiveness"
+          }
+        ]
+      },
+      {
+        "h": "Loneliness and exhaustion",
+        "refs": [
+          {
+            "ref": "Matthew 11:28-30",
+            "why": "For the worn out, especially the religiously worn out. The yoke is the point: a burden that fits.",
+            "page": "overwhelmed"
+          },
+          {
+            "ref": "Psalm 139:7-10",
+            "why": "For the isolated: there is nowhere the hand isn’t.",
+            "page": "loneliness"
+          }
+        ]
+      },
+      {
+        "h": "Life transitions",
+        "refs": [
+          {
+            "ref": "Isaiah 43:18-19",
+            "why": "For starting over after failure or loss.",
+            "page": "starting-over"
+          },
+          {
+            "ref": "Psalm 92:14",
+            "why": "For retirement: still bearing fruit. Better than ‘well done, good and faithful servant,’ which is about a final accounting, not a career change.",
+            "page": "retirement"
+          }
+        ]
+      }
+    ],
+    "howToUse": "Read the passage, then stop. The most common pastoral mistake with Scripture is explaining it. If the person wants to talk about it, they will.",
+    "related": [
+      "grief",
+      "anxiety",
+      "before-surgery"
+    ]
+  }
+]

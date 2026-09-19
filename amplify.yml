@@ -1,0 +1,18 @@
+# AWS Amplify Hosting: build the site from source on every push.
+# In the Amplify console this file is picked up automatically; nothing to configure.
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci --ignore-scripts
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

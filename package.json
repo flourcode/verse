@@ -1,0 +1,24 @@
+{
+  "name": "betterverses",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BetterVerses.com — the right Bible verse for right now. Zero-dependency static site generator.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.js",
+    "preview": "node build.js && node scripts/preview.js",
+    "serve": "node build.js && node scripts/serve.js",
+    "verses:sync": "node scripts/sync-verses.js",
+    "bible:build": "node scripts/build-bible.js",
+    "newsletter": "node scripts/newsletter.js",
+    "printables": "node scripts/printables.js",
+    "bible:build": "node scripts/build-bible.js",
+    "newsletter": "node scripts/newsletter.js",
+    "printables": "node scripts/printables.js",
+    "check": "node build.js --check"
+  },
+  "devDependencies": {
+    "world-english-bible": "^1.0.1"
+  }
+}
