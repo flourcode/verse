@@ -230,7 +230,7 @@ for (const u of out) {
   const base = u.endsWith('.html') ? u.replace(/[^/]*$/, '') : u;
   for (const m of html.matchAll(/(?:href|src)="([^"#?:]*)"/g)) {
     if (!m[1] || m[1].startsWith('#') || m[1].startsWith('mailto')) continue;
-    const h = new URL(m[1], 'http://x' + base).pathname;
+    const h = new URL(m[1], 'http://x' + base).pathname;  // query strings (cache-busting ?v=) are ignored
     if (/\.(css|js|svg|png|xml|txt|json|woff2|webmanifest|yml|pdf)$/.test(h)) { if (!existsSync(join(DIST, h))) { console.error(`  broken asset ${h} on ${u}`); broken++; } continue; }
     if (!internal.has(h)) { console.error(`  broken link ${h} on ${u}`); broken++; }
   }

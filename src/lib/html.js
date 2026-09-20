@@ -70,8 +70,8 @@ const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/today/', '
 <meta name="twitter:description" content="${esc(page.description)}">
 <meta name="twitter:image" content="${site.url}${site.ogImage}">
 <meta name="twitter:image:alt" content="${esc(site.name)}: ${esc(site.tagline)}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/source-serif.woff2" as="font" type="font/woff2" crossorigin>
