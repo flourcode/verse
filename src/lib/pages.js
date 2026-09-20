@@ -327,7 +327,8 @@ export function printablesIndex(ctx, opts) {
 <p class="kicker">Free. No signup. Print it. Share it.</p>
 <h1>The Comfort Kit</h1>
 <p class="hero__dek">Free printable Scripture sheets for grief, hospital visits, waiting, end of life, caregivers, and the moments when you simply don’t know what to say. Every sheet follows the same shape: the moment, a few passages with one line on why, what to say, and how to use it. Read one. Then stop.</p>
-<p class="btn-row"><a class="btn btn--primary" href="/print/comfort-kit.pdf">Download the whole kit (PDF, ${ctx.kitPages || 11} pages)</a></p>
+<p class="btn-row"><a class="btn btn--primary btn--lg" href="/print/comfort-kit.pdf">Download the kit</a></p>
+<p class="fine" style="margin-top:-.4rem">One PDF, ${ctx.kitPages || 11} pages, free. No signup.</p>
 <p class="fine">For pastors and chaplains: pastoral-care Scripture, ready for the binder. For caregivers, hospice volunteers, and friends: Scripture for difficult days, ready for the nightstand. Same sheets. No account, no email gate, no donation ask, nothing for sale.</p>
 <h2>Or one sheet at a time</h2>
 <ul class="tools">${items}</ul>
