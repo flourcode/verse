@@ -296,6 +296,7 @@ const SEND = [
   ['grieving', 'grief', 'Thinking of you and of [name]. This came to mind.'],
   ['a widow or widower', 'loss-of-a-spouse', 'I keep thinking about [name]. No need to reply.'],
   ['grieving a parent', 'loss-of-a-parent', 'I’m so sorry about your mom. This came to mind.'],
+  ['grieving a child', 'loss-of-a-child', 'Thinking of you and of Ellie today.'],
   ['anxious', 'anxiety', 'No advice, just this. I’m here.'],
   ['afraid of what’s coming', 'afraid-of-the-future', 'When, not if. You won’t go through it alone.'],
   ['having surgery', 'before-surgery', 'I’ll be thinking about you at 7 tomorrow. You don’t need to reply.'],

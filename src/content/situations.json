@@ -1154,12 +1154,12 @@
     ],
     "howToUse": "For a funeral or graveside, Psalm 23 or Psalm 116:15. For a card, Psalm 103:13–14 or Isaiah 46:4 if the parent lived long. For yourself, in the weeks after, Psalm 27:10 read at night.",
     "related": [
+      "loss-of-a-child",
       "loss-of-a-sibling",
       "grief",
       "loss-of-a-spouse",
       "sympathy-card",
-      "difficult-family-members",
-      "loneliness"
+      "difficult-family-members"
     ],
     "faq": [
       {
@@ -1690,12 +1690,12 @@
     ],
     "howToUse": "Psalm 34:18 first. Isaiah 42:3 when the shame gets loud. Romans 8:38–39 when someone says something unforgivable. If you are a pastor, please read Psalm 88 at the service; the family needs to hear that the Bible has a place for what happened.",
     "related": [
+      "loss-of-a-child",
       "grief",
       "loss-of-a-parent",
       "loss-of-a-spouse",
       "cannot-sleep",
-      "overwhelmed",
-      "loneliness"
+      "overwhelmed"
     ],
     "faq": [
       {
@@ -2081,6 +2081,100 @@
       {
         "q": "What can I write in a card for someone’s new job?",
         "a": "Deuteronomy 31:8 or Psalm 90:17 with one line: “Proud of you. Go get it.” Skip Jeremiah 29:11; everyone else will send it."
+      }
+    ]
+  },
+  {
+    "slug": "loss-of-a-child",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses After Losing a Child",
+    "h1": "Bible verses after losing a child",
+    "label": "Lost a child",
+    "for": "a parent who lost a child",
+    "description": "Bible verses for parents who have lost a child, at any age, including miscarriage and stillbirth. Passages that do not explain the loss or rush the grief.",
+    "intent": "A parent’s child has died: an infant, a child, a teenager, an adult child, or a pregnancy. They want verses that do not explain, minimize, or promise a reason. Or someone is trying to comfort such a parent and is terrified of saying the wrong thing.",
+    "intro": "There is no page on this site I have written more slowly. The death of a child is the loss the Bible itself treats as beyond words: it records a mother who refuses to be comforted, and God does not correct her. None of these verses explains why. None of them says it was for the best. What they say is that the child was known, was carried, is not forgotten, and that the grief is allowed to be as large as it is, for as long as it is. If you are here for someone else, the section on what to say is short on purpose.",
+    "safety": "If you are a parent who has lost a child and you have thought about ending your own life, please tell someone today: a friend, your doctor, or a crisis line (in the US, call or text 988). Wanting to be with your child is one of the most common feelings in this grief, and saying it out loud to someone who can help is not a betrayal of them.",
+    "verses": [
+      {
+        "id": "jeremiah-31-15",
+        "why": "“Rachel weeping for her children. She refuses to be comforted for her children, because they are no more.” This is in the Bible. A mother who will not be consoled, and the text does not scold her; it records her. Matthew quotes the verse after the children of Bethlehem are killed. If everyone around you is trying to comfort you and you cannot receive it, Scripture has a place for exactly that. You are allowed to refuse comfort for a while. Rachel did."
+      },
+      {
+        "id": "psalm-34-18",
+        "why": "Near to the brokenhearted; saves those who have a crushed spirit. First for almost every grief on this site, and here most of all, because it asks nothing. It does not ask you to trust a plan, find a reason, or be strong for the other children. The nearness is a response to the breaking. That is the whole promise, and it is the only one that fits the first months."
+      },
+      {
+        "id": "2-samuel-12-22-23",
+        "why": "David, after his infant son dies: “Can I bring him back again? I will go to him, but he will not return to me.” He had fasted and wept for seven days while the child lived. Afterward he says the plainest thing a bereaved father has ever said, and it holds grief and hope in one sentence: the child is not coming back, and I am going to him. It is the Bible’s clearest statement about where a small child is."
+      },
+      {
+        "id": "isaiah-40-11",
+        "why": "“He will gather the lambs in his arm, and carry them in his bosom.” The shepherd’s smallest sheep are the ones he carries, not leads. This is an image rather than an argument, which is what the days after can bear. For a child of any age, the picture of being gathered up and carried close is the one parents tell me they hold onto."
+      },
+      {
+        "id": "psalm-139-16",
+        "why": "“In your book they were all written, the days that were ordained for me, when as yet there were none of them.” For a child whose life was short, or never began outside the womb, this verse says the life was whole: every day written, none of them accidental. It does not say why there were so few. It says each one was known and counted."
+      },
+      {
+        "id": "matthew-18-10",
+        "why": "Jesus, about children: “in heaven their angels always see the face of my Father.” He says it to warn adults against despising little ones, and the reason he gives is that the little ones are already attended in heaven. Read it plainly, without adding to it. It is the verse for a parent who needs to know their child is not alone where they are."
+      },
+      {
+        "id": "mark-10-14-16",
+        "why": "Parents pushing forward, disciples pushing back, and Jesus indignant on the children’s behalf: “Allow the little children to come to me.” Then he takes them in his arms and blesses them. Read it without commentary at a child’s funeral. It is the picture of what welcome looks like, and it is the one that most parents can bear to hear."
+      },
+      {
+        "id": "psalm-56-8",
+        "why": "“You put my tears into your container. Aren’t they in your book?” Ancient mourners kept tears in small bottles; the psalmist imagines God doing the same, keeping every one. Months in, when the grief has become invisible to everyone around you, this verse says it is seen and counted, not fixed and not explained. That is the only kind of comfort that lasts."
+      },
+      {
+        "id": "john-11-35",
+        "why": "Two words: Jesus wept. At a tomb he was about to empty. He knew what he would do and he wept anyway, because the loss was real and Mary was weeping. If you are wondering whether your grief is a failure of faith, or being told it is, this is the answer. Grief is the right response to death, and Jesus had it."
+      },
+      {
+        "id": "revelation-21-4",
+        "why": "Every tear wiped away, and death, mourning, crying, and pain gone. The last page. For some parents this is the only verse that helps; for others it is unbearable for a long time, because it is about later and the child is gone now. Both are right. It is placed last here for that reason. Read it when you are ready."
+      }
+    ],
+    "skip": {
+      "ref": "Job 1:21 (“Yahweh gave, and Yahweh has taken away”)",
+      "why": "Job says it about his own children, in his own grief, and he is allowed to. It is not for anyone else to say to a bereaved parent, and it makes God the one who took the child. Isaiah 40:11 says what is true and bearable: the lamb is gathered and carried. The other line to leave out is Romans 8:28; in this grief, “all things work together for good” cannot be heard as anything but “this was for the best,” and it wasn’t."
+    },
+    "whatToSay": [
+      "Say the child’s name. Every time. For years. Parents say the worst part is when the world stops saying it.",
+      "“I’m so sorry. There are no words, and I’m not going to try to find them. I’m here.”",
+      "If the child was born still or died before birth: “She was your daughter. I’m so sorry you lost her.” Use the name if there is one. Do not say “at least you can try again.”",
+      "Bring food, mow the lawn, take the other children to school. Do it without asking, for months.",
+      "Mark the birthday and the day of death in your calendar and say something on both, every year.",
+      "Never say: “God needed an angel,” “Everything happens for a reason,” “He’s in a better place,” “At least you have your other children,” or anything that begins with “at least.” Never ask what happened."
+    ],
+    "howToUse": "If you are the parent: one verse, kept for a season. Many parents keep Isaiah 40:11 or Psalm 139:16. Jeremiah 31:15 is for the days you cannot receive anything, and it is enough to know it is there. If you are a friend or a pastor: read Mark 10:14–16 or Isaiah 40:11 at the service and say nothing after it. Presence over words, for as long as it takes.",
+    "related": [
+      "grief",
+      "loss-of-a-parent",
+      "sympathy-card",
+      "suicide-loss",
+      "cannot-sleep",
+      "loneliness"
+    ],
+    "faq": [
+      {
+        "q": "Where is my child now?",
+        "a": "The Bible does not lay out a doctrine of infant death, and I will not pretend it does. What it gives is David’s “I will go to him,” Jesus taking children in his arms and saying the kingdom belongs to such as these, and his word that their angels see the Father’s face. Christians across every tradition have read those together as assurance that a child who dies is with God. That is what I believe. I would not send anyone to argue the point with you."
+      },
+      {
+        "q": "Is there anything for a miscarriage or stillbirth?",
+        "a": "Yes, and it is the same grief, not a smaller one. Psalm 139:13–16 says the child was knit together and every day was written, even when the days were few. 2 Samuel 12:23 is David after the death of an infant. If people around you are treating it as less than a death, this page is not, and neither is Scripture."
+      },
+      {
+        "q": "My child was an adult. Is this page for me?",
+        "a": "Yes. A parent burying an adult child is still burying a child, and the order of things is still wrong. Isaiah 40:11 and 2 Samuel 12:23 do not depend on the child’s age. The loss-of-a-spouse and loss-of-a-parent pages may help for your child’s family, but this one is yours."
+      },
+      {
+        "q": "What can I send a parent who lost a child?",
+        "a": "Isaiah 40:11 and the child’s name, and nothing else: “Thinking of you and of Ellie today.” Then again next month. Then on her birthday. The sending matters more than the verse."
       }
     ]
   }
