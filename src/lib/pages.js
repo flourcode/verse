@@ -58,8 +58,7 @@ export function home(ctx) {
   const body = `
 <section class="hero" aria-labelledby="h-find">
   <h1 id="h-find">A little help finding<br class="hero__br"> <em class="em">the right words.</em></h1>
-  <p class="hero__sub">Comfort someone you care about with the right Bible verse.</p>
-  <p class="hero__line">Sometimes that someone is you.</p>
+  <p class="hero__sub">Comfort someone you care about with the right Bible verse. Sometimes that someone is you.</p>
   <p class="hero__dek">A friend in grief, a parent before surgery, a coworker starting over, or a night you can’t sleep. Search Bible verses for comfort, hope, and encouragement in plain English, or just start from the exact moment you’re in.</p>
   ${searchBox()}
 </section>
