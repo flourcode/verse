@@ -448,3 +448,9 @@ main { padding: 1.5rem 0 4rem; }
 .say { list-style: none; padding: 0; margin: .75rem 0 0; }
 .say li { padding: .6rem 0; border-top: 1px solid var(--line); }
 .say li:first-child { border-top: 0; }
+
+.signup { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 .5rem; }
+.signup input { flex: 1 1 220px; font: inherit; font-size: 1.05rem; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: var(--r-pill); padding: .85rem 1.1rem; min-height: 54px; }
+.signup input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 20%, transparent); }
+.signup .btn { flex: 1 1 220px; min-height: 54px; }
+.newsletter .fine { margin-top: .5rem; }

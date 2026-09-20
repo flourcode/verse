@@ -176,7 +176,7 @@ Each issue is assembled from the site's own content, so the newsletter can't say
 
 Kit merge tags used: `{{ subscriber.first_name | default: "there" }}`, `{{ unsubscribe_url }}`, `{{ subscriber.email_address }}`. Send from `hello@betterverses.com`; the footer invites replies and a person should read them.
 
-To show the signup on the site, paste your Kit landing-page or form URL into `site.config.js` → `newsletter.url`. The block appears on the home page after Today's verse and as a footer link; until the URL is set, nothing renders.
+To show the signup on the site, paste the `action` URL from your Kit form's HTML embed into `site.config.js` → `newsletter.formAction` (it looks like `https://app.kit.com/forms/1234567/subscriptions`). The site then renders its own one-field form that posts straight to Kit: no Kit script, no redirect away, and it matches the site. In the Kit form's settings, set "after subscribing" to redirect to `https://betterverses.com/thanks/`. The block appears on the home page after Today's verse, at the end of every journal post, and as a footer link. If you'd rather link out to a Kit landing page instead, set `newsletter.url` and leave `formAction` empty. With neither set, nothing renders.
 
 ## Printables
 

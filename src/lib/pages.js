@@ -7,6 +7,25 @@ export const urlFor = (p) => `${TYPE_URL[p.type]}${p.slug}/`;
 const PRINTABLES = { 'before-surgery': { href: '/print/hospital-room.pdf', label: 'Scripture for the hospital room' }, 'waiting-for-test-results': { href: '/print/hospital-room.pdf', label: 'Scripture for the hospital room' }, 'grief': { href: '/print/funeral-scripture.pdf', label: 'Funeral Scripture by situation' }, 'sympathy-card': { href: '/print/funeral-scripture.pdf', label: 'Funeral Scripture by situation' } };
 const HOME_CHIPS = [['grief', 'Grief'], ['sympathy-card', 'Sympathy card'], ['before-surgery', 'Before surgery'], ['waiting-for-test-results', 'Waiting on results'], ['job-loss', 'Job loss'], ['worry', 'Worry'], ['cannot-sleep', 'Can’t sleep'], ['starting-over', 'Starting over'], ['retirement-card', 'Retirement card'], ['graduation-card', 'Graduation card']];
 
+// ---------- Newsletter signup (Kit) ----------
+export function newsletterBlock() {
+  const n = site.newsletter || {};
+  if (!n.formAction && !n.url) return '';
+  const inner = n.formAction
+    ? `<form class="signup" action="${esc(n.formAction)}" method="post">
+    <label for="nl-email" class="sr-only">Email address</label>
+    <input id="nl-email" type="email" name="email_address" required autocomplete="email" inputmode="email" placeholder="you@example.com">
+    <button class="btn btn--primary" type="submit">Send me the weekly verse</button>
+  </form>`
+    : `<a class="btn btn--primary" href="${esc(n.url)}">Send me the weekly verse</a>`;
+  return `<section class="section newsletter" aria-labelledby="h-news">
+  <h2 id="h-news">One verse a week, in your inbox</h2>
+  <p>Monday mornings: one verse read slowly, one situation someone near you is probably in, and one note for those whose job is to comfort others.</p>
+  ${inner}
+  <p class="fine">Free. No spam, ever. Unsubscribe with one tap. I read the replies.</p>
+</section>`;
+}
+
 // ---------- Home ----------
 // Shared search widget: the home page and /search/ render the same box; search.js drives both.
 export function searchBox(opts) {
@@ -66,11 +85,7 @@ export function home(ctx) {
   <script type="application/json" id="home-data">${JSON.stringify({ pool: daily.pool.map((e) => ({ id: e.id, ref: e.reference, text: e.text, jesus: e.jesus, jesusFrom: e.jesusFrom, context: e.context })), renderedIndex: daily.index, redLetter: !!site.redLetter }).replace(/</g, '\\u003c')}</script>
 </section>
 
-${site.newsletter && site.newsletter.url ? `<section class="section newsletter" aria-labelledby="h-news">
-  <h2 id="h-news">${esc(site.newsletter.name)} in your inbox, once a week</h2>
-  <p>One verse read slowly, one situation someone near you is probably in, and one note for those whose job is to comfort others. Free, no spam, a person reads the replies.</p>
-  <a class="btn btn--primary" href="${esc(site.newsletter.url)}">Get the weekly email</a>
-</section>` : ''}
+${newsletterBlock()}
 <section class="trust trust--band" aria-labelledby="h-trust">
   <h2 id="h-trust">Scripture, not fortune cookies.</h2>
   <p>Built for the pause before you hit send. When you send someone a verse, it should fit. Every verse here comes with who said it, to whom, and why it belongs in this moment, so you are not handing a grieving friend a line that was written about something else. I read the whole chapter so you don’t have to, and I’ll show you how if you’d rather. Nothing is generated; nothing you type leaves your browser.</p>
@@ -325,6 +340,7 @@ ${fillQuotes(p.html, ctx)}
 </article>
 ${vps.length ? `<section class="section"><h2>The verses, in context</h2><ul class="list">${vps.map((v) => `<li><a href="/verses/${v.slug}/">${esc(v.h1)}</a> — ${esc(v.tagline)}</li>`).join('')}</ul></section>` : ''}
 ${related.length ? `<section class="related"><h2>Related pages</h2><ul>${related.map((x) => `<li><a href="${x.url}">${esc(x.h1)}</a></li>`).join('')}</ul></section>` : ''}
+${newsletterBlock()}
 <section class="section searchmore"><h2>Only remember part of a verse?</h2><p>The search covers every verse in the Bible and tells you when a saying isn’t one.</p><a class="btn btn--ghost" href="/search/">Search Better Verses</a></section>`;
   return layout({ path: `/journal/${p.slug}/`, title: p.title, description: p.description, body, wide: true, ld: [crumbsLd(crumbs), ld] });
 }
