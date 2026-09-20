@@ -57,8 +57,10 @@ export function home(ctx) {
   const d = daily.entry;
   const body = `
 <section class="hero" aria-labelledby="h-find">
-  <h1 id="h-find">Comfort <em class="em">someone you care about</em> with the right Bible verse.</h1>
-  <p class="hero__dek"><strong class="hero__line">Sometimes that someone is you.</strong> A friend in grief, a parent before surgery, a coworker starting over, a night you can’t sleep. Search the whole Bible in plain English, or start from the moment they’re in.</p>
+  <h1 id="h-find">A little help finding<br class="hero__br"> <em class="em">the right words.</em></h1>
+  <p class="hero__sub">Find the right Bible verse to comfort someone you care about.</p>
+  <p class="hero__line">Sometimes that someone is you.</p>
+  <p class="hero__dek">Grief, surgery, starting over, or a night you can’t sleep. Search the Bible in plain English, or start with the moment you’re in.</p>
   ${searchBox()}
 </section>
 
@@ -92,7 +94,7 @@ ${newsletterBlock()}
   <a href="/what-we-believe/">What I believe</a> · <a href="/how-to-read-a-verse/">How to read a verse before you send it</a>
 </section>
 ${adSlot('inline')}`;
-  return layout({ path: '/', finder: true, search: true, fullTitle: `${site.name} — ${site.tagline.replace(/\.$/, '')}`, title: site.name, description: site.defaultDescription, body, ld: [siteLd(), orgLd()] });
+  return layout({ path: '/', wide: true, finder: true, search: true, fullTitle: `${site.name} — ${site.tagline.replace(/\.$/, '')}`, title: site.name, description: site.defaultDescription, body, ld: [siteLd(), orgLd()] });
 }
 
 // ---------- Search page (same widget; canonical home for shared search links) ----------
@@ -116,7 +118,7 @@ ${searchBox()}
     <li><strong>The person and the moment</strong>: <em>a friend who is grieving</em>, <em>my dad before surgery</em>, <em>starting over</em>. If I have a hand-picked page for it, it appears above the results.</li>
   </ul>
 </section>`;
-  return layout({ path: '/search/', title: 'Search the Bible', description: 'Search every verse of the Bible in plain English: the person and the moment, a phrase you half remember, a topic, or a reference. Results explain why they matched. Runs in your browser.', body, finder: true, search: true, canonical: '/search/' });
+  return layout({ path: '/search/', title: 'Search the Bible', description: 'Search every verse of the Bible in plain English: the person and the moment, a phrase you half remember, a topic, or a reference. Results explain why they matched. Runs in your browser.', body, wide: true, finder: true, search: true, canonical: '/search/' });
 }
 
 // ---------- Topic hub ----------

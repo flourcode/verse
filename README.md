@@ -164,7 +164,7 @@ Mobile first, ~544px interactive width, ~704px reading width, Inter 17px for the
 
 ## Logo
 
-The mark is the letter B from Rammetto One (SIL Open Font License), converted to an outline so no font file is needed to display it. It's inline in the header (`MARK` in `src/lib/html.js`, colored by `currentColor`), and `public/favicon.svg`, `public/logo.svg`, `apple-touch-icon.png` and `og-default.png` all use the same path. `scripts/og-template.html` is the social-card layout; render it at 1200×630 to regenerate the PNG.
+The mark is the letter B from Calistoga (SIL Open Font License), converted to an outline so no font file loads. It's inline in the header (`MARK` in `src/lib/html.js`, colored by `currentColor`), and `public/favicon.svg`, `public/logo.svg`, the home-screen icons and `og-default.png` use the same path. `scripts/og-template.html` is the social-card layout; render it at 1200×630 to regenerate the PNG.
 
 ## Newsletter (Kit)
 
