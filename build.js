@@ -7,9 +7,11 @@
  * Zero runtime dependencies. Everything is plain Node (>=18).
  */
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync, readdirSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import site from './site.config.js';
+import { setAssets } from './src/lib/html.js';
 import { urlFor, home, searchPage, topicsHub, topicPage, today, random, staticPage, notFound, versesIndex, versePage, journalIndex, journalPost, ministryHub, guidePage } from './src/lib/pages.js';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
@@ -91,7 +93,12 @@ const epochDay = Math.floor(Date.now() / 86400000);            // UTC day number
 const dailyIndex = epochDay % dailyRaw.length;
 const dailyPool = dailyRaw.map((d) => ({ ...verses[d.id], context: d.context, question: d.question }));
 const daily = { pool: dailyPool, index: dailyIndex, entry: dailyPool[dailyIndex], isoDate: new Date().toISOString().slice(0, 10) };
-const ctx = { pages, clusters, verses, daily, aliases, bible, versePages, posts, guides };
+// Asset fingerprints: main.<hash>.css and app.<hash>.js. The hash changes whenever the file does, so a freshly
+// deployed page can never be served with a stale cached stylesheet (which is what made the logo tile vanish).
+const fp = (file) => createHash('sha256').update(readFileSync(join(ROOT, file))).digest('hex').slice(0, 8);
+const assets = { css: `main.${fp('src/styles/main.css')}.css`, app: `app.${fp('src/scripts/app.js')}.js`, search: `search.${fp('src/scripts/search.js')}.js` };
+const ctx = { pages, clusters, verses, daily, aliases, bible, versePages, posts, guides, assets };
+setAssets(assets);
 
 // ---------- write ----------
 rmSync(DIST, { recursive: true, force: true });
@@ -130,9 +137,9 @@ write('/404/', nf);               // GitHub Pages + direct link fallback
 
 // assets
 mkdirSync(join(DIST, 'assets'), { recursive: true });
-cpSync(join(ROOT, 'src/styles/main.css'), join(DIST, 'assets/main.css'));
-cpSync(join(ROOT, 'src/scripts/app.js'), join(DIST, 'assets/app.js'));
-cpSync(join(ROOT, 'src/scripts/search.js'), join(DIST, 'assets/search.js'));
+cpSync(join(ROOT, 'src/styles/main.css'), join(DIST, 'assets', assets.css));
+cpSync(join(ROOT, 'src/scripts/app.js'), join(DIST, 'assets', assets.app));
+cpSync(join(ROOT, 'src/scripts/search.js'), join(DIST, 'assets', assets.search));
 if (existsSync(join(ROOT, 'public'))) cpSync(join(ROOT, 'public'), DIST, { recursive: true });
 
 // finder data (used by home search, random page). Small on purpose: ~30 KB.

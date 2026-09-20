@@ -1,6 +1,8 @@
 import site from '../../site.config.js';
 
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let ASSETS = { css: 'main.css', app: 'app.js', search: 'search.js' };
+export function setAssets(a) { ASSETS = a; }
 export const TR = `${site.translation.name} (${site.translation.abbr})`;
 
 /** Verse text with the words of Jesus marked (red-letter), when enabled in site.config.js. */
@@ -55,7 +57,7 @@ const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/today/', '
 <meta name="robots" content="${robots}${page.noindex ? '' : ',max-snippet:-1,max-image-preview:large'}">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0F1511" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0F1A11" media="(prefers-color-scheme: dark)">
 <meta property="og:site_name" content="${esc(site.name)}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${esc(page.fullTitle || page.title)}">
@@ -70,16 +72,16 @@ const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/today/', '
 <meta name="twitter:description" content="${esc(page.description)}">
 <meta name="twitter:image" content="${site.url}${site.ogImage}">
 <meta name="twitter:image:alt" content="${esc(site.name)}: ${esc(site.tagline)}">
-<link rel="icon" href="/favicon.svg?v=7" type="image/svg+xml">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=7">
+<link rel="icon" href="/favicon.svg?v=9" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/source-serif.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/${ASSETS.css}">
 ${page.finder ? '<script src="/data/finder.js" defer></script>' : ''}
-${page.search ? '<script src="/assets/search.js" defer></script>' : ''}
+${page.search ? `<script src="/assets/${ASSETS.search}" defer></script>` : ''}
 ${ga}
-<script src="/assets/app.js" defer></script>
+<script src="/assets/${ASSETS.app}" defer></script>
 ${(page.ld || []).map(jsonld).join('\n')}
 ${ads}
 </head>

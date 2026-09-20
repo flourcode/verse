@@ -9,7 +9,7 @@
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const SITE = document.documentElement.dataset.site || location.origin;
   // Folder the site lives in, derived from this script's URL, so data loads work at any path or from disk.
-  const BASE = (document.currentScript && document.currentScript.src || '').replace(/assets\/app\.js.*$/, '') || '/';
+  const BASE = (document.currentScript && document.currentScript.src || '').replace(/assets\/app(\.[0-9a-f]+)?\.js.*$/, '') || '/';
   const LOCAL = location.protocol === 'file:';
   // Opened from disk: make "/topics/worry/" and "../topics/worry/" links open the index.html inside.
   if (LOCAL) document.addEventListener('click', (e) => {

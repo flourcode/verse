@@ -73,7 +73,7 @@ const subject = `${v.reference}, for ${sp.for}`;
 const preview = `${v.text.slice(0, 90).replace(/\s+\S*$/, '')}…`;
 
 // ---------- HTML email (tables + inline styles; renders in Gmail, Apple Mail, Outlook) ----------
-const G = '#2F7D4B', INK = '#182019', INK2 = '#59635B', LINE = '#D7E1D9', MINT = '#E4F6E8', PALE = '#F5FAF6';
+const G = '#2E7D32', INK = '#182019', INK2 = '#59635B', LINE = '#D7E1D9', MINT = '#E8F5E9', PALE = '#F5FAF6';
 const serif = "Georgia, 'Iowan Old Style', 'Times New Roman', serif";
 const sans = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
 const p = (t, extra = '') => `<p style="margin:0 0 14px;font:16px/1.55 ${sans};color:${INK};${extra}">${t}</p>`;

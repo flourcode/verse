@@ -8,25 +8,26 @@
 @font-face { font-family: 'Source Serif'; font-style: normal; font-weight: 200 900; font-display: swap; src: url(../source-serif.woff2) format('woff2'); }
 
 :root {
-  /* Color roles, light: white canvas, one confident leafy green, mint containers, near-black text.
-     ~70% white · 15% very pale green · 10% mint · 5% strong green and celery. Scripture stays near-black. */
+  /* Color roles, light. One green hue, five tones (Material green 50 / 200 / 400 / 800 / 900), on a white page.
+     50 comforts, 200 is calm, 400 is hope (rationed), 800 acts, 900 anchors. Scripture stays near-black. */
   --surface: #FFFFFF;
-  --surface-low: #F5FAF6;             /* search and result areas */
-  --surface-high: #E4F6E8;            /* light mint: soft section backgrounds */
-  --on-surface: #182019;              /* main text            17.6:1 */
-  --on-surface-variant: #59635B;      /* supporting text       6.1:1 */
+  --surface-low: #F4FAF4;             /* results and quiet panels */
+  --surface-high: #E8F5E9;            /* search areas, Today card, soft sections */
+  --on-surface: #182019;              /* main text            16.7:1 */
+  --on-surface-variant: #59635B;      /* supporting text       6.3:1 */
   --outline: #8E9A90;
-  --outline-variant: #D7E1D9;         /* borders, dividers */
-  --primary: #2F7D4B;                 /* buttons, active nav, links   4.9:1 on white */
+  --outline-variant: #D7E1D9;
+  --primary: #2E7D32;                 /* buttons, links, active nav   5.1:1 on white */
   --on-primary: #FFFFFF;
-  --primary-dark: #23643B;            /* hover / pressed */
-  --primary-container: #CDEFD5;       /* selected chips, callouts */
-  --on-primary-container: #12341E;
-  --primary-ink: #23643B;             /* references, link text        6.8:1 */
-  --mint: #A9DFB4;                    /* secondary accents */
-  --mint-fresh: #82CF92;
-  --celery: #D8ED9B;                  /* tiny moments of energy: the match highlight, the Today tag */
-  --red-letter: #B8372B;              /* words of Jesus              5.6:1 */
+  --primary-dark: #1B5E20;            /* pressed state only */
+  --leaf: #43A047;                    /* the B tile and the copied toast: bright, not grave */
+  --primary-container: #A5D6A7;       /* selected chips, matched words, small labels */
+  --on-primary-container: #0F3D14;
+  --primary-ink: #2E7D32;             /* references, link text        5.1:1 */
+  --mint: #A5D6A7;
+  --mint-fresh: #66BB6A;              /* hope: one or two small moments only, never text */
+  --celery: #A5D6A7;                  /* the match highlight now uses the calm mint */
+  --red-letter: #B8372B;
   --focus: var(--primary);
 
   --bg: var(--surface); --bg-2: var(--surface-low); --bg-3: var(--surface-high);
@@ -63,18 +64,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --surface: #0F1511; --surface-low: #171E19; --surface-high: #1F2A22;
-    --on-surface: #E6EDE7; --on-surface-variant: #AEBBB1; --outline: #78857B; --outline-variant: #2B372E;
-    --primary: #8FD9A3; --on-primary: #06301A; --primary-dark: #A9E5B8; --primary-container: #1F4A2F; --on-primary-container: #CDEFD5; --primary-ink: #A9E5B8;
-    --mint: #3E6E4D; --mint-fresh: #5E9E70; --celery: #4F6423;
+    --surface: #0F1A11; --surface-low: #15231A; --surface-high: #1C2E20;
+    --on-surface: #E6EDE7; --on-surface-variant: #AEBBB1; --outline: #78857B; --outline-variant: #2B3A2E;
+    --primary: #81C784; --on-primary: #0A2E10; --primary-dark: #A5D6A7; --leaf: #66BB6A; --leaf: #66BB6A; --primary-container: #2E5A33; --on-primary-container: #C8E6C9; --primary-ink: #A5D6A7;
+    --mint: #3E6E4D; --mint-fresh: #66BB6A; --celery: #2E5A33;
     --red-letter: #F2A29C; --focus: var(--primary);
   }
 }
 :root[data-theme="dark"] {
-  --surface: #0F1511; --surface-low: #171E19; --surface-high: #1F2A22;
-  --on-surface: #E6EDE7; --on-surface-variant: #AEBBB1; --outline: #78857B; --outline-variant: #2B372E;
-  --primary: #8FD9A3; --on-primary: #06301A; --primary-dark: #A9E5B8; --primary-container: #1F4A2F; --on-primary-container: #CDEFD5; --primary-ink: #A9E5B8;
-  --mint: #3E6E4D; --mint-fresh: #5E9E70; --celery: #4F6423;
+  --surface: #0F1A11; --surface-low: #15231A; --surface-high: #1C2E20;
+  --on-surface: #E6EDE7; --on-surface-variant: #AEBBB1; --outline: #78857B; --outline-variant: #2B3A2E;
+  --primary: #81C784; --on-primary: #0A2E10; --primary-dark: #A5D6A7; --leaf: #66BB6A; --primary-container: #2E5A33; --on-primary-container: #C8E6C9; --primary-ink: #A5D6A7;
+  --mint: #3E6E4D; --mint-fresh: #66BB6A; --celery: #2E5A33;
   --red-letter: #F2A29C; --focus: var(--primary);
 }
 
@@ -130,7 +131,7 @@ main { padding: 1.5rem 0 4rem; }
 .bar__in { display: flex; align-items: center; justify-content: space-between; min-height: 56px; gap: 1rem; }
 .brand { white-space: nowrap; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: .55rem; min-height: var(--tap); }
 .brand__mark { width: 30px; height: 30px; flex: none; border-radius: 8px; }
-.brand__mark .tile { fill: var(--primary); }
+.brand__mark .tile { fill: var(--leaf); }
 .brand__mark .glyph { fill: var(--on-primary); }
 .nav { display: flex; gap: .25rem; }
 .nav a { color: var(--ink-2); text-decoration: none; padding: .55rem .7rem; border-radius: var(--r-sm); min-height: var(--tap); display: inline-flex; align-items: center; font-size: .95rem; }
@@ -168,7 +169,7 @@ main { padding: 1.5rem 0 4rem; }
 .btn:active { transform: scale(.98); }
 .btn--primary { background: var(--accent); color: var(--on-accent); }
 .finder .btn--primary { min-height: 54px; padding-inline: 1.6rem; font-size: 1.05rem; }
-.btn--primary:hover { background: var(--primary-dark); }
+.btn--primary:hover { background: #276F2B; }
 .btn--primary:active { background: var(--primary-dark); transform: scale(.98); }
 .btn--ghost { background: transparent; border-color: var(--line); }
 .btn--ghost:hover { background: color-mix(in srgb, var(--on-surface) var(--state-hover), transparent); }
@@ -296,6 +297,7 @@ main { padding: 1.5rem 0 4rem; }
 
 /* Toast */
 .toast { position: fixed; left: 50%; bottom: 1.25rem; transform: translate(-50%, 8px); background: var(--ink); color: var(--bg); padding: .65rem 1rem; border-radius: var(--r-pill); font-size: .95rem; opacity: 0; pointer-events: none; transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease); z-index: 20; }
+.toast { background: var(--leaf); color: #FFFFFF; }
 .toast.is-on { opacity: 1; transform: translate(-50%, 0); }
 
 /* Ad slots: rendered only when site.config ads.enabled is true. Reserved height prevents layout shift. */
@@ -355,7 +357,7 @@ main { padding: 1.5rem 0 4rem; }
 .hit__ref a { color: var(--accent-ink); text-decoration: none; }
 .hit__ref a:hover { text-decoration: underline; }
 .hit__text { font-family: var(--font-verse); font-size: 1.2rem; line-height: 1.5; margin: 0 0 .5rem; text-wrap: pretty; }
-.hit__text mark { background: var(--celery); color: inherit; border-radius: 3px; padding: 0 .1em; }
+.hit__text mark { background: var(--primary-container); color: inherit; border-radius: 3px; padding: 0 .1em; }
 .hit__why { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 .25rem; }
 .hit__why span { font-size: .78rem; color: var(--ink-2); background: var(--bg-2); border-radius: var(--r-pill); padding: .2rem .6rem; }
 .hit__actions { display: flex; flex-wrap: wrap; gap: 0 .25rem; margin-left: -.6rem; }

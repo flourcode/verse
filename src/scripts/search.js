@@ -6,7 +6,7 @@
   'use strict';
   const $ = (s, el) => (el || document).querySelector(s);
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const BASE = (document.currentScript && document.currentScript.src || '').replace(/assets\/search\.js.*$/, '') || '/';
+  const BASE = (document.currentScript && document.currentScript.src || '').replace(/assets\/search(\.[0-9a-f]+)?\.js.*$/, '') || '/';
   const SITE = document.documentElement.dataset.site || location.origin;
   const TR = document.documentElement.dataset.tr || 'World English Bible (WEB)';
 

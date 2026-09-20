@@ -27,10 +27,10 @@ const CSS = `
 body { margin: 0; font: 10.5pt/1.4 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; color: #182019; }
 h1 { font: 700 20pt/1.15 Georgia, "Times New Roman", serif; margin: 0 0 4pt; letter-spacing: -.01em; }
 .sub { color: #59635B; margin: 0 0 12pt; font-size: 10pt; }
-h2 { font: 700 9pt/1.3 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #2F7D4B; margin: 12pt 0 4pt; }
+h2 { font: 700 9pt/1.3 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #2E7D32; margin: 12pt 0 4pt; }
 .note { color: #59635B; font-size: 9.5pt; margin: 0 0 6pt; }
 .v { margin: 0 0 7pt; padding: 6pt 8pt; background: #F5FAF6; border-radius: 6pt; break-inside: avoid; }
-.v b { display: block; font-size: 9.5pt; color: #2F7D4B; margin-bottom: 1pt; }
+.v b { display: block; font-size: 9.5pt; color: #2E7D32; margin-bottom: 1pt; }
 .v q { font: 11pt/1.35 Georgia, "Times New Roman", serif; quotes: "“" "”"; }
 .v .why { display: block; font-size: 9pt; color: #59635B; margin-top: 3pt; }
 .cols { column-count: 2; column-gap: 18pt; }
