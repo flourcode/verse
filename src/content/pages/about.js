@@ -29,7 +29,9 @@ export default {
   <li><strong>Life changes</strong>: <a href="/situations/retirement/">retirement</a>, <a href="/situations/moving/">moving</a>, <a href="/situations/marriage/">marriage</a>, <a href="/situations/starting-over/">starting over</a>.</li>
   <li><strong>Occasions</strong>: what to write in a <a href="/occasions/sympathy-card/">sympathy card</a>, and scripture for <a href="/ministry/funeral-scripture/">funerals</a>, <a href="/ministry/wedding-scripture/">weddings</a>, and <a href="/occasions/graduation-card/">graduations</a>.</li>
   <li><strong>Themes</strong>: <a href="/topics/forgiveness/">forgiveness</a>, <a href="/topics/financial-stress/">money</a>, <a href="/situations/work-stress/">work</a>, <a href="/topics/wisdom/">guidance</a>.</li>
-  <li><strong>Search</strong>: type a few words you remember, a person, a story, a reference, or a saying you suspect is not in the Bible, and <a href="/search/">the search</a> finds it in the full text.</li>
+  <li><strong>Something to send</strong>: <a href="/send/">one verse and one honest line</a> for each moment, for a text or a card.</li>
+  <li><strong>Something to print</strong>: <a href="/printables/">free one-page sheets</a> for grief, the hospital room, waiting, end of life, caregivers, and more, and the <a href="/print/comfort-kit.pdf">Comfort Kit</a> that bundles them.</li>
+  <li><strong>Search</strong>: type a few words you remember, a person, a story, a reference, or a saying you suspect is not in the Bible, and <a href="/search/">the search</a> finds it in the full text. When it sounds like a hard moment, it ranks the comforting verses first and says so.</li>
 </ul>
 
 <h2>Hand-picked, not generated</h2>

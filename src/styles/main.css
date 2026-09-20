@@ -481,3 +481,7 @@ main { padding: 1.5rem 0 4rem; }
 .results__note--soft { color: var(--ink-2); font-size: .9rem; }
 
 .kicker { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); margin: 0 0 .4rem; }
+
+.tool__pdf b { color: var(--primary); font-weight: 600; }
+.tools .tool__about { display: inline-block; background: transparent; padding: .25rem .4rem; margin: .1rem 0 0 .75rem; font-size: .85rem; color: var(--ink-2); border-radius: var(--r-sm); text-decoration: underline; }
+.tools .tool__about:hover { background: var(--bg-2); }

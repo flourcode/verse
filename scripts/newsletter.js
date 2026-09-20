@@ -35,6 +35,7 @@ const sayings = json('src/data/sayings.json').filter((s) => s.status === 'not' |
 const versePages = json('src/content/verses-pages.json');
 const posts = readdirSync(join(ROOT, 'src/content/journal')).filter((f) => f.endsWith('.js')).sort();
 const TYPE_URL = { topic: '/topics/', situation: '/situations/', occasion: '/occasions/' };
+const SHEET = { 'before-surgery': 'hospital-room', 'cancer-diagnosis': 'hospital-room', 'waiting-for-test-results': 'waiting-for-test-results', 'waiting-for-bad-news': 'waiting-for-test-results', 'grief': 'grief', 'loss-of-a-spouse': 'grief', 'loss-of-a-parent': 'grief', 'loss-of-a-child': 'grief', 'sympathy-card': 'funeral-scripture', 'someone-dying': 'end-of-life', 'marriage': 'wedding-scripture', 'cannot-sleep': 'for-tonight', 'anxiety': 'for-tonight', 'overwhelmed': 'caregivers' };
 const urlFor = (p) => `${site.url}${TYPE_URL[p.type]}${p.slug}/`;
 
 function passage(ref) {
@@ -113,11 +114,12 @@ const html = `<!DOCTYPE html>
   ${p(esc(spLead.why))}
   ${p(`<strong>If you’re writing it in a card or a text:</strong> “${esc(wording)}”`, `color:${INK2};`)}
   ${btn(urlFor(sp), `All the verses for ${esc(sp.for)}`)}
+  ${SHEET[sp.slug] ? p(`On paper: ${link(site.url + '/print/' + SHEET[sp.slug] + '.pdf', 'a free one-sheet PDF')} you can print and hand to someone.`, `color:${INK2};font-size:15px;margin-top:-8px;`) : ''}
 
   ${h2('For those who comfort others')}
   ${p(`<strong>${esc(ci.section)}.</strong> ${esc(ci.why)}`)}
   ${verseBlock(ci.ref, passage(ci.ref), PALE)}
-  ${p(`The full quick reference, by situation, is at ${link(site.url + '/ministry/pastoral-care-scripture/', 'betterverses.com/ministry')}. Funeral and wedding readings are there too.`, `color:${INK2};`)}
+  ${p(`The full quick reference is at ${link(site.url + '/ministry/', 'betterverses.com/ministry')}, and the ${link(site.url + '/print/comfort-kit.pdf', 'Comfort Kit')} is eight care sheets in one PDF for the office drawer.`, `color:${INK2};`)}
 
   ${h2('Is that in the Bible?')}
   ${p(`<strong>“${esc(sy.say[0].replace(/^\w/, (c) => c.toUpperCase()))}.”</strong> ${esc(sy.note)}`)}
@@ -164,7 +166,7 @@ ${spVerse.reference}
 ${wrap(spLead.why)}
 
 If you're writing it in a card or a text: "${wording}"
-All the verses: ${urlFor(sp)}
+All the verses: ${urlFor(sp)}${SHEET[sp.slug] ? `\nOn paper: ${site.url}/print/${SHEET[sp.slug]}.pdf` : ''}
 
 FOR THOSE WHO COMFORT OTHERS
 ${ci.section}. ${wrap(ci.why)}
@@ -172,7 +174,8 @@ ${ci.section}. ${wrap(ci.why)}
 ${ci.ref}
 "${passage(ci.ref)}"
 
-The full quick reference: ${site.url}/ministry/pastoral-care-scripture/
+The full quick reference: ${site.url}/ministry/
+The Comfort Kit, eight care sheets in one PDF: ${site.url}/print/comfort-kit.pdf
 
 IS THAT IN THE BIBLE?
 "${sy.say[0]}" — ${wrap(sy.note)}

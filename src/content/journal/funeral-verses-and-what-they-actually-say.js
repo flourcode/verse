@@ -25,5 +25,5 @@ export default {
 <blockquote data-ref="Ecclesiastes 3:1-4"></blockquote>
 <p>A time to be born and a time to die. The book it comes from is the Bible’s most unsparing look at mortality, and this passage is its most quoted. It asks nothing of the listener, which makes it the right choice when the room holds people of many beliefs or none. It doesn’t explain death; it places it.</p>
 <h2>The rule underneath all five</h2>
-<p>If a passage needs a paragraph of explanation to fit the funeral, it is the wrong passage. Choose two or three, read them slowly, and let them stand. The full list, grouped by situation, is in the <a href="/ministry/funeral-scripture/">funeral Scripture guide</a>.</p>`,
+<p>If a passage needs a paragraph of explanation to fit the funeral, it is the wrong passage. Choose two or three, read them slowly, and let them stand. The full list, grouped by situation, is in the <a href="/ministry/funeral-scripture/">funeral Scripture guide</a>, and it is a <a href="/print/funeral-scripture.pdf">free PDF</a> if you want it in a binder.</p>`,
 };

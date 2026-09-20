@@ -182,7 +182,7 @@ To show the signup on the site, paste the `action` URL from your Kit form's HTML
 
 ## Printables
 
-Content lives in `src/content/printables.json`; every sheet follows the same shape (the moment, passages with a line on why, what to say, what not to say, how to use it). `npm run printables` writes print-ready HTML to `src/print/` and renders `public/print/<slug>.pdf` plus `pastoral-care-pack.pdf` (needs `pip install playwright pypdf && playwright install chromium`; without them, render the HTML to PDF from any browser at Letter size with background graphics on). The PDFs are committed. Each sheet also gets a landing page at `/printables/<slug>/` (the thing that earns links) with the PDF underneath at `/print/<slug>.pdf`; page counts on the landing pages are read from the real PDFs at build time. Topic pages link to the matching sheet through the `PRINTABLES` map in `src/lib/pages.js`.
+Content lives in `src/content/printables.json`; every sheet follows the same shape (the moment, passages with a line on why, what to say, what not to say, how to use it). `npm run printables` writes print-ready HTML to `src/print/` and renders `public/print/<slug>.pdf` plus `comfort-kit.pdf` (needs `pip install playwright pypdf && playwright install chromium`; without them, render the HTML to PDF from any browser at Letter size with background graphics on). The PDFs are committed. Each sheet also gets a landing page at `/printables/<slug>/` (the thing that earns links) with the PDF underneath at `/print/<slug>.pdf`; page counts on the landing pages are read from the real PDFs at build time. Topic pages link to the matching sheet through the `PRINTABLES` map in `src/lib/pages.js`.
 
 ## Voice
 

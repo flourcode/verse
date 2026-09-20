@@ -37,4 +37,6 @@ var GA_MEASUREMENT_ID = "G-KR7GC1XMW7";
      copy_verse          { topic }               Copy
      share_verse         { topic, method }       Share (native sheet or copied link)
      related_topic_click { from }                tapped a Related chip on a result
+     printable_open      { sheet }               opened a PDF sheet or the Comfort Kit
+     bible_search        { results, kind }       used the full-Bible search (never the query text)
    They appear in GA under Reports → Engagement → Events. */

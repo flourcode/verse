@@ -297,6 +297,9 @@
     document.addEventListener('click', (e) => { if (m.open && !m.contains(e.target)) m.open = false; });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && m.open) { m.open = false; $('summary', m).focus(); } });
   }
+  function initPrintables() {
+    document.addEventListener('click', (e) => { const a = e.target.closest('a[href$=".pdf"]'); if (!a) return; track('printable_open', { sheet: a.getAttribute('href').split('/').pop().replace('.pdf', '') }); });
+  }
   function initPassages() {
     document.addEventListener('click', async (e) => {
       const b = e.target.closest('[data-copy-passage]'); if (!b) return;
@@ -304,5 +307,5 @@
       toast((await copyText(`“${text}” — ${b.dataset.ref} (${TR})`)) ? 'Passage copied' : 'Couldn’t copy'); track('copy_verse', { topic: b.dataset.ref.replace(/\s+/g, '-').toLowerCase() });
     });
   }
-  document.addEventListener('DOMContentLoaded', () => { initMenu(); initPassages(); initFinder(); initHomeDaily(); initTopic(); initToday(); initRandom(); });
+  document.addEventListener('DOMContentLoaded', () => { initMenu(); initPassages(); initPrintables(); initFinder(); initHomeDaily(); initTopic(); initToday(); initRandom(); });
 })();

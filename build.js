@@ -221,7 +221,7 @@ ${posts.map((p) => md(`/journal/${p.slug}/`, p.title, p.description)).join('\n')
 
 ## Printables
 
-${md('/printables/', 'Free printable Scripture guides', 'Sheets for grief, funerals, the hospital room, waiting, end of life, caregivers, weddings, sleepless nights; the Pastoral Care Pack bundles them')}
+${md('/printables/', 'Free printable Scripture guides', 'Sheets for grief, funerals, the hospital room, waiting, end of life, caregivers, weddings, sleepless nights; the Comfort Kit bundles them')}
 ${printables.map((p) => md(`/printables/${p.slug}/`, p.h1, p.description)).join('\n')}
 
 ## For ministry
