@@ -45,7 +45,7 @@ export function layout(page) {
     ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.ads.client}" crossorigin="anonymous"></script>`
     : '';
   const navItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/journal/', 'Journal'], ['/ministry/', 'For Ministry']];
-const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/today/', 'Today’s verse'], ['/verses/', 'Verses in context'], ['/journal/', 'Journal'], ['/ministry/', 'For Ministry'], ['/about/', 'About']];
+const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/send/', 'Verses to send someone'], ['/today/', 'Today’s verse'], ['/verses/', 'Verses in context'], ['/journal/', 'Journal'], ['/ministry/', 'For Ministry'], ['/about/', 'About']];
   return `<!doctype html>
 <html lang="en" data-site="${site.url}" data-tr="${esc(TR)}">
 <head>

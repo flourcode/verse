@@ -71,7 +71,7 @@ public/                   Copied as-is: analytics.js (paste GA4 id here), favico
 dist/                     Build output (gitignored). Deploy this folder.
 ```
 
-Launch set: full-Bible search (home and `/search/`), 31 hand-picked topic pages (12 topics, 16 situations, 3 occasion/card pages), 16 famous-verse context pages (`/verses/`), a journal with 4 launch articles (`/journal/`), a ministry hub with 3 guides (`/ministry/`), topics hub, today, random, seven trust pages, and a 404. 71 pages. 31,098 searchable verses, 156 hand-annotated ones, 31-entry daily rotation.
+Launch set: full-Bible search (home and `/search/`), 46 hand-picked topic pages (12 topics, 30 situations, 4 occasion/card pages), a "verses to send someone who is…" page (`/send/`), 19 famous-verse context pages (`/verses/`), a journal with 5 articles (`/journal/`), a ministry hub with 3 guides (`/ministry/`), topics hub, today, random, seven trust pages, and a 404. 71 pages. 31,098 searchable verses, 156 hand-annotated ones, 31-entry daily rotation.
 
 ## The three layers
 

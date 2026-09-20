@@ -12,7 +12,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import site from './site.config.js';
 import { setAssets } from './src/lib/html.js';
-import { urlFor, home, searchPage, topicsHub, topicPage, today, random, staticPage, notFound, versesIndex, versePage, journalIndex, journalPost, ministryHub, guidePage } from './src/lib/pages.js';
+import { urlFor, home, searchPage, sendPage, topicsHub, topicPage, today, random, staticPage, notFound, versesIndex, versePage, journalIndex, journalPost, ministryHub, guidePage } from './src/lib/pages.js';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const DIST = join(ROOT, 'dist');
@@ -125,6 +125,7 @@ write('/today/', today(ctx));
 write('/random/', random(ctx));
 for (const p of pages) write(p.url, topicPage(p, ctx));
 for (const s of statics) write(s.path, staticPage(s));
+write('/send/', sendPage(ctx));
 write('/verses/', versesIndex(ctx));
 for (const v of versePages) write(`/verses/${v.slug}/`, versePage(v, ctx));
 write('/journal/', journalIndex(ctx));
@@ -163,7 +164,7 @@ writeFileSync(join(DIST, 'data/finder.js'), 'window.__FINDER__=' + JSON.stringif
 const excluded = new Set(site.sitemapExclude);
 const urls = out.filter((u) => !u.endsWith('.html') && !excluded.has(u.replace(/^\/|\/$/g, '').split('/').pop() || 'home') && !excluded.has(u.replace(/^\/|\/$/g, '')));
 const today_ = new Date().toISOString().slice(0, 10);
-const prio = (u) => (u === '/' ? '1.0' : /^\/(topics|today|verses|journal|ministry)\/$/.test(u) ? '0.8' : /^\/(topics|situations|occasions|verses|journal|ministry)\//.test(u) ? '0.7' : '0.3');
+const prio = (u) => (u === '/' ? '1.0' : /^\/(topics|today|verses|journal|ministry|send)\/$/.test(u) ? '0.8' : /^\/(topics|situations|occasions|verses|journal|ministry)\//.test(u) ? '0.7' : '0.3');
 const freq = (u) => (u === '/today/' ? 'daily' : u === '/' ? 'weekly' : 'monthly');
 writeFileSync(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${site.url}${u}</loc><lastmod>${today_}</lastmod><changefreq>${freq(u)}</changefreq><priority>${prio(u)}</priority></url>`).join('\n')}\n</urlset>\n`);
 
@@ -197,6 +198,10 @@ ${byType('situation').join('\n')}
 ## Cards and occasions
 
 ${byType('occasion').join('\n')}
+
+## Verses to send someone
+
+${md('/send/', 'Bible verses to send someone who is…', 'One verse and one honest line for each moment')}
 
 ## Famous verses in context
 

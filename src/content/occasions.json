@@ -64,12 +64,12 @@
       }
     ],
     "related": [
+      "new-baby-card",
       "retirement",
       "graduation-card",
       "wisdom",
       "hope",
-      "starting-over",
-      "peace"
+      "starting-over"
     ],
     "faq": [
       {
@@ -237,12 +237,12 @@
       }
     ],
     "related": [
+      "loss-of-a-spouse",
       "grief",
       "loneliness",
       "hope",
       "peace",
-      "waiting",
-      "overwhelmed"
+      "waiting"
     ],
     "faq": [
       {
@@ -263,6 +263,98 @@
       "Write the name of the person who died. Most cards don’t, and the family notices.",
       "If you knew them, one specific memory beats any verse: “He always asked about my mom.”",
       "Don’t explain the loss, don’t compare it to yours, and don’t promise it gets easier. Sign it and send it."
+    ]
+  },
+  {
+    "slug": "new-baby-card",
+    "type": "occasion",
+    "cluster": "occasions",
+    "title": "Bible Verse for a New Baby Card",
+    "h1": "Bible verse for a new baby card",
+    "label": "New baby card",
+    "for": "a new baby card",
+    "description": "Bible verses for a new baby card or baby shower: best overall, short, traditional, and a blessing, with suggested wording. Every verse in full.",
+    "intent": "Someone is writing a card for a birth, adoption, or baby shower and wants a verse that fits a baby specifically, plus a line to write with it.",
+    "intro": "A baby card is one of the happier cards to write, and one of the easier ones to get slightly wrong: half the verses people reach for are about children in general, or about parenting, or are Jeremiah 29:11 again. These are the ones that are actually about a new life, or a prayer answered, or a blessing you can write over a child. Every one of them fits on the inside of a card.",
+    "verses": [
+      {
+        "id": "psalm-127-3",
+        "why": "“Children are a heritage from Yahweh. The fruit of the womb is his reward.” The most direct thing the Bible says about a baby: a gift, not an accident and not an achievement. It is the verse to start with because it says the one thing every parent wants said about their child."
+      },
+      {
+        "id": "1-samuel-1-27",
+        "why": "Hannah, who had waited years and been mocked for her empty arms, holding her son: “For this child I prayed, and Yahweh has given me my petition which I asked of him.” If the parents waited, or struggled, or adopted, this is the verse. It carries the whole wait in one sentence."
+      },
+      {
+        "id": "psalm-139-13-14",
+        "why": "Knit together in the womb; fearfully and wonderfully made. The psalm is about being known completely by God, and this passage says the knowing started before birth. For a card, it says the baby was already a person, already known, before anyone met them."
+      },
+      {
+        "id": "jeremiah-1-5",
+        "why": "“Before I formed you in the womb, I knew you.” Said to Jeremiah about his calling as a prophet, so it is not a promise that every baby will be a prophet. The principle that carries is real: known before born. It is a favorite for adoption announcements for good reason."
+      },
+      {
+        "id": "numbers-6-24-26",
+        "why": "The blessing Aaron was told to say over the people, word for word. It is the best thing to write in a baby card if you want to bless the child rather than describe them: keep you, shine on you, give you peace. Traditional, and no one has ever minded receiving it."
+      },
+      {
+        "id": "matthew-19-14",
+        "why": "Jesus, with parents pushing forward and disciples pushing back: “Allow the little children to come to me.” For a card it says the child is welcome at the very center of the faith, from the start, no waiting until they are old enough."
+      },
+      {
+        "id": "3-john-1-4",
+        "why": "“I have no greater joy than this: to hear about my children walking in truth.” John writes it about spiritual children, but grandparents in particular reach for it, because it is a hope for the whole life ahead written by an old man who had watched it happen."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "psalm-127-3"
+      },
+      {
+        "kind": "Short",
+        "id": "psalm-127-3"
+      },
+      {
+        "kind": "After a long wait or adoption",
+        "id": "1-samuel-1-27"
+      },
+      {
+        "kind": "Traditional",
+        "id": "numbers-6-24-26"
+      }
+    ],
+    "wording": [
+      "Welcome, little one. You were prayed for before you were here.",
+      "So happy for the three of you. Get some sleep when you can.",
+      "Congratulations. A whole new person. We can’t wait to meet her.",
+      "Praying this over your family this week.",
+      "For the grandparents: You did this once and look how it turned out. Enjoy every minute of the second run."
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "It appears in more baby cards than any verse, and it was written to exiles about a return seventy years away. It is not wrong, exactly; it is just not about a baby. Psalm 127:3 is."
+    },
+    "howToUse": "Write the verse by hand, then one line of your own. If the parents waited a long time or adopted, 1 Samuel 1:27 will mean more than anything else you could write. For a baptism or dedication, Numbers 6:24–26.",
+    "related": [
+      "graduation-card",
+      "marriage",
+      "hope",
+      "patience"
+    ],
+    "faq": [
+      {
+        "q": "What is a good short Bible verse for a baby card?",
+        "a": "Psalm 127:3, “Children are a heritage from Yahweh,” or the first line of Numbers 6:24, “Yahweh bless you and keep you.” Both fit on one line."
+      },
+      {
+        "q": "What verse is good for an adoption?",
+        "a": "1 Samuel 1:27 if the family waited and prayed, or Jeremiah 1:5, “before I formed you in the womb, I knew you,” with the note that the knowing came first."
+      },
+      {
+        "q": "What about a baby shower?",
+        "a": "Numbers 6:24–26 read aloud as a blessing works better than a card verse. If you want a card, Psalm 139:13–14."
+      }
     ]
   }
 ]

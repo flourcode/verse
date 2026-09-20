@@ -102,12 +102,12 @@
       }
     ],
     "related": [
+      "afraid-of-the-future",
       "patience",
       "waiting-for-test-results",
       "hope",
       "difficult-decisions",
-      "job-loss",
-      "peace"
+      "job-loss"
     ],
     "faq": [
       {
@@ -233,12 +233,12 @@
       }
     ],
     "related": [
+      "new-job",
       "hope",
       "courage",
       "job-loss",
       "moving",
-      "waiting",
-      "forgiveness"
+      "waiting"
     ],
     "faq": [
       {
@@ -415,12 +415,12 @@
     ],
     "howToUse": "Read Philippians 4:6-7 the night before and Exodus 4:12 the morning of. Say Psalm 90:17 once before you walk in. Then do the interview. If you don't get the job, come back to Proverbs 16:3; it was never a guarantee, and it still holds.",
     "related": [
+      "new-job",
       "starting-over",
       "courage",
       "work-stress",
       "job-loss",
-      "wisdom",
-      "waiting"
+      "wisdom"
     ],
     "faq": [
       {
@@ -684,12 +684,12 @@
     ],
     "howToUse": "Memorize Psalm 112:7. It's one sentence, and it's the one you'll want when the phone rings. If you can't pray in words, Romans 8:26 says that's fine.",
     "related": [
+      "waiting-for-bad-news",
       "before-surgery",
       "waiting",
       "anxiety",
       "peace",
-      "cannot-sleep",
-      "worry"
+      "cannot-sleep"
     ],
     "faq": [
       {
@@ -996,12 +996,12 @@
       }
     ],
     "related": [
+      "estrangement",
       "forgiveness",
       "patience",
       "difficult-coworkers",
       "marriage",
-      "peace",
-      "loneliness"
+      "peace"
     ],
     "faq": [
       {
@@ -1022,6 +1022,1066 @@
       "“You don’t have to decide today what you do about it.”",
       "“I’m around after the holiday if you need to debrief.”",
       "Don’t say: “But they’re family.” They know. That’s what makes it hard."
+    ]
+  },
+  {
+    "slug": "loss-of-a-spouse",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses After Losing a Spouse",
+    "h1": "Bible verses after losing a spouse",
+    "label": "Lost a spouse",
+    "for": "someone who lost a spouse",
+    "description": "Bible verses for a widow or widower, and for the people who love them: passages that sit with the loss of a husband or wife without explaining it away.",
+    "intent": "A husband or wife has died, or the person is comforting someone whose spouse died. They want verses that honor the size of the loss.",
+    "intro": "Losing a spouse is losing the person who knew the ordinary version of you: how you take your coffee, which side of the bed, the way you say a name. The Bible does not treat that loss lightly. God calls himself the defender of widows in the Psalms, and the New Testament assumes grief, not the absence of it. These verses were chosen for the long stretch after the funeral, when the house is quiet.",
+    "safety": "If the grief has become a weight you cannot carry, or you have thought about not wanting to be here, please tell someone today: a friend, your doctor, or a crisis line in your country. Wanting to be with the person you lost is common in this kind of grief, and it is worth saying out loud to someone who can help.",
+    "verses": [
+      {
+        "id": "psalm-34-18",
+        "why": "David wrote this after a humiliating escape, and it is the first verse I would give anyone who has lost a spouse, because it asks nothing of them. Near to the brokenhearted; saves those crushed in spirit. It does not say when the heart mends. It says the nearness comes in response to the breaking. For a widow or widower, that matters: you do not have to be doing well to be close to God."
+      },
+      {
+        "id": "psalm-68-5",
+        "why": "A short line from a psalm about God’s strength, and one of the few places Scripture names widows directly. God is a defender of widows in his holy dwelling. In the ancient world a widow had no protector; this verse says she now has the one who matters. Read plainly, it is a promise of being looked after, not of being unaffected."
+      },
+      {
+        "id": "2-corinthians-1-3-4",
+        "why": "Paul opens this letter after a season so hard he despaired of life itself, so “the God of all comfort” comes from a man who needed comforting and got it. The verse also says what the comfort is for: to pass on. Widows and widowers become, eventually, the people other widows can talk to. Not yet. But the verse holds that future open."
+      },
+      {
+        "id": "psalm-73-26",
+        "why": "“My flesh and my heart fail.” The psalmist says it plainly and does not pretend otherwise. Then: God is the strength of my heart. This is a verse for the mornings when getting up is the whole task. It does not promise the failing will stop. It says something holds while it happens."
+      },
+      {
+        "id": "1-thessalonians-4-13",
+        "why": "Paul writes to a young church whose members have begun to die, and the survivors do not know what to think. His line is careful: not “don’t grieve,” but “don’t grieve like those who have no hope.” Grief is assumed. Hope changes its shape, not its existence. For a believer who feels guilty for being devastated, this is the verse."
+      },
+      {
+        "id": "john-14-1-3",
+        "why": "Jesus, the night before his own death, tells frightened friends there is a prepared place and that he will come back for them. Widows and widowers often want to know one thing: where is he, where is she. This passage does not give a map. It gives the word of someone who went through the door first and says he is preparing a place."
+      },
+      {
+        "id": "revelation-21-4",
+        "why": "The last page. A hand wiping away tears, and death, mourning, crying, and pain gone. It only means anything because those things are real now, and the verse is honest about that. Some people cannot hear it in the first weeks. Some find it is the only thing that helps. Offer it once, quietly, and let them decide."
+      }
+    ],
+    "skip": {
+      "ref": "Romans 8:28",
+      "why": "“All things work together for good” is true, and in the first year it lands as “his death was for the best.” Paul meant God is at work in it and the good is who we become. Save it. Psalm 34:18 asks nothing of the grieving person but being broken, which is where they are."
+    },
+    "whatToSay": [
+      "Say the spouse’s name, often. Widows and widowers say the worst part is when everyone stops saying it.",
+      "“Tell me about him.” Then listen. Most people are trying to move them past the story; be the one who asks for it.",
+      "Pick a day and show up: “I’m bringing dinner Tuesday, and I’ll leave it on the porch if you don’t feel like company.”",
+      "In three months, when everyone else has gone back to normal, send one line. That is when the house is quietest.",
+      "Don’t say: “At least you had so many years,” “She’s in a better place,” or “You’re so strong.” None of them are for the grieving person; they are for the speaker."
+    ],
+    "howToUse": "Choose one verse and keep it for a month rather than reading all seven. If you are sending one to a widow or widower, Psalm 34:18 or Psalm 73:26 with a single honest sentence is enough. Do not send Revelation 21:4 in the first weeks unless you know they want it.",
+    "related": [
+      "grief",
+      "sympathy-card",
+      "loneliness",
+      "cannot-sleep",
+      "loss-of-a-parent"
+    ],
+    "faq": [
+      {
+        "q": "Is it wrong to still feel married?",
+        "a": "No. The Bible’s own picture of marriage is one flesh, and one flesh does not come apart on a schedule. Grief for a spouse commonly lasts years and changes rather than ends. Nothing in Scripture puts a clock on it."
+      },
+      {
+        "q": "What does the Bible say about widows?",
+        "a": "More than about almost any other group. God calls himself the defender of widows (Psalm 68:5), commands his people to care for them (Deuteronomy 10:18, James 1:27), and the early church organized daily support for them (Acts 6:1). The consistent theme is that they are to be protected and provided for, not left alone."
+      },
+      {
+        "q": "What verse can I send someone who lost their husband or wife?",
+        "a": "Psalm 34:18 with one line of your own: “Thinking of you and of Tom. This came to mind.” Say the name. Keep it short. Send another one in a month."
+      }
+    ]
+  },
+  {
+    "slug": "loss-of-a-parent",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses After Losing a Parent",
+    "h1": "Bible verses after losing a parent",
+    "label": "Lost a parent",
+    "for": "someone who lost a parent",
+    "description": "Bible verses for the death of a mother or father, at any age: passages about being carried, being remembered, and grief that does not need to be explained.",
+    "intent": "A mother or father has died. The person is an adult child, or is comforting one. They want verses that fit a parent specifically.",
+    "intro": "Losing a parent, at any age, is losing the person who remembers you before you remember yourself. People are often surprised by how hard it hits when the parent was old, or ill, or difficult. The Bible does not rank losses. It gives a psalm that says “when my father and mother forsake me,” and a God who describes himself as a father with compassion. These verses were chosen for adult children, and for those comforting them.",
+    "verses": [
+      {
+        "id": "psalm-27-10",
+        "why": "“When my father and my mother forsake me, then Yahweh will take me up.” David wrote it, probably about abandonment, but adult children read it at funerals for a reason: the two people who were always there are not, and the verse says someone is. It does not diminish the parent. It says the role of being held does not end with them."
+      },
+      {
+        "id": "psalm-103-13-14",
+        "why": "“As a father has compassion on his children.” The psalm reaches for the best of what a parent is and says that is what God is like toward you. Then the honest line: he knows we are dust. For someone who has just watched a parent become fragile, that sentence is not bleak. It is the relief of being known completely and still held."
+      },
+      {
+        "id": "matthew-5-4",
+        "why": "Jesus calls mourners blessed, which is a strange thing to say until you notice he does not tell them to stop. The promise is comfort, and he does not say when. For an adult child who feels they should be “handling it” because the parent was old, this verse says the grief is right, and that it is headed somewhere."
+      },
+      {
+        "id": "isaiah-46-4",
+        "why": "God speaking to Israel: “even to old age I am he, and even to gray hairs I will carry you.” If your parent lived long, this verse is about them: carried to the end. If they were a believer, it can be read as a promise kept. It is one of the gentlest verses in the Bible about growing old, and it is right at a funeral."
+      },
+      {
+        "id": "psalm-116-15",
+        "why": "“Precious in Yahweh’s sight is the death of his saints.” One line, and it says the thing adult children most want to hear: the death was not a clerical event. It was noticed, and it mattered. Read it slowly. It works at a graveside when nothing longer would."
+      },
+      {
+        "id": "john-11-25-26",
+        "why": "Said to Martha at her brother’s tomb, before anything has changed. Jesus does not say “I will do a resurrection.” He says “I am the resurrection,” and then asks her, with the loss fresh, whether she believes it. If you cannot answer yet, that is allowed. Martha said yes with tears on her face."
+      },
+      {
+        "id": "psalm-23-4",
+        "why": "The most familiar verse in the Bible for a reason: it names the valley of the shadow of death and walks through it. Many people heard this at their parent’s bedside or funeral, which is itself a comfort; it connects the two. The confidence is in the shepherd, not in the road."
+      }
+    ],
+    "skip": {
+      "ref": "“Everything happens for a reason”",
+      "why": "Not a Bible verse, and the wrong thing to say when a parent has died, because it invites the person to hunt for the reason. Psalm 103:14, “he knows we are dust,” says the true thing: mortality is known and held, not explained."
+    },
+    "whatToSay": [
+      "“I remember when your mom …” One specific memory is worth more than any verse.",
+      "“What was your dad like when you were little?” People rarely get asked, and they want to answer.",
+      "Show up to the funeral, and then show up to something ordinary two weeks later.",
+      "If they were the caregiver: “You did that well. She was lucky to have you.” They are usually second-guessing every decision.",
+      "Don’t say: “At least she lived a long life.” Length does not make it smaller."
+    ],
+    "howToUse": "For a funeral or graveside, Psalm 23 or Psalm 116:15. For a card, Psalm 103:13–14 or Isaiah 46:4 if the parent lived long. For yourself, in the weeks after, Psalm 27:10 read at night.",
+    "related": [
+      "loss-of-a-sibling",
+      "grief",
+      "loss-of-a-spouse",
+      "sympathy-card",
+      "difficult-family-members",
+      "loneliness"
+    ],
+    "faq": [
+      {
+        "q": "My relationship with my parent was difficult. Is it wrong to grieve?",
+        "a": "No, and it is often harder. You are grieving the parent you had and the one you did not get. Psalm 27:10 was written by someone who felt forsaken by his parents, and it belongs to you as much as to anyone."
+      },
+      {
+        "q": "What verse is good for a parent’s funeral?",
+        "a": "Psalm 23 whole, or Psalm 116:15 if you want one line. Isaiah 46:4 is right for a parent who lived to old age. John 11:25–26 if you want the service to say something about resurrection plainly."
+      },
+      {
+        "q": "What can I send a friend whose mother died?",
+        "a": "Psalm 103:13–14 and one sentence: “I’m so sorry about your mom. This came to mind.” Then, in a few weeks, a text that just says her name and that you are thinking of them."
+      }
+    ]
+  },
+  {
+    "slug": "cancer-diagnosis",
+    "type": "situation",
+    "cluster": "health",
+    "title": "Bible Verses for a Cancer Diagnosis",
+    "h1": "Bible verses for a cancer diagnosis",
+    "label": "Cancer diagnosis",
+    "for": "someone with a cancer diagnosis",
+    "description": "Bible verses for someone who has just been diagnosed with cancer, and for the family: passages for fear, for the long middle, and for the days the body gives out.",
+    "intent": "Someone (or their parent, spouse, friend) has cancer. They want verses that are honest about fear and the body without promising a cure.",
+    "intro": "A cancer diagnosis divides life into before and after in a single sentence. Then comes the long middle: scans, treatment, waiting, good days and terrible ones. These verses were chosen for that whole stretch, not just the day of the news. None of them promise healing. What they promise is presence, and a self that outlasts the body’s wearing down. That is a promise Scripture can actually keep.",
+    "safety": "Please keep every appointment and follow your medical team. A verse can steady you through treatment; it is not treatment. If fear or despair is overwhelming, tell your doctor; oncology teams have people whose whole job is that.",
+    "verses": [
+      {
+        "id": "isaiah-41-10",
+        "why": "Five promises in one breath, said to exiles facing the most powerful empire on earth: I am with you, I am your God, I will strengthen you, I will help you, I will uphold you. The last one is a hand. This is the verse for the day of the diagnosis, when the news is bigger than anything you can do about it. The empire does not go away. The grip does not either."
+      },
+      {
+        "id": "psalm-46-1",
+        "why": "A very present help in trouble: here, now, before the shaking stops. The psalm goes on to picture the earth giving way. A diagnosis feels exactly like that. The verse does not tell you to be calm first; the refuge is available while the ground is moving."
+      },
+      {
+        "id": "2-corinthians-4-16-18",
+        "why": "Paul on a body wearing out: the outer person decays, the inner is renewed day by day. He is not being brave; he is being precise about what treatment feels like. Hair, strength, appetite, all going, and something inside that is not. This is the passage for the middle of chemotherapy, when the mirror is hard."
+      },
+      {
+        "id": "psalm-139-7-10",
+        "why": "There is nowhere the hand is not. Read this one in the scanner, or the infusion chair, or the 3 a.m. bathroom. The psalm tries every direction to get away from God and fails. For a cancer patient, that is not a threat; it means the treatment room is not outside his reach."
+      },
+      {
+        "id": "romans-8-38-39",
+        "why": "Paul’s list of what cannot separate us from God’s love begins with death and ends with “any other created thing.” Cancer is a created thing. This is the verse for the conversation nobody wants to have, and it is honest enough to have it: whatever happens, this does not."
+      },
+      {
+        "id": "matthew-6-34",
+        "why": "Jesus, at the end of a long argument about worry, says: don’t borrow tomorrow’s trouble. Cancer makes you live a year of scan results in an afternoon. This verse is permission to stop at today. There will be provision for tomorrow, tomorrow. It is a hard discipline and the only one that works."
+      },
+      {
+        "id": "psalm-56-3",
+        "why": "“When I am afraid, I will put my trust in you.” Not “I am not afraid.” David writes it while captured by enemies, and it is a sequence, not a cure: fear arrives, trust is chosen, fear loses its grip, and then it arrives again. That is what a diagnosis is like. The verse is small enough to carry through it."
+      }
+    ],
+    "skip": {
+      "ref": "James 5:15",
+      "why": "“The prayer of faith will heal the one who is sick” is a real verse in a real passage about elders anointing the sick. Sent to someone with cancer, it quietly puts the outcome on their faith, and if the outcome is bad it hurts them twice. Pray for healing, absolutely. Send Isaiah 41:10, which promises the thing you can actually promise."
+    },
+    "whatToSay": [
+      "“That’s terrifying. I’m here.” Then stop. Don’t fix it in the same breath.",
+      "Offer a specific thing, not “anything you need”: “I’ll drive you Thursday.” “I’m walking the dog this week.”",
+      "Ask which they want: distraction or talking about it. Both are right on different days.",
+      "Keep showing up during the boring middle of treatment, months in, when the meal train has stopped.",
+      "Don’t say: “My aunt had that and she …” They do not need your aunt. Don’t say: “Stay positive.” They are allowed not to."
+    ],
+    "howToUse": "For the day of the news, Isaiah 41:10, and nothing else. For the long middle, 2 Corinthians 4:16–18 read slowly on the bad days. For the family, Psalm 46:1. If you are the one with the diagnosis and someone sends you a verse that lands wrong, you are allowed to put it down.",
+    "related": [
+      "before-surgery",
+      "waiting-for-test-results",
+      "anxiety",
+      "grief",
+      "someone-dying"
+    ],
+    "faq": [
+      {
+        "q": "Does the Bible promise healing?",
+        "a": "It records many healings and invites prayer for them, and it is honest that faithful people die of illness: Paul left Trophimus sick (2 Timothy 4:20) and lived with a thorn God did not remove. Pray for healing. Do not tell someone their healing depends on their faith; nothing in Scripture supports putting that weight on a sick person."
+      },
+      {
+        "q": "What verse can I send someone just diagnosed with cancer?",
+        "a": "Isaiah 41:10, with one line: “I don’t know what to say. I’m here, and I’m not going anywhere.” That is the whole message."
+      },
+      {
+        "q": "What about for the family?",
+        "a": "Psalm 46:1 for the spouse or adult child who is holding everything together. They are often more afraid than the patient and less allowed to say so."
+      }
+    ]
+  },
+  {
+    "slug": "someone-dying",
+    "type": "situation",
+    "cluster": "health",
+    "title": "Bible Verses for Someone Who Is Dying",
+    "h1": "Bible verses for someone who is dying",
+    "label": "Someone is dying",
+    "for": "someone who is dying",
+    "description": "Bible verses to read at a bedside or in hospice: short passages about being held, going home, and the promise Jesus made to the man dying next to him.",
+    "intent": "Someone is at the end of life, in hospice or the hospital. The person wants verses to read aloud at the bedside, or for themselves as they face it.",
+    "intro": "At a bedside, you need verses that are short, plain, and true, because the person may be drifting, and you will be reading through your own tears. These are the ones hospice chaplains reach for. None of them argue. They say: you are held, you are going somewhere, and you are not going alone. Read one, slowly, and then sit. The sitting is most of it.",
+    "safety": "If you are the one dying, and no one has asked what you want these last days to be like, it is all right to say so. Hospice teams, chaplains, and social workers exist for exactly this. If you are caring for someone, ask them for help before you are past the point of being able to.",
+    "verses": [
+      {
+        "id": "psalm-23-4",
+        "why": "The valley of the shadow of death, named without flinching, and “you are with me.” This is the verse for the bedside because the person has probably known it their whole life, and hearing it now connects the end to everything before. Read it as a statement about company. The rod and staff are a shepherd’s tools for the dark."
+      },
+      {
+        "id": "luke-23-43",
+        "why": "Jesus, dying, to the thief dying next to him: “today you will be with me in Paradise.” The man had nothing to offer, no time left to make amends, and the answer was today. This is the verse for someone afraid it is too late, and for the family afraid on their behalf. There is no shorter or clearer promise in the Bible about what comes next."
+      },
+      {
+        "id": "psalm-31-5",
+        "why": "“Into your hand I commend my spirit.” Jesus quoted this line on the cross, and Christians have said it at deathbeds ever since. It is a handing-over, said by the person themselves or on their behalf. If the person is still able to speak, this is one they may want to say. If not, it can be said for them."
+      },
+      {
+        "id": "john-14-1-3",
+        "why": "“In my Father’s house are many homes. I go to prepare a place for you.” Jesus says it the night before his own death to friends who are about to watch him die. A prepared place, and someone coming back to get you. Read it as a promise from the one who went first."
+      },
+      {
+        "id": "2-corinthians-5-1",
+        "why": "Paul’s image: the body is a tent, and when it comes down there is a house, not made with hands, eternal. A tent is temporary on purpose. For someone whose body has become a difficult place to live, this verse says the difficulty is the tent, not them, and the house is ready."
+      },
+      {
+        "id": "isaiah-43-2",
+        "why": "“When you pass through the waters, I will be with you.” When, not if. Isaiah writes it to people who have already been through the worst. The promise is presence in the crossing, which is the honest kind of promise for this room. It does not say the water isn’t deep."
+      },
+      {
+        "id": "psalm-116-15",
+        "why": "“Precious in Yahweh’s sight is the death of his saints.” For the family, more than the patient: it says the death is seen and valued, not merely permitted. One line, and it can be the last thing read in the room, or the first thing said afterward when nobody knows what to say."
+      }
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "“Plans to prosper you and not to harm you, to give you a future and a hope” gets read at deathbeds because of the word hope, and it was written to exiles about a return seventy years out. At a bedside it can sound like a promise of recovery that everyone in the room knows is not coming. John 14:1–3 is the future-and-hope verse for this room."
+    },
+    "whatToSay": [
+      "Say less. One verse, slowly. Then hold a hand.",
+      "“You can go when you’re ready. We’ll be all right.” Families often need to give permission, and the dying often wait for it.",
+      "Say what they meant to you, in the present tense, while they can hear it. Hearing is usually the last sense to go.",
+      "Play the music they loved. Read the psalm they knew. Familiar is more comforting than profound now.",
+      "Don’t say: “Fight this.” Late in dying, that can become one more thing they are failing at."
+    ],
+    "howToUse": "Bring two verses, not seven. Psalm 23 for the room, Luke 23:43 or Psalm 31:5 for the person. If you are a pastor or chaplain, the printable hospital-room card has these with a few words to say; it is linked below.",
+    "related": [
+      "cancer-diagnosis",
+      "grief",
+      "loss-of-a-parent",
+      "loss-of-a-spouse",
+      "before-surgery"
+    ],
+    "faq": [
+      {
+        "q": "What is the best Bible verse to read to someone who is dying?",
+        "a": "Psalm 23, whole and slow. If you want one line, Luke 23:43. If the person is a believer who is afraid, Psalm 31:5, “into your hand I commend my spirit,” which they may want to say themselves."
+      },
+      {
+        "q": "What if the person can’t respond?",
+        "a": "Read anyway. Hearing usually remains near the end, and familiar words reach people who cannot answer. Keep your voice ordinary. Say their name."
+      },
+      {
+        "q": "What if I don’t know what they believed?",
+        "a": "Psalm 23 and Isaiah 43:2. Both offer presence without requiring the listener to affirm anything, and both are honest about the crossing."
+      }
+    ]
+  },
+  {
+    "slug": "after-a-breakup",
+    "type": "situation",
+    "cluster": "family",
+    "title": "Bible Verses After a Breakup",
+    "h1": "Bible verses after a breakup",
+    "label": "After a breakup",
+    "for": "someone going through a breakup",
+    "description": "Bible verses for heartbreak: for the first nights, for being chosen against, for starting again. Passages about a broken heart and a love that does not leave.",
+    "intent": "A relationship has ended. The person is heartbroken, or comforting someone who is. They want verses about heartbreak, not relationship advice.",
+    "intro": "A breakup is a real loss and it is grieved like one, whatever anyone says about how you will find someone else. The Bible has more for a broken heart than it gets credit for. It has a God who is near to it, a promise of a love that does not leave, and a verse about mercies that are new in the morning, written by someone who had watched everything fall apart. These are for the first weeks, not for figuring out what went wrong.",
+    "verses": [
+      {
+        "id": "psalm-147-3",
+        "why": "“He heals the broken in heart, and binds up their wounds.” The psalm is about God gathering the scattered and naming the stars, and this line sits in the middle of it, as if a broken heart is one of the big things. Binding a wound takes time and does not skip the pain. It is the right first verse for a breakup because it treats the injury as real."
+      },
+      {
+        "id": "psalm-34-18",
+        "why": "Near to the brokenhearted. David wrote it from the floor after a humiliating day, which is where a breakup puts you: not just sad but embarrassed, replaying it. The verse says the nearness is a response to the breaking, not a reward for getting over it."
+      },
+      {
+        "id": "jeremiah-31-3",
+        "why": "“I have loved you with an everlasting love; therefore I have drawn you with loving kindness.” Said by God to Israel after years of the nation walking away and coming back. If a breakup has left you feeling unlovable, or unchosen, this is the counterweight: a love that has already decided, and is not reconsidering."
+      },
+      {
+        "id": "lamentations-3-22-23",
+        "why": "New every morning. Written in a burned city by someone who had lost everything. This is the verse for the first mornings, when you wake up and remember. It does not say the day will be good. It says you were not abandoned in the night, and that is evidence for the morning."
+      },
+      {
+        "id": "isaiah-43-18-19",
+        "why": "“Don’t remember the former things. Behold, I will do a new thing; now it springs out.” Not advice to forget the person; the exiles it was written to remembered everything. It is a refusal to let the past be the last word. Some days you will not believe a new thing is springing up. The verse says it is, anyway."
+      },
+      {
+        "id": "romans-8-38-39",
+        "why": "Paul’s list of what cannot separate you from God’s love. Read it after being separated from someone’s. The point is not that this love replaces the one you lost; it is that there is one love in your life that is not up for renegotiation."
+      },
+      {
+        "id": "philippians-1-6",
+        "why": "He who began a good work in you will complete it. Paul wrote it to people he loved and was confident about, because of God, not because of their track record. After a breakup you can feel like a project someone gave up on. This verse says the most important work in you is still in progress and was never theirs to finish."
+      }
+    ],
+    "skip": {
+      "ref": "Proverbs 31 or Ephesians 5",
+      "why": "Well-meaning people send the marriage passages to the freshly single as a kind of “next time.” Not now. The person is grieving, not shopping. Psalm 147:3 is about the wound; send that."
+    },
+    "whatToSay": [
+      "“That’s awful. I’m sorry.” Then don’t say anything about how they are better off.",
+      "“Want to come over and not talk about it?” Distraction is a real gift in the first week.",
+      "Be the friend who doesn’t say “I never liked him.” They may get back together, and they will remember.",
+      "Check in on the first weekend, the first holiday, and the day you know the ex has moved on.",
+      "Don’t say: “God has someone better for you.” Maybe. Not the point, and not yours to promise."
+    ],
+    "howToUse": "Psalm 147:3 the first night. Lamentations 3:22–23 in the mornings. If you are sending one to a friend, keep the note to a sentence and skip anything that sounds like advice.",
+    "related": [
+      "grief",
+      "loneliness",
+      "starting-over",
+      "cannot-sleep",
+      "forgiveness",
+      "after-a-divorce"
+    ],
+    "faq": [
+      {
+        "q": "Does the Bible say anything about breakups?",
+        "a": "Not about dating breakups directly; the world it was written in did not have them in this form. It says a great deal about broken hearts, being left, and beginning again, which is what a breakup is made of. Psalm 147:3 and Lamentations 3 were written for exactly this shape of loss."
+      },
+      {
+        "q": "Is it okay to be angry at the person?",
+        "a": "The psalms are full of anger at people who hurt the writer, and they were kept in the Bible. Bring the anger to God rather than to the ex’s phone. Ephesians 4:26 is the guidance: be angry, and don’t let it settle in and rot."
+      },
+      {
+        "q": "What verse can I send a friend after a breakup?",
+        "a": "Psalm 147:3 with one line: “This is a real loss and I’m sorry. This came to mind.” Nothing about the ex, nothing about the future."
+      }
+    ]
+  },
+  {
+    "slug": "after-a-divorce",
+    "type": "situation",
+    "cluster": "family",
+    "title": "Bible Verses After a Divorce",
+    "h1": "Bible verses after a divorce",
+    "label": "After a divorce",
+    "for": "someone going through a divorce",
+    "description": "Bible verses for someone going through or recovering from divorce: a crushed spirit, restored years, rising after a fall, and a new creation. No lectures.",
+    "intent": "The person is divorcing or divorced and often feels judged by church people. They want comfort and a path forward, not a debate.",
+    "intro": "Divorce is grief with paperwork, and often with an audience. People going through it tell me the hardest part is not the loss; it is the sense that the loss is also a verdict. These verses were chosen with that in mind. None of them are about the rules of marriage. They are about a crushed spirit, years that felt wasted, falling and rising, and a new creation. Whatever anyone has said to you, this page is not going to say it.",
+    "verses": [
+      {
+        "id": "psalm-34-18",
+        "why": "Near to the brokenhearted; saves those who have a crushed spirit. “Crushed” is the right word for divorce: not just sad, but flattened. The verse promises nearness in exactly that state. It does not ask what happened or whose fault it was. That is why it is first."
+      },
+      {
+        "id": "psalm-30-5",
+        "why": "“Weeping may stay for the night, but joy comes in the morning.” The Hebrew pictures weeping as a guest who lodges overnight. David wrote it looking back on a season he did not think he would survive. It does not say the night is short. It says it ends, from someone who has been through one."
+      },
+      {
+        "id": "joel-2-25",
+        "why": "“I will restore to you the years that the swarming locust has eaten.” Said to a nation after a plague stripped the fields bare. Divorce can make years feel eaten: the wedding, the plans, the photographs. This is the one verse in the Bible that speaks directly to years that feel wasted, and it says they are not beyond restoring."
+      },
+      {
+        "id": "micah-7-8",
+        "why": "“When I fall, I will arise. When I sit in darkness, Yahweh will be a light to me.” Micah says it to enemies who are enjoying his defeat. If your divorce has an audience, this is the verse for it. Not “I did not fall.” Fell, and rising anyway."
+      },
+      {
+        "id": "2-corinthians-5-17",
+        "why": "“If anyone is in Christ, he is a new creation. The old things have passed away.” Paul is talking about what happens to a person in Christ, not about divorce specifically, and that is the point: your identity is not “divorced.” It is new, and the newness does not have a prior condition."
+      },
+      {
+        "id": "isaiah-43-18-19",
+        "why": "“Don’t remember the former things. Behold, I will do a new thing.” Written to exiles who could not stop remembering. It is not a command to forget the marriage; it is a refusal to let the marriage be the last thing that ever happens to you. Some days that is hard to believe. The verse says it anyway."
+      },
+      {
+        "id": "matthew-11-28-29",
+        "why": "Come to me, all who are weary. Divorce is exhausting in a way outsiders do not see: lawyers, custody calendars, splitting a life into two piles. Jesus offers rest, and then a yoke that fits. Not less to carry, but a way of carrying it with someone gentle."
+      }
+    ],
+    "skip": {
+      "ref": "Malachi 2:16",
+      "why": "“I hate divorce” gets sent to divorcing people by relatives who mean it as truth-telling. Whatever it means in context (it is addressed to men abandoning their wives), it is not comfort, and the person has heard it. Psalm 34:18 is what they have not heard enough."
+    },
+    "whatToSay": [
+      "“I’m on your side. I don’t need the details.”",
+      "“Which weekends are the kids gone? I’ll put something on the calendar.” The empty weekends are the worst part.",
+      "If they are still going to church, sit with them. If they have stopped, don’t make it an issue.",
+      "Don’t ask what happened. If they want you to know, they will tell you.",
+      "Don’t say: “Have you tried counseling?” or “God hates divorce.” Both arrive as verdicts."
+    ],
+    "howToUse": "Psalm 34:18 first. Joel 2:25 when the wasted-years feeling hits. Micah 7:8 for the day you have to see people. If someone sends you a verse that sounds like a judgment, you are allowed to delete it.",
+    "related": [
+      "starting-over",
+      "after-a-breakup",
+      "forgiveness",
+      "loneliness",
+      "difficult-family-members"
+    ],
+    "faq": [
+      {
+        "q": "Does God still love someone who is divorced?",
+        "a": "Yes, without qualification. Nothing in the Bible ranks the loved by marital status, and Jesus’ longest recorded conversation with an individual was with a woman who had been married five times (John 4). He offered her living water, not a lecture."
+      },
+      {
+        "q": "What verse can I send a friend going through a divorce?",
+        "a": "Psalm 34:18 or Joel 2:25, with one line: “I’m on your side.” Nothing about what happened, nothing about the ex, nothing about marriage."
+      },
+      {
+        "q": "Can I still serve or lead in a church?",
+        "a": "That depends on the church, not on the Bible’s view of you. If yours has made you feel disqualified as a person, that is worth talking through with someone outside it."
+      }
+    ]
+  },
+  {
+    "slug": "afraid-of-the-future",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses When You Are Afraid of the Future",
+    "h1": "Bible verses when you are afraid of the future",
+    "label": "Afraid of the future",
+    "for": "someone afraid of the future",
+    "description": "Bible verses for fear about what comes next: uncertainty, dread about tomorrow, waiting for the other shoe to drop. Days already written, and a hand that goes ahead.",
+    "intent": "The person is anxious about what is coming: a decision, a season, life in general. They want verses about the future that don’t promise a specific outcome.",
+    "intro": "Fear of the future is the most common fear in the Bible, if you count how often God says “don’t be afraid” to people about to walk into something. These verses were chosen for the dread that has no single cause: the sense that the other shoe is going to drop. None of them tell you what is coming. They tell you who is going ahead, and how much of it you are asked to carry today.",
+    "verses": [
+      {
+        "id": "matthew-6-34",
+        "why": "Jesus’ last line in a long argument about worry: tomorrow will worry about itself. He does not say tomorrow will be easy. He says today’s trouble is enough, and that carrying tomorrow’s on top of it only doubles the load. Fear of the future is mostly the habit of paying for things twice. This verse is permission to pay once, on the day."
+      },
+      {
+        "id": "isaiah-41-10",
+        "why": "Said to exiles who had every reason to dread what was coming: I am with you, I will strengthen you, I will uphold you with my right hand. The future in that verse is not described. The company in it is. That is the shape of every honest promise about tomorrow."
+      },
+      {
+        "id": "proverbs-3-5-6",
+        "why": "Trust with all your heart, don’t lean on your own understanding, and he will make your paths straight. Straight, not easy, not visible in advance. The verse is about direction rather than outcome, which is the only kind of guidance the future actually allows for."
+      },
+      {
+        "id": "psalm-32-8",
+        "why": "“I will instruct you and teach you in the way which you shall go. I will counsel you with my eye on you.” Written by David after a season of hiding something and then owning it. The last phrase is a picture of attention, not surveillance. Someone is watching how you go."
+      },
+      {
+        "id": "isaiah-43-2",
+        "why": "“When you pass through the waters, I will be with you.” When, not if. The verse assumes the waters. It is one of the few promises about the future in the Bible that is completely honest: hard things are coming, and you will not go through them alone."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "Be strong and courageous, said three times in nine verses to a man about to lead a nation across a river into hostile country, which suggests he was not feeling either. The reason given is not Joshua’s ability. It is “Yahweh your God is with you wherever you go.” Courage in this verse is a conclusion from company."
+      },
+      {
+        "id": "psalm-139-16",
+        "why": "“In your book they were all written, the days that were ordained for me, when as yet there were none of them.” The psalmist finds it a comfort that his days were known before any of them happened. Read it as a statement that the future is not unwritten chaos. Someone has read ahead."
+      }
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "The obvious verse for the future, and it was written to exiles about a return seventy years out. Quoted as “God has a great plan for my next year,” it sets people up for a fall. Its real promise, that God’s intentions are good even across a long wait, is sturdier and is what Isaiah 43:2 says more plainly."
+    },
+    "whatToSay": [
+      "“What’s the specific thing you’re dreading?” Naming it usually shrinks it.",
+      "“What do you need to do today?” Not this month. Today.",
+      "“I’ll be there for the thing on Thursday.” Fear of the future shrinks when someone else is in it.",
+      "Don’t say: “It’ll all work out.” You don’t know that, and they know you don’t. Say: “Whatever happens, you won’t be alone in it.”"
+    ],
+    "howToUse": "Matthew 6:34 in the morning, as a rule for the day. Psalm 139:16 at night. If the fear has a specific object, a diagnosis, a job, a decision, there are pages for each of those, and they will fit better.",
+    "related": [
+      "anxiety",
+      "worry",
+      "difficult-decisions",
+      "waiting",
+      "cannot-sleep",
+      "starting-over"
+    ],
+    "faq": [
+      {
+        "q": "Does the Bible say not to plan for the future?",
+        "a": "No. Proverbs praises the ant for storing food, and Jesus tells a story about counting the cost before building a tower. The warning is against anxiety about the future, not preparation for it. Plan, then hand the plan over."
+      },
+      {
+        "q": "What if my fear is about something real, like losing my job?",
+        "a": "Then it is not irrational, and the verses do not ask you to pretend it is. Matthew 6 was said to people who genuinely might not have food tomorrow. The instruction is about which day’s trouble you carry, not about whether the trouble is real."
+      },
+      {
+        "q": "What verse can I send someone who is scared about what’s coming?",
+        "a": "Isaiah 43:2 with one line: “When, not if. You won’t go through it alone.”"
+      }
+    ]
+  },
+  {
+    "slug": "estrangement",
+    "type": "situation",
+    "cluster": "family",
+    "title": "Bible Verses for Estrangement From an Adult Child",
+    "h1": "Bible verses when your adult child has cut you off",
+    "label": "Estranged from a child",
+    "for": "a parent estranged from an adult child",
+    "description": "Bible verses for parents whose adult child has gone low or no contact: for the silence, the waiting, and the door left open. Comfort, not ammunition.",
+    "intent": "A parent’s grown child has stopped speaking to them. The parent is grieving, ashamed, and often bewildered. They want comfort, not ammunition, and not a plan to force contact.",
+    "intro": "Estrangement from an adult child is a grief nobody brings casseroles for. There is no funeral, no card, and often no one to tell, because the first question is always “what happened,” and you may not fully know. These verses were chosen for the parent in that silence. None of them is about winning the child back, and none of them should be sent to the child. They are about how to keep a heart open across a distance you did not choose and cannot close by yourself.",
+    "safety": "If your child has asked for space, the most loving and most hopeful thing you can do is honor it. Scripture will not help you if it becomes a way around a boundary. If the silence has become despair, or you are drinking or not sleeping because of it, please talk to a counselor; this is one of the hardest griefs there is, and it is worth professional help.",
+    "verses": [
+      {
+        "id": "luke-15-20",
+        "why": "The father in Jesus’ story does not go get his son. He waits, and he watches the road, and when the son appears “while he was still far off,” he runs. Every estranged parent knows the road-watching part. The verse does not promise the son comes back on a schedule; the story has already skipped an unknown number of years. What it shows is the posture: not chasing, not closed, ready. That is the whole page in one verse."
+      },
+      {
+        "id": "psalm-34-18",
+        "why": "Near to the brokenhearted. Estrangement breaks a heart slowly, in a way friends stop asking about after the first year. This verse does not require you to know what went wrong or to have fixed it. The nearness is a response to the breaking, not to the reconciliation."
+      },
+      {
+        "id": "isaiah-49-15-16",
+        "why": "“Can a woman forget her nursing child? Yes, these may forget, yet I will not forget you.” Spoken to Israel, who felt abandoned by God. Read it two ways. It is a comfort to a parent who cannot stop thinking about a child who seems to have forgotten them. And it is a reminder that the child is engraved on God’s hands too, which means you are not the only one holding them."
+      },
+      {
+        "id": "romans-12-18",
+        "why": "“If it is possible, as much as it is up to you, be at peace with all men.” Two honest qualifiers. Sometimes it is not possible right now. And peace takes two; your part is only your part. This verse gives permission to stop trying to control the other half, which is the part that is making you sick."
+      },
+      {
+        "id": "psalm-62-5-6",
+        "why": "“My soul, wait in silence for God alone, for my expectation is from him.” Not from the child. The most painful thing about estrangement is that your hope is pinned to someone else’s decision. This psalm moves the hope somewhere steadier, without saying the wish for reconciliation is wrong."
+      },
+      {
+        "id": "1-peter-5-7",
+        "why": "Cast all your worries on him, because he cares for you. The reason clause is the point: he cares about this particular worry, the one you don’t say at church because someone will ask what you did. You are allowed to hand it over every day for years. The verse does not have an expiration."
+      },
+      {
+        "id": "ecclesiastes-3-1-4",
+        "why": "A time to keep silence, and a time to speak; a time to embrace, and a time to refrain. Estrangement is a season of refraining, and this passage says such seasons exist in the design and are not permanent by definition. It does not tell you how long. It tells you that silence can be a season rather than a verdict."
+      }
+    ],
+    "skip": {
+      "ref": "Exodus 20:12 (“Honor your father and mother”)",
+      "why": "Please do not send this to your child, and do not let anyone send it to them for you. It is true, and used this way it is a weapon, and it will confirm the reason for the distance. If contact ever reopens, it will be because the child felt safe, not because they felt commanded."
+    },
+    "whatToSay": [
+      "To yourself: “I don’t have to understand all of it to be at peace with my part of it.”",
+      "If you write to the child, once: “I love you. I’m not going anywhere. I’ll respect what you’ve asked.” Then respect it. No verse, no guilt, no questions.",
+      "To a friend who asks: “We’re not in touch right now. It’s painful. I’d rather not go through the details.” You do not owe anyone the story.",
+      "If the child reaches out: answer warmly, briefly, and without relitigating anything. Let them set the pace.",
+      "Don’t say to the child: “After everything I did for you.” It may be true. It ends the conversation."
+    ],
+    "howToUse": "Luke 15:20 for the posture. Psalm 62:5–6 when you catch yourself checking the phone. Romans 12:18 when you want to fix it. These are for you; none of them is for the child. If you are the adult child reading this page, the same verses hold for you, and Psalm 27:10 is yours in particular.",
+    "related": [
+      "difficult-family-members",
+      "loneliness",
+      "waiting",
+      "forgiveness",
+      "patience",
+      "grief"
+    ],
+    "faq": [
+      {
+        "q": "Should I keep reaching out?",
+        "a": "If your child has asked for no contact, honor it; reaching out anyway teaches them the boundary won’t hold, and it delays the day they might feel safe enough to try again. If they have not said, one brief, warm, no-pressure message on a birthday or holiday, with no questions in it, is generally right. Then stop and wait."
+      },
+      {
+        "q": "Is estrangement a sin on their part, or mine?",
+        "a": "This page is not going to adjudicate that, and neither should anyone who does not know the whole story. Adult children who go no contact almost always experience it as self-protection, whether or not the parent sees it that way. Romans 12:18 gives you the only assignment you can carry out: your part."
+      },
+      {
+        "q": "What if I don’t know what I did?",
+        "a": "That is common and it is agony. If the child ever tells you, listen without defending, even if you see it differently. In the meantime, a counselor who works with estrangement can help you look at your part honestly without drowning in it."
+      },
+      {
+        "q": "I’m the adult child. Is there anything here for me?",
+        "a": "Yes. Psalm 27:10, “when my father and my mother forsake me, then Yahweh will take me up,” and Psalm 34:18. Distance can be the right choice and still grieve you. Nothing on this page is meant to push you toward contact you are not safe to have."
+      }
+    ]
+  },
+  {
+    "slug": "suicide-loss",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses After Losing Someone to Suicide",
+    "h1": "Bible verses after losing someone to suicide",
+    "label": "Loss to suicide",
+    "for": "someone who lost a loved one to suicide",
+    "description": "Bible verses for grief after a suicide: for the questions no one can answer, the guilt that isn’t yours, and the darkness that Scripture does not pretend away.",
+    "intent": "Someone died by suicide. The person is a family member or close friend, often carrying guilt and unanswerable questions, sometimes told cruel things by religious people.",
+    "intro": "Grief after a suicide is grief with a second wound: the why, the what-ifs, and sometimes a religious voice saying something unforgivable about where the person is now. This page will not do that. The Bible knows what despair sounds like; it kept a psalm that ends in darkness, and it records a prophet asking to die. These verses are for the people left, and they are honest that some questions will not be answered here.",
+    "safety": "If you have thought about ending your own life since the loss, please tell someone today. In the US, call or text 988; elsewhere, your country has a line and a search for “crisis line” will find it. Suicide loss raises the risk for those left behind, and asking for help is not weakness; it is what you would want the person you lost to have done.",
+    "verses": [
+      {
+        "id": "psalm-34-18",
+        "why": "Near to the brokenhearted; saves those who have a crushed spirit. This is the first verse because it does not ask a single question. It does not ask what happened, whether you saw the signs, or what the person believed. It says God is near to exactly the state you are in, and, read plainly, it says the same about the state your loved one was in."
+      },
+      {
+        "id": "psalm-88-1-3",
+        "why": "The only psalm that never turns toward hope. It begins in darkness and ends in darkness, and it was kept in the Bible on purpose. Read it and you will know that Scripture does not flinch from what your loved one may have felt, and does not require you to feel better on schedule. God can be cried out to from the bottom, and the psalm proves it by being there."
+      },
+      {
+        "id": "1-kings-19-4-5",
+        "why": "Elijah, one of the greatest prophets, sits under a tree and asks God to let him die. God’s response is not a rebuke. It is food, sleep, and a touch, twice. If you are wondering how God regards someone who wanted to die, this is the closest the Bible comes to showing you: with tenderness, and practical care. It is also permission for you to eat and sleep."
+      },
+      {
+        "id": "psalm-139-11-12",
+        "why": "“If I say, ‘Surely the darkness will overwhelm me,’ even the night will be light about me. The darkness doesn’t hide from you.” The psalmist has been trying to find a place beyond God’s reach and cannot. For a family asking where their loved one was in the last hours, this verse says: not outside the light. Not hidden. Seen."
+      },
+      {
+        "id": "isaiah-42-3",
+        "why": "“He won’t break a bruised reed. He won’t quench a dimly burning wick.” Said of the servant God sends, and applied by Matthew to Jesus. A person who dies by suicide was a bruised reed, a wick burning low. This verse is how God handles those. Let it answer the voices, inside or outside your head, that say otherwise."
+      },
+      {
+        "id": "romans-8-38-39",
+        "why": "Paul’s list of what cannot separate us from God’s love begins with death and includes “things present” and “things to come.” It does not have an exception for how a death happened. If you take one verse to the hardest question, take this one, and read it as it is written, without adding a clause."
+      },
+      {
+        "id": "matthew-5-4",
+        "why": "Blessed are those who mourn, for they shall be comforted. Suicide loss often comes with a sense that you are not allowed to mourn normally, that there is shame around it. Jesus puts no condition on the blessing. Mourning is mourning. The comfort is promised to all of it."
+      }
+    ],
+    "skip": {
+      "ref": "Any verse used to say where the person is now",
+      "why": "People will quote 1 Corinthians 6:19 or Exodus 20:13 at you, sometimes gently, to explain that the person is lost. The Bible nowhere says that a person’s last act decides their standing with God, and Romans 8:38–39 says the opposite. If someone says it to you, you do not have to answer. If it is playing in your own head, read Isaiah 42:3 out loud."
+    },
+    "whatToSay": [
+      "“I don’t have any answers. I’m here, and I loved him too.”",
+      "Say the person’s name. Suicide loss makes people afraid to, and the silence is its own cruelty.",
+      "Don’t ask how. Don’t ask whether they saw it coming. If they want to tell you, they will.",
+      "Show up at the six-month mark, when the shock has worn off and the questions have started. That is usually the hardest stretch.",
+      "Don’t say: “They’re at peace now,” “It was selfish,” or anything about where they are. You do not know, and it is not the comfort."
+    ],
+    "howToUse": "Psalm 34:18 first. Isaiah 42:3 when the shame gets loud. Romans 8:38–39 when someone says something unforgivable. If you are a pastor, please read Psalm 88 at the service; the family needs to hear that the Bible has a place for what happened.",
+    "related": [
+      "grief",
+      "loss-of-a-parent",
+      "loss-of-a-spouse",
+      "cannot-sleep",
+      "overwhelmed",
+      "loneliness"
+    ],
+    "faq": [
+      {
+        "q": "Does the Bible say people who die by suicide go to hell?",
+        "a": "No. That teaching came from church tradition centuries later, not from Scripture, and most churches have abandoned it. The Bible records several suicides without commentary on the person’s eternal state, and Romans 8:38–39 states that nothing, including death, separates from God’s love. Anyone who tells you otherwise is speaking for themselves."
+      },
+      {
+        "q": "Could I have stopped it?",
+        "a": "Almost everyone left behind asks this, and the honest answer from people who study suicide is that it is far less predictable and preventable than hindsight makes it feel. Guilt is a normal part of this grief, not evidence. A grief counselor or a survivors-of-suicide-loss group can help you set it down; the verses can keep you company while you do."
+      },
+      {
+        "q": "What verse can I send someone who lost a family member to suicide?",
+        "a": "Psalm 34:18, with one line: “I don’t have any answers. I loved him too, and I’m here.” Nothing about where he is. Nothing about why."
+      }
+    ]
+  },
+  {
+    "slug": "loss-of-a-sibling",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses After Losing a Sibling",
+    "h1": "Bible verses after losing a brother or sister",
+    "label": "Lost a sibling",
+    "for": "someone who lost a sibling",
+    "description": "Bible verses for the death of a brother or sister: the loss of the person who shared your childhood, from David’s lament to Mary at her brother’s tomb.",
+    "intent": "A brother or sister has died. The person is often overlooked in the grief (attention goes to parents or spouse) and wants verses that fit a sibling specifically.",
+    "intro": "A sibling is the only person who remembers your childhood from the inside. When they die, the grief is often overlooked; the attention goes to the parents, or the spouse, and the brother or sister is expected to be the strong one. The Bible has two of the most honest sibling griefs ever written: David’s lament for Jonathan, and Mary saying to Jesus, “if you had been here, my brother would not have died.” These verses start there.",
+    "verses": [
+      {
+        "id": "2-samuel-1-26",
+        "why": "David’s lament for Jonathan: “I am distressed for you, my brother. Your love to me was wonderful.” It is raw, personal, and it was written down and kept. If you have not been given room to grieve a sibling, this is the Bible giving it to you. David does not say Jonathan is in a better place. He says he is distressed, and that the love was wonderful."
+      },
+      {
+        "id": "john-11-33-35",
+        "why": "Mary falls at Jesus’ feet: “if you had been here, my brother would not have died.” It is an accusation and a grief in one breath, and Jesus does not correct her. He is troubled, and he weeps. Whatever you are saying to God about your brother or sister, Mary said it first, and the response was tears, not a lecture."
+      },
+      {
+        "id": "psalm-34-18",
+        "why": "Near to the brokenhearted. Sibling loss can leave you as the family’s designated strong person, and this verse does not ask you to be strong. It asks nothing at all. The nearness comes to the broken state, not to the composed one."
+      },
+      {
+        "id": "proverbs-17-17",
+        "why": "“A brother is born for adversity.” The proverb is about what a sibling is for: the one who shows up when things go wrong. Losing that person means losing your backup. Read it as a description of what you had, and as a grief for it, not as a demand to replace it."
+      },
+      {
+        "id": "ecclesiastes-4-9-10",
+        "why": "“Two are better than one. If they fall, the one will lift up his fellow; but woe to him who is alone when he falls.” For many people the sibling was the “two.” This passage names the specific loss: not just the person, but the one who lifted you up. That is why it hurts in the way it does."
+      },
+      {
+        "id": "psalm-73-26",
+        "why": "“My flesh and my heart fail, but God is the strength of my heart.” For the stretch after the funeral, when you are managing your parents’ grief and your own has no room. The psalm allows the failing. It just says something holds underneath it."
+      },
+      {
+        "id": "revelation-21-4",
+        "why": "Death, mourning, crying, and pain gone. The last page. For a sibling who shared the first pages with you, the promise that the story has an ending written down can be a real comfort, or can be too soon. Read it when you are ready, not before."
+      }
+    ],
+    "skip": {
+      "ref": "“God needed another angel”",
+      "why": "Not in the Bible, not how the Bible describes people, and it makes God the one who took your brother. Psalm 34:18 says what is actually true: God is near to you in the loss, not the cause of it."
+    },
+    "whatToSay": [
+      "“You lost your brother. I’m so sorry.” Say it to the sibling directly; most people only say it to the parents.",
+      "“What was she like when you were kids?” Nobody else can tell those stories now.",
+      "“How are you doing, not your parents, you?” The sibling is often managing everyone else’s grief.",
+      "Don’t say: “At least your parents still have you.” It makes the sibling responsible for filling a gap that cannot be filled."
+    ],
+    "howToUse": "2 Samuel 1:26 if you need permission to grieve out loud. John 11:33–35 if you are angry at God. Ecclesiastes 4:9–10 to name what exactly was lost. If you are comforting a sibling, address them, not the family.",
+    "related": [
+      "grief",
+      "loss-of-a-parent",
+      "loss-of-a-spouse",
+      "suicide-loss",
+      "sympathy-card"
+    ],
+    "faq": [
+      {
+        "q": "Why does no one ask how I’m doing?",
+        "a": "Sibling grief is called “disenfranchised” for a reason: culturally, the spouse and parents are seen as the primary mourners, and the brother or sister is expected to support them. Your grief is real and the Bible’s own example, David for Jonathan, treats it as one of the deepest there is."
+      },
+      {
+        "q": "What verse is good for a sibling’s funeral?",
+        "a": "2 Samuel 1:26 if you are speaking as the sibling; John 11:25–26 for the service; Psalm 23 for the graveside. Ecclesiastes 4:9–10 works if the two of you were close in a way the room knows about."
+      },
+      {
+        "q": "What can I send someone whose brother or sister died?",
+        "a": "Psalm 34:18, addressed to them by name, with: “You lost your brother, and I’m so sorry. This came to mind.” Make it about their loss, not their parents’."
+      }
+    ]
+  },
+  {
+    "slug": "pet-loss",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses After Losing a Pet",
+    "h1": "Bible verses after losing a pet",
+    "label": "Lost a pet",
+    "for": "someone who lost a pet",
+    "description": "Bible verses after the death of a dog, cat, or other animal: sparrows that don’t fall unnoticed, a God who preserves man and animal, and a grief allowed to be real.",
+    "intent": "A pet has died. The person feels the grief is real but suspects it is not allowed, and wants to know whether the Bible has anything for it.",
+    "intro": "People apologize for grieving a pet, which tells you something about the grief: it is real enough to need excusing. The Bible does not require the apology. It says God made the animals and called them good, that he preserves man and animal alike, that a sparrow does not fall without the Father, and that the righteous care for the life of their animals. These are the verses for the empty spot by the door.",
+    "verses": [
+      {
+        "id": "matthew-10-29",
+        "why": "“Aren’t two sparrows sold for an assarion coin? Not one of them falls to the ground apart from your Father.” Jesus says it to reassure people about their own worth, and the argument only works if the sparrow’s fall really is noticed. It is. If the smallest bird does not die unseen, neither did the animal that slept at the foot of your bed for twelve years."
+      },
+      {
+        "id": "psalm-36-6",
+        "why": "“Yahweh, you preserve man and animal.” One line, and it puts animals inside God’s care in the same breath as people. Not the same as people. In the same sentence. The psalm is about how far God’s love and faithfulness reach, and the answer includes the creatures."
+      },
+      {
+        "id": "genesis-1-25",
+        "why": "God made the animals, “and God saw that it was good.” Before there were people, there were animals, and God’s verdict on them was the same as on everything else he made. Your dog or cat was one of those. The grief you feel is grief for something God called good."
+      },
+      {
+        "id": "proverbs-12-10",
+        "why": "“A righteous man respects the life of his animal.” The Bible’s only verse about pet care, and it treats caring well for an animal as a mark of a good person. If you are second-guessing the last decisions, the vet visits, the day you had to choose, this verse is on your side: the care was the righteous thing, all the way to the end."
+      },
+      {
+        "id": "psalm-145-9",
+        "why": "“Yahweh is good to all. His tender mercies are over all his works.” All his works. The psalm is one long list of God’s kindness, and this line refuses to draw a boundary around who it covers. Whatever you believe about where animals go, this says they were never outside his mercy."
+      },
+      {
+        "id": "romans-8-21",
+        "why": "Paul says creation itself will be “delivered from the bondage of decay into the liberty of the glory of the children of God.” The verse is about all of creation being included in what is coming, not just people. Christians have read it as hope for the animals for a long time. It is not a proof. It is a door left open."
+      },
+      {
+        "id": "psalm-147-3",
+        "why": "“He heals the broken in heart, and binds up their wounds.” No qualification about what broke it. If you are embarrassed by how much this hurts, this verse is not. Binding a wound takes time; it does not skip the pain, and it does not ask why."
+      }
+    ],
+    "skip": {
+      "ref": "Ecclesiastes 3:21",
+      "why": "“Who knows whether the spirit of man goes upward, and the spirit of the animal goes downward?” gets quoted both to comfort and to correct. It is the Teacher of Ecclesiastes asking a question, in a book built on not knowing. It settles nothing, and it is not what a grieving pet owner needs. Matthew 10:29 is."
+    },
+    "whatToSay": [
+      "“I’m sorry about Max. He was a good dog.” Say the name. Say it was a good animal.",
+      "Don’t say: “It was just a dog” or “You can get another one.”",
+      "If they had to choose euthanasia: “That was the kind thing. You did right by her.” They are replaying it.",
+      "A card with the animal’s name on it means more than people expect."
+    ],
+    "howToUse": "Matthew 10:29 if you need to know the loss was seen. Proverbs 12:10 if you are second-guessing the end. For a child who has lost a pet, Genesis 1:25 and Psalm 145:9 are simple enough to read together.",
+    "related": [
+      "grief",
+      "loneliness",
+      "cannot-sleep",
+      "loss-of-a-parent"
+    ],
+    "faq": [
+      {
+        "q": "Do pets go to heaven?",
+        "a": "The Bible does not answer directly. It says creation as a whole is included in what God is restoring (Romans 8:21, Isaiah 11:6–9), and it never says animals are excluded. Christians have disagreed for centuries and most have landed on hope. What Scripture does say clearly is that God made them, called them good, and notices when they fall."
+      },
+      {
+        "q": "Is it wrong to grieve a pet this much?",
+        "a": "No. Grief is proportional to attachment, and a pet is often the one creature that was with you every single day. Psalm 147:3 puts no condition on which broken hearts get bound up."
+      },
+      {
+        "q": "What can I say to a child whose pet died?",
+        "a": "“God made Biscuit and said she was good, and he knows exactly where she is.” Then read Matthew 10:29 together. Let them cry. Don’t rush to a new pet."
+      }
+    ]
+  },
+  {
+    "slug": "panic",
+    "type": "situation",
+    "cluster": "feelings",
+    "title": "Bible Verses for Panic and Panic Attacks",
+    "h1": "Bible verses for panic",
+    "label": "Panic",
+    "for": "someone in a panic",
+    "description": "Short Bible verses to hold onto during a panic attack, and passages for the fear of the next one. Jesus in the storm, a rock higher than you, and a mind kept.",
+    "intent": "The person has panic attacks, or is in one, or is afraid of the next. They need verses short enough to say while breathing, not paragraphs.",
+    "intro": "In a panic attack you cannot read a paragraph. You can hold about five words. So the first verses here are short enough for that: Peace, be still. When I am afraid, I will trust in you. The later ones are for afterward, when the fear of the next one sets in. None of them is a treatment. Panic responds well to real help, and the safety note below means it.",
+    "safety": "Panic attacks are common and very treatable, and you deserve treatment, not just verses. A doctor or therapist can teach you tools that work in minutes. If you are having chest pain, difficulty breathing that does not ease, or symptoms you have not had before, get medical care now rather than assuming it is panic.",
+    "verses": [
+      {
+        "id": "mark-4-39",
+        "why": "Jesus, woken in a boat that is filling with water, says three words to the storm: “Peace! Be still!” Panic feels exactly like that boat. This is the verse to say on the exhale, over and over, because it is short enough to say while breathing and because the one who said it was speaking to a storm that stopped. It is not a technique. It is a name to call."
+      },
+      {
+        "id": "psalm-56-3",
+        "why": "“When I am afraid, I will put my trust in you.” Eleven words, and honest ones: not “I am not afraid.” David writes it while captured by enemies. It is a sequence to repeat: fear arrives, trust is chosen, fear loosens, and the sequence runs again. In a panic attack that repetition is the whole prayer."
+      },
+      {
+        "id": "psalm-61-2",
+        "why": "“When my heart is overwhelmed, lead me to the rock that is higher than I.” The psalmist does not claim to be able to climb it. He asks to be led. Panic is the heart overwhelmed, precisely, and this is a prayer for during it: not to fix it, but to be taken somewhere higher than the wave."
+      },
+      {
+        "id": "psalm-46-1-3",
+        "why": "“We won’t be afraid, though the earth changes, though the mountains are shaken into the heart of the seas.” A panic attack is the earth changing under you. This psalm was written for a city under siege and it is honest that the shaking is real. The refuge is “very present,” meaning here, now, before the shaking stops."
+      },
+      {
+        "id": "isaiah-26-3",
+        "why": "“You will keep whoever’s mind is steadfast in perfect peace, because he trusts in you.” The word for “steadfast” means propped up, leaned. It does not say your mind will never race. It says a racing mind can be leaned, again and again, onto something that holds. For the days between attacks, when you are bracing for the next one."
+      },
+      {
+        "id": "philippians-4-6-7",
+        "why": "Paul’s instruction, written from custody, is a practice rather than a feeling: every specific fear becomes a specific request, with thanks. The peace that follows is described as a guard posted at the door of your mind. After an attack, this is what to do with the fear of the next one: hand it over, item by item, and let the guard stand."
+      },
+      {
+        "id": "2-timothy-1-7",
+        "why": "“God didn’t give us a spirit of fear, but of power, love, and self-control.” The word for fear here is timidity, a shrinking back. It is not a verse that says panic is a spiritual failure; Paul wrote it from prison to a frightened young man. It says the panic is not who you are, and the self-control is a gift, not a demand."
+      }
+    ],
+    "skip": {
+      "ref": "“Fear not” as a command",
+      "why": "Someone will tell you the Bible says “fear not” 365 times, one for each day, as if the count settles it. Every one of those is said to a frightened person by someone offering presence, not issued as a rule. Psalm 56:3 is what the Bible actually sounds like about fear: when I am afraid, I will trust. Not: don’t be."
+    },
+    "whatToSay": [
+      "During: “You’re safe. I’m right here. Breathe out slowly.” Say one short thing and then be quiet.",
+      "Don’t say: “Calm down” or “There’s nothing to be afraid of.” Both make it worse.",
+      "After: “That was hard. Want to walk?” Movement helps, and it changes the subject without dismissing it.",
+      "If they’ve never seen a doctor about it: “This is really treatable. Want me to come with you?”"
+    ],
+    "howToUse": "Pick one short verse, Mark 4:39 or Psalm 56:3, and make it yours before the next attack, so it is already in your mouth when you need it. The longer ones are for afterward. And please, if you have not, talk to a doctor; the verses will keep you company through treatment, and treatment works.",
+    "related": [
+      "anxiety",
+      "afraid-of-the-future",
+      "cannot-sleep",
+      "overwhelmed",
+      "peace"
+    ],
+    "faq": [
+      {
+        "q": "Is panic a lack of faith?",
+        "a": "No. Elijah, David, and Paul all describe states that sound a great deal like panic, and none of them is rebuked for it. Panic is a body’s alarm system misfiring. Faith is what you lean on while it does; it is not a switch that turns the alarm off."
+      },
+      {
+        "q": "What is the shortest verse for a panic attack?",
+        "a": "“Peace! Be still!” from Mark 4:39. Three words, said by Jesus to a storm. Say it on the exhale."
+      },
+      {
+        "q": "Should I pray instead of taking medication?",
+        "a": "Both, if your doctor recommends medication. Nothing in the Bible sets prayer against medicine; Luke was a physician and Paul told Timothy to take something for his stomach. Pray, and take what helps."
+      }
+    ]
+  },
+  {
+    "slug": "waiting-for-bad-news",
+    "type": "situation",
+    "cluster": "health",
+    "title": "Bible Verses While Waiting for Bad News",
+    "h1": "Bible verses while waiting for bad news",
+    "label": "Waiting for bad news",
+    "for": "someone waiting for bad news",
+    "description": "Bible verses for the dread before the call: a biopsy, a verdict, a layoff list. Passages for a heart kept steady before the news, not after.",
+    "intent": "The person is waiting for something they expect to be bad: a diagnosis, a court decision, a layoff, a phone call. They want verses for the dread itself.",
+    "intro": "Waiting for bad news is its own kind of suffering, and in some ways the worst: nothing to do, nothing to fight, every phone call a possible verdict. These verses were chosen for the dread, not the news. Some were written by people who then got the bad news anyway. That is what makes them trustworthy. They are not a promise that the call will be good. They are for the person by the phone.",
+    "verses": [
+      {
+        "id": "psalm-112-7",
+        "why": "“He will not be afraid of evil news. His heart is steadfast, trusting in Yahweh.” A verse about bad news, written for the time before it arrives. The person described does not know it will be fine. His heart is steady because it rests on something other than the outcome, which is the only steadiness available while the phone has not rung."
+      },
+      {
+        "id": "habakkuk-3-17-18",
+        "why": "“Though the fig tree doesn’t flourish, nor fruit be in the vines … yet I will rejoice in Yahweh.” Habakkuk has just been told that invasion is coming, and it is. This is the Bible’s clearest statement of trust that does not depend on the news being good: even if it is all bad, even if the fields are empty, still. Read it before the call, so it is already said."
+      },
+      {
+        "id": "psalm-27-13-14",
+        "why": "“I am still confident of this: I will see the goodness of Yahweh in the land of the living. Wait for Yahweh. Be strong, and let your heart take courage.” David has spent a whole psalm talking himself steady, and this is where he lands: waiting, said twice, with courage in the middle. Waiting is a decision you make more than once, sometimes several times before noon."
+      },
+      {
+        "id": "lamentations-3-25-26",
+        "why": "“It is good that a man should hope and quietly wait for the salvation of Yahweh.” Written in a ruined city by someone who had already received every piece of bad news there was. If he can say quiet waiting is good, it is not naive to say it now. Quiet does not mean calm. It means not filling the silence with rehearsed catastrophes."
+      },
+      {
+        "id": "psalm-62-5-6",
+        "why": "“My soul, wait in silence for God alone, for my expectation is from him. He alone is my rock and my salvation, my fortress. I will not be shaken.” David moves his expectation off the outcome and onto God. Then the careful phrase: not greatly shaken. The psalm allows for wobbling. It just says you will not be toppled."
+      },
+      {
+        "id": "isaiah-41-10",
+        "why": "Don’t be afraid, for I am with you. Five promises in a breath, to exiles who then stayed in exile a long time. The verse does not promise the news is good. It promises a grip that does not depend on it. That is the promise for the waiting room."
+      },
+      {
+        "id": "matthew-6-34",
+        "why": "Tomorrow will worry about itself. The mind produces a full year of consequences from one pending call, and then lives through all of them before lunch. Jesus’ instruction is to carry today only. Today, you are waiting. That is the whole assignment for today, and it is enough, and tomorrow will have its own provision when it comes."
+      }
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "“Plans to prosper you and not to harm you” is the verse people send while you wait, and it implies they know the news will be good. They don’t, and you know they don’t. Habakkuk 3:17–18 is the honest one: even if it isn’t, still."
+    },
+    "whatToSay": [
+      "“I know you’re waiting. I’m not going to ask. I’m just here.”",
+      "“Whatever it is, you won’t hear it alone. Call me right after.”",
+      "Offer to be there when the call comes, or to sit with them the night before.",
+      "Don’t say: “I’m sure it’s nothing.” Say: “Whatever it is, we’ll deal with it together.”"
+    ],
+    "howToUse": "Habakkuk 3:17–18 the night before. Psalm 112:7 the morning of. Matthew 6:34 every time the mind runs ahead. If the news comes and it is bad, the pages for a cancer diagnosis, job loss, and grief are here, and they were written for after.",
+    "related": [
+      "waiting-for-test-results",
+      "afraid-of-the-future",
+      "cancer-diagnosis",
+      "job-loss",
+      "anxiety",
+      "waiting"
+    ],
+    "faq": [
+      {
+        "q": "How do I stop imagining the worst?",
+        "a": "You probably can’t stop it; you can decline to follow it. Matthew 6:34 is the discipline: when the mind runs to tomorrow, name today’s one task, which is waiting, and come back to it. Say Psalm 112:7 out loud. Move your body. Repeat as needed; it is a practice, not a switch."
+      },
+      {
+        "q": "Is it okay to pray for a specific outcome?",
+        "a": "Yes. Jesus prayed for the cup to pass, and then said “not my will.” Ask plainly for the news you want. Habakkuk 3 is the second half of that prayer: and if not, still."
+      },
+      {
+        "q": "What verse can I send someone waiting for a diagnosis or a decision?",
+        "a": "Psalm 112:7, with: “I know you’re waiting. I’m not going to ask. I’m just here.” That is the whole message."
+      }
+    ]
+  },
+  {
+    "slug": "new-job",
+    "type": "situation",
+    "cluster": "work",
+    "title": "Bible Verses for Starting a New Job",
+    "h1": "Bible verses for starting a new job",
+    "label": "New job",
+    "for": "someone starting a new job",
+    "description": "Bible verses for the first day and first month of a new job: nerves, wanting to do well, and working for someone other than the boss.",
+    "intent": "The person is starting a new job and is nervous, or wants to send a verse to someone who is. They want encouragement that is not a promise of promotion.",
+    "intro": "The first week of a new job is a strange mix of hope and dread: you wanted this, and you have no idea where the bathroom is. These verses are for that week and the month after, when you are still proving yourself. None of them promises you will be a star. They say who you are working for, who goes ahead of you, and how to hand the outcome over.",
+    "verses": [
+      {
+        "id": "deuteronomy-31-8",
+        "why": "“Yahweh himself is who goes before you. He will be with you. He will not fail you nor forsake you. Don’t be afraid.” Moses says it to Joshua about to take over a job Moses had done for forty years. Someone going ahead of you into the building is exactly the reassurance a first day needs. It does not say the job will be easy. It says the room is not empty when you walk in."
+      },
+      {
+        "id": "colossians-3-23-24",
+        "why": "“Whatever you do, work heartily, as for the Lord, and not for men.” Paul wrote it to household servants who had no career and no say in who they worked for. To them, of all people, he says: your work is for the Lord and he sees it. That reframes the new boss, the new team, and the fear of being judged. You have one audience, and he is generous."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "Be strong and courageous, said three times to a man starting the hardest job in the nation, which suggests he did not feel either. The reason given is not Joshua’s ability. It is “Yahweh your God is with you wherever you go,” including the new office."
+      },
+      {
+        "id": "proverbs-16-3",
+        "why": "“Commit your deeds to Yahweh, and your plans shall succeed.” Proverbs describes how life usually goes, so read this as a pattern rather than a contract: work handed over tends to go better than work clutched. Practically, it is a habit for the first month: at the start of each day, hand the day over, then do it."
+      },
+      {
+        "id": "psalm-90-17",
+        "why": "“Let the favor of the Lord our God be on us. Establish the work of our hands.” A prayer, not a promise, and the right one for a new job: not “make me impressive,” but let what I do here last. The psalm is Moses reflecting on how short life is, so the request is for work that matters, not work that dazzles."
+      },
+      {
+        "id": "exodus-33-14",
+        "why": "“My presence will go with you, and I will give you rest.” God’s answer to Moses when Moses was afraid to lead without him. Read it for the evenings of the first week, when you come home wired and doubting. The presence goes in with you, and the rest is part of the deal."
+      },
+      {
+        "id": "philippians-4-13",
+        "why": "“I can do all things through Christ, who strengthens me.” The verse everyone sends on the first day, and it was written by Paul about being content whether he had plenty or nothing. So read it the way he meant it: not “I will crush this,” but “whatever this job turns out to be, I can be all right in it.” That is a better thing to carry in on day one."
+      }
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "On more first-day cards than any verse, and written to exiles about a return seventy years off. Sent to someone starting a job it reads as “God got you this for your prosperity,” which sets them up badly if the job is hard. Deuteronomy 31:8 says the true thing: someone goes ahead of you."
+    },
+    "whatToSay": [
+      "“You’re going to be good at this. Text me after.”",
+      "“Nobody expects you to know anything the first week. Ask every question.”",
+      "Check in on Friday of the first week, not Monday. Monday they’re fine; Friday they’re tired and doubting.",
+      "Don’t say: “Don’t be nervous.” Say: “Nervous is right. It means you care.”"
+    ],
+    "howToUse": "Deuteronomy 31:8 in the car before you walk in. Colossians 3:23 when the new boss is difficult. Proverbs 16:3 as a morning habit for the first month. If you are sending one, Deuteronomy 31:8 with a line about texting you after.",
+    "related": [
+      "job-interview",
+      "work-stress",
+      "difficult-coworkers",
+      "starting-over",
+      "courage",
+      "job-loss"
+    ],
+    "faq": [
+      {
+        "q": "What is a good verse for a first day at work?",
+        "a": "Deuteronomy 31:8: someone goes ahead of you into the building. If you want something shorter, Joshua 1:9."
+      },
+      {
+        "q": "What if the new job turns out to be a mistake?",
+        "a": "Then Colossians 3:23 still holds: the work is for the Lord regardless of the employer, and that gives you dignity while you decide what to do. The starting-over page is here if you need it."
+      },
+      {
+        "q": "What can I write in a card for someone’s new job?",
+        "a": "Deuteronomy 31:8 or Psalm 90:17 with one line: “Proud of you. Go get it.” Skip Jeremiah 29:11; everyone else will send it."
+      }
     ]
   }
 ]

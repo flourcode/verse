@@ -67,6 +67,7 @@ export function home(ctx) {
   <h2 id="h-pop">Start from the moment they’re in</h2>
   <p class="muted">Hand-picked pages for the situations people most often want a verse for. Each verse comes with a note on who said it and why it fits, so what you send lands.</p>
   <ul class="chips">${HOME_CHIPS.map(([s, t]) => `<li><a class="chip" href="${urlFor(bySlug[s])}">${t}</a></li>`).join('')}<li><a class="chip chip--more" href="/topics/">All ${pages.length} topics</a></li></ul>
+  <p class="fine"><a href="/send/">Just tell me what to send someone →</a></p>
 </section>
 
 <section class="section" aria-labelledby="h-today">
@@ -177,6 +178,7 @@ ${adSlot('inline')}
 ${p.skip ? `<section class="section leaveout"><h2>The one I’d leave out</h2><p><strong>${esc(p.skip.ref)}.</strong> ${esc(p.skip.why)}</p></section>` : ''}
 ${p.whatToSay ? `<section class="section"><h2>What to say with it</h2><ul class="say">${p.whatToSay.map((l) => `<li>${esc(l)}</li>`).join('')}</ul></section>` : ''}
 ${p.howToUse ? `<section class="section"><h2>How to use these verses</h2><p>${esc(p.howToUse)}</p></section>` : ''}
+${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).length ? `<section class="section"><h2>Go deeper</h2><ul class="list">${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).map((x) => `<li><a href="/journal/${x.slug}/">${esc(x.title)}</a></li>`).join('')}</ul></section>` : ''}
 ${PRINTABLES[p.slug] ? `<p class="fine">Visiting in person? <a href="${PRINTABLES[p.slug].href}">${esc(PRINTABLES[p.slug].label)}</a> is a one-page PDF to print and take with you.</p>` : ''}
 <section class="section searchmore"><h2>Want more than ${vs.length}?</h2><p>These are the ones I’d hand you first. The search covers every verse in the Bible and tells you why each one matched.</p><a class="btn btn--ghost" href="/search/?q=${encodeURIComponent(p.searchQuery || p.label.toLowerCase())}">Search the whole Bible for ${esc(p.label.toLowerCase())}</a></section>
 ${relatedList(related)}
@@ -287,6 +289,55 @@ export function passageHTML(ref, ctx, opts) {
 </figure>`;
 }
 const fillQuotes = (html, ctx) => html.replace(/<blockquote data-ref="([^"]+)"><\/blockquote>/g, (m, ref) => passageHTML(ref, ctx));
+
+// ---------- /send/ : verses to send someone who is… ----------
+const SEND = [
+  ['grieving', 'grief', 'Thinking of you and of [name]. This came to mind.'],
+  ['a widow or widower', 'loss-of-a-spouse', 'I keep thinking about [name]. No need to reply.'],
+  ['grieving a parent', 'loss-of-a-parent', 'I’m so sorry about your mom. This came to mind.'],
+  ['anxious', 'anxiety', 'No advice, just this. I’m here.'],
+  ['afraid of what’s coming', 'afraid-of-the-future', 'When, not if. You won’t go through it alone.'],
+  ['having surgery', 'before-surgery', 'I’ll be thinking about you at 7 tomorrow. You don’t need to reply.'],
+  ['waiting on test results', 'waiting-for-test-results', 'I know you’re waiting. I’m not going to ask. I’m just here.'],
+  ['sick', 'cancer-diagnosis', 'I don’t know what to say. I’m here, and I’m not going anywhere.'],
+  ['dying', 'someone-dying', 'You can go when you’re ready. We’ll be all right.'],
+  ['going through a breakup', 'after-a-breakup', 'This is a real loss and I’m sorry. This came to mind.'],
+  ['going through a divorce', 'after-a-divorce', 'I’m on your side. I don’t need the details.'],
+  ['starting a new job', 'job-interview', 'You’re going to be good at this. Text me after.'],
+  ['out of work', 'job-loss', 'That’s rotten. I’m sorry. Lunch is on me Thursday.'],
+  ['starting over', 'starting-over', 'Proud of you for the first step. Here’s something for the next one.'],
+  ['discouraged', 'hope', 'Not a fix. Just company.'],
+  ['lonely', 'loneliness', 'I missed you Sunday. Walk at 4 most days if you ever want to come.'],
+  ['unable to sleep', 'cannot-sleep', 'No need to reply. Just in case you’re staring at the ceiling.'],
+  ['overwhelmed', 'overwhelmed', 'You don’t have to do all of it today. Here’s one verse, and I’ll take the dog.'],
+  ['dealing with family', 'difficult-family-members', 'You’re not crazy. That was a hard thing to sit through.'],
+  ['estranged from a child', 'estrangement', 'I know it’s quiet. I’m thinking of you both.'],
+  ['grieving a suicide', 'suicide-loss', 'I don’t have any answers. I loved him too, and I’m here.'],
+  ['grieving a pet', 'pet-loss', 'I’m sorry about Max. He was a good dog.'],
+  ['in a panic', 'panic', 'You’re safe. I’m right here. Breathe out slowly.'],
+  ['waiting for bad news', 'waiting-for-bad-news', 'Whatever it is, you won’t hear it alone. Call me right after.'],
+  ['graduating', 'graduation-card', 'Proud of you. Keep this one.'],
+  ['retiring', 'retirement-card', 'You did that well. Enjoy the next part.'],
+  ['a new parent', 'new-baby-card', 'Welcome, little one. You were prayed for before you were here.'],
+];
+export function sendPage(ctx) {
+  const bySlug = Object.fromEntries(ctx.pages.map((p) => [p.slug, p]));
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Verses to send', url: '/send/' }];
+  const rows = SEND.filter(([, slug]) => bySlug[slug]).map(([who, slug, line]) => {
+    const p = bySlug[slug]; const v = ctx.verses[p.verses[0].id];
+    return `<li class="send__row"><h2 class="send__who">…${esc(who)}</h2>
+<div class="send__card"><p class="verse__ref">${esc(v.reference)}</p><p class="verse__text send__text" lang="en">${verseText(v)}</p>
+<p class="send__line"><span class="send__k">Write above it:</span> “${esc(line)}”</p>
+<p class="send__more"><a href="${p.url}">All the verses for ${esc(p.for)}</a></p></div></li>`;
+  }).join('');
+  const body = `${breadcrumbs(crumbs)}
+<h1>Bible verses to send someone who is…</h1>
+<p class="hero__dek">One verse and one honest line for each moment, chosen so it fits. Copy the verse, write the line in your own words, send it. Shorter is better; the person is tired.</p>
+<ul class="send">${rows}</ul>
+<section class="section searchmore"><h2>Someone in a moment that isn’t here?</h2><p>Describe the person and the moment: “my friend just lost her mother,” “a coworker who got laid off.” The search understands that.</p><a class="btn btn--ghost" href="/search/">Search the whole Bible</a></section>
+<p class="fine">Before you send anything, <a href="/how-to-read-a-verse/">two minutes to read it in context</a>.</p>`;
+  return layout({ path: '/send/', title: 'Bible Verses to Send Someone Who Is Grieving, Sick, Anxious, or Starting Over', description: 'What Bible verse to send someone who is grieving, anxious, having surgery, sick, going through a breakup, out of work, lonely, or starting over. One verse and one honest line for each, with the context so it fits.', body, wide: true, ld: [crumbsLd(crumbs)] });
+}
 
 // ---------- /verses/ : key passages in context ----------
 export function versesIndex(ctx) {
