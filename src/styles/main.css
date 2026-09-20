@@ -488,3 +488,10 @@ main { padding: 1.5rem 0 4rem; }
 
 .btn--lg { min-height: 56px; padding-inline: 1.8rem; font-size: 1.1rem; }
 @media (max-width: 480px) { .btn-row .btn--lg { flex: 1 1 100%; } }
+
+.foot__signup { margin: 0 0 1.25rem; padding: 0 0 1.25rem; border-bottom: 1px solid var(--line); }
+.foot__label { display: block; font-size: .95rem; color: var(--ink); margin: 0 0 .5rem; }
+.foot__row { display: flex; flex-wrap: wrap; gap: .5rem; max-width: 34rem; }
+.foot__row input { flex: 1 1 200px; font: inherit; font-size: 1rem; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: var(--r-pill); padding: .6rem 1rem; min-height: 46px; }
+.foot__row input:focus { border-color: var(--primary); outline: none; }
+.foot__row .btn { min-height: 46px; }

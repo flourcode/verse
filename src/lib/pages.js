@@ -234,7 +234,8 @@ ${breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Today', url: '/today/' }])}
   <h2>Why one verse a day</h2>
   <p>A single verse read slowly does more than a chapter skimmed. The verse changes each day at midnight and rotates through a curated set, so it isn’t random and it isn’t tied to your mood. If today’s doesn’t fit, <a href="/topics/">find one that does</a>.</p>
 </section>
-${trustCallout()}`;
+${trustCallout()}
+${newsletterBlock()}`;
   return layout({ path: '/today/', title: 'Bible Verse for Today', description: 'A Bible verse for today with short context and one reflection question. Same verse for everyone each day; a new one tomorrow.', body, ld: [crumbsLd([{ name: 'Home', url: '/' }, { name: 'Today', url: '/today/' }])] });
 }
 
@@ -435,6 +436,7 @@ ${passageHTML(v.ref, ctx, { copy: true })}
 <section class="section"><h2>How to use it</h2><p>${esc(v.use)}</p></section>
 ${posts.length ? `<section class="section"><h2>Go deeper</h2><ul class="list">${posts.map((p) => `<li><a href="/journal/${p.slug}/">${esc(p.title)}</a></li>`).join('')}</ul></section>` : ''}
 ${related.length ? `<section class="related"><h2>Situations this verse fits</h2><ul>${related.map((p) => `<li><a href="${p.url}">${esc(p.h1)}</a></li>`).join('')}</ul></section>` : ''}
+${newsletterBlock()}
 <section class="section searchmore"><h2>Read it with its neighbors</h2><p>Context is the whole method. The search shows any verse with the ones around it.</p><a class="btn btn--ghost" href="/search/?q=${encodeURIComponent(v.ref.replace(/:\d+(-\d+)?$/, ''))}">Read ${esc(v.ref.replace(/:\d+(-\d+)?$/, ''))} in the search</a></section>
 ${trustCallout()}`;
   return layout({ path: `/verses/${v.slug}/`, title: v.title, description: v.description, body, wide: true, ld: [crumbsLd(crumbs)] });

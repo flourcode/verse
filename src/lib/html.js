@@ -101,8 +101,9 @@ ${page.body}
 </main>
 <footer class="foot">
   <div class="wrap">
+    ${site.newsletter && site.newsletter.formAction ? `<form class="foot__signup" action="${esc(site.newsletter.formAction)}" method="post"><label for="nl-foot" class="foot__label">One thoughtful email each week. Something worth reading.</label><div class="foot__row"><input id="nl-foot" type="email" name="email_address" required autocomplete="email" inputmode="email" placeholder="you@example.com"><button class="btn btn--primary" type="submit">Send me Better Verses</button></div></form>` : site.newsletter && site.newsletter.url ? `<p class="foot__label"><a href="${esc(site.newsletter.url)}">One thoughtful email each week →</a></p>` : ''}
     <ul>
-      ${site.newsletter && site.newsletter.url ? `<li><a href="${esc(site.newsletter.url)}">Weekly email</a></li>` : ''}
+
       <li><a href="/verses/">Verses in context</a></li>
       <li><a href="/journal/">Journal</a></li>
       <li><a href="/comfort-kit/">The Comfort Kit</a></li>
