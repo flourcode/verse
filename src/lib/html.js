@@ -15,7 +15,7 @@ export function verseText(v) {
 }
 export const trLine = (v) => (site.redLetter && v.jesus ? `${TR} · <span class="rl-key">Words of Jesus in red</span>` : TR);
 
-export const MARK = `<svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M31.32 55.00Q28.28 55.00 24.27 54.74Q20.26 54.48 14.31 54.48Q12.88 52.74 12.88 50.41Q15.08 50.41 15.99 49.66Q16.89 48.92 16.89 47.11V16.70Q16.89 14.89 15.99 14.14Q15.08 13.40 12.88 13.40Q12.88 11.07 14.31 9.32Q18.90 9.32 21.62 9.23Q24.33 9.13 26.24 9.06Q28.15 9.00 30.09 9.00Q35.72 9.00 39.34 10.00Q42.97 11.01 45.00 12.59Q47.04 14.18 47.85 16.08Q48.66 17.99 48.66 19.87Q48.66 23.49 46.78 26.08Q44.91 28.67 40.44 30.54Q46.01 31.71 48.56 34.17Q51.12 36.63 51.12 41.80Q51.12 44.32 50.28 46.69Q49.44 49.05 47.27 50.92Q45.10 52.80 41.22 53.90Q37.34 55.00 31.32 55.00ZM29.51 28.99Q34.23 28.99 36.21 26.92Q38.18 24.85 38.18 21.36Q38.18 17.86 36.27 15.79Q34.36 13.72 30.22 13.72Q29.57 13.72 28.83 13.79Q28.09 13.85 27.57 13.98V28.86Q28.02 28.93 28.54 28.96Q29.06 28.99 29.51 28.99ZM30.29 50.28Q39.34 50.28 39.34 42.45Q39.34 38.05 37.11 35.85Q34.88 33.65 29.70 33.65Q29.19 33.65 28.57 33.68Q27.96 33.71 27.57 33.71V50.08Q28.02 50.15 28.73 50.21Q29.44 50.28 30.29 50.28Z" fill="currentColor"/></svg>`;
+export const MARK = `<svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><rect class="tile" width="64" height="64" rx="14"/><path class="glyph" d="M31.32 55.00Q28.28 55.00 24.27 54.74Q20.26 54.48 14.31 54.48Q12.88 52.74 12.88 50.41Q15.08 50.41 15.99 49.66Q16.89 48.92 16.89 47.11V16.70Q16.89 14.89 15.99 14.14Q15.08 13.40 12.88 13.40Q12.88 11.07 14.31 9.32Q18.90 9.32 21.62 9.23Q24.33 9.13 26.24 9.06Q28.15 9.00 30.09 9.00Q35.72 9.00 39.34 10.00Q42.97 11.01 45.00 12.59Q47.04 14.18 47.85 16.08Q48.66 17.99 48.66 19.87Q48.66 23.49 46.78 26.08Q44.91 28.67 40.44 30.54Q46.01 31.71 48.56 34.17Q51.12 36.63 51.12 41.80Q51.12 44.32 50.28 46.69Q49.44 49.05 47.27 50.92Q45.10 52.80 41.22 53.90Q37.34 55.00 31.32 55.00ZM29.51 28.99Q34.23 28.99 36.21 26.92Q38.18 24.85 38.18 21.36Q38.18 17.86 36.27 15.79Q34.36 13.72 30.22 13.72Q29.57 13.72 28.83 13.79Q28.09 13.85 27.57 13.98V28.86Q28.02 28.93 28.54 28.96Q29.06 28.99 29.51 28.99ZM30.29 50.28Q39.34 50.28 39.34 42.45Q39.34 38.05 37.11 35.85Q34.88 33.65 29.70 33.65Q29.19 33.65 28.57 33.68Q27.96 33.71 27.57 33.71V50.08Q28.02 50.15 28.73 50.21Q29.44 50.28 30.29 50.28Z"/></svg>`;
 
 const ARROW = `<svg class="arrow" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
 
@@ -70,8 +70,8 @@ const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/today/', '
 <meta name="twitter:description" content="${esc(page.description)}">
 <meta name="twitter:image" content="${site.url}${site.ogImage}">
 <meta name="twitter:image:alt" content="${esc(site.name)}: ${esc(site.tagline)}">
-<link rel="icon" href="/favicon.svg?v=6" type="image/svg+xml">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=6">
+<link rel="icon" href="/favicon.svg?v=7" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=7">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/source-serif.woff2" as="font" type="font/woff2" crossorigin>
