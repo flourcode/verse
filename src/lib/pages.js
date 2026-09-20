@@ -30,14 +30,14 @@ export function newsletterBlock() {
     ? `<form class="signup" action="${esc(n.formAction)}" method="post">
     <label for="nl-email" class="sr-only">Email address</label>
     <input id="nl-email" type="email" name="email_address" required autocomplete="email" inputmode="email" placeholder="you@example.com">
-    <button class="btn btn--primary" type="submit">Send me the weekly verse</button>
+    <button class="btn btn--primary" type="submit">Send me Better Verses</button>
   </form>`
-    : `<a class="btn btn--primary" href="${esc(n.url)}">Send me the weekly verse</a>`;
+    : `<a class="btn btn--primary" href="${esc(n.url)}">Send me Better Verses</a>`;
   return `<section class="section newsletter" aria-labelledby="h-news">
-  <h2 id="h-news">One verse a week, in your inbox</h2>
-  <p>Monday mornings: one verse read slowly, one situation someone near you is probably in, and one note for those whose job is to comfort others.</p>
+  <h2 id="h-news">Something worth reading this week</h2>
+  <p>A verse read slowly. Something for someone you care about. Something for those who comfort others. And a reminder to read the whole chapter before quoting the famous line.</p>
   ${inner}
-  <p class="fine">Free. No spam, ever. Unsubscribe with one tap. I read the replies.</p>
+  <p class="fine">One thoughtful email each week. I read the replies. Unsubscribe anytime.</p>
 </section>`;
 }
 

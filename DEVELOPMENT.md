@@ -170,7 +170,7 @@ The mark is the letter B from Calistoga (SIL Open Font License), converted to an
 
 ## Newsletter (Kit)
 
-**Every Monday**, the GitHub Action in `.github/workflows/newsletter.yml` generates the week's issue and saves it in the repo under `newsletter/<date>/`. Nothing is sent. Open that folder on GitHub, copy `email.html` into a Kit broadcast (HTML editor), paste the subject from `subject.txt`, and send. You can also run the Action any time from the repo's Actions tab, optionally with an issue number to preview ahead.
+**Every Monday morning**, the GitHub Action in `.github/workflows/newsletter.yml` generates the week's issue and saves it in the repo under `newsletter/<date>/`, ready for a **Tuesday 8:00 AM** send (schedule it in Kit; Tuesday tends to beat Monday's crowded inbox, and the site copy names no day, so you can move it later on your own open rates). Nothing is sent from the repo. Open that folder on GitHub, copy `email.html` into a Kit broadcast (HTML editor), paste the subject from `subject.txt`, and send. You can also run the Action any time from the repo's Actions tab, optionally with an issue number to preview ahead.
 
 **By hand:** `npm run newsletter` writes this week's issue to `newsletter/<date>/`: `email.html` (paste into a Kit broadcast using the HTML editor, or save it as a Kit template), `email.txt` (plain-text version), and `subject.txt` (subject line and preview text). `--issue N` previews a future issue; `--date YYYY-MM-DD` generates for a given week.
 
@@ -178,7 +178,7 @@ Each issue is assembled from the site's own content, so the newsletter can't say
 
 Kit merge tags used: `{{ subscriber.first_name | default: "there" }}`, `{{ unsubscribe_url }}`, `{{ subscriber.email_address }}`. Send from `hello@betterverses.com`; the footer invites replies and a person should read them.
 
-To show the signup on the site, paste the `action` URL from your Kit form's HTML embed into `site.config.js` → `newsletter.formAction` (it looks like `https://app.kit.com/forms/1234567/subscriptions`). The site then renders its own one-field form that posts straight to Kit: no Kit script, no redirect away, and it matches the site. In the Kit form's settings, set "after subscribing" to redirect to `https://betterverses.com/thanks/`. The block appears on the home page after Today's verse, at the end of every journal post, and as a footer link. If you'd rather link out to a Kit landing page instead, set `newsletter.url` and leave `formAction` empty. With neither set, nothing renders.
+To show the signup on the site, paste the `action` URL from your Kit form's HTML embed into `site.config.js` → `newsletter.formAction` (it looks like `https://app.kit.com/forms/1234567/subscriptions`). The site then renders its own one-field form that posts straight to Kit: no Kit script, no redirect away, and it matches the site. In the Kit form's settings, set "after subscribing" to redirect to `https://betterverses.com/thanks/`. The signup reads "Something worth reading this week" with the button "Send me Better Verses." The block appears on the home page after Today's verse, at the end of every journal post, and as a footer link. If you'd rather link out to a Kit landing page instead, set `newsletter.url` and leave `formAction` empty. With neither set, nothing renders.
 
 ## Printables
 

@@ -1,6 +1,7 @@
 # Every Monday at 7:00 Pacific, generate this week's newsletter issue and save it in the repo under
-# newsletter/<date>/. Nothing is sent. Open the folder on GitHub, copy email.html into a Kit broadcast,
-# paste the subject from subject.txt, send. You can also run this any time from the Actions tab.
+# newsletter/<date>/, so it is waiting for the Tuesday-morning send. Nothing is sent from here. Open the
+# folder on GitHub, copy email.html into a Kit broadcast, paste the subject from subject.txt, schedule it
+# for Tuesday 8:00 in your main audience's time zone (Kit → Broadcast → Schedule). You can also run this any time from the Actions tab.
 name: Weekly newsletter
 on:
   schedule:

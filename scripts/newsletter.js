@@ -101,7 +101,7 @@ const html = `<!DOCTYPE html>
   </tr></table>
   <p style="margin:22px 0 4px;font:700 12px/1.4 ${sans};letter-spacing:.08em;text-transform:uppercase;color:${INK2};">Weekly · Issue ${issue} · ${fmt(date)}</p>
   <p style="margin:0 0 18px;font:600 26px/1.2 ${serif};color:${INK};">A verse for ${esc(sp.for)}.</p>
-  ${p(`Hi {{ subscriber.first_name | default: "there" }}. Once a week I send one verse read slowly, one situation someone near you is probably in, and one note for those whose job is to comfort others. Glad you’re here.`)}
+  ${p(`Hi {{ subscriber.first_name | default: "there" }}. Once a week: a verse read slowly, something for someone you care about, something for those who comfort others, and a little help separating what the Bible says from what we think it says. Glad you’re here.`)}
 
   ${h2('This week’s verse')}
   ${verseBlock(v.reference, v.text)}
@@ -146,7 +146,7 @@ const wrap = (s) => s.replace(/(.{1,72})(\s+|$)/g, '$1\n').trim();
 const text = `BETTER VERSES — Weekly, Issue ${issue} — ${fmt(date)}
 A verse for ${sp.for}.
 
-Once a week I send one verse read slowly, one situation someone near you is probably in, and one note for those whose job is to comfort others. Glad you're here.
+Once a week: a verse read slowly, something for someone you care about, something for those who comfort others, and a little help separating what the Bible says from what we think it says. Glad you're here.
 
 THIS WEEK'S VERSE
 ${v.reference}
