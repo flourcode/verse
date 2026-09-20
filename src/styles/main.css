@@ -479,3 +479,5 @@ main { padding: 1.5rem 0 4rem; }
 .send__more { margin: 0; font-size: .9rem; }
 
 .results__note--soft { color: var(--ink-2); font-size: .9rem; }
+
+.kicker { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); margin: 0 0 .4rem; }

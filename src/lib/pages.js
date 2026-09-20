@@ -4,7 +4,22 @@ import { esc, verseText, trLine, layout, verseCard, situationCard, relatedList, 
 const TYPE_URL = { topic: '/topics/', situation: '/situations/', occasion: '/occasions/' };
 export const urlFor = (p) => `${TYPE_URL[p.type]}${p.slug}/`;
 
-const PRINTABLES = { 'before-surgery': { href: '/print/hospital-room.pdf', label: 'Scripture for the hospital room' }, 'waiting-for-test-results': { href: '/print/hospital-room.pdf', label: 'Scripture for the hospital room' }, 'grief': { href: '/print/funeral-scripture.pdf', label: 'Funeral Scripture by situation' }, 'sympathy-card': { href: '/print/funeral-scripture.pdf', label: 'Funeral Scripture by situation' } };
+const PRINTABLES = {
+  'before-surgery': { href: '/printables/hospital-room/', label: 'Scripture for the hospital room' },
+  'cancer-diagnosis': { href: '/printables/hospital-room/', label: 'Scripture for the hospital room' },
+  'waiting-for-test-results': { href: '/printables/waiting-for-test-results/', label: 'Scripture for waiting on test results' },
+  'waiting-for-bad-news': { href: '/printables/waiting-for-test-results/', label: 'Scripture for waiting on test results' },
+  'grief': { href: '/printables/grief/', label: 'Scripture for someone who is grieving' },
+  'loss-of-a-spouse': { href: '/printables/grief/', label: 'Scripture for someone who is grieving' },
+  'loss-of-a-parent': { href: '/printables/grief/', label: 'Scripture for someone who is grieving' },
+  'loss-of-a-child': { href: '/printables/grief/', label: 'Scripture for someone who is grieving' },
+  'sympathy-card': { href: '/printables/funeral-scripture/', label: 'Funeral Scripture by situation' },
+  'someone-dying': { href: '/printables/end-of-life/', label: 'What to read when someone is dying' },
+  'marriage': { href: '/printables/wedding-scripture/', label: 'Wedding Scripture by moment' },
+  'cannot-sleep': { href: '/printables/for-tonight/', label: 'For tonight, when you can’t sleep' },
+  'anxiety': { href: '/printables/for-tonight/', label: 'For tonight, when you can’t sleep' },
+  'overwhelmed': { href: '/printables/caregivers/', label: 'Scripture for caregivers' },
+};
 const HOME_CHIPS = [['grief', 'Grief'], ['sympathy-card', 'Sympathy card'], ['before-surgery', 'Before surgery'], ['waiting-for-test-results', 'Waiting on results'], ['job-loss', 'Job loss'], ['worry', 'Worry'], ['cannot-sleep', 'Can’t sleep'], ['starting-over', 'Starting over'], ['retirement-card', 'Retirement card'], ['graduation-card', 'Graduation card']];
 
 // ---------- Newsletter signup (Kit) ----------
@@ -180,7 +195,7 @@ ${p.skip ? `<section class="section leaveout"><h2>The one I’d leave out</h2><p
 ${p.whatToSay ? `<section class="section"><h2>What to say with it</h2><ul class="say">${p.whatToSay.map((l) => `<li>${esc(l)}</li>`).join('')}</ul></section>` : ''}
 ${p.howToUse ? `<section class="section"><h2>How to use these verses</h2><p>${esc(p.howToUse)}</p></section>` : ''}
 ${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).length ? `<section class="section"><h2>Go deeper</h2><ul class="list">${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).map((x) => `<li><a href="/journal/${x.slug}/">${esc(x.title)}</a></li>`).join('')}</ul></section>` : ''}
-${PRINTABLES[p.slug] ? `<p class="fine">Visiting in person? <a href="${PRINTABLES[p.slug].href}">${esc(PRINTABLES[p.slug].label)}</a> is a one-page PDF to print and take with you.</p>` : ''}
+${PRINTABLES[p.slug] ? `<p class="fine">Want it on paper? <a href="${PRINTABLES[p.slug].href}">${esc(PRINTABLES[p.slug].label)}</a> is a free sheet to print and take with you.</p>` : ''}
 <section class="section searchmore"><h2>Want more than ${vs.length}?</h2><p>These are the ones I’d hand you first. The search covers every verse in the Bible and tells you why each one matched.</p><a class="btn btn--ghost" href="/search/?q=${encodeURIComponent(p.searchQuery || p.for)}">Search the whole Bible for ${esc(p.label.toLowerCase())}</a></section>
 ${relatedList(related)}
 ${faq(p.faq)}
@@ -290,6 +305,44 @@ export function passageHTML(ref, ctx, opts) {
 </figure>`;
 }
 const fillQuotes = (html, ctx) => html.replace(/<blockquote data-ref="([^"]+)"><\/blockquote>/g, (m, ref) => passageHTML(ref, ctx));
+
+// ---------- /printables/ : landing pages for the PDFs ----------
+const PACK = ['funeral-scripture', 'hospital-room', 'grief', 'waiting-for-test-results', 'end-of-life', 'caregivers', 'when-you-dont-know-what-to-say', 'for-tonight'];
+export function printablesIndex(ctx) {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Printables', url: '/printables/' }];
+  const items = ctx.printables.map((p) => `<li><a href="/printables/${p.slug}/"><strong>${esc(p.h1)}</strong><span>${esc(p.kicker)} · ${p.pages === 1 ? 'one page' : p.pages + ' pages'}</span></a></li>`).join('');
+  const body = `${breadcrumbs(crumbs)}
+<h1>Printables</h1>
+<p class="hero__dek">Sheets people actually print: for a binder, a glovebox, a nightstand, or to hand to someone. Every one follows the same shape: the moment, a few passages with a line on why, what to say, and how to use it. Free to print and share.</p>
+<ul class="tools">${items}</ul>
+<section class="section newsletter" aria-labelledby="h-pack">
+  <h2 id="h-pack">The Pastoral Care Pack</h2>
+  <p>All eight care sheets in one PDF: funeral Scripture by situation, the hospital room, grief, waiting on test results, end of life, caregivers, and the two one-page leave-behinds. For pastors, chaplains, hospice teams, and church resource libraries. Print it, put it in the office, hand out the pages.</p>
+  <a class="btn btn--primary" href="/print/pastoral-care-pack.pdf">Download the pack (PDF)</a>
+  <p class="fine">Free to print and share. If your church or ministry keeps a resource page, you are welcome to link this one; that is exactly what it is for.</p>
+</section>
+<p class="fine">Made from the same pages as the rest of the site, so nothing here says something the site doesn’t. <a href="/how-we-choose-verses/">How I choose verses</a>.</p>`;
+  return layout({ path: '/printables/', title: 'Free Printable Scripture Guides', description: 'Free printable Scripture sheets for grief, funerals, the hospital room, waiting on test results, end of life, caregivers, weddings, and sleepless nights. Passages, why each fits, what to say. The Pastoral Care Pack bundles them.', body, wide: true, ld: [crumbsLd(crumbs)] });
+}
+export function printablePage(pr, ctx) {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Printables', url: '/printables/' }, { name: pr.h1, url: `/printables/${pr.slug}/` }];
+  const bySlug = Object.fromEntries(ctx.pages.map((p) => [p.slug, p]));
+  const related = (pr.related || []).map((s) => bySlug[s]).filter(Boolean);
+  const preview = pr.sections.map((sec) => `<h3>${esc(sec.h)}</h3><ul class="list">${sec.refs.map((r) => `<li><strong>${esc(r.ref)}</strong>${r.why ? ` — ${esc(r.why)}` : ''}</li>`).join('')}</ul>`).join('');
+  const sample = pr.sections[0].refs[0];
+  const body = `${breadcrumbs(crumbs)}
+<p class="kicker">${esc(pr.kicker)}</p>
+<h1>Free printable: ${esc(pr.h1)}</h1>
+<p class="hero__dek">${esc(pr.moment)}</p>
+<p class="btn-row"><a class="btn btn--primary" href="/print/${pr.slug}.pdf">Download the PDF (${pr.pages === 1 ? 'one page' : pr.pages + ' pages'})</a><a class="btn btn--ghost" href="/print/pastoral-care-pack.pdf">Get all of them in the pack</a></p>
+<section class="section"><h2>What’s on it</h2>${preview}
+${pr.say && pr.say.length ? `<h3>What to say</h3><ul class="say">${pr.say.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>` : ''}
+${pr.use ? `<h3>How to use it</h3><p>${esc(pr.use)}</p>` : ''}</section>
+<section class="section"><h2>One of the passages, in full</h2>${passageHTML(sample.ref, ctx, { copy: true })}${sample.why ? `<p class="guide__why">${esc(sample.why)}</p>` : ''}</section>
+${related.length ? `<section class="related"><h2>The full pages behind this sheet</h2><ul>${related.map((p) => `<li><a href="${p.url}">${esc(p.h1)}</a></li>`).join('')}</ul></section>` : ''}
+<p class="fine">Free to print and share; the footer of the sheet says so. If you keep a resource page for a church, a hospice, or a chaplaincy, you’re welcome to link here. <a href="/how-we-choose-verses/">How I choose verses</a>.</p>`;
+  return layout({ path: `/printables/${pr.slug}/`, title: `Free Printable: ${pr.title}`, description: pr.description, body, wide: true, ld: [crumbsLd(crumbs)] });
+}
 
 // ---------- /send/ : verses to send someone who is… ----------
 const SEND = [
@@ -413,8 +466,7 @@ export function ministryHub(ctx) {
   <li><a href="/ministry/pastoral-care-scripture/"><strong>Pastoral care quick reference</strong><span>Hospital, grief, fear, job loss, family conflict: the verse to open with, and the one to avoid.</span></a></li>
   <li><a href="/verses/"><strong>Commonly misread verses</strong><span>${misread.length} famous passages with their setting, the usual misreading, and how to use them well.</span></a></li>
   <li><a href="/topics/"><strong>Scripture by topic and situation</strong><span>${ctx.pages.length} hand-picked pages, seven verses each with a note on who said it and why it fits.</span></a></li>
-  <li><a href="/print/hospital-room.pdf"><strong>Printable: Scripture for the hospital room</strong><span>One page. Eight passages for before surgery, waiting, a long stay, and when there are no words, with what to say. Free to print and copy.</span></a></li>
-  <li><a href="/print/funeral-scripture.pdf"><strong>Printable: Funeral Scripture by situation</strong><span>The funeral guide as a sheet for a binder, with every passage in full.</span></a></li>
+  <li><a href="/printables/"><strong>Printables and the Pastoral Care Pack</strong><span>Nine free sheets for the moments people call you about: funerals, the hospital room, grief, waiting, end of life, caregivers, weddings, sleepless nights. One PDF has them all.</span></a></li>
   <li><a href="/search/"><strong>Full-Bible search</strong><span>Every verse of the World English Bible. Type a half-remembered phrase, a reference, a topic, or a saying you suspect isn’t Scripture.</span></a></li>
 </ul>
 <section class="section">
@@ -444,7 +496,7 @@ ${s.refs.map((r) => `<div class="guide__item">${passageHTML(r.ref, ctx, { copy: 
 <nav class="toc" aria-label="Sections"><ul>${g.sections.map((s, i) => `<li><a href="#s${i + 1}">${esc(s.h)}</a></li>`).join('')}</ul></nav>
 ${sections.replace(/<section class="section guide__section">/g, (m) => m).split('<section class="section guide__section">').map((chunk, i) => (i === 0 ? chunk : `<section class="section guide__section" id="s${i}">${chunk}`)).join('')}
 ${g.howToUse ? `<section class="section"><h2>How to use this</h2><p>${esc(g.howToUse)}</p></section>` : ''}
-${g.printable ? `<p class="fine"><a href="${esc(g.printable)}">Print this guide (PDF)</a>, free to copy.</p>` : ''}
+${g.printable ? `<p class="fine"><a href="${esc(g.printable)}">Print this guide</a>, free to copy.</p>` : ''}
 ${related.length ? `<section class="related"><h2>Related pages</h2><ul>${related.map((p) => `<li><a href="${p.url}">${esc(p.h1)}</a></li>`).join('')}</ul></section>` : ''}
 ${trustCallout()}`;
   return layout({ path: `/ministry/${g.slug}/`, title: g.title, description: g.description, body, wide: true, ld: [crumbsLd(crumbs)] });

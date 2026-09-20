@@ -167,7 +167,7 @@
       "sympathy-card",
       "loneliness"
     ],
-    "printable": "/print/funeral-scripture.pdf"
+    "printable": "/printables/funeral-scripture/"
   },
   {
     "slug": "wedding-scripture",
@@ -288,7 +288,8 @@
       "marriage",
       "starting-over",
       "patience"
-    ]
+    ],
+    "printable": "/printables/wedding-scripture/"
   },
   {
     "slug": "pastoral-care-scripture",

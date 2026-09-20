@@ -182,7 +182,7 @@ To show the signup on the site, paste the `action` URL from your Kit form's HTML
 
 ## Printables
 
-`npm run printables` writes `src/print/hospital-room.html` and `src/print/funeral-scripture.html` from the site's data. Render them to PDF with any browser (File → Print → Save as PDF, Letter, background graphics on) into `public/print/`; the PDFs are committed and served at `/print/*.pdf`. They are linked from the Ministry hub, the funeral guide, and the surgery, test-results, grief, and sympathy-card pages. Free to print and copy; the footer says so.
+Content lives in `src/content/printables.json`; every sheet follows the same shape (the moment, passages with a line on why, what to say, what not to say, how to use it). `npm run printables` writes print-ready HTML to `src/print/` and renders `public/print/<slug>.pdf` plus `pastoral-care-pack.pdf` (needs `pip install playwright pypdf && playwright install chromium`; without them, render the HTML to PDF from any browser at Letter size with background graphics on). The PDFs are committed. Each sheet also gets a landing page at `/printables/<slug>/` (the thing that earns links) with the PDF underneath at `/print/<slug>.pdf`; page counts on the landing pages are read from the real PDFs at build time. Topic pages link to the matching sheet through the `PRINTABLES` map in `src/lib/pages.js`.
 
 ## Voice
 

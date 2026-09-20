@@ -12,10 +12,10 @@
     "verses:sync": "node scripts/sync-verses.js",
     "bible:build": "node scripts/build-bible.js",
     "newsletter": "node scripts/newsletter.js",
-    "printables": "node scripts/printables.js",
+    "printables": "node scripts/printables.js && python3 scripts/render-pdfs.py",
     "bible:build": "node scripts/build-bible.js",
     "newsletter": "node scripts/newsletter.js",
-    "printables": "node scripts/printables.js",
+    "printables": "node scripts/printables.js && python3 scripts/render-pdfs.py",
     "check": "node build.js --check"
   },
   "devDependencies": {

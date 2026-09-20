@@ -12,7 +12,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import site from './site.config.js';
 import { setAssets } from './src/lib/html.js';
-import { urlFor, home, searchPage, sendPage, topicsHub, topicPage, today, random, staticPage, notFound, versesIndex, versePage, journalIndex, journalPost, ministryHub, guidePage } from './src/lib/pages.js';
+import { urlFor, home, searchPage, sendPage, printablesIndex, printablePage, topicsHub, topicPage, today, random, staticPage, notFound, versesIndex, versePage, journalIndex, journalPost, ministryHub, guidePage } from './src/lib/pages.js';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const DIST = join(ROOT, 'dist');
@@ -38,6 +38,7 @@ const pages = [...json('src/content/topics.json'), ...json('src/content/situatio
 const staticDir = join(ROOT, 'src/content/pages');
 const versePages = json('src/content/verses-pages.json');
 const guides = json('src/content/guides.json');
+const printables = json('src/content/printables.json');
 const journalDir = join(ROOT, 'src/content/journal');
 const posts = (await Promise.all(readdirSync(journalDir).filter((f) => f.endsWith('.js')).map(async (f) => (await import(join(journalDir, f))).default))).sort((a, b) => b.date.localeCompare(a.date));
 const bible = JSON.parse(readFileSync(join(ROOT, 'src/data/bible.json'), 'utf8'));
@@ -74,6 +75,7 @@ for (const p of pages) if (p.related.length < 3 || p.related.length > 6) warn.pu
 for (const d of dailyRaw) if (!verses[d.id]) errors.push(`daily: unknown verse id "${d.id}"`);
 for (const v of versePages) for (const r of v.related || []) if (!slugs.has(r)) errors.push(`verses/${v.slug}: related "${r}" does not exist`);
 for (const g of guides) { for (const r of g.related || []) if (!slugs.has(r)) errors.push(`ministry/${g.slug}: related "${r}" does not exist`); for (const sec of g.sections) for (const r of sec.refs) if (r.page && !slugs.has(r.page)) errors.push(`ministry/${g.slug}: page "${r.page}" does not exist`); }
+for (const pr of printables) { for (const r of pr.related || []) if (!slugs.has(r)) errors.push(`printables/${pr.slug}: related "${r}" does not exist`); if (!existsSync(join(ROOT, 'public/print', pr.slug + '.pdf'))) warn.push(`printables/${pr.slug}: public/print/${pr.slug}.pdf is missing — run npm run printables && python3 scripts/render-pdfs.py`); }
 for (const p of posts) { for (const r of p.related || []) if (!slugs.has(r)) errors.push(`journal/${p.slug}: related "${r}" does not exist`); for (const v of p.versePages || []) if (!versePages.some((x) => x.slug === v)) errors.push(`journal/${p.slug}: verse page "${v}" does not exist`); }
 for (const v of versesArr) if (!v.text) errors.push(`verses: "${v.id}" has no text — run \`npm run verses:sync\``);
 for (const s of Object.keys(aliases)) if (!slugs.has(s)) warn.push(`aliases: "${s}" has no page`);
@@ -97,7 +99,9 @@ const daily = { pool: dailyPool, index: dailyIndex, entry: dailyPool[dailyIndex]
 // deployed page can never be served with a stale cached stylesheet (which is what made the logo tile vanish).
 const fp = (file) => createHash('sha256').update(readFileSync(join(ROOT, file))).digest('hex').slice(0, 8);
 const assets = { css: `main.${fp('src/styles/main.css')}.css`, app: `app.${fp('src/scripts/app.js')}.js`, search: `search.${fp('src/scripts/search.js')}.js` };
-const ctx = { pages, clusters, verses, daily, aliases, bible, versePages, posts, guides, assets };
+// Page counts come from the real PDFs, not the content file
+for (const pr of printables) { const f = join(ROOT, 'public/print', pr.slug + '.pdf'); if (existsSync(f)) { const n = (readFileSync(f, 'latin1').match(/\/Type\s*\/Page(?![s])/g) || []).length; if (n) pr.pages = n; } }
+const ctx = { pages, clusters, verses, daily, aliases, bible, versePages, posts, guides, printables, assets };
 setAssets(assets);
 
 // ---------- write ----------
@@ -126,6 +130,8 @@ write('/random/', random(ctx));
 for (const p of pages) write(p.url, topicPage(p, ctx));
 for (const s of statics) write(s.path, staticPage(s));
 write('/send/', sendPage(ctx));
+write('/printables/', printablesIndex(ctx));
+for (const pr of printables) write(`/printables/${pr.slug}/`, printablePage(pr, ctx));
 write('/verses/', versesIndex(ctx));
 for (const v of versePages) write(`/verses/${v.slug}/`, versePage(v, ctx));
 write('/journal/', journalIndex(ctx));
@@ -164,7 +170,7 @@ writeFileSync(join(DIST, 'data/finder.js'), 'window.__FINDER__=' + JSON.stringif
 const excluded = new Set(site.sitemapExclude);
 const urls = out.filter((u) => !u.endsWith('.html') && !excluded.has(u.replace(/^\/|\/$/g, '').split('/').pop() || 'home') && !excluded.has(u.replace(/^\/|\/$/g, '')));
 const today_ = new Date().toISOString().slice(0, 10);
-const prio = (u) => (u === '/' ? '1.0' : /^\/(topics|today|verses|journal|ministry|send)\/$/.test(u) ? '0.8' : /^\/(topics|situations|occasions|verses|journal|ministry)\//.test(u) ? '0.7' : '0.3');
+const prio = (u) => (u === '/' ? '1.0' : /^\/(topics|today|verses|journal|ministry|send|printables)\/$/.test(u) ? '0.8' : /^\/(topics|situations|occasions|verses|journal|ministry|printables)\//.test(u) ? '0.7' : '0.3');
 const freq = (u) => (u === '/today/' ? 'daily' : u === '/' ? 'weekly' : 'monthly');
 writeFileSync(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${site.url}${u}</loc><lastmod>${today_}</lastmod><changefreq>${freq(u)}</changefreq><priority>${prio(u)}</priority></url>`).join('\n')}\n</urlset>\n`);
 
@@ -212,6 +218,11 @@ ${versePages.map((v) => md(`/verses/${v.slug}/`, v.h1, v.description)).join('\n'
 
 ${md('/journal/', 'Journal')}
 ${posts.map((p) => md(`/journal/${p.slug}/`, p.title, p.description)).join('\n')}
+
+## Printables
+
+${md('/printables/', 'Free printable Scripture guides', 'Sheets for grief, funerals, the hospital room, waiting, end of life, caregivers, weddings, sleepless nights; the Pastoral Care Pack bundles them')}
+${printables.map((p) => md(`/printables/${p.slug}/`, p.h1, p.description)).join('\n')}
 
 ## For ministry
 
