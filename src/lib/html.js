@@ -45,7 +45,7 @@ export function layout(page) {
     ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.ads.client}" crossorigin="anonymous"></script>`
     : '';
   const navItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/journal/', 'Journal'], ['/ministry/', 'For Ministry']];
-const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/send/', 'Verses to send someone'], ['/today/', 'Today’s verse'], ['/verses/', 'Verses in context'], ['/journal/', 'Journal'], ['/printables/', 'Printables'], ['/ministry/', 'For Ministry'], ['/about/', 'About']];
+const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/send/', 'Verses to send someone'], ['/today/', 'Today’s verse'], ['/verses/', 'Verses in context'], ['/journal/', 'Journal'], ['/comfort-kit/', 'The Comfort Kit'], ['/ministry/', 'For Ministry'], ['/about/', 'About']];
   return `<!doctype html>
 <html lang="en" data-site="${site.url}" data-tr="${esc(TR)}">
 <head>
@@ -102,7 +102,7 @@ ${page.body}
       ${site.newsletter && site.newsletter.url ? `<li><a href="${esc(site.newsletter.url)}">Weekly email</a></li>` : ''}
       <li><a href="/verses/">Verses in context</a></li>
       <li><a href="/journal/">Journal</a></li>
-      <li><a href="/printables/">Printables</a></li>
+      <li><a href="/comfort-kit/">The Comfort Kit</a></li>
       <li><a href="/ministry/">For Ministry</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/what-we-believe/">What I believe</a></li>

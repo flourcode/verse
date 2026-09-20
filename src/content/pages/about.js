@@ -10,7 +10,8 @@ export default {
 <p>I built Better Verses for that pause. It has one job: help you find the right Bible verse to comfort someone you care about, and give you enough context to use it well. Sometimes you know the verse and only need the words. Sometimes you remember a phrase. Often you only know the person and the moment. And sometimes that someone is you.</p>
 
 <h2>Who’s behind this</h2>
-<p>One person, of quiet faith, who got tired of the pause ending badly. I am not a pastor or a scholar. I am someone who has stood in the card aisle, and sat in the waiting room, and typed and deleted a text three times. I read a lot, I check everything against the whole chapter, and I write down what I find in plain words. That’s the site.</p>
+<p>One person, of quiet faith. I am not a pastor, a theologian, or a counselor, and this site does not pretend I am. I am someone who has lived long enough to know that hard seasons rarely need a lecture, and that finding the right words for someone you care about is harder than it should be. I have stood in the card aisle, sat in the waiting room, and typed and deleted a text three times.</p>
+<p>So my aim is modest: choose Scripture carefully, explain the context plainly, make it easy to find a passage worth reading or sending, and then get out of the way. Everything here shows you the passage and its setting so you can judge it for yourself. You do not have to take my word for anything.</p>
 <p>You don’t need to be a scholar to use it either. Whether you read scripture every day or are looking for a few encouraging words for a friend, you are welcome here. I don’t promote a denomination and I don’t try to settle theological arguments. The method is simple: find the passage, read it in context, and let the text speak for itself.</p>
 
 <h2>What “better” means</h2>
@@ -30,7 +31,7 @@ export default {
   <li><strong>Occasions</strong>: what to write in a <a href="/occasions/sympathy-card/">sympathy card</a>, and scripture for <a href="/ministry/funeral-scripture/">funerals</a>, <a href="/ministry/wedding-scripture/">weddings</a>, and <a href="/occasions/graduation-card/">graduations</a>.</li>
   <li><strong>Themes</strong>: <a href="/topics/forgiveness/">forgiveness</a>, <a href="/topics/financial-stress/">money</a>, <a href="/situations/work-stress/">work</a>, <a href="/topics/wisdom/">guidance</a>.</li>
   <li><strong>Something to send</strong>: <a href="/send/">one verse and one honest line</a> for each moment, for a text or a card.</li>
-  <li><strong>Something to print</strong>: <a href="/printables/">free one-page sheets</a> for grief, the hospital room, waiting, end of life, caregivers, and more, and the <a href="/print/comfort-kit.pdf">Comfort Kit</a> that bundles them.</li>
+  <li><strong>Something to print</strong>: <a href="/comfort-kit/">free one-page sheets</a> for grief, the hospital room, waiting, end of life, caregivers, and more, and the <a href="/print/comfort-kit.pdf">Comfort Kit</a> that bundles them.</li>
   <li><strong>Search</strong>: type a few words you remember, a person, a story, a reference, or a saying you suspect is not in the Bible, and <a href="/search/">the search</a> finds it in the full text. When it sounds like a hard moment, it ranks the comforting verses first and says so.</li>
 </ul>
 

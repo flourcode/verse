@@ -83,7 +83,7 @@ export function home(ctx) {
   <h2 id="h-pop">Start from the moment they’re in</h2>
   <p class="muted">Hand-picked pages for the situations people most often want a verse for. Each verse comes with a note on who said it and why it fits, so what you send lands.</p>
   <ul class="chips">${HOME_CHIPS.map(([s, t]) => `<li><a class="chip" href="${urlFor(bySlug[s])}">${t}</a></li>`).join('')}<li><a class="chip chip--more" href="/topics/">All ${pages.length} topics</a></li></ul>
-  <p class="fine"><a href="/send/">Just tell me what to send someone →</a> · <a href="/print/comfort-kit.pdf">Prefer paper? The Comfort Kit (PDF)</a></p>
+  <p class="fine"><a href="/send/">Just tell me what to send someone →</a> · <a href="/comfort-kit/">Prefer paper? The Comfort Kit</a></p>
 </section>
 
 <section class="section" aria-labelledby="h-today">
@@ -306,26 +306,41 @@ export function passageHTML(ref, ctx, opts) {
 }
 const fillQuotes = (html, ctx) => html.replace(/<blockquote data-ref="([^"]+)"><\/blockquote>/g, (m, ref) => passageHTML(ref, ctx));
 
-// ---------- /printables/ : landing pages for the PDFs ----------
-const PACK = ['funeral-scripture', 'hospital-room', 'grief', 'waiting-for-test-results', 'end-of-life', 'caregivers', 'when-you-dont-know-what-to-say', 'for-tonight'];
-export function printablesIndex(ctx) {
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Printables', url: '/printables/' }];
-  const items = ctx.printables.map((p) => `<li class="tool"><a class="tool__pdf" href="/print/${p.slug}.pdf"><strong>${esc(p.h1)}</strong><span>${esc(p.kicker)} · ${p.pages === 1 ? 'one page' : p.pages + ' pages'} · <b>Open the PDF</b></span></a><a class="tool__about" href="/printables/${p.slug}/">What’s on it</a></li>`).join('');
-  const body = `${breadcrumbs(crumbs)}
-<h1>Printables</h1>
-<p class="hero__dek">Sheets people actually print: for a binder, a glovebox, a nightstand, or to hand to someone. Every one follows the same shape: the moment, a few passages with a line on why, what to say, and how to use it. Free to print and share.</p>
-<ul class="tools">${items}</ul>
-<section class="section newsletter" aria-labelledby="h-pack">
+// ---------- The Comfort Kit block (ministry hub, guides, printables) ----------
+export function kitBlock() {
+  return `<section class="section newsletter" aria-labelledby="h-pack">
   <h2 id="h-pack">The Comfort Kit</h2>
   <p>All eight care sheets in one PDF, one-pagers first: when you don’t know what to say, grief, the hospital room, waiting on test results, end of life, caregivers, tonight when you can’t sleep, and funeral Scripture by situation. For a pastor’s desk, a hospice binder, a church resource shelf, or your own kitchen drawer. Print it once; hand out the pages as the moments come.</p>
   <a class="btn btn--primary" href="/print/comfort-kit.pdf">Download the Comfort Kit (PDF)</a>
   <p class="fine">Free to print and share. If your church or ministry keeps a resource page, you are welcome to link this one; that is exactly what it is for.</p>
+</section>`;
+}
+
+// ---------- /printables/ : landing pages for the PDFs ----------
+const PACK = ['funeral-scripture', 'hospital-room', 'grief', 'waiting-for-test-results', 'end-of-life', 'caregivers', 'when-you-dont-know-what-to-say', 'for-tonight'];
+export function printablesIndex(ctx, opts) {
+  opts = opts || {};
+  const path = opts.path || '/comfort-kit/';
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'The Comfort Kit', url: '/comfort-kit/' }];
+  const items = ctx.printables.map((p) => `<li class="tool"><a class="tool__pdf" href="/print/${p.slug}.pdf"><strong>${esc(p.h1)}</strong><span>${esc(p.kicker)} · ${p.pages === 1 ? 'one page' : p.pages + ' pages'} · <b>Open the PDF</b></span></a><a class="tool__about" href="/printables/${p.slug}/">What’s on it</a></li>`).join('');
+  const body = `${breadcrumbs(crumbs)}
+<p class="kicker">Free. No signup. Print it. Share it.</p>
+<h1>The Comfort Kit</h1>
+<p class="hero__dek">Free printable Scripture sheets for grief, hospital visits, waiting, end of life, caregivers, and the moments when you simply don’t know what to say. Every sheet follows the same shape: the moment, a few passages with one line on why, what to say, and how to use it. Read one. Then stop.</p>
+<p class="btn-row"><a class="btn btn--primary" href="/print/comfort-kit.pdf">Download the whole kit (PDF, ${ctx.kitPages || 11} pages)</a></p>
+<p class="fine">For pastors and chaplains: pastoral-care Scripture, ready for the binder. For caregivers, hospice volunteers, and friends: Scripture for difficult days, ready for the nightstand. Same sheets. No account, no email gate, no donation ask, nothing for sale.</p>
+<h2>Or one sheet at a time</h2>
+<ul class="tools">${items}</ul>
+<section class="section">
+  <h2>What this is, and isn’t</h2>
+  <p>I am a layperson, not a pastor or a counselor, so the sheets stay modest: Scripture, brief context, and a few plainspoken sentences. They are meant to help you show up, not to replace pastoral care, a doctor, or a grief counselor. Where a sheet touches something that needs real help, it says so.</p>
+  <p>If you keep a resource page for a church, a hospice, a chaplaincy, or a caregiving group, you are welcome to link this page. That is what it is for. The address is short on purpose: <strong>betterverses.com/comfort-kit</strong>.</p>
 </section>
 <p class="fine">Made from the same pages as the rest of the site, so nothing here says something the site doesn’t. <a href="/how-we-choose-verses/">How I choose verses</a>.</p>`;
-  return layout({ path: '/printables/', title: 'Free Printable Scripture Guides', description: 'Free printable Scripture sheets for grief, funerals, the hospital room, waiting on test results, end of life, caregivers, weddings, and sleepless nights. Passages, why each fits, what to say. The Comfort Kit bundles them.', body, wide: true, ld: [crumbsLd(crumbs)] });
+  return layout({ path, canonical: '/comfort-kit/', noindex: path !== '/comfort-kit/', title: 'The Comfort Kit — Free Printable Scripture for Grief, Hospital Visits, and Hard Days', description: 'Free printable Scripture sheets for grief, hospital visits, waiting on test results, end of life, caregivers, funerals, weddings, and the moments you don’t know what to say. No signup. Print it, share it, link it.', body, wide: true, ld: [crumbsLd(crumbs)] });
 }
 export function printablePage(pr, ctx) {
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Printables', url: '/printables/' }, { name: pr.h1, url: `/printables/${pr.slug}/` }];
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'The Comfort Kit', url: '/comfort-kit/' }, { name: pr.h1, url: `/printables/${pr.slug}/` }];
   const bySlug = Object.fromEntries(ctx.pages.map((p) => [p.slug, p]));
   const related = (pr.related || []).map((s) => bySlug[s]).filter(Boolean);
   const preview = pr.sections.map((sec) => `<h3>${esc(sec.h)}</h3><ul class="list">${sec.refs.map((r) => `<li><strong>${esc(r.ref)}</strong>${r.why ? ` — ${esc(r.why)}` : ''}</li>`).join('')}</ul>`).join('');
@@ -340,6 +355,7 @@ ${pr.say && pr.say.length ? `<h3>What to say</h3><ul class="say">${pr.say.map((l
 ${pr.use ? `<h3>How to use it</h3><p>${esc(pr.use)}</p>` : ''}</section>
 <section class="section"><h2>One of the passages, in full</h2>${passageHTML(sample.ref, ctx, { copy: true })}${sample.why ? `<p class="guide__why">${esc(sample.why)}</p>` : ''}</section>
 ${related.length ? `<section class="related"><h2>The full pages behind this sheet</h2><ul>${related.map((p) => `<li><a href="${p.url}">${esc(p.h1)}</a></li>`).join('')}</ul></section>` : ''}
+${kitBlock()}
 <p class="fine">Free to print and share; the footer of the sheet says so. If you keep a resource page for a church, a hospice, or a chaplaincy, you’re welcome to link here. <a href="/how-we-choose-verses/">How I choose verses</a>.</p>`;
   return layout({ path: `/printables/${pr.slug}/`, title: `Free Printable: ${pr.title}`, description: pr.description, body, wide: true, ld: [crumbsLd(crumbs)] });
 }
@@ -466,9 +482,9 @@ export function ministryHub(ctx) {
   <li><a href="/ministry/pastoral-care-scripture/"><strong>Pastoral care quick reference</strong><span>Hospital, grief, fear, job loss, family conflict: the verse to open with, and the one to avoid.</span></a></li>
   <li><a href="/verses/"><strong>Commonly misread verses</strong><span>${misread.length} famous passages with their setting, the usual misreading, and how to use them well.</span></a></li>
   <li><a href="/topics/"><strong>Scripture by topic and situation</strong><span>${ctx.pages.length} hand-picked pages, seven verses each with a note on who said it and why it fits.</span></a></li>
-  <li><a href="/print/comfort-kit.pdf"><strong>The Comfort Kit (PDF)</strong><span>Eight free care sheets in one file for the moments people call you about. Print it once, hand out the pages.</span></a></li>
   <li><a href="/search/"><strong>Full-Bible search</strong><span>Every verse of the World English Bible. Type a half-remembered phrase, a reference, a topic, or a saying you suspect isn’t Scripture.</span></a></li>
 </ul>
+${kitBlock()}
 <section class="section" aria-labelledby="h-sheets">
   <h2 id="h-sheets">The sheets, one at a time</h2>
   <ul class="list">${ctx.printables.map((p) => `<li><a href="/print/${p.slug}.pdf">${esc(p.h1)}</a> <span class="muted">· ${p.pages === 1 ? 'one page' : p.pages + ' pages'} · <a href="/printables/${p.slug}/">what’s on it</a></span></li>`).join('')}</ul>
@@ -502,6 +518,7 @@ ${sections.replace(/<section class="section guide__section">/g, (m) => m).split(
 ${g.howToUse ? `<section class="section"><h2>How to use this</h2><p>${esc(g.howToUse)}</p></section>` : ''}
 ${g.printable ? `<p class="fine"><a href="${esc(g.printable)}">Print this guide</a>, free to copy.</p>` : ''}
 ${related.length ? `<section class="related"><h2>Related pages</h2><ul>${related.map((p) => `<li><a href="${p.url}">${esc(p.h1)}</a></li>`).join('')}</ul></section>` : ''}
+${kitBlock()}
 ${trustCallout()}`;
   return layout({ path: `/ministry/${g.slug}/`, title: g.title, description: g.description, body, wide: true, ld: [crumbsLd(crumbs)] });
 }

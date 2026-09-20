@@ -22,5 +22,5 @@ export default {
   // Ads: keep false until real AdSense code exists. When true, <ins> ad slots render.
   ads: { enabled: false, client: '' },           // e.g. client: 'ca-pub-XXXXXXXXXXXXXXXX'
   // Pages excluded from the sitemap (still crawlable, just not promoted).
-  sitemapExclude: ['privacy', 'terms', 'affiliate-disclosure', 'random', 'search', 'thanks', '404'],
+  sitemapExclude: ['privacy', 'terms', 'affiliate-disclosure', 'random', 'search', 'thanks', 'printables', '404'],
 };

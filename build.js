@@ -130,7 +130,9 @@ write('/random/', random(ctx));
 for (const p of pages) write(p.url, topicPage(p, ctx));
 for (const s of statics) write(s.path, staticPage(s));
 write('/send/', sendPage(ctx));
-write('/printables/', printablesIndex(ctx));
+{ const f = join(ROOT, 'public/print/comfort-kit.pdf'); if (existsSync(f)) ctx.kitPages = (readFileSync(f, 'latin1').match(/\/Type\s*\/Page(?![s])/g) || []).length; }
+write('/comfort-kit/', printablesIndex(ctx));
+write('/printables/', printablesIndex(ctx, { path: '/printables/' }));
 for (const pr of printables) write(`/printables/${pr.slug}/`, printablePage(pr, ctx));
 write('/verses/', versesIndex(ctx));
 for (const v of versePages) write(`/verses/${v.slug}/`, versePage(v, ctx));
@@ -221,7 +223,7 @@ ${posts.map((p) => md(`/journal/${p.slug}/`, p.title, p.description)).join('\n')
 
 ## Printables
 
-${md('/printables/', 'Free printable Scripture guides', 'Sheets for grief, funerals, the hospital room, waiting, end of life, caregivers, weddings, sleepless nights; the Comfort Kit bundles them')}
+${md('/comfort-kit/', 'The Comfort Kit: free printable Scripture guides', 'Sheets for grief, funerals, the hospital room, waiting, end of life, caregivers, weddings, sleepless nights; the Comfort Kit bundles them')}
 ${printables.map((p) => md(`/printables/${p.slug}/`, p.h1, p.description)).join('\n')}
 
 ## For ministry
