@@ -102,6 +102,22 @@
   }
 
   // ---------- query understanding ----------
+  // Comfort-first ranking. Turns on when the query sounds like a hard moment (a hand-picked page matched, or the
+  // words below appear). Verses that comfort rank up; law codes, genealogies, and verses about punishment or
+  // sexual sin rank down. Nothing is removed, the reader is told, and it can be switched off.
+  const COMFORT_INTENT = /\b(griev|grief|mourn|comfort|hurt|hurting|scared|afraid|fear|sad|lonely|alone|anxious|anxiety|worried|worry|panic|dying|died|death|dead|lost|loss|sick|ill|cancer|hospital|surgery|struggling|hard time|broken|heartbroken|crying|tears|estranged|cut me off|no contact|divorce|breakup|laid off|fired|overwhelmed|depress|despair|hopeless|suicid|can t sleep|cant sleep|encourag|hope|peace|strength|carry|help me|help my|for my (mom|dad|mother|father|son|daughter|friend|wife|husband|sister|brother))\b/;
+  const COMFORT_PLUS = ['comfort','near','heal','refuge','peace','rest','hope','merci','loving kindness','carri','uphold','strengthen','help','deliver','shelter','fear not','don t be afraid','with you','never leave','forsake you','light','joy','still','trust','shepherd','wipe','tears','broken heart','crushed','weari','burden','courage','hold','hand','love','grace','new'];
+  const COMFORT_MINUS = ['nakedness','put to death','shall die','abomination','uncleanness','unclean','whore','prostitut','curse','cursed','iniquity','wrath','slay','slain','sword','destroy','vengeance','plague','leprosy','sacrifice','burnt offering','genealog','begat','father of','son of','sons of','cubits'];
+  const LAW_BOOKS = new Set([2, 3, 4, 12, 13, 14, 15, 25]); // Leviticus, Numbers, Deuteronomy, 1–2 Chronicles, Ezra, Nehemiah, Ezekiel
+  function comfortScore(id) {
+    const t = V.lower[id]; let sc = 0;
+    for (const w of COMFORT_PLUS) if (t.includes(' ' + w)) sc += 6;
+    for (const w of COMFORT_MINUS) if (t.includes(' ' + w)) sc -= 30;
+    if (LAW_BOOKS.has(V.book[id])) sc -= 12;
+    if (V.book[id] === 18 || (V.book[id] >= 39 && V.book[id] <= 42) || (V.book[id] >= 44 && V.book[id] <= 65)) sc += 8; // psalms, gospels, letters
+    if (t.includes(' you ') || t.includes(' your ')) sc += 3; // spoken to someone
+    return Math.max(-60, Math.min(40, sc));
+  }
   const SITUATION = new Set(['retirement', 'graduation', 'surgery', 'job loss', 'interview', 'moving', 'exam', 'coworkers', 'boss', 'pregnancy', 'divorce', 'wedding', 'starting over', 'fresh start', 'stress', 'overwhelmed', 'depression', 'single', 'elderly', 'aging', 'youth', 'travel', 'home', 'change', 'new beginnings', 'identity', 'purpose', 'body', 'nature', 'animals', 'sleep problems', 'insomnia']);
   const SCOPES = {
     jesus: { label: 'In the Gospels', books: [39, 40, 41, 42], term: 'jesus' },
@@ -245,6 +261,8 @@
     let curated = null;
     if (CURATED) { let best = 0; for (const c of CURATED) { let sc = 0; for (const a of c.aliases) if (a && wholeQ.includes(' ' + a + ' ')) sc = Math.max(sc, a.split(' ').length * 2 + a.length / 20); if (sc > best) { best = sc; curated = c; } } }
     if (curated) out.curated = { label: curated.label, url: curated.url, h1: curated.h1 };
+    const comfort = opts.comfort === 'on' ? true : opts.comfort === 'off' ? false : !!(curated || COMFORT_INTENT.test(q));
+    out.comfort = comfort;
 
     // 3. Candidates & scoring
     const scores = new Map(); const why = new Map();
@@ -288,6 +306,7 @@
       const coverage = ideas ? covered / ideas : 1;
       const full = ideas ? mIdeas + rIdeas >= ideas : true;
       let score = base + coverage * 40 + (full ? 10 : 0) - Math.min(V.n[id], 60) * 0.15;
+      if (comfort) { score += comfortScore(id); if (!full && ideas > 1) score -= 25; }   // partial matches rank lower when someone is hurting
       const r = reasons.slice();
       // Words appearing close together in the order typed ("lord … shepherd" within a few words) beat scattered matches.
       if (full && matched.length >= 2 && !reasons.includes('Exact phrase')) {
@@ -355,7 +374,9 @@
     const input = $('#q', form), results = $('#results'), status = $('#search-status');
     const fTest = $('#f-testament'), fBook = $('#f-book'), fMode = $('#f-mode'), filters = $('#filters');
     const isSearchPage = /\/search\/?$/.test(location.pathname);
-    let last = null, shown = 0, current = '', strict = false;
+    let last = null, shown = 0, current = '', strict = false, comfortPref = null;
+    const fRank = $('#f-rank');
+    if (fRank) fRank.addEventListener('change', () => { comfortPref = fRank.value === 'comfort' ? 'on' : 'off'; if (current) run(current, false); });
     const PAGE = 25;
 
     const setStatus = (m) => { if (status) status.textContent = m; };
@@ -382,6 +403,7 @@
       else if (last.terms.length > 1 && last.full < last.total) h += `<p class="results__count">${last.full.toLocaleString()} verse${last.full === 1 ? '' : 's'} match everything you typed · ${(last.total - last.full).toLocaleString()} more match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
       else h += `<p class="results__count">${last.total.toLocaleString()} verse${last.total === 1 ? '' : 's'} match${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
       if (last.note) h += `<p class="results__note">${esc(last.note)}</p>`;
+      if (last.comfort && !last.reference) h += `<p class="results__note results__note--soft">Ranked for comfort first, because this sounds like a hard moment. Law codes and genealogies are still here, further down. <a href="#" data-rank="plain">Rank by words alone</a></p>`;
       if (last.saying && !more) {
         const sy = last.saying; const head = { not: 'Not in the Bible', misquote: 'Close, but not quite', verse: 'You’re thinking of ' + esc(sy.ref), story: 'That story is in ' + esc(sy.ref).replace(/:\d+$/, '') }[sy.status];
         h += `<div class="saying saying--${sy.status}"><p class="saying__k">${head}</p><p class="saying__note">${esc(sy.note)}</p>${sy.id != null ? `<p class="saying__ref">${esc(refOf(sy.id))}</p><p class="saying__text" lang="en">${esc(sy.text)}</p><p class="saying__more"><a href="${BASE}search/?q=${encodeURIComponent(refOf(sy.id).replace(/:\d+$/, ''))}" data-q="${esc(refOf(sy.id).replace(/:\d+$/, ''))}">Read the whole chapter</a>${versePageFor(sy.id) ? ` · <a href="${BASE}${versePageFor(sy.id).url.replace(/^\//, '')}">${esc(versePageFor(sy.id).h1)} in context</a>` : ''}</p>` : ''}</div>`;
@@ -402,14 +424,16 @@
       if (push && /^https?:$/.test(location.protocol)) { try { if (isSearchPage) history.replaceState({ q }, '', url); else history.pushState({ q }, '', url); } catch (e) { /* file:// or sandboxed */ } }
       loadAll(setStatus).then(() => {
         if (fBook && fBook.options.length <= 1) { for (let i = 0; i < B.books.length; i++) { const o = document.createElement('option'); o.value = i; o.textContent = B.books[i].n; fBook.appendChild(o); } }
-        last = search(q, { testament: fTest && fTest.value || null, book: fBook && fBook.value !== '' ? +fBook.value : null, mode: fMode && fMode.value, strict });
+        last = search(q, { testament: fTest && fTest.value || null, book: fBook && fBook.value !== '' ? +fBook.value : null, mode: fMode && fMode.value, strict, comfort: comfortPref });
+        if (fRank) fRank.value = last.comfort ? 'comfort' : 'plain';
         render(false); setStatus('');
         track('bible_search', { results: last.total, kind: last.reference ? 'reference' : (last.curated ? 'topic' : 'text') });
         const y = results.getBoundingClientRect().top + window.scrollY - 72; if (window.scrollY < y - 40) window.scrollTo({ top: y, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       }).catch(() => setStatus('The Bible text didn’t load. Check your connection and try again.'));
     }
-    form.addEventListener('submit', (e) => { e.preventDefault(); strict = false; run(input.value, true); });
+    form.addEventListener('submit', (e) => { e.preventDefault(); strict = false; comfortPref = null; run(input.value, true); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-strict]'); if (!a) return; e.preventDefault(); strict = a.dataset.strict === '1'; run(current, false); });
+    results.addEventListener('click', (e) => { const a = e.target.closest('[data-rank]'); if (!a) return; e.preventDefault(); comfortPref = a.dataset.rank === 'plain' ? 'off' : 'on'; run(current, false); });
     [fTest, fBook, fMode].forEach((el) => el && el.addEventListener('change', () => current && run(current, false)));
     document.addEventListener('click', (e) => { const el = e.target.closest('[data-q]'); if (!el) return; e.preventDefault(); strict = false; run(el.dataset.q, true); });
     results.addEventListener('click', async (e) => {

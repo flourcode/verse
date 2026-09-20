@@ -220,18 +220,16 @@
   ],
   "family": [
     "family",
-    "father",
-    "mother",
-    "son",
-    "daughter",
-    "children",
-    "child",
-    "brother",
-    "sister",
     "household",
-    "parents",
-    "wife",
-    "husband"
+    "home",
+    "kin",
+    "relatives",
+    "one another",
+    "bearing with",
+    "forgive",
+    "peace",
+    "reconcile",
+    "reconciled"
   ],
   "marriage": [
     "marriage",
@@ -239,36 +237,35 @@
     "married",
     "wife",
     "husband",
-    "wives",
     "bride",
     "bridegroom",
     "one flesh",
-    "cleave",
-    "joined"
+    "joined",
+    "love",
+    "faithful"
   ],
   "children": [
     "children",
     "child",
-    "son",
-    "sons",
-    "daughter",
-    "daughters",
     "little ones",
     "youth",
-    "train",
-    "discipline"
+    "offspring",
+    "heritage",
+    "gift",
+    "bless"
   ],
   "parenting": [
-    "children",
-    "child",
     "train",
     "discipline",
-    "father",
-    "mother",
     "instruction",
     "correction",
-    "rod",
-    "teach"
+    "teach",
+    "raise",
+    "children",
+    "child",
+    "gentle",
+    "patience",
+    "provoke"
   ],
   "friendship": [
     "friend",
@@ -1899,13 +1896,12 @@
     "born",
     "birth",
     "womb",
-    "child",
     "conceived",
-    "bear",
-    "labor",
     "knit",
     "formed",
-    "fearfully"
+    "fearfully",
+    "child",
+    "newborn"
   ],
   "loss": [
     "loss",

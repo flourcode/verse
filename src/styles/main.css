@@ -477,3 +477,5 @@ main { padding: 1.5rem 0 4rem; }
 .send__line { margin: 0 0 .4rem; color: var(--ink); }
 .send__k { font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); margin-right: .3rem; }
 .send__more { margin: 0; font-size: .9rem; }
+
+.results__note--soft { color: var(--ink-2); font-size: .9rem; }

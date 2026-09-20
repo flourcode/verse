@@ -44,6 +44,7 @@ export function searchBox(opts) {
       <label>Testament <select id="f-testament"><option value="">All</option><option value="OT">Old</option><option value="NT">New</option></select></label>
       <label>Book <select id="f-book"><option value="">All books</option></select></label>
       <label>Match <select id="f-mode"><option value="best">Best match</option><option value="all">All words</option><option value="phrase">Exact phrase</option></select></label>
+      <label>Rank <select id="f-rank"><option value="plain">By words</option><option value="comfort">Comfort first</option></select></label>
     </div>
   </form>
   <div id="results" class="results" aria-live="polite" hidden></div>`;
@@ -180,7 +181,7 @@ ${p.whatToSay ? `<section class="section"><h2>What to say with it</h2><ul class=
 ${p.howToUse ? `<section class="section"><h2>How to use these verses</h2><p>${esc(p.howToUse)}</p></section>` : ''}
 ${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).length ? `<section class="section"><h2>Go deeper</h2><ul class="list">${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).map((x) => `<li><a href="/journal/${x.slug}/">${esc(x.title)}</a></li>`).join('')}</ul></section>` : ''}
 ${PRINTABLES[p.slug] ? `<p class="fine">Visiting in person? <a href="${PRINTABLES[p.slug].href}">${esc(PRINTABLES[p.slug].label)}</a> is a one-page PDF to print and take with you.</p>` : ''}
-<section class="section searchmore"><h2>Want more than ${vs.length}?</h2><p>These are the ones I’d hand you first. The search covers every verse in the Bible and tells you why each one matched.</p><a class="btn btn--ghost" href="/search/?q=${encodeURIComponent(p.searchQuery || p.label.toLowerCase())}">Search the whole Bible for ${esc(p.label.toLowerCase())}</a></section>
+<section class="section searchmore"><h2>Want more than ${vs.length}?</h2><p>These are the ones I’d hand you first. The search covers every verse in the Bible and tells you why each one matched.</p><a class="btn btn--ghost" href="/search/?q=${encodeURIComponent(p.searchQuery || p.for)}">Search the whole Bible for ${esc(p.label.toLowerCase())}</a></section>
 ${relatedList(related)}
 ${faq(p.faq)}
 ${trustCallout()}`;
