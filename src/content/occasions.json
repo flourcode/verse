@@ -148,12 +148,12 @@
       }
     ],
     "related": [
+      "confirmation-card",
       "graduation",
       "retirement-card",
       "wisdom",
       "courage",
-      "starting-over",
-      "difficult-decisions"
+      "starting-over"
     ],
     "faq": [
       {
@@ -237,12 +237,12 @@
       }
     ],
     "related": [
+      "easter-card",
+      "christmas-card",
       "loss-of-a-child",
       "loss-of-a-spouse",
       "grief",
-      "loneliness",
-      "hope",
-      "peace"
+      "loneliness"
     ],
     "faq": [
       {
@@ -337,6 +337,7 @@
     },
     "howToUse": "Write the verse by hand, then one line of your own. If the parents waited a long time or adopted, 1 Samuel 1:27 will mean more than anything else you could write. For a baptism or dedication, Numbers 6:24–26.",
     "related": [
+      "baptism-card",
       "graduation-card",
       "marriage",
       "hope",
@@ -356,5 +357,857 @@
         "a": "Numbers 6:24–26 read aloud as a blessing works better than a card verse. If you want a card, Psalm 139:13–14."
       }
     ]
+  },
+  {
+    "slug": "christmas-card",
+    "title": "Bible Verse for a Christmas Card",
+    "h1": "Bible verse for a Christmas card",
+    "label": "Christmas card",
+    "for": "a Christmas card",
+    "description": "Bible verses for a Christmas card: best overall, short, traditional, and one for a hard Christmas. Suggested wording and every verse in full.",
+    "intent": "Someone is writing Christmas cards and wants a verse that is actually about Christmas, with a line to write with it. Some of the cards are going to people having a hard year.",
+    "intro": "Christmas cards are the one time a year most people write Scripture by hand, so it is worth choosing a verse that is actually about the night in question. These are, and one of them is for the card that is hard to write: the friend whose first Christmas this is without someone. That card matters more than the other forty.",
+    "verses": [
+      {
+        "id": "luke-2-10-11",
+        "why": "“Don’t be afraid, for behold, I bring you good news of great joy which will be to all the people.” The angel to the shepherds, and the first thing said about Christmas is the same thing said to every frightened person in the Bible: don’t be afraid. For a card, it is the whole story in two sentences, and it starts with the words a hard year needs."
+      },
+      {
+        "id": "isaiah-9-6",
+        "why": "“For to us a child is born. To us a son is given.” Written seven centuries before Bethlehem, to a nation in the dark. The names that follow, Wonderful Counselor, Mighty God, Prince of Peace, are the traditional Christmas card verse for a reason. It reads well aloud and everyone recognizes it."
+      },
+      {
+        "id": "john-1-14",
+        "why": "“The Word became flesh, and lived among us.” John’s Christmas story has no manger; it has this sentence. For a card to someone who thinks, it says the point of the season in nine words: God moved into the neighborhood."
+      },
+      {
+        "id": "matthew-1-23",
+        "why": "“They shall call his name Immanuel,” which is, being interpreted, “God with us.” The verse to write for the hard Christmas card. Not God fixing it, not God explaining it: God with us. For the widow, the family with an empty chair, the friend in treatment, it is the only Christmas promise that does not ring false."
+      },
+      {
+        "id": "luke-2-14",
+        "why": "“Glory to God in the highest, on earth peace, good will toward men.” The angels’ line, short enough for a small card, and the one that survives on ornaments for a reason. If you want traditional and brief, this is it."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "luke-2-10-11"
+      },
+      {
+        "kind": "Short",
+        "id": "luke-2-14"
+      },
+      {
+        "kind": "For a hard Christmas",
+        "id": "matthew-1-23"
+      },
+      {
+        "kind": "Traditional",
+        "id": "isaiah-9-6"
+      }
+    ],
+    "wording": [
+      "Merry Christmas. Thinking of you and yours this season.",
+      "Wishing you a quiet, warm Christmas and a good year ahead.",
+      "For a hard year: I know this Christmas is different. Thinking of you and of [name], and holding you both close.",
+      "To a friend in treatment: God with us. That includes the infusion chair. Merry Christmas; I’m around all week."
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "It shows up on Christmas cards because of the word hope, and it was written to exiles about a return seventy years off. Nothing to do with Christmas, and to someone having a hard year it reads as “next year will be better,” which you cannot promise. Matthew 1:23 is the Christmas verse for a hard year."
+    },
+    "howToUse": "Write the verse by hand. For most cards, Luke 2:10–11 or Luke 2:14. For the card to someone grieving, Matthew 1:23 and a line that says the person’s name. That card is the one to write first, while you have the energy.",
+    "related": [
+      "easter-card",
+      "thanksgiving",
+      "grief",
+      "loss-of-a-spouse",
+      "loneliness",
+      "hope"
+    ],
+    "faq": [
+      {
+        "q": "What is a short Bible verse for a Christmas card?",
+        "a": "Luke 2:14, the angels’ line, or “God with us” from Matthew 1:23. Both fit on one line."
+      },
+      {
+        "q": "What verse for a Christmas card to someone who lost a loved one this year?",
+        "a": "Matthew 1:23, “God with us,” with the person’s name in your line. Skip anything about joy or a bright new year; they will hear it as a demand."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "easter-card",
+    "title": "Bible Verse for an Easter Card",
+    "h1": "Bible verse for an Easter card",
+    "label": "Easter card",
+    "for": "an Easter card",
+    "description": "Bible verses for an Easter card: the empty tomb, “why do you seek the living among the dead,” and one for someone grieving this spring. With wording.",
+    "intent": "Someone is writing an Easter card, for family, a church friend, or someone grieving, and wants a verse that is about the resurrection, with a line to write.",
+    "intro": "Easter is the one holiday whose verses are almost all about death being undone, which makes it the easiest card for a believer and the hardest for a friend who buried someone in March. These verses cover both. The best Easter cards say something true about the empty tomb and something kind about the person’s year.",
+    "verses": [
+      {
+        "id": "matthew-28-5-6",
+        "why": "“He is not here, for he has risen, just like he said.” The angel’s announcement at the tomb, and “just like he said” is the part to notice: the resurrection was a promise kept, not a surprise. For a card, it is the whole of Easter in one sentence, and it is short."
+      },
+      {
+        "id": "luke-24-5-6",
+        "why": "“Why do you seek the living among the dead? He isn’t here, but is risen.” Said to women who came to the tomb with spices, expecting a body. The question is gentle and it is the heart of the day. It also reads well to someone who has recently stood at a grave: the place they went looking is not where the story ends."
+      },
+      {
+        "id": "john-11-25-26",
+        "why": "“I am the resurrection and the life.” Jesus to Martha, at her brother’s tomb, before anything has changed. For an Easter card to someone grieving, this is the verse, because it was said to a grieving person with the loss still fresh and it did not ask her to feel better first."
+      },
+      {
+        "id": "1-corinthians-15-55",
+        "why": "“Death, where is your sting? Hades, where is your victory?” Paul, taunting death, at the end of the longest argument in the Bible about resurrection. Bold, and for a card to a believer who loves Easter, exactly right. Not for the card to someone freshly grieving; they are not ready to taunt anything yet."
+      },
+      {
+        "id": "1-peter-1-3",
+        "why": "“Born again to a living hope through the resurrection of Jesus Christ from the dead.” Living hope, as opposed to the kind that dies with the person. Peter, who had denied Jesus and been found again, is the right author for a card about second chances."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "matthew-28-5-6"
+      },
+      {
+        "kind": "Short",
+        "id": "matthew-28-5-6"
+      },
+      {
+        "kind": "For someone grieving",
+        "id": "john-11-25-26"
+      },
+      {
+        "kind": "For a believer who loves Easter",
+        "id": "1-corinthians-15-55"
+      }
+    ],
+    "wording": [
+      "He is risen. Happy Easter to you and your family.",
+      "Wishing you a bright Easter morning and a good spring.",
+      "For someone grieving: I know this Easter comes hard this year. Thinking of you and of [name]. He is risen; that promise is for them too."
+    ],
+    "skip": {
+      "ref": "Romans 8:28",
+      "why": "It gets into Easter cards because the season is about things turning out. To someone who buried a spouse this winter it reads as “this was for the best.” John 11:25–26 was said to a grieving sister and it is the Easter verse for that card."
+    },
+    "howToUse": "Matthew 28:6 for most cards. John 11:25–26 for anyone who lost someone this year, with their name in your line. Write the hard card first.",
+    "related": [
+      "hope",
+      "grief",
+      "loss-of-a-spouse",
+      "starting-over",
+      "christmas-card"
+    ],
+    "faq": [
+      {
+        "q": "What is a short Easter verse for a card?",
+        "a": "“He is not here, for he has risen.” Matthew 28:6. Six words if you stop at risen."
+      },
+      {
+        "q": "What verse for an Easter card to someone who is grieving?",
+        "a": "John 11:25–26. Said to Martha at her brother’s tomb. Add the person’s name to your line."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "mothers-day-card",
+    "title": "Bible Verse for a Mother’s Day Card",
+    "h1": "Bible verse for a Mother’s Day card",
+    "label": "Mother’s Day card",
+    "for": "a Mother’s Day card",
+    "description": "Bible verses for a Mother’s Day card: for your mother, a grandmother, a stepmother, a friend who mothers everyone, and for the people for whom the day is hard.",
+    "intent": "Someone is writing a Mother’s Day card, possibly for a complicated relationship, or is dreading the day: a lost mother, a lost child, infertility, estrangement. They want a verse and a line, or permission to skip the day.",
+    "intro": "Mother’s Day is a good day for a lot of people and a hard one for many more: those who lost a mother, lost a child, could not have one, or have a mother they cannot safely call. These verses work for the card, and the last of them is for the person who will be quietly getting through Sunday. If that is you, you are allowed to skip church that week.",
+    "verses": [
+      {
+        "id": "proverbs-31-28",
+        "why": "“Her children rise up and call her blessed.” From the poem about the excellent wife, and this line is the one about being seen by your kids. For a straightforward card to a mother who did the work, it is the traditional choice and it still lands."
+      },
+      {
+        "id": "isaiah-66-13",
+        "why": "“As one whom his mother comforts, so I will comfort you.” God describes his own comfort by comparing it to a mother’s. For a card, it honors what she did by saying it is what God is like. For someone who lost their mother, it is the verse for the day, because the comfort it names is still available."
+      },
+      {
+        "id": "2-timothy-1-5",
+        "why": "Paul to Timothy: the faith that lived first in your grandmother Lois and your mother Eunice. Two women named in Scripture for handing faith down a generation at a time. For a grandmother’s card, or a mother whose faith is the reason you have yours, this is the one."
+      },
+      {
+        "id": "proverbs-31-25",
+        "why": "“Strength and dignity are her clothing. She laughs at the time to come.” For the mother who raised kids alone, or through illness, or on not enough money. Laughing at the future is a specific kind of courage, and the verse names it."
+      },
+      {
+        "id": "1-samuel-1-27",
+        "why": "Hannah, holding the son she waited years for: “For this child I prayed.” For a mother who waited, adopted, or fostered. And for a Mother’s Day card to a woman still waiting, it is the only verse that does not skip the waiting."
+      },
+      {
+        "id": "isaiah-49-15-16",
+        "why": "“Can a woman forget her nursing child? Yes, these may forget, yet I will not forget you.” For the person whose mother could not, or would not, be a mother. The verse admits that some mothers fail their children and does not pretend otherwise, and then promises the one who won’t."
+      },
+      {
+        "id": "psalm-34-18",
+        "why": "Near to the brokenhearted. This one is not for a card; it is for the second Sunday in May, for whoever is dreading it: the woman who lost a baby, the one who cannot conceive, the son who cannot call, the daughter whose mother died in March. The nearness does not take the day off."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "proverbs-31-28"
+      },
+      {
+        "kind": "Short",
+        "id": "isaiah-66-13"
+      },
+      {
+        "kind": "For a grandmother",
+        "id": "2-timothy-1-5"
+      },
+      {
+        "kind": "For someone dreading the day",
+        "id": "psalm-34-18"
+      }
+    ],
+    "wording": [
+      "Happy Mother’s Day. Thank you for everything, and for the things I didn’t notice.",
+      "To a stepmother or the mother who chose you: You didn’t have to, and you did. Happy Mother’s Day.",
+      "To a friend whose mother died: I know Sunday is hard. Thinking of you and of your mom.",
+      "To a friend who lost a child or is waiting for one: You’re a mother, and I’m thinking of you today. No need to reply.",
+      "If the day is hard for you: you can skip it. Take the day. Psalm 34:18 does not require attendance."
+    ],
+    "skip": {
+      "ref": "Proverbs 22:6",
+      "why": "“Train up a child in the way he should go” goes in Mother’s Day cards as praise, and for the mother whose adult child has walked away, from the faith or from her, it lands as a verdict. Proverbs 31:25 praises the mother without grading the outcome."
+    },
+    "howToUse": "Proverbs 31:28 or Isaiah 66:13 for most cards. 2 Timothy 1:5 for grandmothers. And send one text on Sunday to the friend you know is dreading it; that message will be the only one she gets that does not assume the day is happy.",
+    "related": [
+      "loss-of-a-parent",
+      "loss-of-a-child",
+      "infertility",
+      "estrangement",
+      "grief",
+      "new-baby-card"
+    ],
+    "faq": [
+      {
+        "q": "What is a good short Bible verse for a Mother’s Day card?",
+        "a": "Isaiah 66:13, “As one whom his mother comforts, so I will comfort you,” or the first line of Proverbs 31:28."
+      },
+      {
+        "q": "What can I say to a friend for whom Mother’s Day is painful?",
+        "a": "“I know Sunday is hard. Thinking of you.” Name the reason if you know it, and the person if there is one. Do not send a Mother’s Day verse; send Psalm 34:18 or nothing but the note."
+      },
+      {
+        "q": "My mother was not a good mother. Is there a verse for me?",
+        "a": "Isaiah 49:15–16, which admits some mothers forget their children and promises the one who won’t. You do not owe the day a card."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "fathers-day-card",
+    "title": "Bible Verse for a Father’s Day Card",
+    "h1": "Bible verse for a Father’s Day card",
+    "label": "Father’s Day card",
+    "for": "a Father’s Day card",
+    "description": "Bible verses for a Father’s Day card: for your dad, a grandfather, a stepfather, the man who stepped in, and for the people for whom the day is hard.",
+    "intent": "Someone is writing a Father’s Day card, possibly for a complicated father, a stepfather, or a grandfather, or is dreading the day because of loss, absence, or estrangement.",
+    "intro": "Father’s Day gets less attention than Mother’s Day and carries the same freight: some people have a father worth a card, some have a father worth a phone call at most, and some are the father whose child no longer calls. These verses cover the card, the stepfather, the grandfather, and the Sunday that is hard.",
+    "verses": [
+      {
+        "id": "psalm-103-13-14",
+        "why": "“As a father has compassion on his children, so Yahweh has compassion on those who fear him.” God describes himself by comparing his compassion to a father’s. For a dad who was compassionate, the card writes itself. For someone whose father wasn’t, the verse still names what a father is supposed to be, and says God is that."
+      },
+      {
+        "id": "proverbs-20-7",
+        "why": "“A righteous man walks in integrity. Blessed are his children after him.” The proverb about what a good father leaves behind: not money, a way of walking. For the dad who was honest when it cost him, this is the card."
+      },
+      {
+        "id": "1-thessalonians-2-11-12",
+        "why": "Paul describes his care for the church “as a father with his own children, exhorting, comforting, and imploring.” Three verbs. A good father does all three, and a card that names which one your dad did best will mean more than any generic line."
+      },
+      {
+        "id": "psalm-68-5",
+        "why": "“A father of the fatherless, and a defender of the widows, is God in his holy habitation.” For the person whose father died, left, or was never there. The verse says the role of father did not go unfilled. It is also the verse for a stepfather or a grandfather who stepped in, because it describes what they did."
+      },
+      {
+        "id": "luke-15-20",
+        "why": "The father who saw his son from a long way off and ran. For the dad who kept the door open when a child made a mess of things, and for the dad who is still watching the road. It is the Bible’s picture of what a father’s love looks like from the porch."
+      },
+      {
+        "id": "psalm-127-3",
+        "why": "“Children are a heritage from Yahweh.” Short, traditional, and it turns the card around: instead of praising the father, it says what he was given, and that he was given it on purpose. For a new father’s first Father’s Day especially, when he is still a little stunned to be one."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "psalm-103-13-14"
+      },
+      {
+        "kind": "Short",
+        "id": "psalm-127-3"
+      },
+      {
+        "kind": "For a stepfather or the man who stepped in",
+        "id": "psalm-68-5"
+      },
+      {
+        "kind": "For someone dreading the day",
+        "id": "psalm-68-5"
+      }
+    ],
+    "wording": [
+      "Happy Father’s Day. Thank you for the things you did that I didn’t see until I was older.",
+      "To a stepfather: You didn’t have to show up, and you did, every time. Happy Father’s Day.",
+      "To a new dad: Happy first Father’s Day. You’re going to be good at this.",
+      "To a friend whose father died: I know Sunday is hard. Thinking of you and of your dad.",
+      "To a father whose child isn’t calling: I know today is quiet. I’m thinking of you, and I’m around."
+    ],
+    "skip": {
+      "ref": "Ephesians 6:4 (“fathers, don’t provoke your children to wrath”)",
+      "why": "It is instruction, not praise, and it turns up in cards as a backhanded reminder. Proverbs 20:7 says what a good father leaves behind without grading him."
+    },
+    "howToUse": "Psalm 103:13 for most dads. Psalm 68:5 for the stepfather, the grandfather, or the friend who is fatherless this year. And a text on Sunday to the father you know whose child won’t call; the estrangement page is written for him.",
+    "related": [
+      "loss-of-a-parent",
+      "estrangement",
+      "new-baby-card",
+      "grief",
+      "difficult-family-members"
+    ],
+    "faq": [
+      {
+        "q": "What is a good short verse for a Father’s Day card?",
+        "a": "Psalm 127:3, “Children are a heritage from Yahweh,” or the first line of Psalm 103:13."
+      },
+      {
+        "q": "What verse for a stepfather?",
+        "a": "Psalm 68:5, a father of the fatherless, with a line saying he didn’t have to and did."
+      },
+      {
+        "q": "My father was absent or harmful. Is there a verse for me?",
+        "a": "Psalm 68:5, which says the role was not left empty, and Psalm 27:10 on the losing-a-parent page: when my father and my mother forsake me, Yahweh takes me up. You do not owe the day a card."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "baptism-card",
+    "title": "Bible Verse for a Baptism or Dedication Card",
+    "h1": "Bible verse for a baptism or dedication card",
+    "label": "Baptism card",
+    "for": "a baptism or dedication card",
+    "description": "Bible verses for a baptism, christening, or baby dedication card, infant or adult: the voice at the Jordan, buried and raised, and the blessing over a child.",
+    "intent": "Someone is invited to a baptism, christening, or dedication, for a baby or an adult, and wants a verse that is about baptism, with a line to write.",
+    "intro": "Baptism cards get the wrong verses more than almost any occasion, because people reach for baby verses when the baptism is an adult’s, or adult verses when it is an infant’s. These are sorted. The first two are about baptism itself; the rest are for the child, the new believer, and the family standing up front.",
+    "verses": [
+      {
+        "id": "matthew-3-16-17",
+        "why": "Jesus comes up out of the water and a voice says, “This is my beloved Son, with whom I am well pleased.” The first baptism in the Gospels, and the words spoken over it are the words every baptism echoes: beloved, pleased. Write it in the card for anyone, any age. That is what the day says over them."
+      },
+      {
+        "id": "romans-6-4",
+        "why": "“We were buried with him through baptism to death, that just as Christ was raised from the dead, so we also might walk in newness of life.” Paul’s explanation of what baptism means: going under and coming up, a death and a rising. For an adult baptism, this is the verse. It says what happened."
+      },
+      {
+        "id": "galatians-3-27",
+        "why": "“As many of you as were baptized into Christ have put on Christ.” Baptism as being clothed, which is a picture a teenager or adult can hold: something put on that changes how you are seen. Short, and it fits a card for someone who has just made the decision for themselves rather than had it made for them."
+      },
+      {
+        "id": "mark-10-14-16",
+        "why": "Jesus, indignant on the children’s behalf: “Allow the little children to come to me.” Then he takes them in his arms and blesses them. For an infant baptism or dedication, this is the picture of what is happening: a child brought forward, and welcomed."
+      },
+      {
+        "id": "numbers-6-24-26",
+        "why": "The blessing Aaron was told to say over the people. It is the best thing to write in a baptism or dedication card if you want to bless the child rather than describe the ceremony: keep you, shine on you, give you peace. Many churches say it over the child that day; writing it makes your card part of that."
+      },
+      {
+        "id": "1-samuel-1-27",
+        "why": "Hannah, bringing the son she prayed for to the temple to give him back to God: “For this child I prayed.” This is the original dedication, and the verse for parents who waited, adopted, or are standing up front with a child they nearly didn’t have."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "matthew-3-16-17"
+      },
+      {
+        "kind": "For an adult baptism",
+        "id": "romans-6-4"
+      },
+      {
+        "kind": "For an infant",
+        "id": "numbers-6-24-26"
+      },
+      {
+        "kind": "For a dedication",
+        "id": "1-samuel-1-27"
+      }
+    ],
+    "wording": [
+      "For a baby: Welcome to the family, little one. We’ll be praying this over you for a long time.",
+      "For an adult: Proud of you. This is a beginning, and we’re glad to be in it with you.",
+      "For the parents: What a day. Thank you for letting us be part of it.",
+      "For godparents, to write to the child for later: I stood up for you today and promised to keep showing up. I mean it."
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "It arrives in baptism cards as a life promise and it was written to exiles about the nation’s return. Matthew 3:17, beloved, well pleased, is what baptism actually says over a person."
+    },
+    "howToUse": "Matthew 3:16–17 for anyone. Romans 6:4 if the person being baptized chose it themselves. Numbers 6:24–26 for a baby, written out in full. If you are a godparent, write a second card for the child to open at eighteen; families keep those.",
+    "related": [
+      "new-baby-card",
+      "confirmation-card",
+      "starting-over",
+      "hope"
+    ],
+    "faq": [
+      {
+        "q": "What is a good short verse for a baptism card?",
+        "a": "“This is my beloved Son, with whom I am well pleased” from Matthew 3:17, or the first line of the blessing in Numbers 6:24."
+      },
+      {
+        "q": "What verse for an adult baptism?",
+        "a": "Romans 6:4 or Galatians 3:27. Both are about the meaning of baptism rather than about childhood."
+      },
+      {
+        "q": "What is the difference between a baptism and a dedication card?",
+        "a": "A dedication is the parents presenting the child and promising to raise them in the faith; 1 Samuel 1:27 is the model. A baptism is a sacrament; Matthew 3:16–17 and Romans 6:4 are about that. Numbers 6:24–26 works for either."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "confirmation-card",
+    "title": "Bible Verse for a Confirmation Card",
+    "h1": "Bible verse for a confirmation card",
+    "label": "Confirmation card",
+    "for": "a confirmation card",
+    "description": "Bible verses for a confirmation card, for a teenager taking the faith as their own: not a spirit of fear, be strong and courageous, rooted and built up.",
+    "intent": "Someone is writing a card for a teenager’s confirmation and wants a verse about taking faith as your own, with a line that isn’t preachy.",
+    "intro": "Confirmation is a teenager standing up and saying the faith is theirs now, not just their parents’. The right verse for the card treats them like the adult they are becoming: no baby verses, no lectures, something they might actually keep. These were chosen with a fourteen-year-old in mind, which means short, honest, and not embarrassing to be handed in front of a grandmother.",
+    "verses": [
+      {
+        "id": "2-timothy-1-7",
+        "why": "“God didn’t give us a spirit of fear, but of power, love, and self-control.” Paul to Timothy, a young man he was mentoring, who seems to have been timid. The best confirmation verse in the Bible, because it was written to exactly this person: someone young, taking on something real, and unsure they are up to it."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "“Be strong and courageous. Don’t be afraid. Yahweh your God is with you wherever you go.” Said to Joshua as he took over from Moses. For a teenager stepping into the faith as their own, the wherever-you-go part is the promise: college, the job, the years when church is not automatic."
+      },
+      {
+        "id": "colossians-2-6-7",
+        "why": "“As you received Christ Jesus the Lord, walk in him, rooted and built up in him, and established in the faith.” Rooted is the confirmation word: not planted by someone else anymore, taking hold on your own. Paul writes it to a young church, and it fits a young believer."
+      },
+      {
+        "id": "philippians-1-6",
+        "why": "“He who began a good work in you will complete it.” For the teenager who suspects they are not sure enough, good enough, or done enough. The verse says the work is in progress and someone else is finishing it. It takes the pressure off a day that can feel like a test."
+      },
+      {
+        "id": "ephesians-3-17-19",
+        "why": "Paul’s prayer that they would know the width, length, height, and depth of the love of Christ, which surpasses knowledge. Written as a prayer, so write it as one in the card: this is what I am asking for you. It is what confirmation is for."
+      },
+      {
+        "id": "proverbs-3-5-6",
+        "why": "Trust in Yahweh with all your heart, and don’t lean on your own understanding. The verse most confirmands already know, and worth writing anyway, because the years ahead are the ones where their own understanding will be loudest. Short enough to memorize; most already have."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "2-timothy-1-7"
+      },
+      {
+        "kind": "Short",
+        "id": "joshua-1-9"
+      },
+      {
+        "kind": "For a nervous one",
+        "id": "philippians-1-6"
+      },
+      {
+        "kind": "Traditional",
+        "id": "proverbs-3-5-6"
+      }
+    ],
+    "wording": [
+      "Proud of you for standing up today. This one is yours now.",
+      "From a grandparent: I prayed for this day before you were born. Keep this card.",
+      "From a sponsor or godparent: I said yes to walking with you and I meant it. Call me, any year, about anything.",
+      "Congratulations. Faith is a long road and you’ve got good company on it."
+    ],
+    "skip": {
+      "ref": "Jeremiah 29:11",
+      "why": "In every second confirmation card, and it was written to exiles about a seventy-year wait. A teenager handed it as a promise of prosperity will notice when sophomore year is hard. 2 Timothy 1:7 was written to a young person about exactly this."
+    },
+    "howToUse": "2 Timothy 1:7 for almost every confirmation card. Philippians 1:6 for the one who is nervous about whether they mean it enough. Write it by hand, and if you are the sponsor, put your phone number in the card.",
+    "related": [
+      "baptism-card",
+      "graduation-card",
+      "courage",
+      "hope",
+      "starting-over"
+    ],
+    "faq": [
+      {
+        "q": "What is a good short verse for a confirmation card?",
+        "a": "Joshua 1:9 or 2 Timothy 1:7. Both were said to a young person taking on something real."
+      },
+      {
+        "q": "What do I write in a confirmation card as a sponsor?",
+        "a": "One sentence that says you will keep showing up, and your phone number. The verse is 2 Timothy 1:7. Teenagers keep those cards."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "new-home-card",
+    "title": "Bible Verse for a New Home or Housewarming Card",
+    "h1": "Bible verse for a new home card",
+    "label": "New home card",
+    "for": "a new home or housewarming card",
+    "description": "Bible verses for a housewarming or new home card: unless the Lord builds the house, as for me and my house, and a blessing over the doorway.",
+    "intent": "Someone is writing a card for a friend’s new home, a housewarming, or a family that just moved, and wants a verse about home, with a line.",
+    "intro": "A new home is one of the few occasions where the Bible’s verses are about the exact thing: houses, doorways, households. These are the ones people write on the inside of a cabinet door, and one of them families have been carving over the entrance for three thousand years.",
+    "verses": [
+      {
+        "id": "psalm-127-1",
+        "why": "“Unless Yahweh builds the house, they who build it labor in vain.” Solomon, who built the biggest house in Israel’s history, on what actually makes one. For a card, it says the right thing without sounding like a warning: the house is not the point; who lives in it with you is."
+      },
+      {
+        "id": "joshua-24-15",
+        "why": "“As for me and my house, we will serve Yahweh.” Joshua, old, to a nation deciding what to do next. The most-carved verse in Christian homes, and for a housewarming card it is the traditional choice. Families put it by the door for a reason: it is a decision about what the house is for."
+      },
+      {
+        "id": "deuteronomy-6-6-7",
+        "why": "“You shall write them on the door posts of your house.” The instruction that led to a thousand doorway plaques. For a family with kids moving into a new home, it is a card about what happens inside: talking about these things when you sit, when you walk, when you lie down. The house is the setting for it."
+      },
+      {
+        "id": "proverbs-24-3-4",
+        "why": "“Through wisdom a house is built; by understanding it is established; by knowledge the rooms are filled with all rare and beautiful treasure.” The verse for a first home, a fixer-upper, or a couple who saved for years. The rooms are filled by wisdom, which is a kind way of saying the furniture can wait."
+      },
+      {
+        "id": "numbers-6-24-26",
+        "why": "The blessing Aaron was told to say: keep you, shine on you, give you peace. Written in a card, it is a blessing on the household, and it has been said over doorways as long as there have been doorways. Nobody has ever minded receiving it."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "joshua-24-15"
+      },
+      {
+        "kind": "Short",
+        "id": "psalm-127-1"
+      },
+      {
+        "kind": "For a first home",
+        "id": "proverbs-24-3-4"
+      },
+      {
+        "kind": "A blessing",
+        "id": "numbers-6-24-26"
+      }
+    ],
+    "wording": [
+      "Welcome home. May it be full of good years and people who stay for dinner.",
+      "For a first home: You did it. Furniture is optional; the door’s the important part.",
+      "After a hard move (divorce, downsizing, a loss): A new address, and the same people who love you. We’ll be by soon.",
+      "Housewarming: Bringing bread and salt, and this. May the house be blessed and the pantry full."
+    ],
+    "skip": {
+      "ref": "Matthew 7:24–27 (“built his house on the rock”)",
+      "why": "A parable about hearing and doing Jesus’ words, and it lands in housewarming cards as a comment on the foundation. Psalm 127:1 says the true thing about a house without turning the card into a sermon."
+    },
+    "howToUse": "Joshua 24:15 for most homes; Proverbs 24:3–4 for a first one. If the move came from something hard, the starting-over page has verses for that, and the card should say the same people who love you are still around.",
+    "related": [
+      "moving",
+      "starting-over",
+      "marriage",
+      "new-baby-card"
+    ],
+    "faq": [
+      {
+        "q": "What is a short verse for a housewarming card?",
+        "a": "Psalm 127:1 or the first line of Numbers 6:24, “Yahweh bless you and keep you.”"
+      },
+      {
+        "q": "What verse for someone moving after a divorce or loss?",
+        "a": "Isaiah 43:18–19, a new thing, from the starting-over page, with a line that says the same people love you at the new address."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "anniversary-card",
+    "title": "Bible Verse for an Anniversary Card",
+    "h1": "Bible verse for an anniversary card",
+    "label": "Anniversary card",
+    "for": "an anniversary card",
+    "description": "Bible verses for a wedding anniversary card: a first anniversary, a fiftieth, your parents, or a couple who have had a hard year. With wording.",
+    "intent": "Someone is writing an anniversary card for a spouse, parents, or friends, and wants a verse about a marriage that has lasted, with a line that fits the number of years.",
+    "intro": "An anniversary card should say something about the years, not just the wedding. The wedding verses are fine, but a couple at twenty-five years has been through things the couple at the altar had not, and the best anniversary verses know that. These do.",
+    "verses": [
+      {
+        "id": "ecclesiastes-4-9-12",
+        "why": "“Two are better than one. If they fall, the one will lift up his fellow.” The Bible’s most practical passage about partnership, and it reads better at an anniversary than at a wedding, because the couple has actually fallen and lifted by now. The cord of three strands is the line people quote; the falling and lifting is the line that means something."
+      },
+      {
+        "id": "1-corinthians-13-4-8",
+        "why": "Love is patient, love is kind, and the rest. Written to a church in a fight, as a list of what they were not doing. At an anniversary it is a report card the couple has been passing for years. Love never fails is the line to underline."
+      },
+      {
+        "id": "song-of-solomon-8-6-7",
+        "why": "“Love is strong as death. Many waters can’t quench love.” The Bible’s love poetry, and the waters line is for a couple who have been through some: illness, a lost job, a hard year with a child. Many waters, not none."
+      },
+      {
+        "id": "ruth-1-16-17",
+        "why": "“Where you go, I will go. Where you lodge, I will lodge.” Said by Ruth to her mother-in-law, not by a bride, and the couple should know that; it makes it better. Loyalty chosen when it would have been easier to leave is what an anniversary celebrates."
+      },
+      {
+        "id": "colossians-3-14",
+        "why": "“Above all these things, walk in love, which is the bond of perfection.” The end of a list about bearing with one another and forgiving. Short, and it names the thing that held the years together: not the feeling, the bond."
+      },
+      {
+        "id": "genesis-2-24",
+        "why": "“They will be one flesh.” The first marriage, and the line Jesus quotes when asked about marriage. For your parents’ anniversary, or a fiftieth, it says the two people have become one thing, which after fifty years is visibly true."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "Best overall",
+        "id": "ecclesiastes-4-9-12"
+      },
+      {
+        "kind": "Short",
+        "id": "colossians-3-14"
+      },
+      {
+        "kind": "After a hard year",
+        "id": "song-of-solomon-8-6-7"
+      },
+      {
+        "kind": "For a fiftieth",
+        "id": "genesis-2-24"
+      }
+    ],
+    "wording": [
+      "To your spouse: [N] years. I’d do all of them again, including the hard ones.",
+      "To your parents: Thank you for showing us what it looks like to stay. Happy anniversary.",
+      "To friends after a hard year: You two have been through the waters this year and you’re still holding on to each other. Happy anniversary; we’re proud of you.",
+      "For a fiftieth: Fifty years. One flesh, and it shows. Congratulations."
+    ],
+    "skip": {
+      "ref": "Ephesians 5:22–24 (“wives, submit”)",
+      "why": "It turns up in anniversary cards and it is instruction about roles, not celebration of years, and it lands badly in a card no matter what you think it means. Ecclesiastes 4:9–12 celebrates the actual thing: two who lift each other up."
+    },
+    "howToUse": "Ecclesiastes 4:9–12 for most anniversaries. Song of Solomon 8:7 for a couple who have had a hard year; say so in your line. Write the number of years in the card; it is the thing being celebrated.",
+    "related": [
+      "marriage",
+      "patience",
+      "forgiveness",
+      "retirement-card"
+    ],
+    "faq": [
+      {
+        "q": "What is a short Bible verse for an anniversary card?",
+        "a": "Colossians 3:14, “above all these things, walk in love,” or “love never fails” from 1 Corinthians 13:8."
+      },
+      {
+        "q": "What verse for parents’ anniversary?",
+        "a": "Genesis 2:24 for a long marriage, or Ecclesiastes 4:9–12, with a line thanking them for showing you what staying looks like."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "thanksgiving",
+    "title": "Bible Verses for Thanksgiving",
+    "h1": "Bible verses for Thanksgiving",
+    "label": "Thanksgiving",
+    "for": "Thanksgiving",
+    "description": "Bible verses for Thanksgiving: to read at the table, to write in a card, and one for a Thanksgiving that is hard this year. Every verse in full.",
+    "intent": "Someone wants a verse to read before Thanksgiving dinner or write in a card, and some of them are facing a first Thanksgiving with an empty chair or a table full of tension.",
+    "intro": "Thanksgiving is the one holiday where someone is usually asked to read something before the meal, and the reading is often the first thing that comes up on a phone. These are better. Two are for the table, two are for a card, and one is for the family whose Thanksgiving has an empty chair or a hard conversation waiting in it.",
+    "verses": [
+      {
+        "id": "psalm-100-4-5",
+        "why": "“Enter into his gates with thanksgiving, and into his courts with praise.” The psalm written to be sung on the way in, which makes it the one to read on the way to the table. Short, everyone can follow it, and the last line, his loving kindness endures forever, is a good place to stop and eat."
+      },
+      {
+        "id": "1-thessalonians-5-18",
+        "why": "“In everything give thanks.” In, not for. Paul wrote it to a church that was being persecuted, so he did not mean be grateful for the trouble; he meant thankfulness is possible inside it. For a Thanksgiving with something hard at the table, this is the verse, because it does not pretend."
+      },
+      {
+        "id": "psalm-107-1",
+        "why": "“Give thanks to Yahweh, for he is good, for his loving kindness endures forever.” The refrain of Psalm 107, a psalm about people in four kinds of trouble, each rescued, each told to give thanks. One line, and it fits a card, a napkin, or a child reading aloud."
+      },
+      {
+        "id": "colossians-3-15-17",
+        "why": "“Let the peace of God rule in your hearts, and be thankful.” Paul’s instruction for a household, with singing, teaching, and thankfulness all in one paragraph. For a family that is a little tense around the table, the peace ruling comes first, on purpose."
+      },
+      {
+        "id": "james-1-17",
+        "why": "“Every good gift and every perfect gift is from above.” The verse for the table: everything on it, and everyone around it, came from somewhere. It is also the Thanksgiving verse for people who are not sure what they believe; it asks only that they notice the gifts."
+      },
+      {
+        "id": "psalm-136-1",
+        "why": "“Give thanks to Yahweh, for he is good, for his loving kindness endures forever.” Psalm 136 says that line twenty-six times, once after every event in Israel’s history, good and terrible. Read the first verse, and if the table is a hard one this year, that is the point: the refrain held through all of it."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "To read at the table",
+        "id": "psalm-100-4-5"
+      },
+      {
+        "kind": "Short",
+        "id": "psalm-107-1"
+      },
+      {
+        "kind": "For a hard Thanksgiving",
+        "id": "1-thessalonians-5-18"
+      },
+      {
+        "kind": "For mixed beliefs at the table",
+        "id": "james-1-17"
+      }
+    ],
+    "wording": [
+      "Happy Thanksgiving. Grateful for you this year, and every year.",
+      "To a friend with an empty chair: I know the table looks different this year. Thinking of you and of [name].",
+      "For a card to a host: Thank you for making room for us. Every good gift."
+    ],
+    "skip": {
+      "ref": "Philippians 4:13",
+      "why": "It appears on Thanksgiving printables as a general encouragement and it is about being content with nothing. 1 Thessalonians 5:18, in everything give thanks, is the Thanksgiving verse that is honest about the everything."
+    },
+    "howToUse": "Psalm 100:4–5 read aloud before the meal; give it to the youngest reader who can. 1 Thessalonians 5:18 if there is an empty chair, and say the name before you read it. If family conflict is the thing on the table, the difficult-family page has what to say and what not to.",
+    "related": [
+      "difficult-family-members",
+      "grief",
+      "loss-of-a-spouse",
+      "hope",
+      "peace"
+    ],
+    "faq": [
+      {
+        "q": "What is a good Bible verse to read before Thanksgiving dinner?",
+        "a": "Psalm 100:4–5. Short, meant to be read aloud, and it ends on a good line to eat on."
+      },
+      {
+        "q": "What verse for a first Thanksgiving after losing someone?",
+        "a": "1 Thessalonians 5:18, in everything give thanks, with the person’s name said before it. Not Romans 8:28."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
+  },
+  {
+    "slug": "memorial-day",
+    "title": "Bible Verses for Memorial Day and Veterans",
+    "h1": "Bible verses for Memorial Day, Veterans Day, and the fallen",
+    "label": "Memorial Day",
+    "for": "Memorial Day or a veteran",
+    "description": "Bible verses for Memorial Day, Veterans Day, a military funeral, or a card to a veteran: greater love, the finished course, swords into plowshares.",
+    "intent": "Someone needs a verse for a Memorial Day service, a card to a veteran, a Gold Star family, or a military funeral, and wants to get the tone right.",
+    "intro": "Memorial Day is for the dead; Veterans Day is for the living. People mix them up every year, and a Gold Star mother notices. These verses are sorted: for remembering the fallen, for thanking someone who served and came home, and for the family at a folded flag. None of them glorifies war. The Bible’s own picture of the end of history is swords beaten into plowshares, and that belongs on this page too.",
+    "verses": [
+      {
+        "id": "john-15-13",
+        "why": "“Greater love has no one than this, that someone lay down his life for his friends.” Jesus, the night before he did it. The Memorial Day verse, on every monument for a reason, and it should be read plainly: it honors the laying down without pretending the death was small."
+      },
+      {
+        "id": "2-timothy-4-7-8",
+        "why": "“I have fought the good fight. I have finished the course. I have kept the faith.” Paul, near his own execution. For a veteran’s funeral, especially one who served long and came home to a full life, this is the reading. The fight in the verse is a life’s worth of faithfulness, not a battle."
+      },
+      {
+        "id": "psalm-23-4",
+        "why": "The valley of the shadow of death, and “you are with me.” For the family at the graveside, and for the veteran who walked through that valley and came back carrying it. Many soldiers have this psalm memorized for a reason."
+      },
+      {
+        "id": "isaiah-2-4",
+        "why": "“They shall beat their swords into plowshares. Nation shall not lift up sword against nation, neither shall they learn war any more.” The Bible’s picture of where all this ends. For a Memorial Day service, it is the honest hope to close on: the ones we remember died in a world that is not supposed to stay this way."
+      },
+      {
+        "id": "psalm-46-9",
+        "why": "“He makes wars cease to the end of the earth. He breaks the bow, and shatters the spear.” A verse to read alongside the names. It does not say the wars were meaningless; it says the one who will end them is the same one who was with the dead in the valley."
+      },
+      {
+        "id": "joshua-1-9",
+        "why": "“Be strong and courageous. Don’t be afraid. Yahweh your God is with you wherever you go.” For a card to someone deploying, or a veteran on a hard anniversary. The wherever-you-go was said to a man leading an army, and it went with him."
+      },
+      {
+        "id": "romans-12-18",
+        "why": "“If it is possible, as much as it is up to you, be at peace with all men.” For a veteran carrying what they did or saw, and for anyone who thinks a service on this day should end somewhere other than with the war. As much as it is up to you is honest about what a person can control, and it is a decent thing to send a soldier home with."
+      }
+    ],
+    "picks": [
+      {
+        "kind": "For Memorial Day",
+        "id": "john-15-13"
+      },
+      {
+        "kind": "For a veteran’s funeral",
+        "id": "2-timothy-4-7-8"
+      },
+      {
+        "kind": "For a card to a veteran",
+        "id": "joshua-1-9"
+      },
+      {
+        "kind": "To close a service",
+        "id": "isaiah-2-4"
+      }
+    ],
+    "wording": [
+      "To a Gold Star family: We remember [name] today, by name. Thank you does not cover it, and we are saying it anyway.",
+      "To a veteran on Veterans Day: Thank you for your service. I mean it, and I’m glad you came home.",
+      "To someone deploying: Wherever you go. I’ll be here when you get back, and I’ll write.",
+      "For a veteran on a hard anniversary: I know today is one of the hard ones. Thinking of you. Call if you want company."
+    ],
+    "skip": {
+      "ref": "Romans 8:28",
+      "why": "Sent to Gold Star families as comfort, and it sounds like the death was for the best. John 15:13 honors the laying down without explaining it away. And do not thank a Gold Star family for their service on Memorial Day; remember their dead by name."
+    },
+    "howToUse": "John 15:13 to open a Memorial Day observance; Isaiah 2:4 to close it. 2 Timothy 4:7–8 at a veteran’s funeral. For a veteran who is struggling, the Veterans Crisis Line is 988 then press 1, and the pages for panic and for cannot-sleep were written with them in mind too.",
+    "related": [
+      "grief",
+      "loss-of-a-spouse",
+      "courage",
+      "panic",
+      "cannot-sleep",
+      "someone-dying"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between Memorial Day and Veterans Day?",
+        "a": "Memorial Day honors those who died in service; Veterans Day honors everyone who served. Say “we remember” on Memorial Day and “thank you for your service” on Veterans Day, not the other way around."
+      },
+      {
+        "q": "What verse for a military funeral?",
+        "a": "2 Timothy 4:7–8 for the service, Psalm 23 at the graveside, John 15:13 if the death was in service."
+      },
+      {
+        "q": "What verse for a card to a veteran?",
+        "a": "Joshua 1:9, with a line that says you are glad they came home."
+      }
+    ],
+    "type": "occasion",
+    "cluster": "occasions"
   }
 ]

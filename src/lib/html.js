@@ -44,10 +44,10 @@ export function layout(page) {
   const ads = site.ads.enabled && site.ads.client
     ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.ads.client}" crossorigin="anonymous"></script>`
     : '';
-  const navItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/journal/', 'Journal'], ['/ministry/', 'For Ministry']];
-const menuItems = [['/search/', 'Search'], ['/topics/', 'Topics'], ['/send/', 'Verses to send someone'], ['/today/', 'Today’s verse'], ['/verses/', 'Verses in context'], ['/journal/', 'Journal'], ['/comfort-kit/', 'The Comfort Kit'], ['/ministry/', 'For Ministry'], ['/about/', 'About']];
+  const navItems = [['/search/', 'Find a verse'], ['/topics/', 'Topics'], ['/journal/', 'Journal'], ['/ministry/', 'For Ministry']];
+const menuItems = [['/search/', 'Find a verse'], ['/topics/', 'Topics'], ['/send/', 'Verses to send someone'], ['/today/', 'Today’s verse'], ['/verses/', 'Verses in context'], ['/journal/', 'Journal'], ['/comfort-kit/', 'The Comfort Kit'], ['/ministry/', 'For Ministry'], ['/about/', 'About']];
   return `<!doctype html>
-<html lang="en" data-site="${site.url}" data-tr="${esc(TR)}">
+<html lang="en" data-site="${site.url}" data-tr="${esc(TR)}" data-email="${esc(site.contactEmail)}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

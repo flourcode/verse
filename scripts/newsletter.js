@@ -35,7 +35,7 @@ const sayings = json('src/data/sayings.json').filter((s) => s.status === 'not' |
 const versePages = json('src/content/verses-pages.json');
 const posts = readdirSync(join(ROOT, 'src/content/journal')).filter((f) => f.endsWith('.js')).sort();
 const TYPE_URL = { topic: '/topics/', situation: '/situations/', occasion: '/occasions/' };
-const SHEET = { 'before-surgery': 'hospital-room', 'cancer-diagnosis': 'hospital-room', 'waiting-for-test-results': 'waiting-for-test-results', 'waiting-for-bad-news': 'waiting-for-test-results', 'grief': 'grief', 'loss-of-a-spouse': 'grief', 'loss-of-a-parent': 'grief', 'loss-of-a-child': 'grief', 'sympathy-card': 'funeral-scripture', 'someone-dying': 'end-of-life', 'marriage': 'wedding-scripture', 'cannot-sleep': 'for-tonight', 'anxiety': 'for-tonight', 'overwhelmed': 'caregivers' };
+const SHEET = { 'before-surgery': 'hospital-room', 'cancer-diagnosis': 'hospital-room', 'waiting-for-test-results': 'waiting-for-test-results', 'waiting-for-bad-news': 'waiting-for-test-results', 'grief': 'grief', 'loss-of-a-spouse': 'grief', 'loss-of-a-parent': 'grief', 'loss-of-a-child': 'grief', 'sympathy-card': 'funeral-scripture', 'someone-dying': 'end-of-life', 'marriage': 'wedding-scripture', 'cannot-sleep': 'for-tonight', 'anxiety': 'for-tonight', 'overwhelmed': 'caregivers', 'dementia': 'caregivers', 'after-an-accident': 'hospital-room', 'someone-dying': 'end-of-life' };
 const urlFor = (p) => `${site.url}${TYPE_URL[p.type]}${p.slug}/`;
 
 function passage(ref) {

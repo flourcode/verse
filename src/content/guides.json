@@ -310,6 +310,11 @@
             "ref": "Psalm 112:7",
             "why": "For the wait between the test and the result: a heart steady before the news, not after it.",
             "page": "waiting-for-test-results"
+          },
+          {
+            "ref": "Isaiah 46:4",
+            "why": "At a memory-care bedside: carried to gray hairs, read aloud whether or not they follow. 2 Timothy 2:13 for the family afraid the faith is gone with the memory.",
+            "page": "dementia"
           }
         ]
       },
@@ -420,6 +425,31 @@
             "ref": "Luke 15:20",
             "why": "For a parent whose adult child has cut them off: the posture of the father, watching the road without chasing. Never send Exodus 20:12 to the child; it will confirm the reason for the distance.",
             "page": "estrangement"
+          }
+        ]
+      },
+      {
+        "h": "Addiction, prison, and money",
+        "refs": [
+          {
+            "ref": "Proverbs 24:16",
+            "why": "For someone in recovery, and especially after a relapse: falls seven times and rises. Never Philippians 4:13 as a slogan; it becomes proof they failed at faith too.",
+            "page": "addiction"
+          },
+          {
+            "ref": "Luke 15:20",
+            "why": "For the parent of an addict: the father watches the road and does not chase. Never Proverbs 22:6; it arrives as an accusation.",
+            "page": "loved-one-addiction"
+          },
+          {
+            "ref": "Philippians 1:12-14",
+            "why": "For a prisoner: Paul wrote it in chains. For the family, Psalm 34:18. Avoid Romans 13 at anyone who has already been sentenced.",
+            "page": "someone-in-prison"
+          },
+          {
+            "ref": "Proverbs 30:8-9",
+            "why": "For a family in financial crisis: a prayer for enough. Never Malachi 3:10 as a lever; provision is not prosperity.",
+            "page": "financial-crisis"
           }
         ]
       }

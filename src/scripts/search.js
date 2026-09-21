@@ -108,14 +108,14 @@
   const COMFORT_INTENT = /\b(griev|grief|mourn|comfort|hurt|hurting|scared|afraid|fear|sad|lonely|alone|anxious|anxiety|worried|worry|panic|dying|died|death|dead|lost|loss|sick|ill|cancer|hospital|surgery|struggling|hard time|broken|heartbroken|crying|tears|estranged|cut me off|no contact|divorce|breakup|laid off|fired|overwhelmed|depress|despair|hopeless|suicid|can t sleep|cant sleep|encourag|hope|peace|strength|carry|help me|help my|for my (mom|dad|mother|father|son|daughter|friend|wife|husband|sister|brother))\b/;
   const COMFORT_PLUS = ['comfort','near','heal','refuge','peace','rest','hope','merci','loving kindness','carri','uphold','strengthen','help','deliver','shelter','fear not','don t be afraid','with you','never leave','forsake you','light','joy','still','trust','shepherd','wipe','tears','broken heart','crushed','weari','burden','courage','hold','hand','love','grace','new'];
   const COMFORT_MINUS = ['nakedness','put to death','shall die','abomination','uncleanness','unclean','whore','prostitut','curse','cursed','iniquity','wrath','slay','slain','sword','destroy','vengeance','plague','leprosy','sacrifice','burnt offering','genealog','begat','father of','son of','sons of','cubits'];
-  const LAW_BOOKS = new Set([2, 3, 4, 12, 13, 14, 15, 25]); // Leviticus, Numbers, Deuteronomy, 1–2 Chronicles, Ezra, Nehemiah, Ezekiel
+  const LAW_BOOKS = new Set([2, 3, 4, 12, 13, 14, 15, 25]);
   function comfortScore(id) {
     const t = V.lower[id]; let sc = 0;
     for (const w of COMFORT_PLUS) if (t.includes(' ' + w)) sc += 6;
     for (const w of COMFORT_MINUS) if (t.includes(' ' + w)) sc -= 30;
     if (LAW_BOOKS.has(V.book[id])) sc -= 12;
-    if (V.book[id] === 18 || (V.book[id] >= 39 && V.book[id] <= 42) || (V.book[id] >= 44 && V.book[id] <= 65)) sc += 8; // psalms, gospels, letters
-    if (t.includes(' you ') || t.includes(' your ')) sc += 3; // spoken to someone
+    if (V.book[id] === 18 || (V.book[id] >= 39 && V.book[id] <= 42) || (V.book[id] >= 44 && V.book[id] <= 65)) sc += 8;
+    if (t.includes(' you ') || t.includes(' your ')) sc += 3;
     return Math.max(-60, Math.min(40, sc));
   }
   const SITUATION = new Set(['retirement', 'graduation', 'surgery', 'job loss', 'interview', 'moving', 'exam', 'coworkers', 'boss', 'pregnancy', 'divorce', 'wedding', 'starting over', 'fresh start', 'stress', 'overwhelmed', 'depression', 'single', 'elderly', 'aging', 'youth', 'travel', 'home', 'change', 'new beginnings', 'identity', 'purpose', 'body', 'nature', 'animals', 'sleep problems', 'insomnia']);
@@ -306,7 +306,7 @@
       const coverage = ideas ? covered / ideas : 1;
       const full = ideas ? mIdeas + rIdeas >= ideas : true;
       let score = base + coverage * 40 + (full ? 10 : 0) - Math.min(V.n[id], 60) * 0.15;
-      if (comfort) { score += comfortScore(id); if (!full && ideas > 1) score -= 25; }   // partial matches rank lower when someone is hurting
+      if (comfort) { score += comfortScore(id); if (!full && ideas > 1) score -= 25; }
       const r = reasons.slice();
       // Words appearing close together in the order typed ("lord … shepherd" within a few words) beat scattered matches.
       if (full && matched.length >= 2 && !reasons.includes('Exact phrase')) {
@@ -377,6 +377,7 @@
     let last = null, shown = 0, current = '', strict = false, comfortPref = null;
     const fRank = $('#f-rank');
     if (fRank) fRank.addEventListener('change', () => { comfortPref = fRank.value === 'comfort' ? 'on' : 'off'; if (current) run(current, false); });
+    const showAll = new URLSearchParams(location.search).get('all') === '1';
     const PAGE = 25;
 
     const setStatus = (m) => { if (status) status.textContent = m; };
@@ -410,29 +411,39 @@
         const sy = last.saying; const head = { not: 'Not in the Bible', misquote: 'Close, but not quite', verse: 'You’re thinking of ' + esc(sy.ref), story: 'That story is in ' + esc(sy.ref).replace(/:\d+$/, '') }[sy.status];
         h += `<div class="saying saying--${sy.status}"><p class="saying__k">${head}</p><p class="saying__note">${esc(sy.note)}</p>${sy.id != null ? `<p class="saying__ref">${esc(refOf(sy.id))}</p><p class="saying__text" lang="en">${esc(sy.text)}</p><p class="saying__more"><a href="${BASE}search/?q=${encodeURIComponent(refOf(sy.id).replace(/:\d+$/, ''))}" data-q="${esc(refOf(sy.id).replace(/:\d+$/, ''))}">Read the whole chapter</a>${versePageFor(sy.id) ? ` · <a href="${BASE}${versePageFor(sy.id).url.replace(/^\//, '')}">${esc(versePageFor(sy.id).h1)} in context</a>` : ''}</p>` : ''}</div>`;
       }
+      let collapsed = false;
       if (last.curated && !more) {
-        const pg = last.curated.page; const F = window.__FINDER__; const lead = pg && pg.verses && pg.verses[0]; const lv = lead && F && F.verses[lead.id];
-        if (lv) {
+        const pg = last.curated.page; const F = window.__FINDER__;
+        const cards = pg && pg.verses ? pg.verses.map((e, i) => { const v = F.verses[e.id]; if (!v) return ''; return `<article class="pick${i === 0 ? ' pick--lead' : ''}">
+<p class="verse__ref">${esc(v.ref)}</p>
+<p class="verse__text pick__text" lang="en"><q>${esc(v.text)}</q></p>
+<p class="pick__why">${esc(e.why)}</p>
+<div class="hit__actions"><button class="btn btn--link" type="button" data-act="copy" data-cid="${esc(e.id)}">Copy</button><button class="btn btn--link" type="button" data-act="share" data-cid="${esc(e.id)}">Share</button></div>
+</article>`; }).join('') : '';
+        if (cards) {
           h += `<section class="answer"><p class="answer__k">Hand-picked for ${esc(pg.for)}</p>
-<p class="verse__ref">${esc(lv.ref)}</p>
-<p class="verse__text answer__text" lang="en"><q>${esc(lv.text)}</q></p>
-<p class="verse__tr">${TR}</p>
-<div class="verse__why"><h3>Why this fits</h3><p>${esc(lead.why)}</p></div>
+<p class="answer__lead">${pg.count || pg.verses.length} verses I’d look at, each with why it fits. Read them slowly; you only need one.</p>
+${cards}
 ${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h3><p><strong>${esc(pg.skip.ref)}.</strong> ${esc(pg.skip.why)}</p></div>` : ''}
-<div class="verse__actions"><button class="btn btn--primary" type="button" data-act="copy" data-cid="${esc(lead.id)}">Copy this verse</button><button class="btn btn--ghost" type="button" data-act="share" data-cid="${esc(lead.id)}">Share</button><a class="btn btn--link" href="${esc(pg.url)}">All ${pg.count || 7} verses for ${esc(pg.for)} →</a></div>
-</section>
-<p class="results__divider">More from the whole Bible</p>${comfortNote}`;
+<p class="answer__more"><a href="${esc(pg.url)}">What to say with it, and more on ${esc(pg.for)} →</a> · <a href="${BASE}how-to-read-a-verse/">Check one yourself in two minutes</a></p>
+</section>`;
+          if (!showAll) { collapsed = true; h += `<p class="results__divider"><button class="btn btn--ghost btn--block" type="button" data-expand>Search the whole Bible for this too (${last.total.toLocaleString()} verses match)</button></p>`; }
+          else h += `<p class="results__divider">More from the whole Bible</p>${comfortNote}`;
         } else {
-          h += `<a class="curated" href="${esc(last.curated.url)}"><span class="curated__k">Hand-picked</span><strong>${esc(last.curated.h1)}</strong><span>Seven verses chosen for their context, each with a note on why it fits.</span></a>`;
+          h += `<a class="curated" href="${esc(last.curated.url)}"><span class="curated__k">Hand-picked</span><strong>${esc(last.curated.h1)}</strong><span>Verses chosen for their context, each with a note on why it fits.</span></a>`;
         }
+      } else if (!more && !last.reference && !last.saying) {
+        h += `<p class="results__note results__note--soft">I don’t have a hand-picked page for that yet, so these are from the whole Bible. <a href="${BASE}send/">See the moments I’ve written for</a>, or <a href="mailto:${esc(document.documentElement.dataset.email || 'hello@betterverses.com')}">tell me what you were looking for</a>.</p>`;
       }
       if (!last.total && !more) h += `<div class="state"><p>Try fewer words, a phrase you remember in quotes, or a reference like <em>Psalm 23</em>.</p><p class="muted">Search covers every verse of the ${esc(TR)}.</p></div>`;
       head.innerHTML = h;
       const slice = last.hits.slice(shown, shown + PAGE); shown += slice.length;
+      let bin = $('.results__hits', results); if (!bin) { bin = document.createElement('div'); bin.className = 'results__hits'; results.appendChild(bin); }
+      if (!more) bin.hidden = collapsed;
       const frag = document.createElement('div'); frag.innerHTML = slice.map((x) => hitHTML(x, !!last.reference)).join('');
-      while (frag.firstChild) results.appendChild(frag.firstChild);
+      while (frag.firstChild) bin.appendChild(frag.firstChild);
       const old = $('.results__more', results); if (old) old.remove();
-      if (shown < last.total) { const b = document.createElement('button'); b.type = 'button'; b.className = 'btn btn--ghost btn--block results__more'; b.textContent = `Show more (${last.total - shown} left)`; b.addEventListener('click', () => render(true)); results.appendChild(b); }
+      if (shown < last.total) { const b = document.createElement('button'); b.type = 'button'; b.className = 'btn btn--ghost btn--block results__more'; b.textContent = `Show more (${last.total - shown} left)`; b.addEventListener('click', () => render(true)); bin.appendChild(b); }
     }
     function run(q, push) {
       q = (q || '').trim(); if (!q) return;
@@ -450,6 +461,7 @@ ${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h
     }
     form.addEventListener('submit', (e) => { e.preventDefault(); strict = false; comfortPref = null; run(input.value, true); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-strict]'); if (!a) return; e.preventDefault(); strict = a.dataset.strict === '1'; run(current, false); });
+    results.addEventListener('click', (e) => { const btn = e.target.closest('[data-expand]'); if (!btn) return; const bin = $('.results__hits', results); if (bin) bin.hidden = false; btn.closest('.results__divider').innerHTML = 'More from the whole Bible'; track('bible_search', { results: last.total, kind: 'expand' }); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-rank]'); if (!a) return; e.preventDefault(); comfortPref = a.dataset.rank === 'plain' ? 'off' : 'on'; run(current, false); });
     [fTest, fBook, fMode].forEach((el) => el && el.addEventListener('change', () => current && run(current, false)));
     document.addEventListener('click', (e) => { const el = e.target.closest('[data-q]'); if (!el) return; e.preventDefault(); strict = false; run(el.dataset.q, true); });

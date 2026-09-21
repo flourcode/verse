@@ -73,7 +73,7 @@ public/                   Copied as-is: analytics.js (paste GA4 id here), favico
 dist/                     Build output (gitignored). Deploy this folder.
 ```
 
-Launch set: full-Bible search (home and `/search/`), 46 hand-picked topic pages (12 topics, 30 situations, 4 occasion/card pages), a "verses to send someone who is…" page (`/send/`), 19 famous-verse context pages (`/verses/`), a journal with 5 articles (`/journal/`), a ministry hub with 3 guides (`/ministry/`), topics hub, today, random, seven trust pages, and a 404. 71 pages. 31,098 searchable verses, 156 hand-annotated ones, 31-entry daily rotation.
+Launch set: full-Bible search (home and `/search/`), 66 hand-picked topic pages (12 topics, 40 situations, 14 occasion/card pages), a "verses to send someone who is…" page (`/send/`), 19 famous-verse context pages (`/verses/`), a journal with 5 articles (`/journal/`), a ministry hub with 3 guides (`/ministry/`), topics hub, today, random, seven trust pages, and a 404. 71 pages. 31,098 searchable verses, 156 hand-annotated ones, 31-entry daily rotation.
 
 ## The three layers
 
@@ -82,6 +82,8 @@ Launch set: full-Bible search (home and `/search/`), 46 hand-picked topic pages 
 | **Find it** | `/`, `/search/`, `/topics/`, `/situations/`, `/occasions/` | The utility and the SEO surface. Grow toward 200–400 exceptional pages, never programmatic ones. |
 | **Understand it** | `/verses/`, `/journal/` | Authority: what famous passages actually say. `src/content/verses-pages.json` (one object per verse: ref, context, misread, use, related) and `src/content/journal/*.js` (one file per article; `<blockquote data-ref="Romans 8:28"></blockquote>` is filled with WEB text at build). |
 | **Use it** | `/ministry/` | Tools for pastors, chaplains and teachers. `src/content/guides.json`: sections of references with a note each; text is pulled from the full Bible at build, so any reference works. |
+
+Two kinds of search. The home-page box is for hand-picked moments: when what someone types matches a page, all of that page's verses render inline with their notes and the skip note, and the whole-Bible results sit behind one button ("Search the whole Bible for this too"). When nothing hand-picked matches, the home page falls back to whole-Bible results and says so. `/search/` ("Find a verse" in the nav) behaves the same way; `/search/?all=1` opens with the whole-Bible results expanded, which is where the "Search the whole Bible" quick path and the topic pages' "search the whole Bible for…" buttons send people.
 
 Search links into the Understand layer: a hit that has a `/verses/` page shows "Why it's misread", and the sayings card links to the context page.
 

@@ -508,3 +508,13 @@ main { padding: 1.5rem 0 4rem; }
 .answer__skip p { color: var(--ink-2); }
 .answer .verse__actions { margin-top: 1rem; }
 .results__divider { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); margin: 1.5rem 0 .25rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+
+.answer__lead { margin: 0 0 1rem; color: var(--ink-2); }
+.pick { padding: .9rem 0; border-top: 1px solid color-mix(in srgb, var(--on-surface) 10%, transparent); }
+.pick--lead { border-top: 0; padding-top: 0; }
+.pick__text { font-size: clamp(1.15rem, 1rem + .7vw, 1.4rem); margin-bottom: .45rem; }
+.pick--lead .pick__text { font-size: clamp(1.4rem, 1.1rem + 1.4vw, 1.9rem); }
+.pick__why { margin: 0 0 .2rem; color: var(--ink-2); font-size: .95rem; }
+.answer__more { margin: 1rem 0 0; font-size: .95rem; }
+.results__divider .btn { text-transform: none; letter-spacing: 0; font-size: 1rem; }
+.results__hits[hidden] { display: none; }

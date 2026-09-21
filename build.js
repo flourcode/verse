@@ -55,7 +55,7 @@ for (const p of pages) {
   slugs.add(p.slug);
   for (const k of ['slug', 'type', 'cluster', 'title', 'h1', 'label', 'for', 'description', 'intro', 'verses', 'related', 'faq']) if (p[k] == null) errors.push(`${at}: missing "${k}"`);
   if (!clusters.some((c) => c.id === p.cluster)) errors.push(`${at}: unknown cluster "${p.cluster}"`);
-  if (!p.verses || p.verses.length < 7) warn.push(`${at}: only ${p.verses?.length ?? 0} verses (spec asks for 7–10)`);
+  if (!p.verses || p.verses.length < (p.type === 'occasion' ? 5 : 7)) warn.push(`${at}: only ${p.verses?.length ?? 0} verses (spec asks for ${p.type === 'occasion' ? '5–10' : '7–10'})`);
   if (p.verses && p.verses.length > 10) warn.push(`${at}: ${p.verses.length} verses (spec asks for 7–10)`);
   for (const e of p.verses || []) {
     if (!verses[e.id]) errors.push(`${at}: unknown verse id "${e.id}"`);
@@ -188,7 +188,7 @@ Every verse is quoted from the World English Bible (public domain) and comes wit
 ## Start here
 
 ${md('/', 'Home', 'Find the right Bible verse to comfort someone you care about; search every verse in plain English or start from the moment they are in')}
-${md('/search/', 'Search the Bible', 'The person and the moment, a phrase, a topic, or a reference; runs in the browser')}
+${md('/search/', 'Find a verse', 'Say what someone is going through and get hand-picked verses with why each fits; the whole Bible is one tap further')}
 ${md('/topics/', 'All topics', 'Every page, grouped by feelings, work, family, health, changes, decisions, money, and occasions')}
 ${md('/today/', 'Verse for today', 'One verse a day, with context and a reflection question')}
 ${md('/how-we-choose-verses/', 'How we choose verses', 'The selection method')}

@@ -19,6 +19,8 @@ const PRINTABLES = {
   'cannot-sleep': { href: '/print/for-tonight.pdf', label: 'For tonight, when you can’t sleep' },
   'anxiety': { href: '/print/for-tonight.pdf', label: 'For tonight, when you can’t sleep' },
   'overwhelmed': { href: '/print/caregivers.pdf', label: 'Scripture for caregivers' },
+  'dementia': { href: '/print/caregivers.pdf', label: 'Scripture for caregivers' },
+  'after-an-accident': { href: '/print/hospital-room.pdf', label: 'Scripture for the hospital room' },
 };
 const HOME_CHIPS = [['grief', 'Grief'], ['sympathy-card', 'Sympathy card'], ['before-surgery', 'Before surgery'], ['waiting-for-test-results', 'Waiting on results'], ['job-loss', 'Job loss'], ['worry', 'Worry'], ['cannot-sleep', 'Can’t sleep'], ['starting-over', 'Starting over'], ['retirement-card', 'Retirement card'], ['graduation-card', 'Graduation card']];
 
@@ -83,7 +85,7 @@ export function home(ctx) {
   <h2 id="h-paths" class="sr-only">Where to start</h2>
   <ul class="tools paths">
     <li><a href="/topics/"><strong>Browse by situation</strong><span>Grief, surgery, job loss, worry, starting over, sympathy cards, sleepless nights, and more.</span></a></li>
-    <li><a href="/search/"><strong>Search the whole Bible</strong><span>Remember half a verse, a phrase, or a reference? Every verse of the World English Bible.</span></a></li>
+    <li><a href="/search/?all=1"><strong>Search the whole Bible</strong><span>Remember half a verse, a phrase, or a reference? Every verse of the World English Bible.</span></a></li>
     <li><a href="/ministry/"><strong>Ministry and caregiving</strong><span>Scripture and printable resources for pastors, chaplains, caregivers, teachers, and hospice workers.</span></a></li>
   </ul>
 </section>
@@ -132,25 +134,24 @@ ${adSlot('inline')}`;
 // ---------- Search page (same widget; canonical home for shared search links) ----------
 export function searchPage() {
   const body = `
-${breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Search', url: '/search/' }])}
-<h1>Search the Bible</h1>
-<p class="hero__dek">Every verse of the World English Bible, searched in your browser. Describe the person and the moment, type a phrase you half remember, or give a reference.</p>
-${searchBox({ cta: 'Search', label: 'Search the Bible' })}
-<p class="fine">All Scripture text on Better Verses comes from the World English Bible (WEB), a modern-English translation in the public domain. The search recognizes approximate wording and the common ways people remember passages, but results are always displayed from the WEB.</p>
+${breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Find a verse', url: '/search/' }])}
+<h1>Find a verse</h1>
+<p class="hero__dek">Tell me what they’re going through, in your own words. If I’ve written for that moment, you’ll get the verses I’d look at, with why each one fits. The whole Bible is one tap further down.</p>
+${searchBox()}
 <section class="section" id="search-help">
   <h2>What you can type</h2>
   <ul class="list">
-    <li><strong>A phrase you remember</strong>: <em>be still and know</em>, <em>love is patient</em>, <em>camel through the eye of a needle</em>. Put it in quotes to require the exact words.</li>
-    <li><strong>A topic</strong>: <em>verses about debt</em>, <em>forgiveness</em>, <em>clay</em>. Related words are included and labelled.</li>
-    <li><strong>A saying you think is in the Bible</strong>: <em>God won’t give you more than you can handle</em>, <em>money is the root of all evil</em>, <em>the lion and the lamb</em>. I’ll tell you whether it’s a verse, a misquote, or not Scripture at all, and show the closest real one.</li>
-    <li><strong>Wording from the Bible you grew up with</strong>: <em>whosoever believeth</em>, <em>fear not</em>, <em>smite</em>, <em>the LORD Almighty</em>. Where the World English Bible uses different words, I translate and tell you what I did, with a link to search for exactly what you typed instead.</li>
-    <li><strong>A person, story, or event</strong>: <em>Moses burning bush</em>, <em>Zacchaeus</em>, <em>the prodigal son</em>, <em>water into wine</em>.</li>
+    <li><strong>The person and the moment</strong>: <em>my friend lost her mother</em>, <em>my dad before surgery</em>, <em>starting over</em>, <em>can’t sleep</em>. Hand-picked verses come first.</li>
+    <li><strong>A phrase you remember</strong>: <em>be still and know</em>, <em>love is patient</em>, <em>camel through the eye of a needle</em>. Quotes require the exact words.</li>
+    <li><strong>A saying you think is in the Bible</strong>: <em>God won’t give you more than you can handle</em>, <em>money is the root of all evil</em>. I’ll tell you whether it’s a verse, a misquote, or not Scripture at all, and show the closest real one.</li>
+    <li><strong>Wording from the Bible you grew up with</strong>: <em>whosoever believeth</em>, <em>fear not</em>, <em>the LORD Almighty</em>. Where the World English Bible uses different words, I translate and say so.</li>
     <li><strong>A reference</strong>: <em>John 3:16</em>, <em>Psalm 23</em>, <em>Matt 6 25-34</em>.</li>
-    <li><strong>A person or section</strong>: <em>Jesus on worry</em>, <em>Paul and running a race</em>, <em>Proverbs about the tongue</em>.</li>
-    <li><strong>The person and the moment</strong>: <em>a friend who is grieving</em>, <em>my dad before surgery</em>, <em>starting over</em>. If I have a hand-picked page for it, it appears above the results.</li>
+    <li><strong>A person, story, or event</strong>: <em>Moses burning bush</em>, <em>Zacchaeus</em>, <em>the prodigal son</em>.</li>
+    <li><strong>A word</strong>: <em>clay</em>, <em>sparrows</em>, <em>debt</em>. Every verse of the World English Bible that contains it, with the matching words marked.</li>
   </ul>
+  <p class="fine">All Scripture text on Better Verses comes from the World English Bible (WEB), a modern-English translation in the public domain. The search recognizes approximate wording and the common ways people remember passages, but results are always displayed from the WEB. When a search sounds like a hard moment, verses that comfort rank first, and the results say so.</p>
 </section>`;
-  return layout({ path: '/search/', title: 'Search the Bible', description: 'Search every verse of the Bible in plain English: the person and the moment, a phrase you half remember, a topic, or a reference. Results explain why they matched. Runs in your browser.', body, wide: true, finder: true, search: true, canonical: '/search/' });
+  return layout({ path: '/search/', title: 'Find a Verse', description: 'Tell Better Verses what someone is going through and get hand-picked Bible verses with why each fits. Or search every verse of the Bible in plain English: a phrase, a reference, a topic, or a saying you suspect is not Scripture.', body, wide: true, finder: true, search: true, canonical: '/search/' });
 }
 
 // ---------- Topic hub ----------
@@ -212,7 +213,7 @@ ${p.whatToSay ? `<section class="section"><h2>What to say with it</h2><ul class=
 ${p.howToUse ? `<section class="section"><h2>How to use these verses</h2><p>${esc(p.howToUse)}</p></section>` : ''}
 ${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).length ? `<section class="section"><h2>Go deeper</h2><ul class="list">${(ctx.posts || []).filter((x) => (x.related || []).includes(p.slug)).map((x) => `<li><a href="/journal/${x.slug}/">${esc(x.title)}</a></li>`).join('')}</ul></section>` : ''}
 ${PRINTABLES[p.slug] ? `<p class="fine">Want it on paper? <a href="${PRINTABLES[p.slug].href}">${esc(PRINTABLES[p.slug].label)}</a> is a free one-sheet PDF to print and take with you.</p>` : ''}
-<section class="section searchmore"><h2>Want more than ${vs.length}?</h2><p>These are the ones I’d hand you first. The search covers every verse in the Bible and tells you why each one matched.</p><a class="btn btn--ghost" href="/search/?q=${encodeURIComponent(p.searchQuery || p.for)}">Search the whole Bible for ${esc(p.label.toLowerCase())}</a></section>
+<section class="section searchmore"><h2>Want more than ${vs.length}?</h2><p>These are the ones I’d hand you first. The search covers every verse in the Bible and tells you why each one matched.</p><a class="btn btn--ghost" href="/search/?all=1&q=${encodeURIComponent(p.searchQuery || p.for)}">Search the whole Bible for ${esc(p.label.toLowerCase())}</a></section>
 ${relatedList(related)}
 ${faq(p.faq)}
 ${trustCallout()}`;
@@ -405,9 +406,20 @@ const SEND = [
   ['grieving a pet', 'pet-loss', 'I’m sorry about Max. He was a good dog.'],
   ['in a panic', 'panic', 'You’re safe. I’m right here. Breathe out slowly.'],
   ['waiting for bad news', 'waiting-for-bad-news', 'Whatever it is, you won’t hear it alone. Call me right after.'],
+  ['in recovery', 'addiction', 'Proud of you for today.'],
+  ['loving an addict', 'loved-one-addiction', 'I know you’re carrying a lot. Coffee Thursday? We don’t have to talk about it.'],
+  ['caring for a parent with dementia', 'dementia', 'She’s engraved on his hands even on the days she doesn’t know yours.'],
+  ['struggling with infertility', 'infertility', 'Thinking of you this month. No need to reply.'],
+  ['in prison', 'someone-in-prison', 'Paul wrote this in chains. I’ll write again next month.'],
+  ['losing the house', 'financial-crisis', 'The house isn’t the thing holding you up. I’m around this weekend if you need hands.'],
+  ['recovering from an accident', 'after-an-accident', 'So glad you’re here. I’m driving you to your appointments this month.'],
+  ['feeling like a failure', 'feeling-like-a-failure', 'That’s hard, and it isn’t the whole story of you. Dinner’s on me.'],
   ['graduating', 'graduation-card', 'Proud of you. Keep this one.'],
   ['retiring', 'retirement-card', 'You did that well. Enjoy the next part.'],
   ['a new parent', 'new-baby-card', 'Welcome, little one. You were prayed for before you were here.'],
+  ['a kid being bullied', 'bullying', 'You were made on purpose, and I’m on your side.'],
+  ['dreading Mother’s Day', 'mothers-day-card', 'I know Sunday is hard. Thinking of you.'],
+  ['a veteran', 'memorial-day', 'Thank you for your service. I’m glad you came home.'],
 ];
 export function sendPage(ctx) {
   const bySlug = Object.fromEntries(ctx.pages.map((p) => [p.slug, p]));
