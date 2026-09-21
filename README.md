@@ -1,6 +1,6 @@
 # Better Verses
 
-**betterverses.com** · A little help finding the right words.
+**betterverses.com** · When you care, but don’t know what to say.
 
 There is a pause before you hit send.
 

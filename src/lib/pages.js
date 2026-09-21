@@ -34,8 +34,8 @@ export function newsletterBlock() {
   </form>`
     : `<a class="btn btn--primary" href="${esc(n.url)}">Send me Better Verses</a>`;
   return `<section class="section newsletter" aria-labelledby="h-news">
-  <h2 id="h-news">Something worth reading this week</h2>
-  <p>A verse read slowly. Something for someone you care about. Something for those who comfort others. And a reminder to read the whole chapter before quoting the famous line.</p>
+  <h2 id="h-news">Something worth reading each week</h2>
+  <p>One verse read slowly. One situation someone around you may be facing. Something useful for people whose job is to comfort others. And a reminder to read the whole chapter before quoting the famous line.</p>
   ${inner}
   <p class="fine">One thoughtful email each week. I read the replies. Unsubscribe anytime.</p>
 </section>`;
@@ -47,11 +47,11 @@ export function searchBox(opts) {
   opts = opts || {};
   return `<form id="search" class="finder" role="search" action="/search/" method="get">
     <div class="field">
-      <label for="q" class="sr-only">Search the Bible</label>
+      <label for="q" class="${opts.label ? 'sr-only' : 'finder__ask'}">${esc(opts.label || 'What are they going through?')}</label>
       <input id="q" name="q" type="search" autocomplete="off" autocapitalize="sentences" enterkeyhint="search" spellcheck="false" placeholder="${esc(SEARCH_EXAMPLES[0])}" maxlength="140" value="${esc(opts.q || '')}" data-examples="${esc(JSON.stringify(SEARCH_EXAMPLES))}">
     </div>
     <div class="finder__row">
-      <button class="btn btn--primary" type="submit">Search</button>
+      <button class="btn btn--primary" type="submit">${opts.cta || 'Find something to send'}</button>
       <span class="finder__try">Try: ${TRY.map(([q, t]) => `<a href="/search/?q=${encodeURIComponent(q)}" data-q="${esc(q)}">${esc(t)}</a>`).join(' · ')}</span>
     </div>
     <p id="search-status" class="finder__status" aria-live="polite"></p>
@@ -65,7 +65,7 @@ export function searchBox(opts) {
   <div id="results" class="results" aria-live="polite" hidden></div>`;
 }
 const SEARCH_EXAMPLES = ['my friend just lost her mother…', 'a verse for my dad before surgery…', 'what to write in a sympathy card…', 'my son can’t sleep and I want to text him something…', 'a coworker who just got laid off…', 'be still and know…', 'where Jesus talks about worrying…', 'John 3:16…'];
-const TRY = [['a friend who is grieving', 'a friend who is grieving'], ['before surgery', 'before surgery'], ['sympathy card', 'a sympathy card'], ['"be still and know"', 'be still and know']];
+const TRY = [['my friend lost her mother', 'my friend lost her mother'], ['surgery tomorrow', 'surgery tomorrow'], ['waiting for test results', 'waiting for test results'], ['can’t sleep', 'can’t sleep']];
 
 export function home(ctx) {
   const { pages, clusters, daily } = ctx;
@@ -73,17 +73,38 @@ export function home(ctx) {
   const d = daily.entry;
   const body = `
 <section class="hero" aria-labelledby="h-find">
-  <h1 id="h-find">A little help finding<br class="hero__br"> the right words.</h1>
-  <p class="hero__sub">Comfort someone you care about with a Bible verse, even if that someone is you.</p>
-  <p class="hero__dek">A friend in grief, a coworker starting over, or a night you can’t sleep. Find Bible verses for comfort, hope, and encouragement.</p>
+  <h1 id="h-find">When you care,<br class="hero__br"> but don’t know what to say.</h1>
+  <p class="hero__dek">Someone you care about is grieving, scared, sick, waiting, or having a hard night. Start with what’s happening. Better Verses helps you find Scripture that might fit, and understand it before you send it. Sometimes that someone is you.</p>
   ${searchBox()}
+  <p class="fine">Sometimes people need space. Sometimes a meal, a ride, or someone willing to sit with them. And sometimes Scripture helps.</p>
+</section>
+
+<section class="section" aria-labelledby="h-paths">
+  <h2 id="h-paths" class="sr-only">Where to start</h2>
+  <ul class="tools paths">
+    <li><a href="/topics/"><strong>Browse by situation</strong><span>Grief, surgery, job loss, worry, starting over, sympathy cards, sleepless nights, and more.</span></a></li>
+    <li><a href="/search/"><strong>Search the whole Bible</strong><span>Remember half a verse, a phrase, or a reference? Every verse of the World English Bible.</span></a></li>
+    <li><a href="/ministry/"><strong>Ministry and caregiving</strong><span>Scripture and printable resources for pastors, chaplains, caregivers, teachers, and hospice workers.</span></a></li>
+  </ul>
+</section>
+
+<section class="section newsletter" aria-labelledby="h-kit">
+  <h2 id="h-kit">Keep this somewhere you’ll need it.</h2>
+  <p>The Comfort Kit is a free printable collection for the moments that are hard to prepare for: grief, hospital visits, waiting on test results, end of life, caregivers, sleepless nights, funeral Scripture, and when you simply don’t know what to say. Print the whole kit or just the page you need. For a pastor’s desk, a hospice binder, a church resource shelf, or your own kitchen drawer.</p>
+  <a class="btn btn--primary" href="/print/comfort-kit.pdf">Print the Comfort Kit</a>
+  <p class="fine">Free. No email address. <a href="/comfort-kit/">See what’s in it</a>.</p>
 </section>
 
 <section class="section" aria-labelledby="h-pop">
-  <h2 id="h-pop">Start from the moment they’re in</h2>
-  <p class="muted">Hand-picked pages for the situations people most often want a verse for. Each verse comes with a note on who said it and why it fits, so what you send lands.</p>
+  <h2 id="h-pop">Common situations</h2>
   <ul class="chips">${HOME_CHIPS.map(([s, t]) => `<li><a class="chip" href="${urlFor(bySlug[s])}">${t}</a></li>`).join('')}<li><a class="chip chip--more" href="/topics/">All ${pages.length} topics</a></li></ul>
-  <p class="fine"><a href="/send/">Just tell me what to send someone →</a> · <a href="/comfort-kit/">Prefer paper? The Comfort Kit</a></p>
+  <p class="fine"><a href="/send/">Just tell me what to send someone →</a></p>
+</section>
+
+<section class="trust trust--band" aria-labelledby="h-trust">
+  <h2 id="h-trust">Scripture, not fortune cookies.</h2>
+  <p>A verse can sound perfect by itself and mean something quite different in its chapter. Every verse here comes with who said it, what was happening, and why it might fit, and on most pages the popular verse I’d leave out and why. I read the whole chapter before recommending a verse, and I’ll show you how to check one yourself in two minutes.</p>
+  <a href="/how-to-read-a-verse/">How to read a verse before you send it</a> · <a href="/what-we-believe/">What I believe</a>
 </section>
 
 <section class="section" aria-labelledby="h-today">
@@ -104,11 +125,6 @@ export function home(ctx) {
 </section>
 
 ${newsletterBlock()}
-<section class="trust trust--band" aria-labelledby="h-trust">
-  <h2 id="h-trust">Scripture, not fortune cookies.</h2>
-  <p>Built for the pause before you hit send. When you send someone a verse, it should fit. Every verse here comes with who said it, to whom, and why it belongs in this moment, so you are not handing a grieving friend a line that was written about something else. I read the whole chapter so you don’t have to, and I’ll show you how if you’d rather. Nothing is generated; nothing you type leaves your browser.</p>
-  <a href="/what-we-believe/">What I believe</a> · <a href="/how-to-read-a-verse/">How to read a verse before you send it</a>
-</section>
 ${adSlot('inline')}`;
   return layout({ path: '/', wide: true, finder: true, search: true, fullTitle: `${site.name} — ${site.tagline.replace(/\.$/, '')}`, title: site.name, description: site.defaultDescription, body, ld: [siteLd(), orgLd()] });
 }
@@ -119,7 +135,7 @@ export function searchPage() {
 ${breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Search', url: '/search/' }])}
 <h1>Search the Bible</h1>
 <p class="hero__dek">Every verse of the World English Bible, searched in your browser. Describe the person and the moment, type a phrase you half remember, or give a reference.</p>
-${searchBox()}
+${searchBox({ cta: 'Search', label: 'Search the Bible' })}
 <p class="fine">All Scripture text on Better Verses comes from the World English Bible (WEB), a modern-English translation in the public domain. The search recognizes approximate wording and the common ways people remember passages, but results are always displayed from the WEB.</p>
 <section class="section" id="search-help">
   <h2>What you can type</h2>
@@ -477,8 +493,8 @@ export function ministryHub(ctx) {
   const crumbs = [{ name: 'Home', url: '/' }, { name: 'For Ministry', url: '/ministry/' }];
   const misread = ctx.versePages.filter((v) => v.misread);
   const body = `${breadcrumbs(crumbs)}
-<h1>Scripture tools for pastors, teachers, and ministry leaders</h1>
-<p class="hero__dek">Comforting people is most of the job, and you live in the pause before you hit send more often than anyone. These tools help you find the right Scripture for the person in front of you, understand its context, and use it responsibly. Everything here is free, public domain, and built to be copied into an order of service, a lesson, or a hospital visit.</p>
+<h1>Scripture for the moments when someone needs care</h1>
+<p class="hero__dek">Funeral planning. A hospital visit. Waiting on test results. Grief. End of life. A caregiver running out of steam. Better Verses collects Scripture for those moments, with enough context to know what you’re quoting and why it fits. The resources and printables are free to copy, print, and share.</p>
 <ul class="tools">
   <li><a href="/ministry/funeral-scripture/"><strong>Funeral Scripture by situation</strong><span>Sudden death, long illness, a child, an elder, unknown faith, suicide. Passages that fit, and the ones that misfire.</span></a></li>
   <li><a href="/ministry/wedding-scripture/"><strong>Wedding Scripture with context</strong><span>The traditional readings and less-used ones, each with where it was written and why it works.</span></a></li>
@@ -502,7 +518,7 @@ ${kitBlock()}
 </section>
 <section class="section">
   <h2>Contribute</h2>
-  <p>If you are a pastor, chaplain, or teacher and a page here has a hole or a misreading, <a href="/contact/">tell me</a>. I would also like to hear how you use, or avoid using, particular passages in pastoral care; short notes from people with names and experience are the thing a one-person website can’t manufacture.</p>
+  <p>If you’re a pastor, chaplain, caregiver, or teacher and I’ve missed something here, <a href="/contact/">tell me</a>. Especially if there’s a passage you use, or deliberately don’t use, in one of these situations. Short notes from people with experience are the thing a one-person website can’t manufacture.</p>
 </section>
 ${trustCallout()}`;
   return layout({ path: '/ministry/', title: 'For Ministry — Scripture Tools for Pastors and Teachers', description: 'Free Scripture tools for pastors, chaplains, and Bible teachers: the Comfort Kit of printable care sheets, funeral and wedding readings by situation, a pastoral-care quick reference, commonly misread verses, and full-Bible search.', body, wide: true, ld: [crumbsLd(crumbs)] });

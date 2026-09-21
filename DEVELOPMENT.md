@@ -2,7 +2,7 @@
 
 This file covers building, deploying, and extending the site. For why it exists, read [README.md](README.md).
 
-The core promise is comforting someone you care about with the right verse: a friend in grief, a parent before surgery, a coworker starting over. Under that sits a full-Bible search engine that runs entirely in the browser, hand-picked pages by situation, context pages for famous verses, a journal, and tools for ministry. No database, no API, no accounts, no framework. The World English Bible ships as one JSON file; the browser downloads it once (about 1.2 MB compressed), indexes it in a few hundred milliseconds, and answers every query locally. Nothing typed is sent anywhere.
+The site opens on the visitor's situation ("When you care, but don't know what to say" → "What are they going through?"), then quick paths (situations, search, ministry), the Comfort Kit, common situations, the context philosophy, Today's verse, and the newsletter, in that order. Under that sits a full-Bible search engine that runs entirely in the browser, hand-picked pages by situation, context pages for famous verses, a journal, and tools for ministry. No database, no API, no accounts, no framework. The World English Bible ships as one JSON file; the browser downloads it once (about 1.2 MB compressed), indexes it in a few hundred milliseconds, and answers every query locally. Nothing typed is sent anywhere.
 
 ## How search works (`src/scripts/search.js`)
 

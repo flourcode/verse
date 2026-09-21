@@ -101,7 +101,7 @@ button { font: inherit; color: inherit; }
 h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.025em; margin: 0 0 .5rem; font-weight: 700; text-wrap: balance; }
 h1 { font-family: var(--font-verse); font-weight: 600; letter-spacing: -0.015em; line-height: 1.1; font-size: clamp(2.1rem, 1.5rem + 2.8vw, 3.1rem); }
 h1 .em { color: var(--primary); font-style: normal; }
-.hero h1 { max-width: 22ch; font-size: clamp(2rem, 1.2rem + 3.4vw, 4rem); margin-bottom: 1rem; }
+.hero h1 { max-width: 28ch; font-size: clamp(2rem, 1.2rem + 2.6vw, 3.1rem); margin-bottom: 1rem; }
 .hero .hero__dek { font-size: clamp(1.05rem, .95rem + .6vw, 1.3rem); max-width: 46ch; margin-bottom: 1.1rem; }
 h2 { font-size: clamp(1.45rem, 1.2rem + 1vw, 2.1rem); letter-spacing: -0.02em; margin-top: 2.25rem; }
 h3 { font-size: 1.1rem; letter-spacing: -0.01em; margin-top: 1.5rem; font-weight: 600; }
@@ -466,7 +466,7 @@ main { padding: 1.5rem 0 4rem; }
 /* "A little help finding" / "the right words.": the forced break holds on any phone 360px and up; below that it wraps naturally. */
 .hero__br { display: inline; }
 .hero h1 { text-wrap: initial; }
-@media (max-width: 359px) { .hero__br { display: none; } .hero h1 { text-wrap: balance; } }
+@media (max-width: 639px) { .hero__br { display: none; } .hero h1 { text-wrap: balance; } }
 
 /* /send/ */
 .send { list-style: none; padding: 0; margin: 1.5rem 0 0; }
@@ -495,3 +495,7 @@ main { padding: 1.5rem 0 4rem; }
 .foot__row input { flex: 1 1 200px; font: inherit; font-size: 1rem; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: var(--r-pill); padding: .6rem 1rem; min-height: 46px; }
 .foot__row input:focus { border-color: var(--primary); outline: none; }
 .foot__row .btn { min-height: 46px; }
+
+.finder__ask { display: block; font-weight: 600; font-size: 1.05rem; margin: 0 0 .5rem; }
+.paths { margin-top: .5rem; }
+@media (min-width: 640px) { .paths { grid-template-columns: 1fr 1fr 1fr; } }
