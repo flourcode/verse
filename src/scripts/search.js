@@ -146,7 +146,7 @@
     let best = null, bestD = 3, bestF = 0;
     const maxD = s.length <= 4 ? 1 : 2; const w = word || s;
     for (const [k, [f, sample]] of VOCAB) {
-      if (k[0] !== s[0] && !(k[1] === s[0] && k[0] === s[1])) continue;
+      if (!((k[0] === s[0] && k[1] === s[1]) || (k[1] === s[0] && k[0] === s[1]))) continue;
       let d = Math.min(Math.abs(k.length - s.length) <= maxD ? dlev(s, k, maxD) : 9, Math.abs(sample.length - w.length) <= maxD ? dlev(w, sample, maxD) : 9);
       if (d > maxD) continue;
       if (d < bestD || (d === bestD && f > bestF)) { best = k; bestD = d; bestF = f; }
@@ -166,6 +166,9 @@
   function search(rawQuery, opts) {
     opts = opts || {}; const out = { query: rawQuery, hits: [], total: 0, reference: null, corrections: [], curated: null, scope: null, terms: [] };
     const q = norm(rawQuery); if (!q) return out;
+    // Hand-picked page matched by alias; computed first so later steps (spelling correction, ranking) can defer to it
+    let curated = null;
+    if (CURATED) { const wq = ' ' + q + ' '; let best = 0; for (const c of CURATED) { let sc = 0; for (const a of c.aliases) if (a && wq.includes(' ' + a + ' ')) sc = Math.max(sc, a.split(' ').length * 2 + a.length / 20); if (sc > best) { best = sc; curated = c; } } }
 
     // 1. Reference ("john 3:16", "psalm 23", "matt 6 25-34")
     const ref = parseReference(rawQuery);
@@ -233,7 +236,7 @@
         const base = w.slice(0, -3); const cand = [base + 'es', base + 's', base, base + 'e'].find((c) => INDEX.has(stem(c)));
         if (cand) { out.translated.push({ from: w, to: cand }); exact.push({ word: cand, stem: stem(cand) }); continue; }
       }
-      if (!strict && !INDEX.has(s) && !SYN[w]) { const fix = fuzzyFix(s, w); if (fix) { if (STOP.has(VOCAB.get(fix)[1])) continue; out.corrections.push({ from: w, to: VOCAB.get(fix)[1] }); s = fix; } }
+      if (!strict && !INDEX.has(s) && !SYN[w]) { if (curated) continue; const fix = fuzzyFix(s, w); if (fix) { if (STOP.has(VOCAB.get(fix)[1])) continue; out.corrections.push({ from: w, to: VOCAB.get(fix)[1] }); s = fix; } }
       if (strict && !INDEX.has(s)) out.absent = (out.absent || []).concat(w);
       exact.push({ word: w, stem: s });
     }
@@ -257,9 +260,8 @@
       for (const l of list) { if (l.includes(' ')) synPhrases.push({ p: ' ' + norm(l) + ' ', concept: label }); else { const s = stem(norm(l)); if (!exact.some((e) => e.stem === s)) synStems.set(s, label); } }
       // concept key itself may be a multi-word phrase to catch (e.g. "new beginnings")
     }
-    // curated topic pages matched by alias
-    let curated = null;
-    if (CURATED) { let best = 0; for (const c of CURATED) { let sc = 0; for (const a of c.aliases) if (a && wholeQ.includes(' ' + a + ' ')) sc = Math.max(sc, a.split(' ').length * 2 + a.length / 20); if (sc > best) { best = sc; curated = c; } } }
+    // curated topic pages matched by alias (computed earlier; see above)
+    if (false) { let best = 0; for (const c of CURATED) { let sc = 0; for (const a of c.aliases) if (a && wholeQ.includes(' ' + a + ' ')) sc = Math.max(sc, a.split(' ').length * 2 + a.length / 20); if (sc > best) { best = sc; curated = c; } } }
     if (curated) out.curated = { label: curated.label, url: curated.url, h1: curated.h1, page: curated.page };
     const comfort = opts.comfort === 'on' ? true : opts.comfort === 'off' ? false : !!(curated || COMFORT_INTENT.test(q));
     out.comfort = comfort;
@@ -394,19 +396,18 @@
       if (!last) return;
       if (!more) { shown = 0; results.innerHTML = ''; }
       const head = $('.results__head', results) || (() => { const d = document.createElement('div'); d.className = 'results__head'; results.prepend(d); return d; })();
-      let h = '';
-      if (last.translated && last.translated.length) h += `<p class="results__note">The ${esc(TR)} says <strong>${last.translated.map((c) => esc(c.to)).join('</strong>, <strong>')}</strong> where other translations say ${last.translated.map((c) => `“${esc(c.from)}”`).join(', ')}. Searching for that instead. <a href="#" data-strict="1">Search for exactly what I typed</a></p>`;
-      if (last.corrections.length) h += `<p class="results__note">No verse contains ${last.corrections.map((c) => `“${esc(c.from)}”`).join(', ')}; showing <strong>${last.corrections.map((c) => esc(c.to)).join(', ')}</strong> instead. <a href="#" data-strict="1">Search for exactly what I typed</a></p>`;
-      if (last.absent && last.absent.length) h += `<p class="results__note">The ${esc(TR)} never uses the word${last.absent.length > 1 ? 's' : ''} ${last.absent.map((w) => `“${esc(w)}”`).join(', ')}. Other translations may; try the wording you remember from another version, or <a href="#" data-strict="0">let us translate it</a>.</p>`;
-      if (last.reference) h += `<p class="results__count">${esc(last.reference.label)} · ${last.total} verse${last.total === 1 ? '' : 's'}</p>`;
-      else if (!last.total) h += `<p class="results__count">No verses match yet</p>`;
-      else if (last.curated && last.curated.page) h += '';
-      else if (last.terms.length > 1 && !last.full) h += `<p class="results__count">No verse matches everything you typed · ${last.total.toLocaleString()} match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
-      else if (last.terms.length > 1 && last.full < last.total) h += `<p class="results__count">${last.full.toLocaleString()} verse${last.full === 1 ? '' : 's'} match everything you typed · ${(last.total - last.full).toLocaleString()} more match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
-      else h += `<p class="results__count">${last.total.toLocaleString()} verse${last.total === 1 ? '' : 's'} match${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
-      if (last.note) h += `<p class="results__note">${esc(last.note)}</p>`;
+      let h = ''; let eng = '';
+      if (last.translated && last.translated.length) eng += `<p class="results__note">The ${esc(TR)} says <strong>${last.translated.map((c) => esc(c.to)).join('</strong>, <strong>')}</strong> where other translations say ${last.translated.map((c) => `“${esc(c.from)}”`).join(', ')}. Searching for that instead. <a href="#" data-strict="1">Search for exactly what I typed</a></p>`;
+      if (last.corrections.length) eng += `<p class="results__note">No verse contains ${last.corrections.map((c) => `“${esc(c.from)}”`).join(', ')}; showing <strong>${last.corrections.map((c) => esc(c.to)).join(', ')}</strong> instead. <a href="#" data-strict="1">Search for exactly what I typed</a></p>`;
+      if (last.absent && last.absent.length) eng += `<p class="results__note">The ${esc(TR)} never uses the word${last.absent.length > 1 ? 's' : ''} ${last.absent.map((w) => `“${esc(w)}”`).join(', ')}. Other translations may; try the wording you remember from another version, or <a href="#" data-strict="0">let us translate it</a>.</p>`;
+      if (last.reference) eng += `<p class="results__count">${esc(last.reference.label)} · ${last.total} verse${last.total === 1 ? '' : 's'}</p>`;
+      else if (!last.total) eng += `<p class="results__count">No verses match yet</p>`;
+      else if (last.terms.length > 1 && !last.full) eng += `<p class="results__count">No verse matches everything you typed · ${last.total.toLocaleString()} match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
+      else if (last.terms.length > 1 && last.full < last.total) eng += `<p class="results__count">${last.full.toLocaleString()} verse${last.full === 1 ? '' : 's'} match everything you typed · ${(last.total - last.full).toLocaleString()} more match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
+      else eng += `<p class="results__count">${last.total.toLocaleString()} verse${last.total === 1 ? '' : 's'} match${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
+      if (last.note) eng += `<p class="results__note">${esc(last.note)}</p>`;
       const comfortNote = last.comfort && !last.reference ? `<p class="results__note results__note--soft">Ranked for comfort first, because this sounds like a hard moment. Law codes and genealogies are still here, further down. <a href="#" data-rank="plain">Rank by words alone</a></p>` : '';
-      if (!(last.curated && last.curated.page)) h += comfortNote;
+      eng += comfortNote;
       if (last.saying && !more) {
         const sy = last.saying; const head = { not: 'Not in the Bible', misquote: 'Close, but not quite', verse: 'You’re thinking of ' + esc(sy.ref), story: 'That story is in ' + esc(sy.ref).replace(/:\d+$/, '') }[sy.status];
         h += `<div class="saying saying--${sy.status}"><p class="saying__k">${head}</p><p class="saying__note">${esc(sy.note)}</p>${sy.id != null ? `<p class="saying__ref">${esc(refOf(sy.id))}</p><p class="saying__text" lang="en">${esc(sy.text)}</p><p class="saying__more"><a href="${BASE}search/?q=${encodeURIComponent(refOf(sy.id).replace(/:\d+$/, ''))}" data-q="${esc(refOf(sy.id).replace(/:\d+$/, ''))}">Read the whole chapter</a>${versePageFor(sy.id) ? ` · <a href="${BASE}${versePageFor(sy.id).url.replace(/^\//, '')}">${esc(versePageFor(sy.id).h1)} in context</a>` : ''}</p>` : ''}</div>`;
@@ -427,19 +428,20 @@ ${cards}
 ${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h3><p><strong>${esc(pg.skip.ref)}.</strong> ${esc(pg.skip.why)}</p></div>` : ''}
 <p class="answer__more"><a href="${esc(pg.url)}">What to say with it, and more on ${esc(pg.for)} →</a> · <a href="${BASE}how-to-read-a-verse/">Check one yourself in two minutes</a></p>
 </section>`;
-          if (!showAll) { collapsed = true; h += `<p class="results__divider"><button class="btn btn--ghost btn--block" type="button" data-expand>Search the whole Bible for this too (${last.total.toLocaleString()} verses match)</button></p>`; }
-          else h += `<p class="results__divider">More from the whole Bible</p>${comfortNote}`;
+          if (!showAll) { collapsed = true; h += `<p class="results__divider"><button class="btn btn--ghost btn--block" type="button" data-expand>Search the whole Bible for this too (${last.total.toLocaleString()} verses match)</button></p><div class="results__eng" hidden>${eng}</div>`; }
+          else h += `<p class="results__divider">More from the whole Bible</p>${eng}`;
         } else {
           h += `<a class="curated" href="${esc(last.curated.url)}"><span class="curated__k">Hand-picked</span><strong>${esc(last.curated.h1)}</strong><span>Verses chosen for their context, each with a note on why it fits.</span></a>`;
         }
       } else if (!more && !last.reference && !last.saying) {
-        h += `<p class="results__note results__note--soft">I don’t have a hand-picked page for that yet, so these are from the whole Bible. <a href="${BASE}send/">See the moments I’ve written for</a>, or <a href="mailto:${esc(document.documentElement.dataset.email || 'hello@betterverses.com')}">tell me what you were looking for</a>.</p>`;
+        h += eng + `<p class="results__note results__note--soft">I don’t have a hand-picked page for that yet, so these are from the whole Bible. <a href="${BASE}send/">See the moments I’ve written for</a>, or <a href="mailto:${esc(document.documentElement.dataset.email || 'hello@betterverses.com')}">tell me what you were looking for</a>.</p>`;
       }
+      if (!(last.curated && last.curated.page) && (last.reference || last.saying)) h = eng + h;
       if (!last.total && !more) h += `<div class="state"><p>Try fewer words, a phrase you remember in quotes, or a reference like <em>Psalm 23</em>.</p><p class="muted">Search covers every verse of the ${esc(TR)}.</p></div>`;
       head.innerHTML = h;
       const slice = last.hits.slice(shown, shown + PAGE); shown += slice.length;
       let bin = $('.results__hits', results); if (!bin) { bin = document.createElement('div'); bin.className = 'results__hits'; results.appendChild(bin); }
-      if (!more) bin.hidden = collapsed;
+      if (!more) { bin.hidden = collapsed; const fl = $('.filters'); if (fl) fl.hidden = collapsed; }
       const frag = document.createElement('div'); frag.innerHTML = slice.map((x) => hitHTML(x, !!last.reference)).join('');
       while (frag.firstChild) bin.appendChild(frag.firstChild);
       const old = $('.results__more', results); if (old) old.remove();
@@ -461,7 +463,7 @@ ${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h
     }
     form.addEventListener('submit', (e) => { e.preventDefault(); strict = false; comfortPref = null; run(input.value, true); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-strict]'); if (!a) return; e.preventDefault(); strict = a.dataset.strict === '1'; run(current, false); });
-    results.addEventListener('click', (e) => { const btn = e.target.closest('[data-expand]'); if (!btn) return; const bin = $('.results__hits', results); if (bin) bin.hidden = false; btn.closest('.results__divider').innerHTML = 'More from the whole Bible'; track('bible_search', { results: last.total, kind: 'expand' }); });
+    results.addEventListener('click', (e) => { const btn = e.target.closest('[data-expand]'); if (!btn) return; const bin = $('.results__hits', results); if (bin) bin.hidden = false; const en = $('.results__eng', results); if (en) en.hidden = false; const fl = $('.filters'); if (fl) fl.hidden = false; btn.closest('.results__divider').innerHTML = 'More from the whole Bible'; track('bible_search', { results: last.total, kind: 'expand' }); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-rank]'); if (!a) return; e.preventDefault(); comfortPref = a.dataset.rank === 'plain' ? 'off' : 'on'; run(current, false); });
     [fTest, fBook, fMode].forEach((el) => el && el.addEventListener('change', () => current && run(current, false)));
     document.addEventListener('click', (e) => { const el = e.target.closest('[data-q]'); if (!el) return; e.preventDefault(); strict = false; run(el.dataset.q, true); });
