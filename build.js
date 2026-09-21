@@ -155,7 +155,7 @@ if (existsSync(join(ROOT, 'public'))) cpSync(join(ROOT, 'public'), DIST, { recur
 const finder = {
   verses: Object.fromEntries(versesArr.map((v) => [v.id, { ref: v.reference, text: v.text, jesus: v.jesus, jesusFrom: v.jesusFrom }])),
   redLetter: !!site.redLetter,
-  pages: pages.map((p) => ({ slug: p.slug, url: p.url, title: p.title, h1: p.h1, label: p.label, for: p.for, cluster: p.cluster, aliases: aliases[p.slug] || [], verses: p.verses.map((e) => ({ id: e.id, why: e.why })), related: p.related })),
+  pages: pages.map((p) => ({ slug: p.slug, url: p.url, title: p.title, h1: p.h1, label: p.label, for: p.for, cluster: p.cluster, aliases: aliases[p.slug] || [], verses: p.verses.map((e) => ({ id: e.id, why: e.why })), skip: p.skip || null, count: p.verses.length, related: p.related })),
   suggestions: ['worry', 'peace', 'courage', 'hope', 'difficult-decisions', 'overwhelmed'],
   versePages: Object.fromEntries(versePages.map((v) => [v.ref, { url: `/verses/${v.slug}/`, h1: v.h1 }])),
 };

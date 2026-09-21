@@ -260,7 +260,7 @@
     // curated topic pages matched by alias
     let curated = null;
     if (CURATED) { let best = 0; for (const c of CURATED) { let sc = 0; for (const a of c.aliases) if (a && wholeQ.includes(' ' + a + ' ')) sc = Math.max(sc, a.split(' ').length * 2 + a.length / 20); if (sc > best) { best = sc; curated = c; } } }
-    if (curated) out.curated = { label: curated.label, url: curated.url, h1: curated.h1 };
+    if (curated) out.curated = { label: curated.label, url: curated.url, h1: curated.h1, page: curated.page };
     const comfort = opts.comfort === 'on' ? true : opts.comfort === 'off' ? false : !!(curated || COMFORT_INTENT.test(q));
     out.comfort = comfort;
 
@@ -399,16 +399,33 @@
       if (last.absent && last.absent.length) h += `<p class="results__note">The ${esc(TR)} never uses the word${last.absent.length > 1 ? 's' : ''} ${last.absent.map((w) => `“${esc(w)}”`).join(', ')}. Other translations may; try the wording you remember from another version, or <a href="#" data-strict="0">let us translate it</a>.</p>`;
       if (last.reference) h += `<p class="results__count">${esc(last.reference.label)} · ${last.total} verse${last.total === 1 ? '' : 's'}</p>`;
       else if (!last.total) h += `<p class="results__count">No verses match yet</p>`;
+      else if (last.curated && last.curated.page) h += '';
       else if (last.terms.length > 1 && !last.full) h += `<p class="results__count">No verse matches everything you typed · ${last.total.toLocaleString()} match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
       else if (last.terms.length > 1 && last.full < last.total) h += `<p class="results__count">${last.full.toLocaleString()} verse${last.full === 1 ? '' : 's'} match everything you typed · ${(last.total - last.full).toLocaleString()} more match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
       else h += `<p class="results__count">${last.total.toLocaleString()} verse${last.total === 1 ? '' : 's'} match${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
       if (last.note) h += `<p class="results__note">${esc(last.note)}</p>`;
-      if (last.comfort && !last.reference) h += `<p class="results__note results__note--soft">Ranked for comfort first, because this sounds like a hard moment. Law codes and genealogies are still here, further down. <a href="#" data-rank="plain">Rank by words alone</a></p>`;
+      const comfortNote = last.comfort && !last.reference ? `<p class="results__note results__note--soft">Ranked for comfort first, because this sounds like a hard moment. Law codes and genealogies are still here, further down. <a href="#" data-rank="plain">Rank by words alone</a></p>` : '';
+      if (!(last.curated && last.curated.page)) h += comfortNote;
       if (last.saying && !more) {
         const sy = last.saying; const head = { not: 'Not in the Bible', misquote: 'Close, but not quite', verse: 'You’re thinking of ' + esc(sy.ref), story: 'That story is in ' + esc(sy.ref).replace(/:\d+$/, '') }[sy.status];
         h += `<div class="saying saying--${sy.status}"><p class="saying__k">${head}</p><p class="saying__note">${esc(sy.note)}</p>${sy.id != null ? `<p class="saying__ref">${esc(refOf(sy.id))}</p><p class="saying__text" lang="en">${esc(sy.text)}</p><p class="saying__more"><a href="${BASE}search/?q=${encodeURIComponent(refOf(sy.id).replace(/:\d+$/, ''))}" data-q="${esc(refOf(sy.id).replace(/:\d+$/, ''))}">Read the whole chapter</a>${versePageFor(sy.id) ? ` · <a href="${BASE}${versePageFor(sy.id).url.replace(/^\//, '')}">${esc(versePageFor(sy.id).h1)} in context</a>` : ''}</p>` : ''}</div>`;
       }
-      if (last.curated && !more) h += `<a class="curated" href="${esc(last.curated.url)}"><span class="curated__k">Hand-picked</span><strong>${esc(last.curated.h1)}</strong><span>Seven verses chosen for their context, each with a note on why it fits.</span></a>`;
+      if (last.curated && !more) {
+        const pg = last.curated.page; const F = window.__FINDER__; const lead = pg && pg.verses && pg.verses[0]; const lv = lead && F && F.verses[lead.id];
+        if (lv) {
+          h += `<section class="answer"><p class="answer__k">Hand-picked for ${esc(pg.for)}</p>
+<p class="verse__ref">${esc(lv.ref)}</p>
+<p class="verse__text answer__text" lang="en"><q>${esc(lv.text)}</q></p>
+<p class="verse__tr">${TR}</p>
+<div class="verse__why"><h3>Why this fits</h3><p>${esc(lead.why)}</p></div>
+${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h3><p><strong>${esc(pg.skip.ref)}.</strong> ${esc(pg.skip.why)}</p></div>` : ''}
+<div class="verse__actions"><button class="btn btn--primary" type="button" data-act="copy" data-cid="${esc(lead.id)}">Copy this verse</button><button class="btn btn--ghost" type="button" data-act="share" data-cid="${esc(lead.id)}">Share</button><a class="btn btn--link" href="${esc(pg.url)}">All ${pg.count || 7} verses for ${esc(pg.for)} →</a></div>
+</section>
+<p class="results__divider">More from the whole Bible</p>${comfortNote}`;
+        } else {
+          h += `<a class="curated" href="${esc(last.curated.url)}"><span class="curated__k">Hand-picked</span><strong>${esc(last.curated.h1)}</strong><span>Seven verses chosen for their context, each with a note on why it fits.</span></a>`;
+        }
+      }
       if (!last.total && !more) h += `<div class="state"><p>Try fewer words, a phrase you remember in quotes, or a reference like <em>Psalm 23</em>.</p><p class="muted">Search covers every verse of the ${esc(TR)}.</p></div>`;
       head.innerHTML = h;
       const slice = last.hits.slice(shown, shown + PAGE); shown += slice.length;
@@ -429,7 +446,7 @@
         render(false); setStatus('');
         track('bible_search', { results: last.total, kind: last.reference ? 'reference' : (last.curated ? 'topic' : 'text') });
         const y = results.getBoundingClientRect().top + window.scrollY - 72; if (window.scrollY < y - 40) window.scrollTo({ top: y, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-      }).catch(() => setStatus('The Bible text didn’t load. Check your connection and try again.'));
+      }).catch((err) => { console.error(err); setStatus('The Bible text didn’t load. Check your connection and try again.'); });
     }
     form.addEventListener('submit', (e) => { e.preventDefault(); strict = false; comfortPref = null; run(input.value, true); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-strict]'); if (!a) return; e.preventDefault(); strict = a.dataset.strict === '1'; run(current, false); });
@@ -437,7 +454,12 @@
     [fTest, fBook, fMode].forEach((el) => el && el.addEventListener('change', () => current && run(current, false)));
     document.addEventListener('click', (e) => { const el = e.target.closest('[data-q]'); if (!el) return; e.preventDefault(); strict = false; run(el.dataset.q, true); });
     results.addEventListener('click', async (e) => {
-      const btn = e.target.closest('[data-act]'); if (!btn) return; const art = btn.closest('.hit'); const id = +art.dataset.id;
+      const btn = e.target.closest('[data-act]'); if (!btn) return;
+      if (btn.dataset.cid) { const F = window.__FINDER__; const v = F.verses[btn.dataset.cid]; const text = `“${v.text}” — ${v.ref} (${TR})`; const url = SITE + last.curated.url + '#' + btn.dataset.cid;
+        if (btn.dataset.act === 'copy') { toast((await copyText(text)) ? 'Verse copied' : 'Couldn’t copy'); track('copy_verse', { topic: last.curated.label }); }
+        if (btn.dataset.act === 'share') { if (navigator.share) { try { await navigator.share({ title: v.ref, text, url }); track('share_verse', { method: 'native' }); return; } catch (err) { if (err && err.name === 'AbortError') return; } } toast((await copyText(text + '\n' + url)) ? 'Link copied' : 'Couldn’t share'); track('share_verse', { method: 'copy' }); }
+        return; }
+      const art = btn.closest('.hit'); const id = +art.dataset.id;
       if (btn.dataset.act === 'context') { const box = $('.hit__ctx', art); if (box.hidden) { box.innerHTML = contextHTML(id); box.hidden = false; btn.textContent = 'Hide context'; } else { box.hidden = true; btn.textContent = 'In context'; } }
       if (btn.dataset.act === 'copy') { toast((await copyText(verseString(id))) ? 'Verse copied' : 'Couldn’t copy'); track('copy_verse', { topic: slugOf(id) }); }
       if (btn.dataset.act === 'share') { const url = SITE + '/search/?q=' + encodeURIComponent(refOf(id)); const text = verseString(id); if (navigator.share) { try { await navigator.share({ title: refOf(id), text, url }); track('share_verse', { method: 'native' }); return; } catch (err) { if (err && err.name === 'AbortError') return; } } toast((await copyText(text + '\n' + url)) ? 'Link copied' : 'Couldn’t share'); track('share_verse', { method: 'copy' }); }

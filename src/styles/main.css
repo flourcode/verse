@@ -499,3 +499,12 @@ main { padding: 1.5rem 0 4rem; }
 .finder__ask { display: block; font-weight: 600; font-size: 1.05rem; margin: 0 0 .5rem; }
 .paths { margin-top: .5rem; }
 @media (min-width: 640px) { .paths { grid-template-columns: 1fr 1fr 1fr; } }
+
+/* The hand-picked answer, shown first when a search names a situation we curated for */
+.answer { background: var(--surface-high); border-radius: var(--r-lg); padding: 1.25rem 1.25rem 1.1rem; margin: 0 0 1.5rem; }
+.answer__k { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); margin: 0 0 .5rem; }
+.answer__text { font-size: clamp(1.4rem, 1.1rem + 1.4vw, 1.9rem); }
+.answer .verse__why { border-top: 1px solid color-mix(in srgb, var(--on-surface) 10%, transparent); padding-top: .8rem; margin-top: .8rem; }
+.answer__skip p { color: var(--ink-2); }
+.answer .verse__actions { margin-top: 1rem; }
+.results__divider { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); margin: 1.5rem 0 .25rem; padding-top: 1rem; border-top: 1px solid var(--line); }
