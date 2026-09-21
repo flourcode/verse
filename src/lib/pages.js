@@ -49,11 +49,11 @@ export function searchBox(opts) {
   opts = opts || {};
   return `<form id="search" class="finder" role="search" action="/search/" method="get">
     <div class="field">
-      <label for="q" class="${opts.label ? 'sr-only' : 'finder__ask'}">${esc(opts.label || 'What are they going through?')}</label>
+      <label for="q" class="${opts.label ? 'sr-only' : 'finder__ask'}">${esc(opts.label || 'What’s happening?')}</label>
       <input id="q" name="q" type="search" autocomplete="off" autocapitalize="sentences" enterkeyhint="search" spellcheck="false" placeholder="${esc(SEARCH_EXAMPLES[0])}" maxlength="140" value="${esc(opts.q || '')}" data-examples="${esc(JSON.stringify(SEARCH_EXAMPLES))}">
     </div>
     <div class="finder__row">
-      <button class="btn btn--primary" type="submit">${opts.cta || 'Find something to send'}</button>
+      <button class="btn btn--primary" type="submit">${opts.cta || 'Find something comforting →'}</button>
       <span class="finder__try">Try: ${TRY.map(([q, t]) => `<a href="/search/?q=${encodeURIComponent(q)}" data-q="${esc(q)}">${esc(t)}</a>`).join(' · ')}</span>
     </div>
     <p id="search-status" class="finder__status" aria-live="polite"></p>
@@ -75,8 +75,8 @@ export function home(ctx) {
   const d = daily.entry;
   const body = `
 <section class="hero" aria-labelledby="h-find">
-  <h1 id="h-find">When you care,<br class="hero__br"> but don’t know what to say.</h1>
-  <p class="hero__dek">Someone you care about is grieving, scared, sick, waiting, or having a hard night. Start with what’s happening. Better Verses helps you find Scripture that might fit, and understand it before you send it. Sometimes that someone is you.</p>
+  <h1 id="h-find">When you don’t know<br class="hero__br"> what to say.</h1>
+  <p class="hero__dek">Someone is grieving, scared, sick, waiting, or just having a hard night. Maybe that someone is you. Start with what’s happening and find Scripture that comforts.</p>
   ${searchBox()}
   <p class="fine">Sometimes people need space. Sometimes a meal, a ride, or someone willing to sit with them. And sometimes Scripture helps.</p>
 </section>
@@ -136,7 +136,7 @@ export function searchPage() {
   const body = `
 ${breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Find a verse', url: '/search/' }])}
 <h1>Find a verse</h1>
-<p class="hero__dek">Tell me what they’re going through, in your own words. If I’ve written for that moment, you’ll get the verses I’d look at, with why each one fits. The whole Bible is one tap further down.</p>
+<p class="hero__dek">Start with what’s happening, in your own words. If I’ve written for that moment, you’ll get the verses I’d look at, with why each one fits. The whole Bible is one tap further down.</p>
 ${searchBox()}
 <section class="section" id="search-help">
   <h2>What you can type</h2>
@@ -281,7 +281,7 @@ ${breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Random verse', url: '/random
 </div>
 <div id="random" aria-live="polite"><noscript><p class="note">This page needs JavaScript. You can <a href="/topics/">browse topics</a> instead.</p></noscript></div>
 <script type="application/json" id="random-data">${JSON.stringify(filters)}</script>
-<p class="muted" style="margin-top:1rem">Random means random: the verse isn’t chosen for you. If you need one for something specific, <a href="/">tell us what you’re facing</a>.</p>`;
+<p class="muted" style="margin-top:1rem">Random means random: the verse isn’t chosen for you. If you need one for something specific, <a href="/">start with what’s happening</a>.</p>`;
   return layout({ path: '/random/', finder: true, title: 'Random Bible Verse', description: 'Get a random Bible verse from a curated set, with a note on its context. Filter by hope, peace, courage, wisdom, work, family, change, or waiting.', body, ld: [crumbsLd([{ name: 'Home', url: '/' }, { name: 'Random verse', url: '/random/' }])] });
 }
 

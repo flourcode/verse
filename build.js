@@ -187,7 +187,7 @@ Every verse is quoted from the World English Bible (public domain) and comes wit
 
 ## Start here
 
-${md('/', 'Home', 'Find the right Bible verse to comfort someone you care about; search every verse in plain English or start from the moment they are in')}
+${md('/', 'Home', 'When you don’t know what to say: start with what’s happening and find Scripture that comforts, with the context to use it well')}
 ${md('/search/', 'Find a verse', 'Say what someone is going through and get hand-picked verses with why each fits; the whole Bible is one tap further')}
 ${md('/topics/', 'All topics', 'Every page, grouped by feelings, work, family, health, changes, decisions, money, and occasions')}
 ${md('/today/', 'Verse for today', 'One verse a day, with context and a reflection question')}

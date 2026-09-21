@@ -3,8 +3,8 @@ export default {
   name: 'Better Verses',
   domain: 'betterverses.com',
   url: 'https://betterverses.com',               // canonical origin, no trailing slash
-  tagline: 'The right verse to comfort someone you care about.',
-  defaultDescription: "Find the right Bible verse to comfort someone you care about. Sometimes that someone is you. Search the whole Bible in plain English, or start from the moment: grief, surgery, job loss, a night you can't sleep. Every verse comes with its context.",
+  tagline: 'When you don’t know what to say.',
+  defaultDescription: "When you don’t know what to say. Someone is grieving, scared, sick, waiting, or having a hard night; maybe that someone is you. Start with what’s happening and find Scripture that comforts, with the context to use it well.",
   translation: { name: 'World English Bible', abbr: 'WEB', note: 'Public Domain' },
   // The WEB renders the divine name as "Yahweh". Set to 'the LORD' to use the traditional rendering
   // (as in the WEB British Edition) everywhere the text is displayed. Either is public domain.
