@@ -192,3 +192,13 @@ The site speaks in the first person: one person of quiet faith who reads the who
 
 
 CSS and JS ship as `main.<hash>.css` and `app.<hash>.js`; the hash changes with the file, so pages and stylesheets can never be mismatched by a cache, and `/assets/*` is cached for a year.
+
+## Search speed, sending, and seasonality
+
+The hand-picked data (`data/finder.js`) loads when the browser is idle, and a search first checks it alone: if the query matches a moment, the hand-picked verses appear immediately while the whole Bible (`data/bible.js`, ~1.2 MB compressed) finishes downloading in the background. When nothing matches, the results start with the three nearest hand-picked pages by the words typed (person words like "mom" or "coworker" are ignored; they say who, not what), then the whole-Bible results. A one-word alias that is only a person ("coworker", "husband") counts for less than a condition ("tumor", "grief"), so "my coworker has a tumor" goes to the cancer page.
+
+Every verse on the site has a "Text it" button on phones and Macs: it opens Messages with the verse and reference filled in. On other desktops it stays hidden.
+
+The home page adds a seasonal chip ahead of the usual ones in the weeks before Easter, Mother's Day, Memorial Day, graduation, Father's Day, Veterans Day, Thanksgiving, and Christmas. Computed in the browser, so no rebuild is needed.
+
+Each hand-picked page shows "Last reviewed [date]" and carries it as `dateModified` in its WebPage structured data; `site.config.js` → `reviewed` sets the default and a page can override it with its own `reviewed` field. Bump it when you review pages.

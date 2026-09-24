@@ -14,6 +14,8 @@ export default {
   // With formAction set, the site shows a real one-field form that posts straight to Kit; no script, no redirect away.
   // url: fallback, a Kit landing-page link shown as a button if you'd rather not embed a form.
   newsletter: { name: 'Better Verses', formAction: 'https://app.kit.com/forms/9940837/subscriptions', url: '' },
+  // The date the hand-picked pages were last reviewed; a page can override with its own "reviewed" field.
+  reviewed: '2026-09-21',
   redLetter: true,
   divineName: 'Yahweh',                          // 'Yahweh' | 'the LORD'
   contactEmail: 'hello@betterverses.com',        // make sure this mailbox exists

@@ -119,6 +119,7 @@ export function home(ctx) {
     <div class="verse__why"><p data-context>${esc(d.context)}</p></div>
     <div class="verse__actions">
       <button class="btn btn--ghost" type="button" data-act="copy">Copy</button>
+      <button class="btn btn--ghost" type="button" data-text-it hidden>Text it</button>
       <button class="btn btn--ghost" type="button" data-act="share">Share</button>
       <a class="btn btn--link" href="/today/">Today’s question</a>
     </div>
@@ -128,7 +129,7 @@ export function home(ctx) {
 
 ${newsletterBlock()}
 ${adSlot('inline')}`;
-  return layout({ path: '/', wide: true, finder: true, search: true, fullTitle: `${site.name} — ${site.tagline.replace(/\.$/, '')}`, title: site.name, description: site.defaultDescription, body, ld: [siteLd(), orgLd()] });
+  return layout({ path: '/', wide: true, finder: false, search: true, fullTitle: `${site.name} — ${site.tagline.replace(/\.$/, '')}`, title: site.name, description: site.defaultDescription, body, ld: [siteLd(), orgLd()] });
 }
 
 // ---------- Search page (same widget; canonical home for shared search links) ----------
@@ -204,7 +205,7 @@ ${picks}${wording}
     <p class="verse__text" lang="en">${verseText(v)}</p>
     <p class="verse__tr">${trLine(v)} · ${esc(genreLabel(v.genre))}</p>
     <div class="verse__why"><p>${esc(v.why)}</p></div>
-    <p style="margin-top:.6rem"><button class="btn btn--link" type="button" data-copy style="padding-left:0">Copy verse</button></p>
+    <p class="vlist__acts"><button class="btn btn--link" type="button" data-copy>Copy verse</button><button class="btn btn--link" type="button" data-text-it hidden>Text it</button></p>
   </li>`).join('')}</ol>
 </section>
 ${adSlot('inline')}
@@ -216,8 +217,10 @@ ${PRINTABLES[p.slug] ? `<p class="fine">Want it on paper? <a href="${PRINTABLES[
 <section class="section searchmore"><h2>Want more than ${vs.length}?</h2><p>These are the ones I’d hand you first. The search covers every verse in the Bible and tells you why each one matched.</p><a class="btn btn--ghost" href="/search/?all=1&q=${encodeURIComponent(p.searchQuery || p.for)}">Search the whole Bible for ${esc(p.label.toLowerCase())}</a></section>
 ${relatedList(related)}
 ${faq(p.faq)}
-${trustCallout()}`;
-  return layout({ path: p.url, title: p.title, description: p.description, body, wide: true, ld: [crumbsLd(crumbs)] });
+${trustCallout()}
+<p class="fine reviewed">Last reviewed <time datetime="${p.reviewed || site.reviewed}">${new Date((p.reviewed || site.reviewed) + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>. If something here is out of place, <a href="/contact/">tell me</a>.</p>`;
+  const pageLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: p.title, description: p.description, url: site.url + p.url, dateModified: p.reviewed || site.reviewed, inLanguage: 'en', isPartOf: { '@type': 'WebSite', name: site.name, url: site.url + '/' }, publisher: { '@type': 'Organization', name: site.name, url: site.url + '/' } };
+  return layout({ path: p.url, title: p.title, description: p.description, body, wide: true, ld: [crumbsLd(crumbs), pageLd] });
 }
 
 function genreLabel(g) {

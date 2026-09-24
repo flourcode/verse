@@ -103,7 +103,11 @@
   function loadFinder() {
     if (finderData) return Promise.resolve(finderData);
     if (window.__FINDER__) { finderData = window.__FINDER__; RED = !!finderData.redLetter; return Promise.resolve(finderData); }
-    if (!finderPromise) finderPromise = fetch(BASE + 'data/finder.json').then((r) => r.json()).then((d) => { RED = !!d.redLetter; return (finderData = d); });
+    if (!finderPromise) {
+      // Share one download with the search script: both use data/finder.js through window.__loadFinder.
+      window.__loadFinder = window.__loadFinder || (() => window.__finderP || (window.__finderP = new Promise((res, rej) => { if (window.__FINDER__) return res(window.__FINDER__); const s = document.createElement('script'); s.src = BASE + 'data/finder.js'; s.onload = () => res(window.__FINDER__); s.onerror = rej; document.head.appendChild(s); })));
+      finderPromise = window.__loadFinder().then((d) => { RED = !!d.redLetter; return (finderData = d); });
+    }
     return finderPromise;
   }
 
@@ -297,6 +301,42 @@
     document.addEventListener('click', (e) => { if (m.open && !m.contains(e.target)) m.open = false; });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && m.open) { m.open = false; $('summary', m).focus(); } });
   }
+  // "Text it": opens Messages with the verse and reference filled in. Shown only where sms: links work.
+  function initTextIt() {
+    const ok = /iPhone|iPad|iPod|Android|Macintosh/.test(navigator.userAgent);
+    const show = () => { if (ok) document.querySelectorAll('[data-text-it][hidden]').forEach((b) => { b.hidden = false; }); };
+    show(); new MutationObserver(show).observe(document.body, { childList: true, subtree: true });
+    document.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-text-it]'); if (!b) return;
+      const box = b.closest('.pick, .hit, li, .card, .daily, .verse, article, figure') || document;
+      const ref = (box.querySelector('.verse__ref, .hit__ref') || {}).textContent || '';
+      const text = ((box.querySelector('.verse__text, .hit__text, .pick__text') || {}).textContent || '').trim().replace(/^[“"]+|[”"]+$/g, '');
+      if (!text) return;
+      const body = `“${text}” — ${ref.trim()} (${TR})`;
+      track('text_verse', { ref: ref.trim() });
+      location.href = (/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) ? 'sms:&body=' : 'sms:?body=') + encodeURIComponent(body);
+    });
+  }
+  // Seasonal chips on the home page: the occasion that's coming up, first.
+  function initSeason() {
+    const list = document.querySelector('#h-pop') && document.querySelector('#h-pop').parentElement.querySelector('.chips'); if (!list) return;
+    const now = new Date(); const y = now.getFullYear(); const d = (m, day) => new Date(y, m - 1, day);
+    const nth = (m, dow, n) => { const f = d(m, 1); return d(m, 1 + ((dow - f.getDay() + 7) % 7) + (n - 1) * 7); };
+    const last = (m, dow) => { const e = d(m + 1, 0); return d(m, e.getDate() - ((e.getDay() - dow + 7) % 7)); };
+    const easter = (() => { const a = y % 19, b = Math.floor(y / 100), c = y % 100, dd = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - dd - g + 15) % 30, i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451), mo = Math.floor((h + l - 7 * m + 114) / 31), da = ((h + l - 7 * m + 114) % 31) + 1; return d(mo, da); })();
+    const days = (x) => x * 864e5; const between = (a, b) => now >= a && now <= new Date(+b + days(1));
+    const S = [
+      [new Date(+easter - days(21)), easter, 'easter-card', 'Easter card'],
+      [new Date(+nth(5, 0, 2) - days(18)), nth(5, 0, 2), 'mothers-day-card', 'Mother’s Day card'],
+      [new Date(+last(5, 1) - days(10)), last(5, 1), 'memorial-day', 'Memorial Day'],
+      [d(5, 1), d(6, 20), 'graduation-card', 'Graduation card'],
+      [new Date(+nth(6, 0, 3) - days(18)), nth(6, 0, 3), 'fathers-day-card', 'Father’s Day card'],
+      [d(11, 1), d(11, 11), 'memorial-day', 'Veterans Day'],
+      [d(11, 1), nth(11, 4, 4), 'thanksgiving', 'Thanksgiving'],
+      [d(11, 25), d(12, 31), 'christmas-card', 'Christmas card'],
+    ].filter(([a, b]) => between(a, b)).slice(0, 2);
+    S.reverse().forEach(([, , slug, label]) => { const li = document.createElement('li'); li.innerHTML = `<a class="chip chip--season" href="${BASE}occasions/${slug}/">${label}</a>`; list.prepend(li); });
+  }
   function initPrintables() {
     document.addEventListener('click', (e) => { const a = e.target.closest('a[href$=".pdf"]'); if (!a) return; track('printable_open', { sheet: a.getAttribute('href').split('/').pop().replace('.pdf', '') }); });
   }
@@ -307,5 +347,5 @@
       toast((await copyText(`“${text}” — ${b.dataset.ref} (${TR})`)) ? 'Passage copied' : 'Couldn’t copy'); track('copy_verse', { topic: b.dataset.ref.replace(/\s+/g, '-').toLowerCase() });
     });
   }
-  document.addEventListener('DOMContentLoaded', () => { initMenu(); initPassages(); initPrintables(); initFinder(); initHomeDaily(); initTopic(); initToday(); initRandom(); });
+  document.addEventListener('DOMContentLoaded', () => { initMenu(); initPassages(); initPrintables(); initTextIt(); initSeason(); initFinder(); initHomeDaily(); initTopic(); initToday(); initRandom(); });
 })();

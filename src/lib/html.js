@@ -151,6 +151,7 @@ export function verseCard(v, ctx, why, opts = {}) {
   <div class="verse__actions">
     ${opts.another !== false ? `<button class="btn btn--primary" type="button" data-act="another">Another verse</button>` : ''}
     <button class="btn btn--ghost" type="button" data-act="copy">Copy</button>
+    <button class="btn btn--ghost" type="button" data-text-it hidden>Text it</button>
     <button class="btn btn--ghost" type="button" data-act="share">Share</button>
   </div>
   ${ctx.url && opts.seeAll !== false ? `<p class="verse__more"><a href="${ctx.url}">See all verses for ${esc(ctx.for || ctx.label)}</a></p>` : ''}

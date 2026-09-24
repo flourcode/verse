@@ -45,13 +45,17 @@
 
   function loadScript(src) { return new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = rej; document.head.appendChild(s); }); }
   function loadJSON(src) { return fetch(src).then((r) => r.json()); }
+  const PERSON_WORDS = new Set('coworker coworkers boss mom dad mother father son daughter husband wife friend friends sister brother family kids kid child children parents parent grandpa grandma grandmother grandfather teenager teen spouse partner'.split(' '));
+  function aliasScore(na) { const w = na.split(' ').length; const sc = w * 2 + na.length / 20; return w === 1 && PERSON_WORDS.has(na) ? sc * 0.4 : sc; }
+  // One shared promise for the hand-picked data, so app.js and the search never download it twice.
+  window.__loadFinder = window.__loadFinder || (() => window.__finderP || (window.__finderP = window.__FINDER__ ? Promise.resolve(window.__FINDER__) : loadScript(BASE + 'data/finder.js').then(() => window.__FINDER__)));
   function loadAll(onStatus) {
     if (loading) return loading;
     onStatus && onStatus('Loading the Bible… (once, then it’s cached)');
     loading = Promise.all([
       window.__BIBLE__ ? Promise.resolve() : loadScript(BASE + 'data/bible.js'),
       window.__SYN__ ? Promise.resolve() : loadScript(BASE + 'data/synonyms.js'),
-      window.__FINDER__ ? Promise.resolve() : loadScript(BASE + 'data/finder.js'),
+      window.__loadFinder(),
       window.__KJV__ ? Promise.resolve() : loadScript(BASE + 'data/kjv.js'),
       window.__SAYINGS__ ? Promise.resolve() : loadScript(BASE + 'data/sayings.js'),
     ]).then(() => { onStatus && onStatus('Indexing…'); return new Promise((r) => setTimeout(r, 10)); }).then(() => { buildIndex(); onStatus && onStatus(''); });
@@ -168,7 +172,7 @@
     const q = norm(rawQuery); if (!q) return out;
     // Hand-picked page matched by alias; computed first so later steps (spelling correction, ranking) can defer to it
     let curated = null;
-    if (CURATED) { const wq = ' ' + q + ' '; let best = 0; for (const c of CURATED) { let sc = 0; for (const a of c.aliases) if (a && wq.includes(' ' + a + ' ')) sc = Math.max(sc, a.split(' ').length * 2 + a.length / 20); if (sc > best) { best = sc; curated = c; } } }
+    if (CURATED) { const wq = ' ' + q + ' '; let best = 0; for (const c of CURATED) { let sc = 0; for (const a of c.aliases) if (a && wq.includes(' ' + a + ' ')) sc = Math.max(sc, aliasScore(a)); if (sc > best) { best = sc; curated = c; } } }
 
     // 1. Reference ("john 3:16", "psalm 23", "matt 6 25-34")
     const ref = parseReference(rawQuery);
@@ -342,6 +346,22 @@
     return esc(text).replace(/[A-Za-z][A-Za-z’']*/g, (w) => (stems.includes(stem(norm(w))) ? `<mark>${w}</mark>` : w));
   }
   const versePageFor = (id) => { const F = window.__FINDER__; if (!F || !F.versePages) return null; const ref = refOf(id); return F.versePages[ref] || F.versePages[ref.replace(/:\d+$/, ':1')] && null; };
+  // Match a hand-picked page from the small finder data alone, before the whole Bible has loaded.
+  function quickCurated(q) {
+    const F = window.__FINDER__; if (!F) return null;
+    const wq = ' ' + norm(q) + ' '; let best = 0, hit = null;
+    for (const p of F.pages) { let sc = 0; for (const a of p.aliases) { const na = norm(a); if (na && wq.includes(' ' + na + ' ')) sc = Math.max(sc, aliasScore(na)); } if (sc > best) { best = sc; hit = p; } }
+    return hit;
+  }
+  // When nothing hand-picked matches: the nearest pages by the words typed.
+  function nearestPages(q) {
+    const F = window.__FINDER__; if (!F) return [];
+    const skip = (w) => STOP.has(w) || PERSON_WORDS.has(w) || /^(card|verse|verses|bible|scripture|something|someone|help|need)$/.test(w) || w.length < 3;
+    const qs = new Set(tokens(q).filter((w) => !skip(w)).map(stem)); if (!qs.size) return [];
+    const scored = F.pages.map((p) => { const bag = new Set(tokens([p.label, p.h1, p.for, ...p.aliases].join(' ')).filter((w) => !skip(w)).map(stem)); let sc = 0; for (const w of qs) if (bag.has(w)) sc++; return { p, sc }; });
+    return scored.filter((x) => x.sc > 0).sort((a, b) => b.sc - a.sc).slice(0, 3).map((x) => x.p);
+  }
+  const textBtn = '<button class="btn btn--link text-it" type="button" data-text-it hidden>Text it</button>';
   function hitHTML(h, showAll) {
     const id = h.id; const stems = showAll ? [] : h.matched.concat(h.syn); const vp = versePageFor(id);
     return `<article class="hit" data-id="${id}">
@@ -351,6 +371,7 @@
   <div class="hit__actions">
     <button class="btn btn--link" type="button" data-act="context">In context</button>
     <button class="btn btn--link" type="button" data-act="copy">Copy</button>
+    ${textBtn}
     <button class="btn btn--link" type="button" data-act="share">Share</button>
     ${vp ? `<a class="btn btn--link hit__vp" href="${BASE}${vp.url.replace(/^\//, '')}">Why it’s misread</a>` : ''}
   </div>
@@ -380,6 +401,7 @@
     const fRank = $('#f-rank');
     if (fRank) fRank.addEventListener('change', () => { comfortPref = fRank.value === 'comfort' ? 'on' : 'off'; if (current) run(current, false); });
     const showAll = new URLSearchParams(location.search).get('all') === '1';
+    let wantAll = false;
     const PAGE = 25;
 
     const setStatus = (m) => { if (status) status.textContent = m; };
@@ -401,6 +423,7 @@
       if (last.corrections.length) eng += `<p class="results__note">No verse contains ${last.corrections.map((c) => `“${esc(c.from)}”`).join(', ')}; showing <strong>${last.corrections.map((c) => esc(c.to)).join(', ')}</strong> instead. <a href="#" data-strict="1">Search for exactly what I typed</a></p>`;
       if (last.absent && last.absent.length) eng += `<p class="results__note">The ${esc(TR)} never uses the word${last.absent.length > 1 ? 's' : ''} ${last.absent.map((w) => `“${esc(w)}”`).join(', ')}. Other translations may; try the wording you remember from another version, or <a href="#" data-strict="0">let us translate it</a>.</p>`;
       if (last.reference) eng += `<p class="results__count">${esc(last.reference.label)} · ${last.total} verse${last.total === 1 ? '' : 's'}</p>`;
+      else if (last.quick) eng += '';
       else if (!last.total) eng += `<p class="results__count">No verses match yet</p>`;
       else if (last.terms.length > 1 && !last.full) eng += `<p class="results__count">No verse matches everything you typed · ${last.total.toLocaleString()} match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
       else if (last.terms.length > 1 && last.full < last.total) eng += `<p class="results__count">${last.full.toLocaleString()} verse${last.full === 1 ? '' : 's'} match everything you typed · ${(last.total - last.full).toLocaleString()} more match part of it${last.scope ? ` · ${esc(last.scope)}` : ''}</p>`;
@@ -419,7 +442,7 @@
 <p class="verse__ref">${esc(v.ref)}</p>
 <p class="verse__text pick__text" lang="en"><q>${esc(v.text)}</q></p>
 <p class="pick__why">${esc(e.why)}</p>
-<div class="hit__actions"><button class="btn btn--link" type="button" data-act="copy" data-cid="${esc(e.id)}">Copy</button><button class="btn btn--link" type="button" data-act="share" data-cid="${esc(e.id)}">Share</button></div>
+<div class="hit__actions"><button class="btn btn--link" type="button" data-act="copy" data-cid="${esc(e.id)}">Copy</button>${textBtn}<button class="btn btn--link" type="button" data-act="share" data-cid="${esc(e.id)}">Share</button></div>
 </article>`; }).join('') : '';
         if (cards) {
           h += `<section class="answer"><p class="answer__k">Hand-picked for ${esc(pg.for)}</p>
@@ -428,16 +451,19 @@ ${cards}
 ${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h3><p><strong>${esc(pg.skip.ref)}.</strong> ${esc(pg.skip.why)}</p></div>` : ''}
 <p class="answer__more"><a href="${esc(pg.url)}">What to say with it, and more on ${esc(pg.for)} →</a> · <a href="${BASE}how-to-read-a-verse/">Check one yourself in two minutes</a></p>
 </section>`;
-          if (!showAll) { collapsed = true; h += `<p class="results__divider"><button class="btn btn--ghost btn--block" type="button" data-expand>Search the whole Bible for this too (${last.total.toLocaleString()} verses match)</button></p><div class="results__eng" hidden>${eng}</div>`; }
+          if (!showAll && !wantAll) { collapsed = true; h += `<p class="results__divider"><button class="btn btn--ghost btn--block" type="button" data-expand>Search the whole Bible for this too${last.quick ? '' : ` (${last.total.toLocaleString()} verses match)`}</button></p><div class="results__eng" hidden>${eng}</div>`; }
           else h += `<p class="results__divider">More from the whole Bible</p>${eng}`;
         } else {
           h += `<a class="curated" href="${esc(last.curated.url)}"><span class="curated__k">Hand-picked</span><strong>${esc(last.curated.h1)}</strong><span>Verses chosen for their context, each with a note on why it fits.</span></a>`;
         }
       } else if (!more && !last.reference && !last.saying) {
-        h += eng + `<p class="results__note results__note--soft">I don’t have a hand-picked page for that yet, so these are from the whole Bible. <a href="${BASE}send/">See the moments I’ve written for</a>, or <a href="mailto:${esc(document.documentElement.dataset.email || 'hello@betterverses.com')}">tell me what you were looking for</a>.</p>`;
+        const near = nearestPages(current);
+        if (near.length) h += `<section class="near"><p class="answer__k">I don’t have a page for exactly that. These are close:</p><ul class="near__list">${near.map((p) => `<li><a href="${esc(p.url)}"><strong>${esc(p.h1)}</strong><span>${p.count || p.verses.length} hand-picked verses, each with why it fits</span></a></li>`).join('')}</ul></section><p class="results__divider">From the whole Bible</p>`;
+        h += eng + `<p class="results__note results__note--soft">${near.length ? '' : 'I don’t have a hand-picked page for that yet, so these are from the whole Bible. '}<a href="${BASE}send/">See every moment I’ve written for</a>, or <a href="mailto:${esc(document.documentElement.dataset.email || 'hello@betterverses.com')}">tell me what you were looking for</a>.</p>`;
+        track('search_miss', { suggested: near.length });
       }
       if (!(last.curated && last.curated.page) && (last.reference || last.saying)) h = eng + h;
-      if (!last.total && !more) h += `<div class="state"><p>Try fewer words, a phrase you remember in quotes, or a reference like <em>Psalm 23</em>.</p><p class="muted">Search covers every verse of the ${esc(TR)}.</p></div>`;
+      if (!last.quick && !last.total && !more) h += `<div class="state"><p>Try fewer words, a phrase you remember in quotes, or a reference like <em>Psalm 23</em>.</p><p class="muted">Search covers every verse of the ${esc(TR)}.</p></div>`;
       head.innerHTML = h;
       const slice = last.hits.slice(shown, shown + PAGE); shown += slice.length;
       let bin = $('.results__hits', results); if (!bin) { bin = document.createElement('div'); bin.className = 'results__hits'; results.appendChild(bin); }
@@ -452,18 +478,29 @@ ${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h
       current = q; input.value = q; results.hidden = false; filters && (filters.hidden = false);
       const url = BASE.replace(/\/$/, '') + '/search/?q=' + encodeURIComponent(q);
       if (push && /^https?:$/.test(location.protocol)) { try { if (isSearchPage) history.replaceState({ q }, '', url); else history.pushState({ q }, '', url); } catch (e) { /* file:// or sandboxed */ } }
-      loadAll(setStatus).then(() => {
+      wantAll = false;
+      const scrollToResults = () => { const y = results.getBoundingClientRect().top + window.scrollY - 72; if (window.scrollY < y - 40) window.scrollTo({ top: y, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); };
+      let answeredQuickly = false;
+      window.__loadFinder().then(() => {
+        if (current !== q || strict || (last && last.q === q && !last.quick)) return;
+        const hit = quickCurated(q); if (!hit) return;
+        answeredQuickly = true;
+        last = { q, quick: true, curated: { label: hit.label, url: hit.url, h1: hit.h1, page: hit }, total: null, full: 0, hits: [], terms: [], corrections: [], translated: [], absent: [], comfort: true, reference: null, saying: null, note: null };
+        render(false); setStatus(''); scrollToResults();
+      }).catch(() => {});
+      loadAll((m) => { if (!answeredQuickly) setStatus(m); }).then(() => {
+        if (current !== q) return;
         if (fBook && fBook.options.length <= 1) { for (let i = 0; i < B.books.length; i++) { const o = document.createElement('option'); o.value = i; o.textContent = B.books[i].n; fBook.appendChild(o); } }
-        last = search(q, { testament: fTest && fTest.value || null, book: fBook && fBook.value !== '' ? +fBook.value : null, mode: fMode && fMode.value, strict, comfort: comfortPref });
+        last = search(q, { testament: fTest && fTest.value || null, book: fBook && fBook.value !== '' ? +fBook.value : null, mode: fMode && fMode.value, strict, comfort: comfortPref }); last.q = q;
         if (fRank) fRank.value = last.comfort ? 'comfort' : 'plain';
         render(false); setStatus('');
         track('bible_search', { results: last.total, kind: last.reference ? 'reference' : (last.curated ? 'topic' : 'text') });
-        const y = results.getBoundingClientRect().top + window.scrollY - 72; if (window.scrollY < y - 40) window.scrollTo({ top: y, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-      }).catch((err) => { console.error(err); setStatus('The Bible text didn’t load. Check your connection and try again.'); });
+        if (!answeredQuickly) scrollToResults();
+      }).catch((err) => { console.error(err); if (answeredQuickly) { const b = $('[data-expand]', results); if (b) { b.disabled = false; b.textContent = 'The whole Bible didn’t load. Try again'; } loading = null; } else setStatus('The Bible text didn’t load. Check your connection and try again.'); });
     }
     form.addEventListener('submit', (e) => { e.preventDefault(); strict = false; comfortPref = null; run(input.value, true); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-strict]'); if (!a) return; e.preventDefault(); strict = a.dataset.strict === '1'; run(current, false); });
-    results.addEventListener('click', (e) => { const btn = e.target.closest('[data-expand]'); if (!btn) return; const bin = $('.results__hits', results); if (bin) bin.hidden = false; const en = $('.results__eng', results); if (en) en.hidden = false; const fl = $('.filters'); if (fl) fl.hidden = false; btn.closest('.results__divider').innerHTML = 'More from the whole Bible'; track('bible_search', { results: last.total, kind: 'expand' }); });
+    results.addEventListener('click', (e) => { const btn = e.target.closest('[data-expand]'); if (!btn) return; if (last && last.quick) { wantAll = true; btn.textContent = 'Loading the whole Bible…'; btn.disabled = true; if (!loading) run(current, false); return; } const bin = $('.results__hits', results); if (bin) bin.hidden = false; const en = $('.results__eng', results); if (en) en.hidden = false; const fl = $('.filters'); if (fl) fl.hidden = false; btn.closest('.results__divider').innerHTML = 'More from the whole Bible'; track('bible_search', { results: last.total, kind: 'expand' }); });
     results.addEventListener('click', (e) => { const a = e.target.closest('[data-rank]'); if (!a) return; e.preventDefault(); comfortPref = a.dataset.rank === 'plain' ? 'off' : 'on'; run(current, false); });
     [fTest, fBook, fMode].forEach((el) => el && el.addEventListener('change', () => current && run(current, false)));
     document.addEventListener('click', (e) => { const el = e.target.closest('[data-q]'); if (!el) return; e.preventDefault(); strict = false; run(el.dataset.q, true); });
@@ -482,4 +519,5 @@ ${pg.skip ? `<div class="verse__why answer__skip"><h3>The one I’d leave out</h
     const q0 = new URLSearchParams(location.search).get('q'); if (q0) run(q0, false);
   }
   document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
+  (window.requestIdleCallback || ((f) => setTimeout(f, 800)))(() => window.__loadFinder().catch(() => {}));
 })();
