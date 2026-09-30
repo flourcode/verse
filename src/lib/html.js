@@ -79,7 +79,6 @@ const menuItems = [['/search/', 'Find a verse'], ['/topics/', 'Topics'], ['/send
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/source-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/${ASSETS.css}">
 ${page.finder ? '<script src="/data/finder.js" defer></script>' : ''}
 ${page.search ? `<script src="/assets/${ASSETS.search}" defer></script>` : ''}
@@ -101,7 +100,7 @@ ${page.body}
 </main>
 <footer class="foot">
   <div class="wrap">
-    ${site.newsletter && site.newsletter.formAction ? `<form class="foot__signup" action="${esc(site.newsletter.formAction)}" method="post"><label for="nl-foot" class="foot__label">One thoughtful email each week. Something worth reading.</label><div class="foot__row"><input id="nl-foot" type="email" name="email_address" required autocomplete="email" inputmode="email" placeholder="you@example.com"><button class="btn btn--primary" type="submit">Send me Better Verses</button></div></form>` : site.newsletter && site.newsletter.url ? `<p class="foot__label"><a href="${esc(site.newsletter.url)}">One thoughtful email each week →</a></p>` : ''}
+    ${site.newsletter && site.newsletter.formAction && !String(page.body || '').includes('id="h-news"') ? `<form class="foot__signup" action="${esc(site.newsletter.formAction)}" method="post"><label for="nl-foot" class="foot__label">One thoughtful email each week. Something worth reading.</label><div class="foot__row"><input id="nl-foot" type="email" name="email_address" required autocomplete="email" inputmode="email" placeholder="you@example.com"><button class="btn btn--primary" type="submit">Send me Better Verses</button></div></form>` : site.newsletter && site.newsletter.url ? `<p class="foot__label"><a href="${esc(site.newsletter.url)}">One thoughtful email each week →</a></p>` : ''}
     <ul>
 
       <li><a href="/verses/">Verses in context</a></li>

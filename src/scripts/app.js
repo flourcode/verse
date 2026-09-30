@@ -225,22 +225,19 @@
 
   // ---------- topic page ----------
   function initTopic() {
-    const holder = $('#page-data'); const card = $('#lead-verse'); if (!holder || !card) return;
-    const data = JSON.parse(holder.textContent); let idx = 0; RED = !!data.redLetter;
-    const ctx = { slug: data.slug, url: data.url, for: data.for };
-    const at = () => Object.assign({ why: data.verses[idx].why }, data.verses[idx]);
-    // Arriving from a shared link (#verse-id): show that verse first.
-    const want = location.hash.slice(1); const wi = want ? data.verses.findIndex((v) => v.id === want) : -1;
-    if (wi > 0) { idx = wi; card.innerHTML = cardHTML(at(), ctx, at().why, { seeAll: false }); }
-    wireCard(card, at, ctx, () => {
-      idx = (idx + 1) % data.verses.length;
-      card.innerHTML = cardHTML(at(), ctx, at().why, { seeAll: false });
-    });
-    // Copy buttons on the long list
-    const list = $('#verse-list'); if (list) list.addEventListener('click', async (e) => {
-      const b = e.target.closest('[data-copy]'); if (!b) return;
-      const li = b.closest('li'); const v = { ref: $('.verse__ref', li).textContent, text: $('.verse__text', li).textContent };
-      const ok = await copyText(verseString(v)); toast(ok ? 'Verse copied' : 'Couldn’t copy'); track('copy_verse', { topic: data.slug, via: 'list' });
+    const holder = $('#page-data'); if (!holder) return;
+    const data = JSON.parse(holder.textContent); RED = !!data.redLetter;
+    // Arriving from a shared link (#verse-id): bring that verse into view and mark it.
+    const want = location.hash.slice(1); const target = want && document.getElementById(want);
+    if (target && target.closest('#verse-list')) { target.classList.add('is-target'); setTimeout(() => target.scrollIntoView({ block: 'start' }), 50); }
+    const list = $('#verse-list'); if (!list) return;
+    list.addEventListener('click', async (e) => {
+      const b = e.target.closest('[data-copy], [data-share]'); if (!b) return;
+      const li = b.closest('li'); const v = { ref: $('.verse__ref', li).textContent, text: $('.verse__text', li).textContent.trim().replace(/^[“"]+|[”"]+$/g, '') };
+      if (b.hasAttribute('data-copy')) { const ok = await copyText(verseString(v)); toast(ok ? 'Verse copied' : 'Couldn’t copy'); track('copy_verse', { topic: data.slug, via: 'list' }); return; }
+      const url = SITE + data.url + '#' + li.id; const text = verseString(v);
+      if (navigator.share) { try { await navigator.share({ title: v.ref, text, url }); track('share_verse', { method: 'native' }); return; } catch (err) { if (err && err.name === 'AbortError') return; } }
+      toast((await copyText(text + '\n' + url)) ? 'Link copied' : 'Couldn’t share'); track('share_verse', { method: 'copy' });
     });
   }
 

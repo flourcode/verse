@@ -81,13 +81,10 @@ export function home(ctx) {
   <p class="fine">Sometimes people need space. Sometimes a meal, a ride, or someone willing to sit with them. And sometimes Scripture helps.</p>
 </section>
 
-<section class="section" aria-labelledby="h-paths">
-  <h2 id="h-paths" class="sr-only">Where to start</h2>
-  <ul class="tools paths">
-    <li><a href="/topics/"><strong>Browse by situation</strong><span>Grief, surgery, job loss, worry, starting over, sympathy cards, sleepless nights, and more.</span></a></li>
-    <li><a href="/search/?all=1"><strong>Search the whole Bible</strong><span>Remember half a verse, a phrase, or a reference? Every verse of the World English Bible.</span></a></li>
-    <li><a href="/ministry/"><strong>Ministry and caregiving</strong><span>Scripture and printable resources for pastors, chaplains, caregivers, teachers, and hospice workers.</span></a></li>
-  </ul>
+<section class="section section--tight" aria-labelledby="h-pop">
+  <h2 id="h-pop">Or start with a common moment</h2>
+  <ul class="chips">${HOME_CHIPS.map(([s, t]) => `<li><a class="chip" href="${urlFor(bySlug[s])}">${t}</a></li>`).join('')}</ul>
+  <p class="links"><a href="/topics/">All ${pages.length} situations</a><a href="/send/">What to send someone</a><a href="/search/?all=1">Search the whole Bible</a><a href="/ministry/">For ministry</a></p>
 </section>
 
 <section class="section newsletter" aria-labelledby="h-kit">
@@ -97,13 +94,7 @@ export function home(ctx) {
   <p class="fine">Free. No email address. <a href="/comfort-kit/">See what’s in it</a>.</p>
 </section>
 
-<section class="section" aria-labelledby="h-pop">
-  <h2 id="h-pop">Common situations</h2>
-  <ul class="chips">${HOME_CHIPS.map(([s, t]) => `<li><a class="chip" href="${urlFor(bySlug[s])}">${t}</a></li>`).join('')}<li><a class="chip chip--more" href="/topics/">All ${pages.length} topics</a></li></ul>
-  <p class="fine"><a href="/send/">Just tell me what to send someone →</a></p>
-</section>
-
-<section class="trust trust--band" aria-labelledby="h-trust">
+<section class="section plain" aria-labelledby="h-trust">
   <h2 id="h-trust">Scripture, not fortune cookies.</h2>
   <p>A verse can sound perfect by itself and mean something quite different in its chapter. Every verse here comes with who said it, what was happening, and why it might fit, and on most pages the popular verse I’d leave out and why. I read the whole chapter before recommending a verse, and I’ll show you how to check one yourself in two minutes.</p>
   <a href="/how-to-read-a-verse/">How to read a verse before you send it</a> · <a href="/what-we-believe/">What I believe</a>
@@ -194,20 +185,19 @@ ${breadcrumbs(crumbs)}
 <h1>${esc(p.h1)}</h1>
 <p class="hero__dek">${esc(p.intro)}</p>
 ${p.safety ? `<p class="note">${esc(p.safety)}</p>` : ''}
-<h2 style="margin-top:1.75rem">A verse to start with</h2>
-<div id="lead-verse">${verseCard(primary, { slug: p.slug, url: p.url, for: p.for }, primary.why, { seeAll: false })}</div>
 <script type="application/json" id="page-data">${JSON.stringify(pageData).replace(/</g, '\\u003c')}</script>
-${picks}${wording}
 <section class="section">
-  <h2>${vs.length} verses ${p.type === 'occasion' ? 'to choose from' : 'for ' + esc(p.for)}</h2>
-  <ol class="vlist" id="verse-list">${vs.map((v) => `<li>
+  <h2>${vs.length} verses I’d look at</h2>
+  <p class="muted">Read them slowly; you only need one. Each comes with who said it and why it fits.</p>
+  <ol class="vlist" id="verse-list">${vs.map((v, i) => `<li id="${esc(v.id)}"${i === 0 ? ' class="vlist__lead"' : ''}>
     <p class="verse__ref">${esc(v.reference)}</p>
     <p class="verse__text" lang="en">${verseText(v)}</p>
     <p class="verse__tr">${trLine(v)} · ${esc(genreLabel(v.genre))}</p>
     <div class="verse__why"><p>${esc(v.why)}</p></div>
-    <p class="vlist__acts"><button class="btn btn--link" type="button" data-copy>Copy verse</button><button class="btn btn--link" type="button" data-text-it hidden>Text it</button></p>
+    <p class="vlist__acts"><button class="btn btn--link" type="button" data-copy>Copy</button><button class="btn btn--link" type="button" data-text-it hidden>Text it</button><button class="btn btn--link" type="button" data-share>Share</button></p>
   </li>`).join('')}</ol>
 </section>
+${picks}${wording}
 ${adSlot('inline')}
 ${p.skip ? `<section class="section leaveout"><h2>The one I’d leave out</h2><p><strong>${esc(p.skip.ref)}.</strong> ${esc(p.skip.why)}</p></section>` : ''}
 ${p.whatToSay ? `<section class="section"><h2>What to say with it</h2><ul class="say">${p.whatToSay.map((l) => `<li>${esc(l)}</li>`).join('')}</ul></section>` : ''}

@@ -75,7 +75,7 @@ const preview = `${v.text.slice(0, 90).replace(/\s+\S*$/, '')}…`;
 
 // ---------- HTML email (tables + inline styles; renders in Gmail, Apple Mail, Outlook) ----------
 const G = '#2E7D32', INK = '#182019', INK2 = '#59635B', LINE = '#D7E1D9', MINT = '#E8F5E9', PALE = '#F5FAF6';
-const serif = "Georgia, 'Iowan Old Style', 'Times New Roman', serif";
+const serif = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"; // sans-serif throughout; the name is kept for the templates below
 const sans = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
 const p = (t, extra = '') => `<p style="margin:0 0 14px;font:16px/1.55 ${sans};color:${INK};${extra}">${t}</p>`;
 const h2 = (t) => `<p style="margin:28px 0 8px;font:700 12px/1.4 ${sans};letter-spacing:.08em;text-transform:uppercase;color:${G};">${t}</p>`;
@@ -100,7 +100,7 @@ const html = `<!DOCTYPE html>
     <td style="font:700 17px/1 ${sans};color:${INK};">Better Verses</td>
   </tr></table>
   <p style="margin:22px 0 4px;font:700 12px/1.4 ${sans};letter-spacing:.08em;text-transform:uppercase;color:${INK2};">Weekly · Issue ${issue} · ${fmt(date)}</p>
-  <p style="margin:0 0 18px;font:600 26px/1.2 ${serif};color:${INK};">A verse for ${esc(sp.for)}.</p>
+  <p style="margin:0 0 18px;font:700 26px/1.2 ${serif};color:${INK};">A verse for ${esc(sp.for)}.</p>
   ${p(`Hi {{ subscriber.first_name | default: "there" }}. Once a week: a verse read slowly, something for someone you care about, something for those who comfort others, and a little help separating what the Bible says from what we think it says. Glad you’re here.`)}
 
   ${h2('This week’s verse')}

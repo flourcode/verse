@@ -1,11 +1,10 @@
 /* Better Verses design system
-   Two typefaces: Inter for the interface, Source Serif for Scripture. One accent, deep evergreen, that means
+   One typeface: Inter, for everything, Scripture included. One accent, deep evergreen, that means
    "go" and appears on the primary action. Neutrals are warm ivory and stone, so the page reads as paper rather
    than software. Tokens are named as roles (surface / on-surface / primary) and components never use a literal
    hex. 48px touch targets, visible focus, reduced-motion respected. */
 
 @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url(../inter.woff2) format('woff2'); }
-@font-face { font-family: 'Source Serif'; font-style: normal; font-weight: 200 900; font-display: swap; src: url(../source-serif.woff2) format('woff2'); }
 
 :root {
   /* Color roles, light. One green hue, five tones (Material green 50 / 200 / 400 / 800 / 900), on a white page.
@@ -36,7 +35,7 @@
   --on-accent: var(--on-primary); --accent-soft: var(--primary-container);
 
   --font: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-verse: 'Source Serif', 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+  --font-verse: var(--font);   /* one sans-serif family everywhere; Scripture is set apart by size and measure, not a second typeface */
   --fs-body: 17px;
   --lh-body: 1.5;
   --fs-verse: clamp(1.5rem, 1.15rem + 1.6vw, 2rem);      /* ~25–32px */
@@ -46,10 +45,10 @@
   --wide: 42rem;     /* ~714px: reading pages */
 
   --r-xs: 4px;
-  --r-sm: 10px;
-  --r-md: 14px;
-  --r-lg: 20px;
-  --r-search: 22px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-search: 12px;
   --r-xl: 28px;
   --r-pill: 999px;
 
@@ -99,7 +98,7 @@ a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: var(--r-xs); }
 button { font: inherit; color: inherit; }
 h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.025em; margin: 0 0 .5rem; font-weight: 700; text-wrap: balance; }
-h1 { font-family: var(--font-verse); font-weight: 600; letter-spacing: -0.015em; line-height: 1.1; font-size: clamp(2.1rem, 1.5rem + 2.8vw, 3.1rem); }
+h1 { font-family: var(--font); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; font-size: var(--t-headline); }
 h1 .em { color: var(--primary); font-style: normal; }
 .hero h1 { max-width: 28ch; font-size: clamp(2rem, 1.2rem + 2.6vw, 3.1rem); margin-bottom: 1rem; }
 .hero .hero__dek { font-size: clamp(1.05rem, .95rem + .6vw, 1.3rem); max-width: 46ch; margin-bottom: 1.1rem; }
@@ -528,3 +527,72 @@ main { padding: 1.5rem 0 4rem; }
 .near__list strong { display: block; font-size: 1.05rem; }
 .near__list span { color: var(--ink-2); font-size: .9rem; }
 .chip--season { background: var(--primary-container); border-color: transparent; color: var(--on-primary-container); font-weight: 600; }
+
+
+/* ==========================================================================
+   Design system v2 (sans-serif only, Material 3 roles, card discipline)
+   Type roles: display (home hero only), headline (page H1), title-l (section H2),
+   title-m (H3, component titles), body-l (Scripture), body (reading), label (controls, meta).
+   Shape: xs 4 · sm 8 (chips, small controls) · md 12 (inputs, containers) · lg 16 (feature containers) · full (buttons).
+   Surfaces: base → low (#F4FAF4) → high (#E8F5E9). Borders only where a surface change can't do the job.
+   ========================================================================== */
+:root {
+  --t-display: clamp(2.125rem, 1.35rem + 3.2vw, 3.25rem);
+  --t-headline: clamp(1.75rem, 1.3rem + 1.8vw, 2.375rem);
+  --t-title-l: clamp(1.25rem, 1.12rem + .5vw, 1.5rem);
+  --t-title-m: 1.125rem;
+  --t-body-l: clamp(1.1875rem, 1.1rem + .35vw, 1.3125rem);
+  --t-body: 1.0625rem;
+  --t-label: .875rem;
+}
+h2 { font-size: var(--t-title-l); font-weight: 650; letter-spacing: -0.012em; line-height: 1.25; }
+h3 { font-size: var(--t-title-m); font-weight: 600; line-height: 1.35; }
+.hero h1 { font-size: var(--t-display); letter-spacing: -0.028em; line-height: 1.08; max-width: 20ch; }
+.hero .hero__dek, .hero__dek { font-size: 1.125rem; line-height: 1.55; }
+
+/* Scripture: same family, larger size, generous measure; the words themselves do the work */
+.verse__text, .hit__text, .saying__text, .pick__text, .answer__text, .send__text, .passage .verse__text {
+  font-family: var(--font); font-weight: 400; font-size: var(--t-body-l); line-height: 1.55; letter-spacing: -0.003em; color: var(--ink); max-width: 38em;
+}
+.pick--lead .pick__text, .vlist__lead .verse__text, .daily .verse__text, .verse .verse__text { font-size: clamp(1.3125rem, 1.15rem + .7vw, 1.5rem); line-height: 1.45; letter-spacing: -0.008em; }
+.verse__ref, .hit__ref, .saying__ref { font-size: var(--t-label); font-weight: 650; letter-spacing: .01em; }
+.hit__ref a { text-decoration: none; }
+
+/* Chips: M3 small shape */
+.chip, .card--sit, .toc a { border-radius: var(--r-sm); }
+.chip:hover, .card--sit:hover, .toc a:hover { background: color-mix(in srgb, var(--on-surface) 6%, var(--bg-2)); }
+
+/* Card discipline: lists are lists. Dividers instead of a rounded box per item. */
+.list--cards, .tools, .posts { gap: 0; }
+.list--cards a, .tools a, .posts a { background: transparent; border-radius: 0; padding: 1rem 0; border-top: 1px solid var(--line); }
+.list--cards li:first-child a, .tools li:first-child a, .posts li:first-child a { border-top: 0; }
+.list--cards a:hover, .tools a:hover, .posts a:hover { background: transparent; }
+.list--cards a:hover strong, .tools a:hover strong, .posts a:hover strong { color: var(--primary); }
+@media (min-width: 640px) { .tools { grid-template-columns: 1fr; } }
+.tools .tool__about { margin: -.4rem 0 .6rem; padding: 0; display: inline-block; }
+
+/* Supporting sections are plain text on the page, separated by a rule, not boxed */
+.plain, .searchmore { background: transparent; padding: 1.5rem 0 0; border-top: 1px solid var(--line); border-radius: 0; }
+.plain h2, .searchmore h2 { margin-top: 0; }
+.trust { background: transparent; padding: 1rem 0 0; border-top: 1px solid var(--line); border-radius: 0; margin-top: 2rem; }
+.hit__why span { background: transparent; padding: 0; border-radius: 0; }
+.hit__why span + span::before { content: "·"; margin: 0 .4rem; color: var(--ink-3); }
+
+/* The containers that remain are the ones that are distinct objects:
+   the hand-picked answer, a caution, the day's verse, a download, a form. */
+.answer, .near, .daily, .newsletter, .saying { border-radius: var(--r-lg); }
+.note, .leaveout, .passage, .hit__ctx { border-radius: var(--r-md); }
+
+/* Home */
+.links { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin: 1rem 0 0; font-size: .95rem; }
+.links a { color: var(--ink-2); text-underline-offset: 3px; min-height: 40px; display: inline-flex; align-items: center; }
+.links a:hover { color: var(--primary); }
+.section--tight { margin-top: 1.75rem; }
+
+/* Topic page list: the first verse leads; the others follow the same rhythm */
+.vlist { counter-reset: v; }
+.vlist > li { padding: 1.25rem 0; border-top: 1px solid var(--line); }
+.vlist > li:first-child { border-top: 0; padding-top: .5rem; }
+.vlist__lead { }
+.vlist > li.is-target { background: var(--surface-high); margin: 0 -1rem; padding-left: 1rem; padding-right: 1rem; border-radius: var(--r-md); }
+.vlist__acts { gap: 1.25rem; }
